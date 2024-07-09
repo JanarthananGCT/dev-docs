@@ -1,0 +1,152 @@
+---
+sidebar_position: 3
+hide_title: false
+sidebar_label: Level 2 - Event App
+title: Level 2 - Event App
+id: event_app
+slug: appnest/code-labs/event_app
+---
+
+# Level 2 - Event App
+
+<!-- ------------------------ -->
+
+## Overview
+
+SurveySparrow enables the creation of apps using a Serverless platform, allowing seamless attachment of custom handler functions. These functions are executed within a Serverless Node.js environment.
+
+Before exploring the next sections, make sure to install the [SSDK CLI](https://sdk.surveysparrow.dev/docs/getting-started/quick-start.html).
+
+<!-- ------------------------ -->
+
+## Quick notes about Serverless in general
+
+Cloud computing refers to the utilization of another party's computer resources. Similarly, Serverless computing implies a server infrastructure managed by a third party. It allows developers to execute code without being concerned about the underlying hardware or infrastructure. Both cloud and serverless services are billed based on actual usage, making them an ideal combination for integration use cases.
+Serverless applications are self-sustaining and automatically execute when triggered by specific functions. Now, let's explore how this mechanism operates within the SurveySparrow AppNest.
+
+## Serverless apps in SurveySparrow Platform
+
+The SurveySparrow AppNest offers a Serverless environment tailored to cater to specific use cases that go beyond the capabilities of a front-end app or require enhanced security measures. This technology enables developers to build their apps completely free of cost. Itâ€™s time to build seamless reactions to desired events and elegant problem-solving.
+SurveySparrow's Serverless apps exclusively support the Node.js runtime and are integrated into the SurveySparrow app, which may also include other components like front-end elements and configuration pages. The process of publishing serverless apps is straightforward, as no special steps or configurations are needed.
+Now, let's delve into the structure of the Serverless app within the SurveySparrow platform. Please create an new directory and enter the command below.
+
+```bash
+SSDK create
+```
+
+From products, please select `SurveySparrow` The templates will be listed. Select the `serverless_app` template.
+All modifications and additions to the Serverless components will be made within the <strong>server</strong> directory, serving as the foundation for building the application. The Serverless application's tree structure will be organized as follows.
+
+```
+.
+â”œâ”€â”€ README.md
+â”œâ”€â”€ config
+â”‚   â””â”€â”€ iparams.json
+â”œâ”€â”€ manifest.json
+â””â”€â”€ server
+    â””â”€â”€ server.js
+```
+
+3 directories, 4 files
+The Serverless application contains the following:
+
+<strong>README.md</strong> - A markdown-formatted document that provides comprehensive
+documentation for the code repository.
+
+<strong>config/iparams.json</strong> - A configuration file used to set Installation
+parameters. Account admins can fill in these parameters during the app installation
+process.
+
+<strong>manifest.json</strong> - An information-capturing file that contains details
+about the app. It also serves as the overall appâ€™s configuration.
+
+<strong>server/server.js</strong> - This file is responsible for writing and exposing
+the Serverless functions. All additional serverless files that can be imported into
+this file will also be located within the same directory.
+
+Now, let's move on to the server.js file to explore how events are registered with functions and how to create Serverless functions.
+
+## Working with Serverless in SSDK
+
+When a Serverless function needs to be accessible from outside the component, it must be exported. The exported function is then registered with a Serverless event, which will trigger the function in response to specific cases. For instance, in SurveySparrow, when a ticket is created, a corresponding event is triggered, and it can be linked to a Serverless function. Consequently, whenever this event occurs, the associated Serverless function will execute. These events are referred to as "Product events" in the SurveySparrow AppNest.
+The Serverless function can contain the required business logic to be executed upon the event trigger, such as handling ticket creation. Additionally, there are other Product Events available, each associated with specific events from the SurveySparrow product.
+Here's an example of how the Serverless function can be structured:
+
+```
+exports = {
+  onSubmissionComplete: function (payload) {
+    onSubmissionCompleteHandler(payload);
+  }
+}
+
+const onSubmissionCompleteHandler = async (args) => {
+  console.log('Hello, Survey Id is ' + args['data']['survey_id']);
+}
+
+```
+
+In this example, we have the following Serverless function exported and registered with the "onSubmissionComplete" event. When a submission is completed in SurveySparrow, this function will be executed, logging a greeting message along with the Survey ID to the console.
+In this scenario, the "onSubmissionCompleteHandler" function is automatically executed when a submission is completed in SurveySparrow.
+
+- For every event, relevant data about the submission will be automatically sent as function arguments.
+- All Serverless events come with metadata that is passed along in the function arguments.
+- The events do not require any response or have callback functions attached. Thus, the execution concludes after the custom business logic written in the function is executed.
+
+## Simulation of Serverless Events
+
+Testing Serverless events with the SurveySparrow product locally can be challenging due to the cloud-based nature of the product and the app not being exposed to the internet. However, SurveySparrow provides a simulation feature to test events. Let's see how to test the "onSubmissionComplete" product event:
+
+- Run the app locally using the "ssdk run" command.
+- Visit the simulation page at https://localhost:30001/web/test.
+- Select the "onSubmissionComplete" event. The payload data to be sent to the event handler function will be displayed. This test data is stored under the "/server/test_data" directory, which can be modified for different test scenarios.
+- Click on the <strong>"Simulate"</strong> button. The event will be triggered in the app, and the log message from the event can be found in the Terminal or Command Prompt where the app is running.
+
+As the app grows in complexity, tracking which areas have been tested becomes difficult. To address this, SurveySparrow provides test coverage tracking and reporting when running the app locally. To view the coverage report:
+
+- Stop the running app in the terminal (Control + C).
+- The coverage report is available in the "/.reports" directory of the app. Open the index HTML file in a browser to view the detailed line-by-line code coverage report. Once the app is published as a custom app in the SurveySparrow portal, event simulation is not required, as the events will automatically trigger the installed apps. This way, Serverless events work seamlessly in a custom app on the SurveySparrow platform.
+
+## Testing the app
+
+Follow the documentation to publish and install a custom app in your SurveySparrow portal using the app that has been created.
+Next, let's create an action in SurveySparrow that will trigger the "onSubmissionComplete" event in the installed Serverless app.
+Here are the steps to achieve it:
+
+- Complete a submission for a Survey in SurveySparrow. This action will be logged to the Serverless logs.
+
+- To check the Serverless logs for this event, you can refer to the steps provided in this documentation.
+
+- For troubleshooting any issues, errors caught can be logged to the console, and uncaught errors can be found in the Serverless logs.
+
+By following these steps, you can effectively trigger the "onSubmissionComplete" event and utilize the Serverless logs for monitoring and troubleshooting purposes within your SurveySparrow custom app.
+
+<strong>Note:</strong>
+When the business logic code runs in a Serverless app, it can only be triggered from
+the same installed SurveySparrow account. This restriction is a feature that ensures
+the security of Serverless apps.
+
+## Security
+
+The Serverless environment is inherently secure by default, operating within a private cloud environment where other services cannot access it without proper authentication and addressing for the function.
+Additionally, it ensures that no information from the frontend component of the application can be read or exposed in the browser. The installation parameters are sent to the Serverless functions as arguments in plain text, maintaining high-level security.
+Given this robust security, the Serverless function is an excellent option for executing secure operations instead of performing them directly on the front end. For instance, tasks like generating a secret token for external API services or encoding specific text before sending it over an HTTP request can be efficiently handled within the Serverless function. It enhances the overall applicationâ€™s security and data protection.
+
+## Recap
+
+Congratulations! You have now gained valuable insights into the workings of the Serverless environment within the SurveySparrow AppNest and how it can be effectively leveraged for specific use cases.
+Throughout this learning journey, we covered the following key topics:
+Serverless environment - Understanding the fundamentals of this innovative pattern of applications, and how they operate.
+Serverless apps on the SurveySparrow platform - Exploring the definition of functions in a SurveySparrow Serverless app, handling errors, utilizing dependencies, and testing with simulation for smooth operation.
+Publish as a custom app - Discovering the process of publishing Serverless apps as custom apps and learning how to troubleshoot any potential issues that may arise.
+Continue your learning experience and explore further possibilities by taking a closer look at the Serverless features offered by the SurveySparrow AppNest. It will enable you to build more powerful and efficient applications using the Serverless approach.
+Keep up the great work, and happy coding!
+
+## Next steps
+
+Ta da ðŸŽ‰! You can build apps for various events to push data to other 3rd party integration. Please refer documentation for reference.
+
+Clone this sample app for reference and check.
+
+```bash
+git clone git@github.com:surveysparrow/appnest/codelabs-apps/serverless-app.git
+```

@@ -1,0 +1,311 @@
+---
+sidebar_position: 3
+hide_title: false
+sidebar_label: Level 4 - Scheduler App
+title: Level 4 - Scheduler App
+id: scheduler_app
+slug: appnest/code-labs/scheduler_app
+---
+
+# Level 4 - Scheduler App
+
+<!-- ------------------------ -->
+
+## Overview
+
+Do you have a regular task or a planned activity? SurveySparrow apps include options that make it simple to schedule jobs.
+
+**Note:** Please complete the previous levels to learn how to build a scheduler app
+
+<!-- ------------------------ -->
+
+## What are we going to learn?
+
+- General Schedule Notes
+- Schedule apps on the SurveySparrow platform
+- Limitations and boundaries
+- Testing Schedule Events
+
+<!-- ------------------------ -->
+
+## General Schedule Notes
+
+Schedule apps are headless applications that can operate independently at a scheduled time. Let's have a look at how it works on the SurveySparrow AppNest.
+It is possible to solve a wide range of use cases by combining Batch applications with Scheduled apps.
+
+## Schedule apps in SurveySparrow platform
+
+SurveySparrow AppNest has given a comparable Schedule environment to solve some special use cases that cannot be addressed just with a frontend app or would be best done behind a secure wall. This technology is available at no cost to developers and their apps through the SurveySparrow AppNest. It enables your apps to respond to desired events and elegantly handle problems.
+Node.js runtime is the only one supported by SurveySparrow Schedule applications. Therefore, publishing Schedule apps doesn't require any specific configurations or procedures.
+Let's begin by examining the structure of the Schedule app on the SurveySparrow platform.
+
+## Working with Schedule in SSDK
+
+Create an empty directory and enter the command below.
+
+```bash
+SSDK create
+```
+
+From products, select `SurveySparrow`. The available templates will be listed. Select `serverless_app`. Your `manifest.json` will look like this
+
+```
+{
+  "platform-version": "1.0",
+  "product": {
+    "surveysparrow": {
+      "location": {
+        "full_page_app": {
+          "url": "index.html",
+          "icon": "images/icon.svg"
+        }
+      },
+      "events": {
+        "onScheduledEvent": {
+          "handler": "onScheduledEvent"
+        }
+      },
+      "functions": {
+        "fetchSchedule": {
+          "timeout": 5
+        },
+        "updateSchedule": {
+          "timeout": 5
+        },
+        "deleteSchedule": {
+          "timeout": 5
+        },
+        "createSchedule": {
+          "timeout": 5
+        },
+        "pauseSchedule": {
+          "timeout": 5
+        },
+        "resumeSchedule": {
+          "timeout": 5
+        }
+      }
+    }
+  },
+  "whitelisted-domains": [],
+  "engines": {
+    "node": "18.16.0",
+    "ssdk": "0.1.1"
+  }
+}
+```
+
+Add below code in `server/server.js`.
+
+```
+exports = {
+  createSchedule: async function (args) {
+    return createSchedule(args);
+  },
+  fetchSchedule: async function (args) {
+    return fetchSchedule(args);
+  },
+  updateSchedule: async function (args) {
+    return updateSchedule(args);
+  },
+  deleteSchedule: async function (args) {
+    return deleteSchedule(args);
+  },
+  pauseSchedule: async function (args) {
+    return pauseSchedule(args);
+  },
+  resumeSchedule: async function (args) {
+    return resumeSchedule(args);
+  },
+  onScheduledEvent: async function (args) {
+    return onScheduledEvent(args);
+  },
+};
+
+const createSchedule = async (args) => {
+  console.log('args', args);
+  try {
+    const data = await $Schedule.create({
+      name: args.data.name,
+      data: args.data.data,
+      schedule_at: args.data.schedule_at
+    });
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+const fetchSchedule = async (args) => {
+  console.log('args', args);
+  try {
+    const data = await $Schedule.fetch({
+      name: args.data.name
+    });
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+const updateSchedule = async (args) => {
+  console.log('args', args);
+  try {
+    const data = await $Schedule.update({
+      name: args.data.name,
+      data: args.data.data,
+      schedule_at: args.data.schedule_at
+    });
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+const deleteSchedule = async (args) => {
+  console.log('args', args);
+  try {
+    const data = await $Schedule.delete({
+      name: args.data.name
+    });
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+const pauseSchedule = async (args) => {
+  console.log('args', args);
+  try {
+    const data = await $Schedule.pause({
+      name: args.data.name
+    });
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+const resumeSchedule = async (args) => {
+  console.log('args', args);
+  try {
+    const data = await $Schedule.resume({
+      name: args.data.name
+    });
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+const onScheduledEvent = async (payload) => {
+  console.log("at the scheduled time", payload);
+};
+```
+
+Replace below code in `index.html`
+
+```
+<html>
+
+<head>
+  <script src="https://ssdk.surveysparrow.dev/ssdk/2.0/assets/survey_client.js"></script>
+  <script src="./js/util.js"></script>
+  <script src="./js/index.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://ssdk.surveysparrow.dev/ssdk/2.0/assets/surveysparrow.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+  <div class="action-icon" id="create-schedule">
+    <img class="create-schedule-logo" style="vertical-align: middle;" />
+    <span style="vertical-align: middle;" class="icon-text">Create schedule</span>
+  </div>
+</body>
+
+</html>
+```
+
+Add below code in js/index.js
+
+```
+function addListeners() {
+  q('#create-schedule').addEventListener('click', async function () {
+    const res = await client.request.invoke('createSchedule', {
+      name: "ayesha1222",
+      data: { "name": "Ayesha1" },
+      schedule_at: "2023-08-09T04:29:36.427Z"
+    });
+    console.log('res', res)
+  });
+
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  addListeners();
+  const client = window.app.initialized();
+  window.client = client;
+});
+
+
+var client;
+
+init();
+
+async function init() {
+  client = window.app.initialized();
+  console.log(client)
+}
+
+function q(selector) {
+  return document.querySelector(selector);
+}
+```
+
+Add below css in the directory css/style.css
+
+```
+.create-schedule-logo {
+  content: url('../images/schedule.svg');
+  height: 22%;
+}
+```
+
+Add `schedule.svg` logo in the directory images/schedule.svg
+
+## Testing the application
+
+App will be rendered in the Full Page app Location. You can click on create schedule button to create schedule. onScheduledEvent will be triggered on the scheduled time.
+
+Please make changes to hit functions through SMI using create, fetch, delete schedules's etc.,
+You don't have to wait everytime for the scheduled time to test onScheduledEvent event, you can use serverless instead.
+
+Testing Serverless events with the SurveySparrow product locally can be difficult due to the cloud-based nature of the product and the app not being visible to the internet. To test scenarios, SurveySparrow has a simulation option. Let's examine the "onScheduledEvent" product event testing procedure:
+
+- Use the "ssdk run" command to launch the application locally.
+- Visit the test page for the simulation at https://localhost:30001/web/test
+- Select the "onScheduledEvent" event. The payload data that will be sent to the event handler function will be displayed. This test data will be saved in the "/server/test_data" directory, which can be customized for different test scenarios.
+- Select the "Simulate" option. The app will trigger the event, and the Terminal or Command Prompt, where the appâ€™s running, will display the log message from the event.
+  Tracking which parts have been tested becomes more challenging as the app becomes more complicated. In order to overcome this, SurveySparrow offers test coverage tracking and reporting when using the app locally. To view the coverage report,
+- Use Control + C to close the terminal's running application.
+- The "/.reports" directory of the program contains the coverage report. To read the comprehensive line-by-line code coverage report, open the index HTML file in a browser. Event simulation is not necessary once the app has been published as a custom app in the SurveySparrow portal because the installed apps will be launched automatically when the events occur. Hence, the Serverless events are seamlessly integrated into the SurveySparrow platform.
+  This functionality can also be accessed from the front end by utilizing the invoke method.
+
+## Recap
+
+Voila! You now understand how SurveySparrow AppNest's new Schedule environment functions and how to make the most of it for your specific use cases.
+Schedule environment - How does this new application pattern operate?
+Schedule apps on the SurveySparrow platform - Defining a function in a SurveySparrow Schedule app, error handling, dependencies used, and simulation
+Publish as a custom app - Publishing the Schedule app as a custom app and debug them
+Take a look at the SurveySparrow AppNest's Schedule features to learn more.
+
+## Next steps
+
+Now that you are familiar with scheduler app using SSDK, you can start building apps for your own use cases.

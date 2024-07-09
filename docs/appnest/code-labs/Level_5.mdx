@@ -1,0 +1,321 @@
+---
+sidebar_position: 3
+hide_title: false
+sidebar_label: Level 5 - Global Webhook
+title: Level 5 - Global Webhook
+id: global_webhook
+slug: appnest/code-labs/global_webhook
+---
+
+# Level 5 - Global Webhook
+
+<!-- ------------------------ -->
+
+## Overview
+
+Enter the realm of simplified integration with the **Global Webhook**, a powerful platform designed and developed by **SurveySparrow**, enabling users to harness SurveySparrow events and seamlessly notify other applications. This marks a significant stride towards automation excellence.
+
+**Event** - An event can be defined as a change of state. It is used to notify someone that something has happened.
+
+For example, the creation of a contact can be considered an event, and receiving a response to a survey can be considered a submission event.
+
+The purpose of Global Webhook is to streamline the process of data retrieval from SurveySparrow to other applications. This removes the unnecessary overhead of repeatedly making API calls to SurveySparrow.
+
+### What will you learn?
+
+In this tutorial, you will gain an in-depth practical understanding of Global Webhook by creating one yourself. Below are the topics covered in this tutorial.
+
+- How do you set up an endpoint URL?
+- How do you add authorization headers to ensure a secure transfer of data?
+- Detailed explanations regarding all the encryption algorithms used to handle the authorization headers
+- How do you securely handle the event payload?
+
+**Note:** It is important to leverage all the various configurations and authorization procedures involved in creating the webhook.
+
+Let's get started!!
+
+<!-- ------------------------ -->
+
+## Set up the endpoint URL
+
+As you know, the event payload is sent to an endpoint URL which you will provide when you create the webhook. The endpoint URL doesn't allow http endpoints.
+
+### Real-Time Scenerio
+
+Imagine you have two online tools â€“ **SurveySparrow** and a **third party application**. You want these tools to work seamlessly together. One best way to achieve this is through Global Webhook.
+
+In this scenario, let's say SurveySparrow is where you collect information about your contacts. Whenever a new contact is created there, you want this information to be instantly sent to the third party application, keeping everything up-to-date.
+
+Here's where the Global Webhook comes into play. You set up the **endpoint URL** (associated with the third party application) within SurveySparrow. Now, whenever a new contact is created in SurveySparrow, it sends an automatic message (event payload) to that endpoint URL.
+
+The third party application is constantly listening at this endpoint URL. As soon as it receives the message, it knows to take action. In this case, it creates a new contact using the event payload on their database, sent from SurveySparrow.
+
+This way, the two tools are in constant communication. Anytime a new contact appears in SurveySparrow, the third party application is immediately in the know and can update its records accordingly.
+
+Let's get started with creating your first webhook!!
+
+## Create your Webhook
+
+Let's locate the Webhooks in SurveySparrow.
+
+- In your account, go to **settings** -> scroll down the left menu panel to find **APPS AND INTEGRATIONS** -> click on the **Developer Portal**
+
+  <br />
+
+  ![Webhook](./assets/global-webhook/webhook.png)
+
+  <br />
+
+- Click on **+ New Webhook** to create the webhook
+
+You will find a list of required and optional fields. These fields are important to fill in and detailed explanations of the fields are down below.
+
+- **App Name** - As the name suggests, you can provide an appropriate name thatâ€™s relevant to the functionality you want to implement.
+
+- **Short Description** - Here, itâ€™s highly useful to provide the necessary instructions, the purpose of this webhook app, unobvious configurations, and other important information.
+
+- **Support Email** - This is crucial to specify because if the webhook you created is malfunctioning or if the endpoint URL throws errors for 24 hours, you will be notified via this email.
+
+- **Support URL (Optional)** - Provide a support URL through which SurveySparrowâ€™s support team can contact you regarding any issues with your webhook app.
+
+- **Website Link (Optional)** - Provide a website URL that you are associated with such as your companyâ€™s website, personal website, etc. This is to verify the identity of the user whoâ€™s creating the webhook app.
+
+- **App Icon (Optional)** - Upload a suitable app icon thatâ€™s minimalistic and relevant.
+
+![Webhook Creation](./assets/global-webhook/webhook-creation.png)
+
+<!-- ------------------------ -->
+
+## Specify the configurations
+
+![Webhook Configuration](./assets/global-webhook/webhook-config.png)
+
+### Secret Token
+
+The secret token helps in the process of verifying that the event payload is sent from SurveySparrow to your server.
+
+#### What happens behind the scenes?
+
+- When the event gets triggered, the event payload will be sent to your server where extra key-value pairs will be passed in the headers. Find the reference to the request headers down below.
+
+  ```bash
+  user-agent: SurveySparrow AppNest
+  x-appnest-signature: ef1ee97cf88e42bb12c14f7885
+  authorization: Bearer eyJ0eXAi0iJKV1QiLCJub25jZSI6I
+  traceid: e549501a-aa1c-4e45-9cea-9a0e05d7311b
+  x-appnest-timestamp: 1705565839
+  ```
+
+- In the **x-appnest-signature**, there is a token encrypted with the help of event payload and the secret token in the webhook using the SHA384 algorithm.
+
+- So, every time the event payload is sent to your server, you can validate this x-appnest-signature by encrypting the event payload with a secret token using the SHA384 algorithm. After that, you can check if both the encrypted tokens are the same.
+
+- To encrypt it, first convert the payload(sent by SurveySparrow) place the secret token(visible in the webhook) in the **salt** field, and then compare it with the x-appnest-signature sent in the headers.
+
+- This is an additional security measure to ensure that the event payload is sent from SurveySparrow.
+
+### Endpoint URL (POST Method)
+
+Enter the URL to which SurveySparrow should send the event payload.
+
+When the selected events get triggered, the webhook app will make a POST request to the endpoint URL where the event payload will be passed in the request body.
+
+Next, click on the **validate** button to validate the URL.
+
+To validate from your server, the platform expects the endpoint URL to return the status code of 200 and the content type as application/json.
+
+```bash
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+This will allow SurveySparrow to check if the endpoint URL is valid.
+
+### Authentication Header (Optional)
+
+This is where you can specify extra headers to the POST request. There is also an option to keep it default as well.
+
+These extra headers provide added security to your webhook.
+
+#### Basic Authentication
+
+- This is one type of authentication where it requires a username and password to be sent with the headers.
+
+- You can validate the **username** and **password** by accessing the headers in the endpoint URL you specified above.
+
+  #### How does basic authentication work?
+
+  - The username and password specified will be converted to this string-based form - "username:password"
+  - This string will be encrypted as a base64 string and then sent in the headers in the below format.
+
+    ```bash
+    authorization:"Basic {encrypted_string}"
+    ```
+
+  - To validate this encrypted string, you can do so by encrypting the username and password on your server and then comparing them with the base64 string sent in the authorization headers.
+
+<br />
+
+![Basic Authentication](./assets/global-webhook/basic-auth.png)
+
+#### OAuth Authentication
+
+- If the third party application needs oauth-based authentication, just specify the client ID, client secret, token URL and scope (optional) of the application.
+
+- That is, third party should have an endpoint to handle this token URL which is responsible for sending access tokens.
+
+- The webhook will first send a POST request to this token URL to fetch the access token on the initial event trigger.
+
+- After fetching the access token, the webhook makes a POST request to the endpoint URL with the access token passed in the Authorization headers.
+
+- If the access_token expires, the webhook sends another request to the same token URL and fetches the new access token.
+
+![OAuth Authentication](./assets/global-webhook/oauth-auth.png)
+
+#### Token Authentication
+
+- Token Authentication is quite similar to OAuth Authentication but here you can only specify the client ID, client secret, and token URL.
+
+- Scope is not defined in Token Authentication
+
+  ![Token Authentication](./assets/global-webhook/token-auth.png)
+
+**Note:** In both Token Authentication and OAuth Authentication, the platform expects the token URL to return the response in the below format.
+
+<br />
+
+```bash
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "access_token":"MTQ0NjJkZmQ5OTM2NDE1ZTZjNGZmZjI3",
+  "token_type":"Bearer/Basic",
+  "expires_in":3600,
+}
+```
+
+#### Custom Headers
+
+As the name suggests, it allows you to specify customized key-value pairs which you can send as part of the headers.
+
+![Custom Headers](./assets/global-webhook/custom-headers.png)
+
+<!-- ------------------------ -->
+
+## Select the events
+
+![Select the events](./assets/global-webhook/select-events.png)
+
+Here, you can select the events whose data you want to fetch. Below are some of the most commonly used events in SurveySparrow. Please refer to this [documentation](https://sdk.surveysparrow.dev/docs/serverless/) for more information.
+
+- **onSubmissionComplete**: When a user submits a response to any survey
+- **onContactCreate**: When a new contact is created
+- **onContactUpdate**: When a new contact is updated
+- **onContactDelete**: When a new contact is deleted
+
+For instance, letâ€™s say youâ€™ve selected the **onSubmissionComplete** event. Now, every time a response is submitted in any of the surveys in your SurveySparrow account, a POST request is made to the endpoint URL with the event payload in the body of the request.
+
+The same applies to all of the events of SurveySparrow. You can select multiple events on one webhook app as well.
+
+You can find the sample data or payload that will be sent to the endpoint URL on the right.
+
+Click on save and your webhook will be created successfully!!
+
+You can find the list of all the webhooks on the [developer portal](https://appnest.surveysparrow.com).
+
+![All Webhooks](./assets/global-webhook/all-webhooks.png)
+
+<!-- ------------------------ -->
+
+## Key Considerations
+
+1. Rate limiting is enforced on Global Webhooks. It restricts each event payload transmission to a maximum of **5000 occurrences per day** within a single webhook.
+
+   - In simple terms, 5000 payload transmissions for one event per day per webhook
+
+2. In the body of the POST request sent to the endpoint URL, the data will be sent in a format similar to the one given below. Note that the event payload varies for each event. Below event payload is an example for **onSubmissionComplete** event.
+
+   ```bash
+   {
+     {
+       "eventType": "onSubmissionComplete",
+       "ruleEvent": "SUBMISSION_COMPLETED",
+       "objectType": "SUBMISSION",
+       "data": {
+         "id": 100000105,
+         "time_taken": "3.00",
+         "state": "COMPLETED",
+         "device_type": "COMPUTER",
+         "feedback": null,
+         "ip": null,
+         "location": null,
+         "language": "en",
+         "geo_info": {},
+         "created_at": "2023-12-20T08:31:18.496Z",
+         "updated_at": "2023-12-20T08:31:18.650Z",
+         "account_id": 100000011,
+         "contact": {
+           "email": "kjher@gmail.com",
+           "full_name": "kjher",
+           "last_name": "",
+           "first_name": "kjher",
+           "createddate": "12-20-2023",
+           "id": 100014810
+         },
+         "score": 8,
+         "meta_data": {
+           "browser": "Chrome 120.0.0.0",
+           "os": "macOS 10.15.7",
+           "time_zone": "Asia/Calcutta",
+           "browser_language": "en-GB"
+         },
+         "survey": {
+           "id": 100000060,
+           "survey_type": "NPSChat",
+           "name": "IHCL NPS"
+         },
+         "folder": {
+           "id": 100000011,
+           "name": "General"
+         },
+         "answers": {
+           "100000103": {
+             "answer": 8,
+             "question": "How likely are you to recommend this product to a friend or colleague?",
+             "question_type": "NPSScore",
+             "question_tags": [],
+             "question_id": 100000103,
+             "skipped": false
+           }
+         },
+         "variables": {
+           "variable_1": "56"
+         },
+         "expressions": {
+           "1001000001": "9.000000000000000"
+         },
+         "channel": {
+           "id": 100000532,
+           "type": "LINK",
+           "name": "Web Link Share",
+           "status": "ACTIVE",
+           "web_url": "https://3f8f-117-221-62-213.ngrok-free.app/s/IHCL-NPS/ntt-x7MchBF3QaiUfjoU3ytCvq"
+         }
+       },
+       "account_id": 100000011
+     }
+   }
+   ```
+
+## Any queries?
+
+Congratulations on reaching the end of this comprehensive tutorial on Global Webhooks by SurveySparrow! We've covered the setup process, configurations, authentication methods, and event selection, providing you with a deep understanding of Global Webhooks.
+
+If you have any lingering doubts or queries, we encourage you to connect with our vibrant [developer community](https://community.surveysparrow.dev).
+
+Alternatively, if you prefer direct assistance, our support team is ready to address your concerns. Drop us an email at **support@surveysparrow.dev**, and our dedicated support professionals will get back to you promptly.
+
+Your success in implementing Global Webhooks is our priority, and we are here to ensure a smooth and enriching experience throughout your integration journey.
+
+Happy webhook-ing!
