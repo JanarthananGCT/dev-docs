@@ -1,0 +1,355 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  /* font-family: 'DM Sans', sans-serif !important; */
+}
+
+:root {
+  --ifm-color-primary: #56b0bb;
+  --ifm-color-primary-dark: #3B8088;
+  --ifm-color-primary-darker: #36737A;
+  --ifm-color-primary-darkest: #2E666D;
+  --ifm-color-primary-light: #9CCFD6;
+  --ifm-color-primary-lighter: #CEE7EA;
+  --ifm-color-primary-lightest: #E6F3F4;
+  --ifm-code-font-size: 100%;
+  --ifm-color-secondary: #64748B;
+  --ifm-color-secondary-dark: #444B5A;
+  --ifm-color-secondary-darker: #3D424D;
+  --ifm-color-secondary-darkest: #363A43;
+  --ifm-color-secondary-light: #76859A;
+  --ifm-color-secondary-lighter: #A3AEBD;
+  --ifm-color-secondary-lightest: #C9CFD8;
+  --docusaurus-highlighted-code-line-bg: rgba(6, 3, 3, 0.1);
+  --ifm-heading-font-family: 'DM Sans', sans-serif !important;
+  --ifm-font-family-monospace: 'Roboto Mono', monospace !important;
+  --site-primary-hue-saturation: 167 68%;
+  --ifm-code-background: rgb(246, 248, 250);
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+html,
+body {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+
+/* sidebar */
+#__docusaurus .theme-doc-sidebar-item-category-level-1>.menu__list>.menu__list-item:last-of-type {
+  font-family: 'DM Sans', sans-serif !important;
+  padding-block-end: 1.5rem;
+}
+
+#__docusaurus ul.menu__list {
+  font-family: 'DM Sans', sans-serif !important;
+  transition-duration: .2s !important;
+}
+
+#__docusaurus .theme-doc-sidebar-item-link-level-1>.menu__link,
+#__docusaurus .menu__list-item.editor>.menu__list-item-collapsible>.menu__link {
+  font-family: 'DM Sans', sans-serif !important;
+  color: var(--ifm-hero-text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+#__docusaurus .menu__link {
+  font-family: 'DM Sans', sans-serif !important;
+  align-items: center;
+  display: flex;
+  font-size: .938rem;
+  font-weight: 500;
+  letter-spacing: -.01em;
+  line-height: 16px;
+  transition: opacity .2s ease-out;
+}
+
+/* Override --ifm text-decoration */
+a:any-link:hover {
+  font-family: 'DM Sans', sans-serif !important;
+  text-decoration: none;
+}
+
+/* Sidebar Method labels */
+.api-method>.menu__link {
+  font-family: 'DM Sans', sans-serif !important;
+  align-items: center;
+  justify-content: start;
+}
+
+.api-method>.menu__link::before {
+  font-family: 'DM Sans', sans-serif !important;
+  width: 50px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  border: 1px solid;
+  margin-right: var(--ifm-spacing-horizontal);
+  text-align: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  color: white;
+}
+
+.get>.menu__link::before {
+  font-family: 'DM Sans', sans-serif !important;
+  content: "get";
+  background-color: var(--ifm-color-primary);
+}
+
+.post>.menu__link::before {
+  font-family: 'DM Sans', sans-serif !important;
+  content: "post";
+  background-color: var(--openapi-code-green);
+}
+
+.delete>.menu__link::before {
+  font-family: 'DM Sans', sans-serif !important;
+  content: "del";
+  background-color: var(--openapi-code-red);
+}
+
+.put>.menu__link::before {
+  font-family: 'DM Sans', sans-serif !important;
+  content: "put";
+  background-color: var(--openapi-code-blue);
+}
+
+.patch>.menu__link::before {
+  font-family: 'DM Sans', sans-serif !important;
+  content: "patch";
+  background-color: var(--openapi-code-orange);
+}
+
+.head>.menu__link::before {
+  font-family: 'DM Sans', sans-serif !important;
+  content: "head";
+  background-color: var(--ifm-color-secondary-darkest);
+}
+
+.event>.menu__link::before {
+  font-family: 'DM Sans', sans-serif !important;
+  content: "event";
+  background-color: var(--ifm-color-secondary-darkest);
+}
+
+/* GitHub Header Link */
+.header-github-link:hover {
+  font-family: 'DM Sans', sans-serif !important;
+  opacity: 0.6;
+}
+
+.header-github-link:before {
+  font-family: 'DM Sans', sans-serif !important;
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
+}
+
+html[data-theme="dark"] .header-github-link:before {
+  font-family: 'DM Sans', sans-serif !important;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
+}
+
+/* Medium Header Link */
+.header-medium-link:hover {
+  font-family: 'DM Sans', sans-serif !important;
+  opacity: 0.6;
+}
+
+.header-medium-link:before {
+  font-family: 'DM Sans', sans-serif !important;
+  content: "\f23a";
+  font-family: "DM sans", sans-serif;
+  font-size: x-large;
+}
+
+div[class^="announcementBar_"] {
+  font-family: 'DM Sans', sans-serif !important;
+  --site-announcement-bar-stripe-color1: hsl(var(--site-primary-hue-saturation) 85%);
+  --site-announcement-bar-stripe-color2: hsl(var(--site-primary-hue-saturation) 95%);
+  background: repeating-linear-gradient(35deg,
+      var(--site-announcement-bar-stripe-color1),
+      var(--site-announcement-bar-stripe-color1) 20px,
+      var(--site-announcement-bar-stripe-color2) 10px,
+      var(--site-announcement-bar-stripe-color2) 40px);
+  font-weight: bold;
+}
+
+.openapi-security__details {
+  font-family: 'DM Sans', sans-serif !important;
+  display: none;
+}
+
+.dropdown--hoverable:hover .dropdown__menu {
+  font-family: 'DM Sans', sans-serif !important;
+  transform: translate(0, 0);
+}
+
+.dropdown__menu {
+  font-family: 'DM Sans', sans-serif !important;
+  right: inherit !important;
+}
+
+.get>.menu__link::before {
+  font-family: 'DM Sans', sans-serif !important;
+  background-color: var(--ifm-color-success);
+}
+
+.badge--primary {
+  font-family: 'DM Sans', sans-serif !important;
+  --ifm-badge-background-color: var(--ifm-color-success);
+}
+
+.menu__link--sublist-caret:after {
+  font-family: 'DM Sans', sans-serif !important;
+  opacity: 0.8;
+  background: var(--ifm-menu-link-sublist-icon) center/1.5rem !important;
+  /* Small arrow size */
+}
+
+.menu__caret:before {
+  font-family: 'DM Sans', sans-serif !important;
+  opacity: 0.8;
+  background: var(--ifm-menu-link-sublist-icon) center/1.5rem !important;
+  /* Small arrow size */
+}
+
+:where(.button--secondary) {
+  font-family: 'DM Sans', sans-serif !important;
+  --ifm-button-background-color: #E2E8F0;
+  --ifm-button-border-color: #E2E8F0;
+}
+
+:where(.button--secondary):not(.button--outline):hover {
+  font-family: 'DM Sans', sans-serif !important;
+  --ifm-button-background-color: #E2E8F0;
+  --ifm-button-border-color: #E2E8F0;
+}
+
+.col.col--7:has(.pagination-nav) {
+  font-family: 'DM Sans', sans-serif !important;
+  padding: 0;
+}
+
+.col.col--12:has(.pagination-nav) {
+  font-family: 'DM Sans', sans-serif !important;
+  padding: 0;
+}
+
+.openapi-markdown__details>div>div {
+  font-family: 'DM Sans', sans-serif !important;
+  line-height: 2;
+}
+
+.theme-doc-version-badge>p {
+  font-family: 'DM Sans', sans-serif !important;
+  margin-bottom: 0;
+}
+
+/* API Explorer */
+
+.openapi-explorer__response-container:hover {
+  font-family: 'Roboto Mono', monospace !important;
+  box-shadow: 0 2px 3px hsla(222, 8%, 43%, 0.1), 0 8px 16px -10px hsla(222, 8%, 43%, 0.2) !important;
+}
+
+.openapi-explorer__request-form:hover {
+  font-family: 'Roboto Mono', monospace !important;
+  box-shadow: 0 2px 3px hsla(222, 8%, 43%, 0.1), 0 8px 16px -10px hsla(222, 8%, 43%, 0.2) !important;
+}
+
+.openapi-tabs__code-container:not(.openapi-tabs__code-container-inner):hover {
+  font-family: 'Roboto Mono', monospace !important;
+  box-shadow: 0 2px 3px hsla(222, 8%, 43%, 0.1), 0 8px 16px -10px hsla(222, 8%, 43%, 0.2) !important;
+}
+
+.navbar__title {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .twigs-select__control {
+  font-family: 'DM Sans', sans-serif !important;
+  background: #1b1b1d !important;
+  border: 1px solid #444950 !important;
+}
+
+[data-theme='dark'] .twigs-select__single-value {
+  font-family: 'DM Sans', sans-serif !important;
+  color: white !important;
+}
+
+[data-theme='dark'] .twigs-select__menu {
+  font-family: 'DM Sans', sans-serif !important;
+  background: #1b1b1d !important;
+  border: 1px solid #444950 !important;
+}
+
+[data-theme='dark'] .twigs-select__option {
+  font-family: 'DM Sans', sans-serif !important;
+  background: #1b1b1d !important;
+  color: white !important;
+}
+
+[data-theme='dark'] .openapi-explorer__form-item-input {
+  font-family: 'DM Sans', sans-serif !important;
+  background: #1b1b1d !important;
+  color: white !important;
+  border: 1px solid #444950 !important;
+}
+
+[data-theme='dark'] .pre-req {
+  font-family: 'DM Sans', sans-serif !important;
+  background: "none",
+}
+
+[data-theme='dark'] .jana {
+  font-family: 'DM Sans', sans-serif !important;
+  background: #1b1b1d !important;
+  color: #fff !important;
+}
+.cardDescription_src-theme-DocCard-styles-module {
+  padding-top: 5px !important;
+}
+/* src/css/custom.css */
+
+
+/* Add more styles for other sidebar items */
+.DocSearch-Logo{
+  display: none !important;
+}
+/* .DocSearch-Button-Keys{
+  display: none !important;
+} */
+
+.DocSearch-Button{
+  width: 200px;
+}
