@@ -1,0 +1,293 @@
+---
+id: get-v-3-teams
+title: "Get all teams"
+description: "Get all teams"
+sidebar_label: "Get all teams"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVW1r20gQ/itiPpZNrNh3xyGOA1NCMYEjXNxCLxgzlsbWXrTa7b640Zn978dIcvwStU1K/MHSSjPPjJ6ZeWYH2pBFL3U9KyCDDflPkzmhciDAoEVFnqyD7H4HBbncSsO2kMFfQa3IJnqdWMq1LVzS6JB81aEqkko+UCLrBBNLXwI5DwJqVAQZVFJJPkrG+BLINiCAraSlArI1Vo4EuLwkhZDtwDeG3eo2GghQspYqKMiuBCh87O/TVEBBawyVh+zXNEZxnu4tbqhL1oXKu0NCBjf0JvkMBJ03pg3qCdUhYgvx6ojOW1lvQADVHO4e7j7+/en6MwiYz97fXM9hEeNCgMcNVwt8W8MFIzuja0eOscZpypfTLO9CnpNz61CBgFzXnmrPVu9G7/jyLBO9+pdyrqGx3DxedtgF+mMrtBb5y6Qn5X7sLYshds/oJFSJLJiDR1SmImZ9T+tzogacW9Mjd5huqd5wg8cz+xfBHT8aQu0KH0WP9UPM03Y54PWljgIwz3Wo/fIldE0722R2wtg4ClgFJ2tyblnqYAexooDcEnoqluiHMl9rq/gNl/2U0nE6Hl+kk4urdH41zia/ZGl6+ftv6T+MGUzx5pgFVfS2mDFGASW6ZU2PftkKxAF5pXVFeFJvbwPF7ifAUR6s9E0rmdPb2fLm+jNk9wseztP6fCCfYFUlvpdbRb7UvQi36utLyGC0nYz2Fo7sdq/GwVaQQem9cdlohEZeumC31DiD1uqvl7nmzju3o3DxUlM0LzZV9C3TxYGQO9aRbtifaDmohZE31Bw0chp8qa38D/vZasWyJCy4NyOf15rdmY6OTRDgpW8ry11htPMK20HuIc/pHh53T49+ZCqUdduv/Jm7vhT3sJ1wlL2yltp5frrbrdDRR1vFyI87SW8XpnS4qo5E/Szkk9a+epkOJvtAzdGC3WIVejJek8nzPfmdWP3u/MlQZ3L3nTj9xjzEWfDBSg7UzpbY9wbT3vlM85zMMRG8ztjxacw+XM9BAAau7XEjPrSN2N8w4P5V3RzBnXdoF5X/mYVBlz+mt7Pkhpo/n8y7N9906D9qb82ULGKM/wOAQjxK
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all teams"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v3/teams"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all teams
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Number of records you would like in a request","name":"limit","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":100,"default":50}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Page of results","name":"page","in":"query","required":false,"schema":{"type":"number","minimum":1}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Type of team","name":"type","in":"query","required":false,"schema":{"type":"string","enum":["SURVEY","TICKET"]}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object[]
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                              >
+                                Array [
+                              </div>
+                            </li><SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Team id","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Team name","example":"Avengers"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"description"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Team description","example":"Avengers team"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"type"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Type of team","example":"SURVEY"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"account_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Account Id","example":2}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"business_hour_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"created_at"}
+                              required={false}
+                              schemaName={"date"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date","example":"2022-03-10T12:34:00.860Z"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"updated_at"}
+                              required={false}
+                              schemaName={"date"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date","example":"2022-03-10T12:34:00.860Z"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"deleted_at"}
+                              required={false}
+                              schemaName={"date"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date","example":"2022-03-10T12:34:00.860Z"}}
+                            >
+                              
+                            </SchemaItem><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                              >
+                                ]
+                              </div>
+                            </li>
+                          </div>
+                        </details>
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"has_next_page"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean","example":true}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": [\n    {\n      \"id\": 1,\n      \"name\": \"Avengers\",\n      \"description\": \"Avengers team\",\n      \"type\": \"SURVEY\",\n      \"account_id\": 2,\n      \"business_hour_id\": 0,\n      \"created_at\": \"2022-03-10T12:34:00.860Z\",\n      \"updated_at\": \"2022-03-10T12:34:00.860Z\",\n      \"deleted_at\": \"2022-03-10T12:34:00.860Z\"\n    }\n  ],\n  \"has_next_page\": true\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

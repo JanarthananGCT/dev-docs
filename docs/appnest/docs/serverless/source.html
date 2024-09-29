@@ -1,0 +1,4623 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="stylesheet" href="/assets/css/just-the-docs-default.css" />
+    <script src="/assets/js/vendor/lunr.min.js"></script>
+    <script src="/assets/js/just-the-docs.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/assets/Color.png" type="image/x-icon" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+    <title>Serverless | SDK Documentation</title>
+    <meta name="generator" content="Jekyll v4.3.2" />
+    <meta property="og:title" content="Serverless" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="SDK Documentation" />
+    <meta property="og:description" content="SDK Documentation" />
+    <link rel="canonical" href="http://localhost:4000/docs/serverless/" />
+    <meta property="og:url" content="http://localhost:4000/docs/serverless/" />
+    <meta property="og:site_name" content="SDK Documentation" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Serverless" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "description": "SDK Documentation",
+        "headline": "Serverless",
+        "publisher": {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://static.surveysparrow.com/application/marketplace/codelabs/ss-Black.svg"
+          }
+        },
+        "url": "http://localhost:4000/docs/serverless/"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
+  </head>
+
+  <body>
+    <a class="skip-to-main" href="#main-content">Skip to main content</a>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="svg-link" viewBox="0 0 24 24">
+        <title>Link</title>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-link"
+        >
+          <path
+            d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+          ></path>
+          <path
+            d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+          ></path>
+        </svg>
+      </symbol>
+      <symbol id="svg-menu" viewBox="0 0 24 24">
+        <title>Menu</title>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </symbol>
+      <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+        <title>Expand</title>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-chevron-right"
+        >
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </symbol>
+      <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+      <symbol
+        id="svg-external-link"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-external-link"
+      >
+        <title id="svg-external-link-title">(external link)</title>
+        <path
+          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+        ></path>
+        <polyline points="15 3 21 3 21 9"></polyline>
+        <line x1="10" y1="14" x2="21" y2="3"></line>
+      </symbol>
+      <symbol id="svg-doc" viewBox="0 0 24 24">
+        <title>Document</title>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-file"
+        >
+          <path
+            d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"
+          ></path>
+          <polyline points="13 2 13 9 20 9"></polyline>
+        </svg>
+      </symbol>
+      <symbol id="svg-search" viewBox="0 0 24 24">
+        <title>Search</title>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-search"
+        >
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </symbol>
+      <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+      <symbol id="svg-copy" viewBox="0 0 16 16">
+        <title>Copy</title>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-clipboard"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
+          />
+          <path
+            d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
+          />
+        </svg>
+      </symbol>
+      <symbol id="svg-copied" viewBox="0 0 16 16">
+        <title>Copied</title>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-clipboard-check-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"
+          />
+          <path
+            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"
+          />
+        </svg>
+      </symbol>
+    </svg>
+    <div class="side-bar">
+      <div class="site-header">
+        <a href="/" class="site-title lh-tight">
+          <div class="site-logo"></div>
+        </a>
+        <a href="#" id="menu-button" class="site-button">
+          <svg viewBox="0 0 24 24" class="icon">
+            <use xlink:href="#svg-menu"></use>
+          </svg>
+        </a>
+      </div>
+      <nav aria-label="Main" id="site-nav" class="site-nav">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="/" class="nav-list-link">Home</a>
+          </li>
+          <li class="nav-list-item">
+            <a
+              href="#"
+              class="nav-list-expander"
+              aria-label="toggle links in Getting Started category"
+            >
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#svg-arrow-right"></use>
+              </svg> </a
+            ><a href="/docs/getting-started/" class="nav-list-link"
+              >Getting Started</a
+            >
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a
+                  href="/docs/getting-started/quick-start.html"
+                  class="nav-list-link"
+                  >Quick Start</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a
+                  href="/docs/getting-started/first-app.html"
+                  class="nav-list-link"
+                  >Your First App</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-list-item">
+            <a
+              href="#"
+              class="nav-list-expander"
+              aria-label="toggle links in Building Apps category"
+            >
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#svg-arrow-right"></use>
+              </svg> </a
+            ><a href="/docs/apps/" class="nav-list-link">Building Apps</a>
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a href="/docs/apps/react_app.html" class="nav-list-link"
+                  >React App</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="/docs/apps/serverless_app.html" class="nav-list-link"
+                  >Serverless App</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a
+                  href="/docs/apps/react_serverless_app.html"
+                  class="nav-list-link"
+                  >React + Serverless App</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="/docs/apps/smi_app.html" class="nav-list-link"
+                  >SMI App</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="/docs/apps/scheduler_app.html" class="nav-list-link"
+                  >Scheduler App</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-list-item">
+            <a href="/docs/sparrow-cli/" class="nav-list-link">Sparrow CLI</a>
+          </li>
+          <li class="nav-list-item">
+            <a
+              href="#"
+              class="nav-list-expander"
+              aria-label="toggle links in Configuration category"
+            >
+              <svg viewBox="0 0 24 24">
+                <use xlink:href="#svg-arrow-right"></use>
+              </svg> </a
+            ><a href="/docs/configuration/" class="nav-list-link"
+              >Configuration</a
+            >
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a
+                  href="/docs/configuration/app-manifest.html"
+                  class="nav-list-link"
+                  >App Manifest</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a
+                  href="/docs/configuration/installation-parameters.html"
+                  class="nav-list-link"
+                  >Installation Parameters</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-list-item">
+            <a href="/docs/features/" class="nav-list-link">Features</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="/docs/data-storage/" class="nav-list-link">Data Storage</a>
+          </li>
+          <li class="nav-list-item active">
+            <a href="/docs/serverless/" class="nav-list-link active"
+              >Serverless</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href="/docs/scheduler/" class="nav-list-link">Scheduler</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="/docs/global-webhook/" class="nav-list-link"
+              >Outgoing Webhook</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href="/docs/incoming-webhook/" class="nav-list-link"
+              >Incoming Webhook</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href="/docs/logs/" class="nav-list-link">Logs</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="/docs/app-category-types/" class="nav-list-link"
+              >App Categories And Types</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href="/docs/terms-and-privacy/" class="nav-list-link"
+              >Terms of use</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <footer class="site-footer">
+        This site uses
+        <a href="https://github.com/just-the-docs/just-the-docs"
+          >Just the Docs</a
+        >, a documentation theme for Jekyll.
+      </footer>
+    </div>
+    <div class="main" id="top">
+      <div id="main-header" class="main-header">
+        <div class="search">
+          <div class="search-input-wrap">
+            <input
+              type="text"
+              id="search-input"
+              class="search-input"
+              tabindex="0"
+              placeholder="Search SDK Documentation"
+              aria-label="Search SDK Documentation"
+              autocomplete="off"
+            />
+            <label for="search-input" class="search-label"
+              ><svg viewBox="0 0 24 24" class="search-icon">
+                <use xlink:href="#svg-search"></use></svg
+            ></label>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+        <nav aria-label="Auxiliary" class="aux-nav">
+          <ul class="aux-nav-list">
+            <li class="aux-nav-list-item">
+              <a
+                href="https://github.com/just-the-docs/just-the-docs-template"
+                class="site-button"
+              >
+                Template Repository
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="main-content-wrap" class="main-content-wrap">
+        <div id="main-content" class="main-content" role="main">
+          <h1 id="serverless">
+            <a
+              href="#serverless"
+              class="anchor-heading"
+              aria-labelledby="serverless"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            Serverless
+          </h1>
+          <p>
+            The SurveySparrow app development platform includes a serverless
+            environment to enable you to create apps that run in response to
+            events such as SurveySparrow product, app setup, and external
+            events. Serverless computing involves servers, but they are
+            abstracted away from developers.
+          </p>
+          <p>
+            To use this feature, all you need to do is configure an event
+            listener and the callback method. When the event occurs, the
+            callback method is executed on a server.
+          </p>
+          <p>
+            Whenever an event happens in the server of the SurveySparrow then
+            that event is captured and sent to the app. With this payload the
+            app can do whatever it wants.
+          </p>
+          <p>
+            In order to capture and use this event the app has to register what
+            are all events that it is using in the
+            <code class="language-plaintext highlighter-rouge"
+              >manifest.json</code
+            >
+            file.
+          </p>
+          <p>Under the product name:</p>
+          <div class="language-json highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code><span class="nl">"events"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"&lt;eventName&gt;"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"handler"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;eventCallbackMethod&gt;"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"&lt;eventName&gt;"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"handler"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;eventCallbackMethod&gt;"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+            </div>
+          </div>
+          <p>Sample:</p>
+          <div class="language-json highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code><span class="nl">"events"</span><span class="p">:{</span><span class="w">
+  </span><span class="nl">"onSubmissionComplete"</span><span class="p">:{</span><span class="w">
+    </span><span class="nl">"handler"</span><span class="p">:</span><span class="s2">"onSubmissionComplete"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"onContactCreate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"handler"</span><span class="p">:</span><span class="w"> </span><span class="s2">"onContactCreate"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+            </div>
+          </div>
+          <p><strong>server.js</strong></p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code>exports <span class="o">=</span> <span class="o">{</span>
+  onSubmissionComplete: <span class="k">function</span> <span class="o">(</span>args<span class="o">)</span> <span class="o">{</span>
+    console.log<span class="o">(</span><span class="s1">'Hello, Survey Id is '</span> + args[<span class="s1">'data'</span><span class="o">][</span><span class="s1">'survey_id'</span><span class="o">])</span><span class="p">;</span>
+  <span class="o">}</span>,
+  onContactCreate: <span class="k">function</span> <span class="o">(</span>args<span class="o">)</span> <span class="o">{</span>
+    console.log<span class="o">(</span><span class="s1">'Hello, Contact Id is '</span> + args[<span class="s1">'data'</span><span class="o">][</span><span class="s1">'id'</span><span class="o">])</span>
+  <span class="o">}</span>
+<span class="o">}</span><span class="p">;</span>
+</code></pre>
+            </div>
+          </div>
+          <p>
+            In this, whenever a submission has happened in SurveySparrow then
+            that payload will be passed to the app. In the server.js the
+            mentioned handler will get the payload of the submission.
+          </p>
+          <p>
+            <strong>Note:</strong> The event handler’s name must be same as the
+            event name. For instance, if you are using the event,
+            onContactCreate, then, the callback method name should be
+            “onContactCreate” as well.
+          </p>
+          <p>
+            Each of the events can be simulated in the app which is running
+            locally. In order to simulate the events it is important to add them
+            in the manifest file. To simulate the events you can go
+            <a href="https://localhost:30001/web/test">here</a> after running
+            your app using ssdk run command.
+          </p>
+          <p>How it looks when you simulate an event in your local app:</p>
+          <p>
+            <img
+              src="https://static.surveysparrow.com/application/marketplace/ssdk-assets/image8.png"
+              alt="image-8"
+            />
+          </p>
+          <p>
+            <img
+              src="https://static.surveysparrow.com/application/marketplace/ssdk-assets/image9.png"
+              alt="image-9"
+            />
+          </p>
+          <p>
+            <img
+              src="https://static.surveysparrow.com/application/marketplace/ssdk-assets/image10.png"
+              alt="image-10"
+            />
+          </p>
+          <p>(The simulated event has come to handler in server.js)</p>
+          <p><br /></p>
+          <h2 id="sample-payloads-of-each-of-the-events">
+            <a
+              href="#sample-payloads-of-each-of-the-events"
+              class="anchor-heading"
+              aria-labelledby="sample-payloads-of-each-of-the-events"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            Sample payloads of each of the events:
+          </h2>
+          <p>
+            All these payloads can be found in server/test_data in your app
+            directory and can be modified accordingly.
+          </p>
+          <h5
+            id="onsubmissioncompleteevent-is-triggered-when-a-submission-is-completed-in-surveysparrow"
+          >
+            <a
+              href="#onsubmissioncompleteevent-is-triggered-when-a-submission-is-completed-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsubmissioncompleteevent-is-triggered-when-a-submission-is-completed-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnSubmissionComplete(Event is triggered when a submission is
+            completed in surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+  For CX Surveys:
+    <code>
+    {
+  "eventType": "onSubmissionComplete",
+  "ruleEvent": "SUBMISSION_COMPLETED",
+  "objectType": "SUBMISSION",
+  "data": {
+    "id": 1000056325,
+    "time_taken": "5.00",
+    "state": "COMPLETED",
+    "device_type": "COMPUTER",
+    "feedback": null,
+    "ip": null,
+    "location": null,
+    "language": "en",
+    "geo_info": {},
+    "created_at": "2024-02-23T07:20:22.474Z",
+    "updated_at": "2024-02-23T07:20:22.497Z",
+    "account_id": 1000056200,
+    "survey_id": 1000035288,
+    "contact": {
+      "email": "naveen@gmail.com",
+      "full_name": "naveen",
+      "last_name": "",
+      "first_name": "naveen",
+      "createddate": "02-23-2024",
+      "id": 1003695263
+    },
+    "score": 5,
+    "meta_data": {
+      "browser": "Chrome 118.0.0.0",
+      "os": "macOS 10.15.7",
+      "time_zone": "Asia/Calcutta",
+      "browser_language": "en-GB"
+    },
+    "survey": {
+      "id": 1000035288,
+      "survey_type": "CSAT",
+      "name": "Naveenrk CSAT"
+    },
+    "folder": {
+      "id": 1000056356,
+      "name": "General"
+    },
+    "answers": {
+      "1000406992": {
+        "answer": 5,
+        "question": "How satisfied are you with our service?",
+        "question_type": "CSATScore",
+        "question_tags": [],
+        "question_id": 1000406992,
+        "skipped": false
+      },
+      "1000406993": {
+        "answer": "I was focused.",
+        "question": "What is the primary reason for your score?",
+        "question_type": "CSATFeedback",
+        "question_tags": [],
+        "question_id": 1000406993,
+        "skipped": false,
+        "parent_question_id": 1000406992
+      }
+    },
+    "variables": {},
+    "expressions": {},
+    "channel": {
+      "id": 1000009054,
+      "type": "LINK",
+      "name": "Web Link Share",
+      "status": "ACTIVE",
+      "web_url": "https://domain.surveysparrow.com/s/Naveenrk-CSAT/ntt-fCYi7nYTWtAZd2HfL3i4ng"
+    }
+  },
+  "account_id": 1000056200
+}
+ 
+    </code>
+  For Other Surveys : 
+  <code>
+  {
+    "eventType": "onSubmissionComplete",
+    "ruleEvent": "SUBMISSION_COMPLETED",
+    "objectType": "SUBMISSION",
+    "data": {
+      "id": 1001001581,
+      "time_taken": "6.00",
+      "state": "COMPLETED",
+      "start_time": "2023-12-01T11:16:23.007Z",
+      "completed_time": "2023-12-01T11:16:29.007Z",
+      "device_type": "COMPUTER",
+      "feedback": null,
+      "ip": null,
+      "location": null,
+      "language": "en",
+      "geo_info": {},
+      "created_at": "2023-12-01T11:16:28.935Z",
+      "updated_at": "2023-12-01T11:16:29.007Z",
+      "account_id": 12,
+      "nomination_id": null,
+      "survey_id": 1001000164,
+      "survey": {
+        "id": 1001000164,
+        "survey_type": "ClassicForm",
+        "name": "Employee Experience Survey"
+      },
+      "folder": {
+        "id": 12,
+        "name": "General"
+      },
+      "contact": {
+        "email": "eldridge777l@surveysparrow.com",
+        "mobile": "424-998-0848",
+        "full_name": "Eldridge Rogahn",
+        "last_name": "Rogahn",
+        "first_name": "Eldridge",
+        "createddate": "10-10-2023",
+        "id": 1001000589
+      },
+      "meta_data": {
+        "browser": "Chrome 119.0.0.0",
+        "os": "macOS 10.15.7",
+        "time_zone": "Asia/Calcutta",
+        "browser_language": "en-US"
+      },
+      "answers": {
+        "1001000645": {
+          "answer": 9,
+          "step": 10,
+          "question": "op 1",
+          "question_tags": [],
+          "question_type": "",
+          "question_id": 1001000645,
+          "skipped": false
+        },
+        "1001000646": {
+          "answer": "yui",
+          "answer_sentiment": null,
+          "question": "trext",
+          "question_tags": [],
+          "question_type": "",
+          "question_id": 1001000646,
+          "skipped": false
+        }
+      },
+      "variables": {
+        "variable_1": "56"
+      },
+      "expressions": {
+        "1001000001": "9.000000000000000"
+      },
+      "channel": {
+        "id": 1001000246,
+        "type": "EMBED",
+        "name": "Embed Share 1",
+        "status": "ACTIVE",
+        "subject": "Could you spare a quick moment to give some feedback?",
+        "is_default": false,
+        "limits": null,
+        "token": "tt-wuMTgKw8kTZE2bhqAT1Brp",
+        "web_url": "https://ayesha.surveysparrow.com/s/test/tt-853e56"
+      }
+    },
+    "account_id": 100000001
+  }
+  </code>
+  </pre>
+          </details>
+          <h5
+            id="oncontactcreateevent-is-triggered-when-a-contact-is-created-in-surveysparrow"
+          >
+            <a
+              href="#oncontactcreateevent-is-triggered-when-a-contact-is-created-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="oncontactcreateevent-is-triggered-when-a-contact-is-created-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnContactCreate(Event is triggered when a contact is created in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+{
+  eventType: "onContactCreate",
+  ruleEvent: "CONTACT_CREATED",
+  objectType: "CONTACT",
+  objectId: 100000321,
+  data: {
+    id: 100000321,
+    contact_type_id: 3,
+    attrs: {
+      email: "srirdsdam.r@surveysparrow.com",
+      phone: "6383683088",
+      mobile: "9736277722",
+      full_name: "new contact",
+      job_title: "contact",
+      language: "en",
+      last_name: "contact",
+      first_name: "new",
+      createddate: "09-12-2023",
+      extra_property: "abcd",
+      new_employee_property: "abcd",
+    },
+    hidden: false,
+    account_id: 100000001,
+    created_at: "2023-09-12T02:49:27.804Z",
+    manager_id: null,
+    is_active: true,
+    deactivated: false,
+    unsubscribed: false,
+    unsubscribed_at:null,
+    bounced: false,
+    full_name: "new contact",
+    role: "default",
+    updated_at: "2023-09-12T02:49:27.804Z",
+    deleted_at: null,
+    contact_lists: [
+      {
+        id: 100000005,
+        name: "test",
+        description: null,
+        type: "STATIC",
+        properties: {
+        },
+        contact_type_id: 3,
+        created_at: "2023-08-21T10:43:49.684Z",
+        updated_at: "2023-09-12T02:49:27.911Z",
+        deleted_at: null,
+        account_id: 100000001,
+      },
+      {
+        id: 100000006,
+        name: "sample-contacts (1)",
+        description: "Auto created during the contact import (sample-contacts (1))",
+        type: "STATIC",
+        properties: {
+        },
+        contact_type_id: 3,
+        created_at: "2023-08-21T10:57:29.170Z",
+        updated_at: "2023-09-12T02:49:27.911Z",
+        deleted_at: null,
+        account_id: 100000001,
+      },
+    ],
+    contact_property_value_mapping: [
+    ],
+    manager: null,
+  },
+  account_id: 100000001,
+}
+    </code>
+  </pre>
+          </details>
+          <h5
+            id="oncontactupdateevent-is-triggered-when-a-contact-is-updated-in-surveysparrow"
+          >
+            <a
+              href="#oncontactupdateevent-is-triggered-when-a-contact-is-updated-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="oncontactupdateevent-is-triggered-when-a-contact-is-updated-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnContactUpdate(Event is triggered when a contact is updated in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+{
+  eventType: "onContactUpdate",
+  ruleEvent: "CONTACT_UPDATED",
+  objectType: "CONTACT",
+  objectId: 100000321,
+  data: {
+    id: 100000321,
+    contact_type_id: 3,
+    attrs: {
+      email: "srirdsdam.r@surveysparrow.com",
+      phone: "6383683088",
+      mobile: "",
+      full_name: "new contact",
+      job_title: "contact",
+      language: "en",
+      last_name: "contact",
+      first_name: "new",
+      createddate: "09-12-2023",
+      extra_property: "abcd",
+      new_employee_property: "abcd",
+    },
+    hidden: false,
+    account_id: 100000001,
+    created_at: "2023-09-12T02:49:27.804Z",
+    manager_id: null,
+    is_active: true,
+    deactivated: false,
+    unsubscribed: false,
+    unsubscribed_at:null,
+    bounced: false,
+    full_name: "new contact",
+    role: "default",
+    updated_at: "2023-09-12T02:50:56.795Z",
+    deleted_at: null,
+    contact_lists: [
+      {
+        id: 100000005,
+        name: "test",
+        description: null,
+        type: "STATIC",
+        properties: {
+        },
+        contact_type_id: 3,
+        created_at: "2023-08-21T10:43:49.684Z",
+        updated_at: "2023-09-12T02:49:27.911Z",
+        deleted_at: null,
+        account_id: 100000001,
+      },
+      {
+        id: 100000006,
+        name: "sample-contacts (1)",
+        description: "Auto created during the contact import (sample-contacts (1))",
+        type: "STATIC",
+        properties: {
+        },
+        contact_type_id: 3,
+        created_at: "2023-08-21T10:57:29.170Z",
+        updated_at: "2023-09-12T02:49:27.911Z",
+        deleted_at: null,
+        account_id: 100000001,
+      },
+    ],
+    contact_property_value_mapping: [
+    ],
+    manager: null,
+  },
+  account_id: 100000001,
+}
+    </code>
+  </pre>
+          </details>
+          <h5
+            id="oncontactdeleteevent-is-triggered-when-a-contact-is-deleted-in-surveysparrow"
+          >
+            <a
+              href="#oncontactdeleteevent-is-triggered-when-a-contact-is-deleted-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="oncontactdeleteevent-is-triggered-when-a-contact-is-deleted-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnContactDelete(Event is triggered when a contact is deleted in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+      eventType: "onContactDelete",
+      ruleEvent: "CONTACT_DELETED",
+      objectType: "CONTACT",
+      objectId: 100000321,
+      data: {
+        id: 100000321,
+        first_name: "new",
+        last_name: "contact",
+        email: "srirdsdam.r@surveysparrow.com",
+        phone: "6383683088",
+        mobile: "",
+        job_title: "contact",
+        active: true,
+        unsubscribed: false,
+        bounced: false,
+        spam_victim: false,
+        disposable: false,
+        attrs: {
+          email: "srirdsdam.r@surveysparrow.com",
+          phone: "6383683088",
+          mobile: "",
+          full_name: "new contact",
+          job_title: "contact",
+          language: "en",
+          last_name: "contact",
+          first_name: "new",
+          createddate: "09-12-2023",
+          extra_property: "abcd",
+          new_employee_property: "abcd",
+        },
+        role: "default",
+        hidden: false,
+        language: "en",
+        contact_type_id: 3,
+        deactivated: false,
+        portal_language: "ENGLISH",
+        email_lowercase: null,
+        created_at: "2023-09-12T02:49:27.804Z",
+        updated_at: "2023-09-12T02:50:56.795Z",
+        deleted_at: "2023-09-12T02:52:06.216Z",
+        account_id: 100000001,
+        manager_id: null,
+      },
+      account_id: 100000001,
+    }
+        </code>
+      </pre>
+          </details>
+          <h5
+            id="oncontactlistcreateevent-is-triggered-when-a-contact-list-is-created-in-surveysparrow"
+          >
+            <a
+              href="#oncontactlistcreateevent-is-triggered-when-a-contact-list-is-created-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="oncontactlistcreateevent-is-triggered-when-a-contact-list-is-created-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnContactListCreate(Event is triggered when a contact list is
+            created in surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onContactListCreate",
+    "ruleEvent": "CONTACT_LIST_CREATED",
+    "objectType": "CONTACT_LIST",
+    "objectId": 1001000008,
+    "data": {
+      "id": 1001000008,
+      "name": "fullname",
+      "description": null,
+      "type": "DYNAMIC",
+      "properties": {
+        "conditions": {
+          "filter_groups": [
+            {
+              "connector": "AND",
+              "filters": [
+                {
+                  "property": {
+                    "type": "contact",
+                    "name": "fullName",
+                    "data_type": "STRING",
+                    "label": "Full Name",
+                    "meta": {}
+                  },
+                  "comparator": "HAS_VALUE",
+                  "value": null
+                }
+              ]
+            }
+          ],
+          "global_connector": "AND"
+        }
+      },
+      "contact_type_id": 2,
+      "created_at": "2024-02-21T07:04:04.134Z",
+      "updated_at": "2024-02-21T07:04:04.134Z",
+      "deleted_at": null,
+      "account_id": 12
+    },
+    "account_id": 12
+  }
+    </code>
+      </pre>
+          </details>
+          <h5
+            id="oncontactlistupdateevent-is-triggered-when-a-contact-list-is-updated-in-surveysparrow"
+          >
+            <a
+              href="#oncontactlistupdateevent-is-triggered-when-a-contact-list-is-updated-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="oncontactlistupdateevent-is-triggered-when-a-contact-list-is-updated-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnContactListUpdate(Event is triggered when a contact list is
+            updated in surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onContactListUpdate",
+    "ruleEvent": "CONTACT_LIST_UPDATED",
+    "objectType": "CONTACT_LIST",
+    "objectId": 1001000008,
+    "data": {
+      "id": 1001000008,
+      "name": "fullname",
+      "description": null,
+      "type": "DYNAMIC",
+      "properties": {
+        "conditions": {
+          "filter_groups": [
+            {
+              "connector": "AND",
+              "filters": [
+                {
+                  "property": {
+                    "type": "contact",
+                    "name": "fullName",
+                    "data_type": "STRING",
+                    "label": "Full Name",
+                    "meta": {}
+                  },
+                  "comparator": "HAS_VALUE",
+                  "value": null
+                },
+                {
+                  "property": {
+                    "type": "contact",
+                    "name": "jobTitle",
+                    "data_type": "STRING",
+                    "label": "Job Title",
+                    "meta": {}
+                  },
+                  "comparator": "HAS_VALUE",
+                  "value": null
+                }
+              ]
+            }
+          ],
+          "global_connector": "AND"
+        }
+      },
+      "contact_type_id": 2,
+      "created_at": "2024-02-21T07:04:04.134Z",
+      "updated_at": "2024-02-21T07:08:51.339Z",
+      "deleted_at": null,
+      "account_id": 12
+    },
+    "account_id": 12
+  }
+    </code>
+      </pre>
+          </details>
+          <h5
+            id="oncontactlistdeleteevent-is-triggered-when-a-contact-list-is-deleted-in-surveysparrow"
+          >
+            <a
+              href="#oncontactlistdeleteevent-is-triggered-when-a-contact-list-is-deleted-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="oncontactlistdeleteevent-is-triggered-when-a-contact-list-is-deleted-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnContactListDelete(Event is triggered when a contact list is
+            deleted in surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onContactListDelete",
+    "ruleEvent": "CONTACT_LIST_DELETED",
+    "objectType": "CONTACT_LIST",
+    "objectId": 1001000008,
+    "data": {
+      "id": 1001000008,
+      "name": "fullname",
+      "description": null,
+      "type": "DYNAMIC",
+      "properties": {
+        "conditions": {
+          "filter_groups": [
+            {
+              "connector": "AND",
+              "filters": [
+                {
+                  "property": {
+                    "type": "contact",
+                    "name": "fullName",
+                    "data_type": "STRING",
+                    "label": "Full Name",
+                    "meta": {}
+                  },
+                  "comparator": "HAS_VALUE",
+                  "value": null
+                },
+                {
+                  "property": {
+                    "type": "contact",
+                    "name": "jobTitle",
+                    "data_type": "STRING",
+                    "label": "Job Title",
+                    "meta": {}
+                  },
+                  "comparator": "HAS_VALUE",
+                  "value": null
+                }
+              ]
+            }
+          ],
+          "global_connector": "AND"
+        }
+      },
+      "contact_type_id": 2,
+      "created_at": "2024-02-21T07:04:04.134Z",
+      "updated_at": "2024-02-21T07:11:40.144Z",
+      "deleted_at": "2024-02-21T07:11:40.143Z",
+      "account_id": 12
+    },
+    "account_id": 12
+  }
+    </code>
+      </pre>
+          </details>
+          <h5
+            id="onquestioncreateevent-is-triggered-when-a-question-is-created-in-surveysparrow"
+          >
+            <a
+              href="#onquestioncreateevent-is-triggered-when-a-question-is-created-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onquestioncreateevent-is-triggered-when-a-question-is-created-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onQuestionCreate(Event is triggered when a question is created in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onQuestionCreate",
+    "ruleEvent": "QUESTION_CREATED",
+    "objectType": "QUESTION",
+    "objectId": 1001000809,
+    "data": {
+      "id": 1001000809,
+      "txt": "",
+      "rtxt": {
+        "entity_map": {},
+        "blocks": [
+          {
+            "key": "1hern",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inline_style_ranges": [],
+            "entity_ranges": [],
+            "data": {}
+          }
+        ]
+      },
+      "desc": null,
+      "rdesc": {
+        "entity_map": {},
+        "blocks": [
+          {
+            "key": "1hern",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inline_style_ranges": [],
+            "entity_ranges": [],
+            "data": {}
+          }
+        ]
+      },
+      "img": null,
+      "video": null,
+      "type": "EmailInput",
+      "position": "0.000000000000",
+      "has_display_logic": false,
+      "display_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "has_jump_logic": false,
+      "jump_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "properties": {
+        "data": {}
+      },
+      "has_score": false,
+      "required": false,
+      "randomized": false,
+      "multiple_answers": false,
+      "options_stacked": false,
+      "sub_question": false,
+      "disabled": false,
+      "multi_language_rtxt": null,
+      "multi_language_properties": null,
+      "multi_language_desc": null,
+      "multi_language_rdesc": null,
+      "piped_source_type": null,
+      "piped_source_id": null,
+      "created_at": "2024-02-21T10:46:57.849Z",
+      "updated_at": "2024-02-21T10:46:57.849Z",
+      "deleted_at": null,
+      "account_id": 12,
+      "parent_question_id": null,
+      "piped_qid": null,
+      "section": {
+        "id": 1001000514,
+        "name": "Untitled Section",
+        "desc": "",
+        "name_rtxt": null,
+        "desc_rtxt": null,
+        "has_display_logic": false,
+        "display_logic": {
+          "version": "1",
+          "logics": []
+        },
+        "img": null,
+        "video": null,
+        "abstract": true,
+        "position": "2.000000000000000",
+        "properties": {
+          "section_randomise": false,
+          "skip_section": false
+        },
+        "multi_language_name_rtxt": null,
+        "multi_language_desc_rtxt": null,
+        "multi_language_properties": null,
+        "created_at": "2024-02-21T10:46:52.531Z",
+        "updated_at": "2024-02-21T10:46:52.531Z",
+        "deleted_at": null,
+        "account_id": 12,
+        "survey_id": 1001000163
+      },
+      "survey": {
+        "id": 1001000163,
+        "name": "name",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [
+          {
+            "message": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "Thank you for your time!",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            },
+            "branding": true,
+            "description_boolean": false,
+            "description": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            }
+          }
+        ],
+        "archived": false,
+        "visibility": "Mine",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+          "autosize_heading": true,
+          "survey_randomiser": false,
+          "progress": {
+            "builder_completed": true,
+            "share_completed": true,
+            "design_completed": true
+          },
+          "start_assessment": true
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2022-10-20T17:09:42.655Z",
+        "updated_at": "2024-02-21T10:47:04.557Z",
+        "deleted_at": null,
+        "account_id": 12,
+        "user_id": 1000000003,
+        "survey_folder_id": 1000000003,
+        "thankyou_template_id": null,
+        "theme_id": 1001000022
+      }
+    },
+    "account_id": 12
+  }
+    </code>
+      </pre>
+          </details>
+          <h5
+            id="onquestionupdateevent-is-triggered-when-a-question-is-updated-in-surveysparrow"
+          >
+            <a
+              href="#onquestionupdateevent-is-triggered-when-a-question-is-updated-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onquestionupdateevent-is-triggered-when-a-question-is-updated-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onQuestionUpdate(Event is triggered when a question is updated in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+  <code>
+  {
+    "eventType": "onQuestionUpdate",
+    "ruleEvent": "QUESTION_UPDATED",
+    "objectType": "QUESTION",
+    "objectId": 1001000809,
+    "data": {
+      "id": 1001000809,
+      "txt": "",
+      "rtxt": {
+        "blocks": [
+          {
+            "key": "1hern",
+            "text": "hi",
+            "type": "unstyled",
+            "depth": 0,
+            "inline_style_ranges": [],
+            "entity_ranges": [],
+            "data": {}
+          }
+        ],
+        "entity_map": {}
+      },
+      "desc": null,
+      "rdesc": {
+        "entity_map": {},
+        "blocks": [
+          {
+            "key": "1hern",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inline_style_ranges": [],
+            "entity_ranges": [],
+            "data": {}
+          }
+        ]
+      },
+      "img": null,
+      "video": null,
+      "type": "EmailInput",
+      "position": "0.000000000000",
+      "has_display_logic": false,
+      "display_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "has_jump_logic": false,
+      "jump_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "properties": {
+        "data": {}
+      },
+      "has_score": false,
+      "required": false,
+      "randomized": false,
+      "multiple_answers": false,
+      "options_stacked": false,
+      "sub_question": false,
+      "disabled": false,
+      "multi_language_rtxt": null,
+      "multi_language_properties": null,
+      "multi_language_desc": null,
+      "multi_language_rdesc": null,
+      "piped_source_type": null,
+      "piped_source_id": null,
+      "created_at": "2024-02-21T10:46:57.849Z",
+      "updated_at": "2024-02-21T10:56:52.406Z",
+      "deleted_at": null,
+      "account_id": 12,
+      "parent_question_id": null,
+      "piped_qid": null,
+      "section": {
+        "id": 1001000514,
+        "name": "Untitled Section",
+        "desc": "",
+        "name_rtxt": null,
+        "desc_rtxt": null,
+        "has_display_logic": false,
+        "display_logic": {
+          "version": "1",
+          "logics": []
+        },
+        "img": null,
+        "video": null,
+        "abstract": true,
+        "position": "2.000000000000000",
+        "properties": {
+          "section_randomise": false,
+          "skip_section": false
+        },
+        "multi_language_name_rtxt": null,
+        "multi_language_desc_rtxt": null,
+        "multi_language_properties": null,
+        "created_at": "2024-02-21T10:46:52.531Z",
+        "updated_at": "2024-02-21T10:46:52.531Z",
+        "deleted_at": null,
+        "account_id": 12,
+        "survey_id": 1001000163
+      },
+      "survey": {
+        "id": 1001000163,
+        "name": "name",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [
+          {
+            "message": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "Thank you for your time!",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            },
+            "branding": true,
+            "description_boolean": false,
+            "description": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            }
+          }
+        ],
+        "archived": false,
+        "visibility": "Mine",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+          "autosize_heading": true,
+          "survey_randomiser": false,
+          "progress": {
+            "builder_completed": true,
+            "share_completed": true,
+            "design_completed": true
+          },
+          "start_assessment": true
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2022-10-20T17:09:42.655Z",
+        "updated_at": "2024-02-21T10:57:04.198Z",
+        "deleted_at": null,
+        "account_id": 12,
+        "user_id": 1000000003,
+        "survey_folder_id": 1000000003,
+        "thankyou_template_id": null,
+        "theme_id": 1001000022
+      }
+    },
+    "account_id": 12
+  }
+        </code>
+    </pre>
+          </details>
+          <h5
+            id="onquestiondeleteevent-is-triggered-when-a-question-is-deleted-in-surveysparrow"
+          >
+            <a
+              href="#onquestiondeleteevent-is-triggered-when-a-question-is-deleted-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onquestiondeleteevent-is-triggered-when-a-question-is-deleted-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onQuestionDelete(Event is triggered when a question is deleted in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+  <code>
+  {
+    "eventType": "onQuestionDelete",
+    "ruleEvent": "QUESTION_DELETED",
+    "objectType": "QUESTION",
+    "objectId": 1001000809,
+    "data": {
+      "id": 1001000809,
+      "txt": "",
+      "rtxt": {
+        "blocks": [
+          {
+            "key": "1hern",
+            "text": "hi",
+            "type": "unstyled",
+            "depth": 0,
+            "inline_style_ranges": [],
+            "entity_ranges": [],
+            "data": {}
+          }
+        ],
+        "entity_map": {}
+      },
+      "desc": null,
+      "rdesc": {
+        "entity_map": {},
+        "blocks": [
+          {
+            "key": "1hern",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inline_style_ranges": [],
+            "entity_ranges": [],
+            "data": {}
+          }
+        ]
+      },
+      "img": null,
+      "video": null,
+      "type": "EmailInput",
+      "position": "0.000000000000",
+      "has_display_logic": false,
+      "display_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "has_jump_logic": false,
+      "jump_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "properties": {
+        "data": {}
+      },
+      "has_score": false,
+      "required": false,
+      "randomized": false,
+      "multiple_answers": false,
+      "options_stacked": false,
+      "sub_question": false,
+      "disabled": false,
+      "multi_language_rtxt": null,
+      "multi_language_properties": null,
+      "multi_language_desc": null,
+      "multi_language_rdesc": null,
+      "piped_source_type": null,
+      "piped_source_id": null,
+      "created_at": "2024-02-21T10:46:57.849Z",
+      "updated_at": "2024-02-21T10:56:52.406Z",
+      "deleted_at": "2024-02-21T11:02:20.072Z",
+      "account_id": 12,
+      "parent_question_id": null,
+      "piped_qid": null,
+      "section": {
+        "id": 1001000514,
+        "name": "Untitled Section",
+        "desc": "",
+        "name_rtxt": null,
+        "desc_rtxt": null,
+        "has_display_logic": false,
+        "display_logic": {
+          "version": "1",
+          "logics": []
+        },
+        "img": null,
+        "video": null,
+        "abstract": true,
+        "position": "2.000000000000000",
+        "properties": {
+          "section_randomise": false,
+          "skip_section": false
+        },
+        "multi_language_name_rtxt": null,
+        "multi_language_desc_rtxt": null,
+        "multi_language_properties": null,
+        "created_at": "2024-02-21T10:46:52.531Z",
+        "updated_at": "2024-02-21T11:02:13.598Z",
+        "deleted_at": "2024-02-21T11:02:13.598Z",
+        "account_id": 12,
+        "survey_id": 1001000163
+      },
+      "survey": {
+        "id": 1001000163,
+        "name": "name",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [
+          {
+            "message": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "Thank you for your time!",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            },
+            "branding": true,
+            "description_boolean": false,
+            "description": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            }
+          }
+        ],
+        "archived": false,
+        "visibility": "Mine",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+          "autosize_heading": true,
+          "survey_randomiser": false,
+          "progress": {
+            "builder_completed": true,
+            "share_completed": true,
+            "design_completed": true
+          },
+          "start_assessment": true
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2022-10-20T17:09:42.655Z",
+        "updated_at": "2024-02-21T10:57:04.198Z",
+        "deleted_at": null,
+        "account_id": 12,
+        "user_id": 1000000003,
+        "survey_folder_id": 1000000003,
+        "thankyou_template_id": null,
+        "theme_id": 1001000022
+      }
+    },
+    "account_id": 12
+  }
+    </code>
+  </pre>
+          </details>
+          <h5
+            id="onquestiontypechangedevent-is-triggered-when-a-question-type-is-changed-in-surveysparrow"
+          >
+            <a
+              href="#onquestiontypechangedevent-is-triggered-when-a-question-type-is-changed-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onquestiontypechangedevent-is-triggered-when-a-question-type-is-changed-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onQuestionTypeChanged(Event is triggered when a question type is
+            changed in surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onQuestionTypeChanged",
+    "ruleEvent": "QUESTION_TYPE_CHANGED",
+    "objectType": "QUESTION",
+    "objectId": 1001000709,
+    "data": {
+      "id": 1001000709,
+      "txt": "",
+      "rtxt": {
+        "blocks": [
+          {
+            "key": "1hern",
+            "text": "Slider",
+            "type": "unstyled",
+            "depth": 0,
+            "inline_style_ranges": [],
+            "entity_ranges": [],
+            "data": {}
+          }
+        ],
+        "entity_map": {}
+      },
+      "desc": null,
+      "rdesc": {
+        "entity_map": {},
+        "blocks": [
+          {
+            "key": "1hern",
+            "text": "",
+            "type": "unstyled",
+            "depth": 0,
+            "inline_style_ranges": [],
+            "entity_ranges": [],
+            "data": {}
+          }
+        ]
+      },
+      "img": null,
+      "video": null,
+      "type": "TextInput",
+      "position": "0.000000000000",
+      "has_display_logic": false,
+      "display_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "has_jump_logic": false,
+      "jump_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "properties": {
+        "data": {
+          "slider_type": "lineSlider",
+          "range": {
+            "min": 1,
+            "max": 100
+          },
+          "show_progress": true,
+          "set_start_position": true,
+          "segments": 5,
+          "decimals": 0,
+          "type": "SINGLE_LINE",
+          "min": "builder.opinion_scale.min",
+          "max": "builder.opinion_scale.max",
+          "reversed_order": false,
+          "mid": "builder.opinion_scale.mid",
+          "step": 10,
+          "start": 0,
+          "not_applicable_tooltip_text": "Not Applicable",
+          "icon_array_name": "RATING_STAR",
+          "rating_scale": 5,
+          "yes": "builder.yes_no.yes",
+          "no": "builder.yes_no.no",
+          "icon_shape": "YES_NO_ICON_THUMBS",
+          "show_total": true,
+          "min_value": 0,
+          "max_value": 100,
+          "total_sum": null,
+          "symbol": null,
+          "symbol_position": "PREFIX",
+          "start_position": false,
+          "start_values": {}
+        }
+      },
+      "has_score": false,
+      "required": true,
+      "randomized": false,
+      "multiple_answers": false,
+      "options_stacked": false,
+      "sub_question": false,
+      "disabled": false,
+      "multi_language_rtxt": null,
+      "multi_language_properties": null,
+      "multi_language_desc": null,
+      "multi_language_rdesc": null,
+      "piped_source_type": null,
+      "piped_source_id": null,
+      "created_at": "2023-07-13T22:42:27.852Z",
+      "updated_at": "2024-02-22T10:34:19.051Z",
+      "deleted_at": null,
+      "account_id": 12,
+      "parent_question_id": null,
+      "piped_qid": null,
+      "section": {
+        "id": 1001000474,
+        "name": "Untitled Section",
+        "desc": "",
+        "name_rtxt": null,
+        "desc_rtxt": null,
+        "has_display_logic": false,
+        "display_logic": {
+          "version": "1",
+          "logics": []
+        },
+        "img": null,
+        "video": null,
+        "abstract": true,
+        "position": "1.000000000000000",
+        "properties": {
+          "section_randomise": false,
+          "skip_section": false
+        },
+        "multi_language_name_rtxt": null,
+        "multi_language_desc_rtxt": null,
+        "multi_language_properties": null,
+        "created_at": "2023-07-13T22:42:27.840Z",
+        "updated_at": "2023-07-13T22:42:27.840Z",
+        "deleted_at": null,
+        "account_id": 12,
+        "survey_id": 1001000163
+      },
+      "survey": {
+        "id": 1001000163,
+        "name": "name",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [
+          {
+            "message": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "Thank you for your time!",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            },
+            "branding": true,
+            "description_boolean": false,
+            "description": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            }
+          }
+        ],
+        "archived": false,
+        "visibility": "Mine",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+          "autosize_heading": true,
+          "survey_randomiser": false,
+          "progress": {
+            "builder_completed": true,
+            "share_completed": true,
+            "design_completed": true
+          },
+          "start_assessment": true
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2022-10-20T17:09:42.655Z",
+        "updated_at": "2024-02-22T10:35:05.688Z",
+        "deleted_at": null,
+        "account_id": 12,
+        "user_id": 1000000003,
+        "survey_folder_id": 1000000003,
+        "thankyou_template_id": null,
+        "theme_id": 1001000022
+      }
+    },
+    "account_id": 12
+  }
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsectioncreateevent-is-triggered-when-a-section-is-created-in-surveysparrow"
+          >
+            <a
+              href="#onsectioncreateevent-is-triggered-when-a-section-is-created-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsectioncreateevent-is-triggered-when-a-section-is-created-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSectionCreate(Event is triggered when a section is created in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+     {
+    "eventType": "onSectionCreate",
+    "ruleEvent": "SECTION_CREATED",
+    "objectType": "SECTION",
+    "objectId": 1001000515,
+    "data": {
+      "id": 1001000515,
+      "name": "Untitled Section",
+      "desc": "",
+      "name_rtxt": null,
+      "desc_rtxt": null,
+      "has_display_logic": false,
+      "display_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "img": null,
+      "video": null,
+      "abstract": true,
+      "position": "3.000000000000000",
+      "properties": {
+        "section_randomise": false,
+        "skip_section": false
+      },
+      "multi_language_name_rtxt": null,
+      "multi_language_desc_rtxt": null,
+      "multi_language_properties": null,
+      "created_at": "2024-02-22T11:21:39.050Z",
+      "updated_at": "2024-02-22T12:48:52.331Z",
+      "deleted_at": null,
+      "account_id": 12,
+      "survey": {
+        "id": 1001000163,
+        "name": "name",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [
+          {
+            "message": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "Thank you for your time!",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            },
+            "branding": true,
+            "description_boolean": false,
+            "description": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            }
+          }
+        ],
+        "archived": false,
+        "visibility": "Mine",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+          "autosize_heading": true,
+          "survey_randomiser": false,
+          "progress": {
+            "builder_completed": true,
+            "share_completed": true,
+            "design_completed": true
+          },
+          "start_assessment": true
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2022-10-20T17:09:42.655Z",
+        "updated_at": "2024-02-22T11:47:58.144Z",
+        "deleted_at": null,
+        "account_id": 12,
+        "user_id": 1000000003,
+        "survey_folder_id": 1000000003,
+        "thankyou_template_id": null,
+        "theme_id": 1001000022
+      }
+    },
+    "account_id": 12
+  }  
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsectionupdateevent-is-triggered-when-a-section-is-updated-in-surveysparrow"
+          >
+            <a
+              href="#onsectionupdateevent-is-triggered-when-a-section-is-updated-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsectionupdateevent-is-triggered-when-a-section-is-updated-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSectionUpdate(Event is triggered when a section is updated in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSectionUpdated",
+    "ruleEvent": "SECTION_UPDATED",
+    "objectType": "SECTION",
+    "objectId": 1001000515,
+    "data": {
+      "id": 1001000515,
+      "name": "Section 1",
+      "desc": "",
+      "name_rtxt": null,
+      "desc_rtxt": null,
+      "has_display_logic": false,
+      "display_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "img": null,
+      "video": null,
+      "abstract": true,
+      "position": "3.000000000000000",
+      "properties": {
+        "section_randomise": false,
+        "skip_section": false
+      },
+      "multi_language_name_rtxt": null,
+      "multi_language_desc_rtxt": null,
+      "multi_language_properties": null,
+      "created_at": "2024-02-22T11:21:39.050Z",
+      "updated_at": "2024-02-22T12:48:52.331Z",
+      "deleted_at": null,
+      "account_id": 12,
+      "survey": {
+        "id": 1001000163,
+        "name": "name",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [
+          {
+            "message": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "Thank you for your time!",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            },
+            "branding": true,
+            "description_boolean": false,
+            "description": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            }
+          }
+        ],
+        "archived": false,
+        "visibility": "Mine",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+          "autosize_heading": true,
+          "survey_randomiser": false,
+          "progress": {
+            "builder_completed": true,
+            "share_completed": true,
+            "design_completed": true
+          },
+          "start_assessment": true
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2022-10-20T17:09:42.655Z",
+        "updated_at": "2024-02-22T11:47:58.144Z",
+        "deleted_at": null,
+        "account_id": 12,
+        "user_id": 1000000003,
+        "survey_folder_id": 1000000003,
+        "thankyou_template_id": null,
+        "theme_id": 1001000022
+      }
+    },
+    "account_id": 12
+  }
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsectiondeleteevent-is-triggered-when-a-section-is-deleted-in-surveysparrow"
+          >
+            <a
+              href="#onsectiondeleteevent-is-triggered-when-a-section-is-deleted-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsectiondeleteevent-is-triggered-when-a-section-is-deleted-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSectionDelete(Event is triggered when a section is deleted in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSectionDelete",
+    "ruleEvent": "SECTION_DELETED",
+    "objectType": "SECTION",
+    "objectId": 1001000515,
+    "data": {
+      "id": 1001000515,
+      "name": "Untitled Section",
+      "desc": "",
+      "name_rtxt": null,
+      "desc_rtxt": null,
+      "has_display_logic": false,
+      "display_logic": {
+        "version": "1",
+        "logics": []
+      },
+      "img": null,
+      "video": null,
+      "abstract": true,
+      "position": "3.000000000000000",
+      "properties": {
+        "section_randomise": false,
+        "skip_section": false
+      },
+      "multi_language_name_rtxt": null,
+      "multi_language_desc_rtxt": null,
+      "multi_language_properties": null,
+      "created_at": "2024-02-22T11:21:39.050Z",
+      "updated_at": "2024-02-22T12:48:52.331Z",
+      "deleted_at": "2024-02-22T12:48:52.331Z",
+      "account_id": 12,
+      "survey": {
+        "id": 1001000163,
+        "name": "name",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [
+          {
+            "message": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "Thank you for your time!",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            },
+            "branding": true,
+            "description_boolean": false,
+            "description": {
+              "entity_map": {},
+              "blocks": [
+                {
+                  "key": "1hern",
+                  "text": "",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inline_style_ranges": [],
+                  "entity_ranges": [],
+                  "data": {}
+                }
+              ]
+            }
+          }
+        ],
+        "archived": false,
+        "visibility": "Mine",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+          "autosize_heading": true,
+          "survey_randomiser": false,
+          "progress": {
+            "builder_completed": true,
+            "share_completed": true,
+            "design_completed": true
+          },
+          "start_assessment": true
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2022-10-20T17:09:42.655Z",
+        "updated_at": "2024-02-22T11:47:58.144Z",
+        "deleted_at": null,
+        "account_id": 12,
+        "user_id": 1000000003,
+        "survey_folder_id": 1000000003,
+        "thankyou_template_id": null,
+        "theme_id": 1001000022
+      }
+    },
+    "account_id": 12
+  }   
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onchannelcreateevent-is-triggered-when-a-channel-is-created-in-surveysparrow"
+          >
+            <a
+              href="#onchannelcreateevent-is-triggered-when-a-channel-is-created-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onchannelcreateevent-is-triggered-when-a-channel-is-created-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onChannelCreate(Event is triggered when a channel is created in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onChannelCreate",
+    "ruleEvent": "CHANNEL_CREATED",
+    "objectType": "CHANNEL",
+    "objectId": 1000023688,
+    "data": {
+        "id": 1000023688,
+        "type": "EMBED",
+        "name": "Embed Share - 1",
+        "status": "ACTIVE",
+        "subject": "EMBED Share",
+        "properties": {
+            "type": "autoTriggered",
+            "auto_triggered": {
+                "background_color": "4D3446",
+                "border_color": "F6F5F6",
+                "start_type": "startWithGreeting",
+                "position": "bottomRight",
+                "trigger": "triggerAfter",
+                "trigger_after": 0,
+                "trigger_after_scroll": 5,
+                "trigger_on_matching_params": "url-path",
+                "sample_rate": 100,
+                "logo": false
+            },
+            "user_invoked": {
+                "background_color": "4D3446",
+                "border_color": "F6F5F6",
+                "type": "teardrop",
+                "button_label": "Got a moment",
+                "icon": "chat",
+                "position": "bottomRight",
+                "sample_rate": 100,
+                "trigger": "triggerAfter",
+                "trigger_after": 0,
+                "trigger_after_scroll": 5,
+                "trigger_on_matching_params": "url-path"
+            },
+            "inline_embed": {
+                "background_color": "4D3446",
+                "border_color": "F6F5F6",
+                "width": 90,
+                "width_unit": "%",
+                "height": 500,
+                "height_unit": "px"
+            },
+            "pop_up": {
+                "button_label": "Open Survey",
+                "button_font_size": 16,
+                "button_color": "4A9CA6",
+                "button_text_color": "FFFFFF",
+                "button_border_radius": 100,
+                "size": "small",
+                "trigger": "noTrigger",
+                "trigger_after": 0,
+                "trigger_after_scroll": 5,
+                "trigger_on_matching_params": "url-path"
+            },
+            "side_panel": {
+                "button_label": "Open Survey",
+                "button_font_size": 16,
+                "button_color": "4A9CA6",
+                "button_text_color": "FFFFFF",
+                "button_border_radius": 100,
+                "position": "right",
+                "trigger": "noTrigger",
+                "trigger_after": 0,
+                "trigger_after_scroll": 5,
+                "trigger_on_matching_params": "url-path"
+            }
+        },
+        "is_default": false,
+        "multi_language_subject": {},
+        "mode": null,
+        "is_primary": false,
+        "created_at": "2024-03-05T06:59:10.098Z",
+        "updated_at": "2024-03-05T06:59:10.098Z",
+        "deleted_at": null,
+        "account_id": 1000001103,
+        "device_id": null,
+        "survey": {
+            "id": 1000019556,
+            "name": "Survey created using API ",
+            "welcome_rtxt": null,
+            "welcome_description": null,
+            "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+            "thankyou_json": [],
+            "archived": false,
+            "visibility": "Public",
+            "survey_type": "ClassicForm",
+            "template_name": null,
+            "properties": {
+                "has_llmsentiment": true,
+                "autosize_heading": true,
+                "survey_randomiser": false
+            },
+            "published": true,
+            "eui_version": 3,
+            "phishing": false,
+            "phishing_details": {},
+            "primary_language": "en",
+            "multi_language_welcome_rtxt": null,
+            "multi_language_welcome_description": null,
+            "multi_language_welcome_screen_yes_button_text": null,
+            "multi_language_thankyou_json": null,
+            "multi_language_name": null,
+            "multi_language_properties": {},
+            "response_blocked": false,
+            "logic_blocked": false,
+            "created_at": "2024-03-05T06:59:09.995Z",
+            "updated_at": "2024-03-05T06:59:09.995Z",
+            "deleted_at": null,
+            "account_id": 1000001103,
+            "user_id": 1000002296,
+            "survey_folder_id": 1000002325,
+            "thankyou_template_id": null,
+            "theme_id": null
+        }
+    },
+    "account_id": 1000001103
+}
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onchannelupdateevent-is-triggered-when-a-channel-is-updated-in-surveysparrow"
+          >
+            <a
+              href="#onchannelupdateevent-is-triggered-when-a-channel-is-updated-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onchannelupdateevent-is-triggered-when-a-channel-is-updated-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onChannelUpdate(Event is triggered when a channel is updated in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onChannelUpdate",
+    "ruleEvent": "CHANNEL_UPDATED",
+    "objectType": "CHANNEL",
+    "objectId": 1000023688,
+    "data": {
+        "id": 1000023688,
+        "type": "EMBED",
+        "name": "Embed Share - 1",
+        "status": "ACTIVE",
+        "subject": "EMBED Share",
+        "properties": {
+            "type": "autoTriggered",
+            "auto_triggered": {
+                "background_color": "4D3446",
+                "border_color": "F6F5F6",
+                "start_type": "startWithGreeting",
+                "position": "bottomRight",
+                "trigger": "triggerAfter",
+                "trigger_after": 0,
+                "trigger_after_scroll": 5,
+                "trigger_on_matching_params": "url-path",
+                "sample_rate": 100,
+                "logo": false
+            },
+            "user_invoked": {
+                "background_color": "4D3446",
+                "border_color": "F6F5F6",
+                "type": "teardrop",
+                "button_label": "Got a moment",
+                "icon": "chat",
+                "position": "bottomRight",
+                "sample_rate": 100,
+                "trigger": "triggerAfter",
+                "trigger_after": 0,
+                "trigger_after_scroll": 5,
+                "trigger_on_matching_params": "url-path"
+            },
+            "inline_embed": {
+                "background_color": "4D3446",
+                "border_color": "F6F5F6",
+                "width": 90,
+                "width_unit": "%",
+                "height": 500,
+                "height_unit": "px"
+            },
+            "pop_up": {
+                "button_label": "Open Survey",
+                "button_font_size": 16,
+                "button_color": "4A9CA6",
+                "button_text_color": "FFFFFF",
+                "button_border_radius": 100,
+                "size": "small",
+                "trigger": "noTrigger",
+                "trigger_after": 0,
+                "trigger_after_scroll": 5,
+                "trigger_on_matching_params": "url-path"
+            },
+            "side_panel": {
+                "button_label": "Open Survey",
+                "button_font_size": 16,
+                "button_color": "4A9CA6",
+                "button_text_color": "FFFFFF",
+                "button_border_radius": 100,
+                "position": "right",
+                "trigger": "noTrigger",
+                "trigger_after": 0,
+                "trigger_after_scroll": 5,
+                "trigger_on_matching_params": "url-path"
+            }
+        },
+        "is_default": false,
+        "multi_language_subject": {},
+        "mode": null,
+        "is_primary": false,
+        "created_at": "2024-03-05T06:59:10.098Z",
+        "updated_at": "2024-03-05T06:59:10.098Z",
+        "deleted_at": null,
+        "account_id": 1000001103,
+        "device_id": null,
+        "survey": {
+            "id": 1000019556,
+            "name": "Survey created using API ",
+            "welcome_rtxt": null,
+            "welcome_description": null,
+            "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+            "thankyou_json": [],
+            "archived": false,
+            "visibility": "Public",
+            "survey_type": "ClassicForm",
+            "template_name": null,
+            "properties": {
+                "has_llmsentiment": true,
+                "autosize_heading": true,
+                "survey_randomiser": false
+            },
+            "published": true,
+            "eui_version": 3,
+            "phishing": false,
+            "phishing_details": {},
+            "primary_language": "en",
+            "multi_language_welcome_rtxt": null,
+            "multi_language_welcome_description": null,
+            "multi_language_welcome_screen_yes_button_text": null,
+            "multi_language_thankyou_json": null,
+            "multi_language_name": null,
+            "multi_language_properties": {},
+            "response_blocked": false,
+            "logic_blocked": false,
+            "created_at": "2024-03-05T06:59:09.995Z",
+            "updated_at": "2024-03-05T06:59:09.995Z",
+            "deleted_at": null,
+            "account_id": 1000001103,
+            "user_id": 1000002296,
+            "survey_folder_id": 1000002325,
+            "thankyou_template_id": null,
+            "theme_id": null
+        }
+    },
+    "account_id": 1000001103
+}
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onchanneldeleteevent-is-triggered-when-a-channel-is-deleted-in-surveysparrow"
+          >
+            <a
+              href="#onchanneldeleteevent-is-triggered-when-a-channel-is-deleted-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onchanneldeleteevent-is-triggered-when-a-channel-is-deleted-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onChannelDelete(Event is triggered when a channel is deleted in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onChannelDelete",
+    "ruleEvent": "CHANNEL_DELETED",
+    "objectType": "CHANNEL",
+    "objectId": 1000023746,
+    "data": {
+        "id": 1000023746,
+        "type": "EMAIL",
+        "name": "Terry",
+        "status": "ACTIVE",
+        "subject": "Could you spare a quick moment to give some feedback?",
+        "properties": {
+            "email": {
+                "mail_content_lists": [
+                    {
+                        "id": "q1rs",
+                        "type": "TEXT",
+                        "value": {
+                            "blocks": [
+                                {
+                                    "key": "1hern",
+                                    "text": "Hello  \n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo",
+                                    "type": "unstyled",
+                                    "depth": 0,
+                                    "inline_style_ranges": [],
+                                    "entity_ranges": [],
+                                    "data": {}
+                                }
+                            ],
+                            "entity_map": {}
+                        },
+                        "component_properties": {
+                            "align_items": "center"
+                        }
+                    },
+                    {
+                        "id": "d611",
+                        "type": "SPACER",
+                        "value": "",
+                        "component_properties": {
+                            "align_items": "center"
+                        }
+                    },
+                    {
+                        "id": "3g81",
+                        "type": "LINK",
+                        "value": "Get Started",
+                        "component_properties": {
+                            "align_items": "center",
+                            "parameters": []
+                        }
+                    }
+                ],
+                "html": {
+                    "header": "",
+                    "footer": "&lt;table style=\"width:100%;background-color: #F6F6F6;\"&gt;\n<tbody>\n  <tr>\n    &lt;td style=\"padding: 32px 0\"&gt;\n      &lt;table style=\"width:100%;\" align=\"center\"&gt;\n        <tbody>\n          <tr>\n            &lt;td class=\"ss-360--block\" style=\"padding: 0 48px\" align=\"center\"&gt;\n                &lt;a href=\"https://surveysparrow.com\" target=\"_blank\"&gt;&lt;img style=\"max-width: 120px;height:auto\"\n                    width=\"120\" height=\"auto\"\n                    src=\"https://static.surveysparrow.com/email-templates/e360/surveysparrow-logo-new.png\"&gt;&lt;/a&gt;\n            &lt;/td&gt;\n          </tr>\n        </tbody>\n      &lt;/table&gt;\n      &lt;table class=\"spacer\"\n        style=\"border-collapse:collapse;border-spacing:0;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;padding:0;text-align:left;vertical-align:top;width:100%\"&gt;\n        &lt;tbody\n          style=\"font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif\"&gt;\n          &lt;tr\n            style=\"font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;padding:0;text-align:left;vertical-align:top\"&gt;\n            &lt;td height=\"24px\"\n              style=\"-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;font-size:24px;font-weight:400;hyphens:auto;line-height:24px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word\"&gt;\n              &#xA0;&lt;/td&gt;\n          </tr>\n        </tbody>\n      &lt;/table&gt;\n      &lt;table style=\"width:100%;\" align=\"center\"&gt;\n        <tbody>\n          <tr>\n            &lt;td class=\"ss-360--block\" style=\"padding: 0 48px\" align=\"center\"&gt;\n                &lt;table style=\"width:50%;\"&gt;\n                  <tbody>\n                    <tr>\n                      &lt;td style=\"text-align: center;\"&gt;\n                        &lt;a href=\"https://www.facebook.com/surveysparrow/\" target=\"_blank\"&gt;&lt;img\n                            style=\"max-width: 24px;height:auto\" width=\"24\" height=\"24\"\n                            src=\"https://static.surveysparrow.com/email-templates/e360/facebook.png\"&gt;&lt;/a&gt;\n                      &lt;/td&gt;\n                      &lt;td style=\"text-align: center;\"&gt;\n                        &lt;a href=\"https://twitter.com/surveysparrow\" target=\"_blank\"&gt;&lt;img\n                            style=\"max-width: 24px;height:auto\" width=\"24\" height=\"24\"\n                            src=\"https://static.surveysparrow.com/email-templates/e360/twitter.png\"&gt;&lt;/a&gt;\n                      &lt;/td&gt;\n                      &lt;td style=\"text-align: center;\"&gt;\n                        &lt;a href=\"https://www.linkedin.com/company/surveysparrow/\" target=\"_blank\"&gt;&lt;img\n                            style=\"max-width: 24px;height:auto\" width=\"24\" height=\"24\"\n                            src=\"https://static.surveysparrow.com/email-templates/e360/linkedin-logo.png\"&gt;&lt;/a&gt;\n                      &lt;/td&gt;\n                      &lt;td style=\"text-align: center;\"&gt;\n                        &lt;a href=\"https://www.instagram.com/surveysparrow/\" target=\"_blank\"&gt;&lt;img\n                            style=\"max-width: 24px;height:auto\" width=\"24\" height=\"24\"\n                            src=\"https://static.surveysparrow.com/email-templates/e360/instagram.png\"&gt;&lt;/a&gt;\n                      &lt;/td&gt;\n                    </tr>\n                  </tbody>\n                &lt;/table&gt;\n            &lt;/td&gt;\n          </tr>\n        </tbody>\n      &lt;/table&gt;\n      &lt;table class=\"spacer\"\n        style=\"border-collapse:collapse;border-spacing:0;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;padding:0;text-align:left;vertical-align:top;width:100%\"&gt;\n        &lt;tbody\n          style=\"font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif\"&gt;\n          &lt;tr\n            style=\"font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;padding:0;text-align:left;vertical-align:top\"&gt;\n            &lt;td height=\"24px\"\n              style=\"-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;font-size:24px;font-weight:400;hyphens:auto;line-height:24px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word\"&gt;\n              &#xA0;&lt;/td&gt;\n          &lt;/tr&gt;\n        &lt;/tbody&gt;\n      &lt;/table&gt;\n      &lt;table style=\"width:100%;\"&gt;\n        <tbody>\n          <tr>\n            &lt;td class=\"ss-360--block\" style=\"padding: 0 48px\"&gt;\n              &lt;p style=\"text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;color:#25292D !important;font-size:14px !important;line-height:1.4 !important;text-align: center !important;margin-bottom: 8px !important;margin-top: 0px !important;font-weight: normal !important;\"&gt;2345 Yale St FL 1, Palo Alto, CA 94306&lt;/p&gt;\n              &lt;p style=\"text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;color:#63686F !important;font-size:12px !important;line-height:1.4 !important;text-align: center !important;margin-bottom: 8px !important;margin-top: 0px !important;font-weight: normal !important;\"&gt;Copyright © SurveySparrow Inc. 2021&lt;/p&gt;\n              &lt;p style=\"text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;text-align: center;margin-bottom:0px!important;line-height:1.4;font-size:10px;color:#BDBDBD;\"&gt;\n                {unsubscribeLink} | &lt;a href={privacyPolicyLink} style=\"Margin:0;color:#BDBDBD;font-family:Montserrat,sans-serif!important;font-size:14px;font-weight:400;line-height:1.3;margin:0;text-align:left;text-decoration:underline; font-size:10px;\"&gt;&lt;span style=\"font-size:10px;\"&gt;Privacy Policy&lt;/span&gt;&lt;/a&gt;\n              &lt;/p&gt;\n            &lt;/td&gt;\n          </tr>\n        </tbody>\n      &lt;/table&gt;\n    &lt;/td&gt;\n  &lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;",
+                    "body": "<html><head></head><body><tr>&lt;td width=\"32px\" style=\"width:32px;\"&gt;&lt;/td&gt;&lt;td style=\"font-family:'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important; padding:0;text-align: center;color:{bodyProperties.textColor};\"&gt;&lt;p style=\"color:{bodyProperties.textColor};margin-block-start:0!important;margin-block-end:0!important;Margin:0!important;font-size:16px!important;font-weight:300!important;line-height:1.4!important;font-family:'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;\"&gt;Hello &nbsp;&lt;br style=\"margin: 0px;\"&gt;\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo&lt;/p&gt;&lt;/td&gt;&lt;td width=\"32px\" style=\"width:32px;\"&gt;&lt;/td&gt;</tr></body></html>\n    <tr>\n      &lt;td colspan=\"3\" height=\"32px\" style=\"height:32px;\"&gt;&#xA0;&lt;/td&gt;\n    </tr>{component.3g81}"
+                }
+            },
+            "email_header": {
+                "logo": null,
+                "brand_name": null
+            },
+            "show_survey_sparrow_branding": true,
+            "embed_first_question": true,
+            "reply_to": "Yadira.Daugherty@hotmail.com",
+            "custom_footer": false,
+            "from_address": "sankarsuite@mailer.paid-existing-non-business-non-bulk2.helpsparrow.com"
+        },
+        "is_default": false,
+        "multi_language_subject": {},
+        "mode": null,
+        "is_primary": false,
+        "created_at": "2024-03-05T09:03:00.233Z",
+        "updated_at": "2024-03-05T09:10:55.724Z",
+        "deleted_at": "2024-03-05T09:10:55.724Z",
+        "account_id": 1000001103,
+        "device_id": null,
+        "survey": {
+            "id": 1000019502,
+            "name": "sankar classic",
+            "welcome_rtxt": null,
+            "welcome_description": null,
+            "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+            "thankyou_json": [],
+            "archived": false,
+            "visibility": "Mine",
+            "survey_type": "ClassicForm",
+            "template_name": null,
+            "properties": {
+                "has_llmsentiment": true,
+                "autosize_heading": true,
+                "survey_randomiser": false,
+                "progress": {
+                    "builder_completed": true,
+                    "design_completed": true,
+                    "share_completed": true
+                },
+                "start_assessment": true
+            },
+            "published": true,
+            "eui_version": 3,
+            "phishing": false,
+            "phishing_details": {},
+            "primary_language": "en",
+            "multi_language_welcome_rtxt": null,
+            "multi_language_welcome_description": null,
+            "multi_language_welcome_screen_yes_button_text": null,
+            "multi_language_thankyou_json": null,
+            "multi_language_name": null,
+            "multi_language_properties": {},
+            "response_blocked": false,
+            "logic_blocked": false,
+            "created_at": "2024-03-04T09:51:56.813Z",
+            "updated_at": "2024-03-05T08:04:40.636Z",
+            "deleted_at": null,
+            "account_id": 1000001103,
+            "user_id": 1000002296,
+            "survey_folder_id": 1000002325,
+            "thankyou_template_id": null,
+            "theme_id": null
+        }
+    },
+    "account_id": 1000001103
+}  
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsurveycreateevent-is-triggered-when-a-survey-is-created-in-surveysparrow"
+          >
+            <a
+              href="#onsurveycreateevent-is-triggered-when-a-survey-is-created-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsurveycreateevent-is-triggered-when-a-survey-is-created-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSurveyCreate(Event is triggered when a survey is created in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSurveyCreate",
+    "ruleEvent": "SURVEY_CREATED",
+    "objectType": "SURVEY",
+    "objectId": 1000019556,
+    "data": {
+        "id": 1000019556,
+        "name": "Survey created using API ",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [],
+        "archived": false,
+        "visibility": "Public",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+            "has_llmsentiment": true,
+            "autosize_heading": true,
+            "survey_randomiser": false
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2024-03-05T06:59:09.995Z",
+        "updated_at": "2024-03-05T06:59:09.995Z",
+        "deleted_at": null,
+        "account_id": 1000001103,
+        "user_id": 1000002296,
+        "survey_folder_id": 1000002325,
+        "thankyou_template_id": null,
+        "theme_id": null
+    },
+    "account_id": 1000001103
+}
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsurveyeditevent-is-triggered-when-a-survey-is-edited-in-surveysparrow"
+          >
+            <a
+              href="#onsurveyeditevent-is-triggered-when-a-survey-is-edited-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsurveyeditevent-is-triggered-when-a-survey-is-edited-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSurveyEdit(Event is triggered when a survey is edited in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSurveyEdit",
+    "ruleEvent": "SURVEY_EDITED",
+    "objectType": "SURVEY",
+    "objectId": 1000019502,
+    "data": {
+        "id": 1000019502,
+        "name": "sankar classic",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [],
+        "archived": false,
+        "visibility": "Mine",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+            "has_llmsentiment": true,
+            "autosize_heading": true,
+            "survey_randomiser": false,
+            "progress": {
+                "builder_completed": true,
+                "design_completed": true,
+                "share_completed": true
+            }
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2024-03-04T09:51:56.813Z",
+        "updated_at": "2024-03-04T10:36:32.088Z",
+        "deleted_at": null,
+        "account_id": 1000001103,
+        "user_id": 1000002296,
+        "survey_folder_id": 1000002325,
+        "thankyou_template_id": null,
+        "theme_id": null
+    },
+    "account_id": 1000001103
+}  
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsurveydeleteevent-is-triggered-when-a-survey-is-deleted-in-surveysparrow"
+          >
+            <a
+              href="#onsurveydeleteevent-is-triggered-when-a-survey-is-deleted-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsurveydeleteevent-is-triggered-when-a-survey-is-deleted-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSurveyDelete(Event is triggered when a survey is deleted in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSurveyDelete",
+    "ruleEvent": "SURVEY_DELETED",
+    "objectType": "SURVEY",
+    "objectId": 1000019504,
+    "data": {
+        "id": 1000019504,
+        "name": "class",
+        "welcome_rtxt": null,
+        "welcome_description": null,
+        "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+        "thankyou_json": [],
+        "archived": true,
+        "visibility": "Mine",
+        "survey_type": "ClassicForm",
+        "template_name": null,
+        "properties": {
+            "has_llmsentiment": true,
+            "autosize_heading": true,
+            "survey_randomiser": false
+        },
+        "published": true,
+        "eui_version": 3,
+        "phishing": false,
+        "phishing_details": {},
+        "primary_language": "en",
+        "multi_language_welcome_rtxt": null,
+        "multi_language_welcome_description": null,
+        "multi_language_welcome_screen_yes_button_text": null,
+        "multi_language_thankyou_json": null,
+        "multi_language_name": null,
+        "multi_language_properties": {},
+        "response_blocked": false,
+        "logic_blocked": false,
+        "created_at": "2024-03-04T10:25:12.633Z",
+        "updated_at": "2024-03-04T10:29:31.254Z",
+        "deleted_at": "2024-03-04T10:29:31.254Z",
+        "account_id": 1000001103,
+        "user_id": 1000002296,
+        "survey_folder_id": 1000002325,
+        "thankyou_template_id": null,
+        "theme_id": null
+    },
+    "account_id": 1000001103
+}  
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsurveymoveevent-is-triggered-when-a-survey-is-moved-in-surveysparrow"
+          >
+            <a
+              href="#onsurveymoveevent-is-triggered-when-a-survey-is-moved-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsurveymoveevent-is-triggered-when-a-survey-is-moved-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSurveyMove(Event is triggered when a survey is moved in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSurveyMove",
+    "ruleEvent": "SURVEY_MOVED",
+    "objectType": "SURVEY",
+    "objectId": 1001000182,
+    "data": {
+      "id": 1001000182,
+      "name": "new",
+      "welcome_rtxt": null,
+      "welcome_description": null,
+      "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+      "thankyou_json": [],
+      "archived": false,
+      "visibility": "Public",
+      "survey_type": "ClassicForm",
+      "template_name": null,
+      "properties": {
+        "has_llmsentiment": true,
+        "autosize_heading": true,
+        "survey_randomiser": false,
+        "progress": {
+          "builder_completed": true,
+          "share_completed": true,
+          "design_completed": true
+        },
+        "start_assessment": true
+      },
+      "published": true,
+      "eui_version": 3,
+      "phishing": false,
+      "phishing_details": {},
+      "primary_language": "en",
+      "multi_language_welcome_rtxt": null,
+      "multi_language_welcome_description": null,
+      "multi_language_welcome_screen_yes_button_text": null,
+      "multi_language_thankyou_json": null,
+      "multi_language_name": null,
+      "multi_language_properties": {},
+      "response_blocked": false,
+      "logic_blocked": false,
+      "created_at": "2024-02-27T10:01:37.154Z",
+      "updated_at": "2024-02-27T12:46:38.910Z",
+      "deleted_at": null,
+      "account_id": 12,
+      "user_id": 1000000003,
+      "survey_folder_id": 1000000007,
+      "thankyou_template_id": null,
+      "theme_id": null
+    },
+    "account_id": 12
+  }  
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsurveycloseevent-is-triggered-when-a-survey-is-closed-in-surveysparrow"
+          >
+            <a
+              href="#onsurveycloseevent-is-triggered-when-a-survey-is-closed-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsurveycloseevent-is-triggered-when-a-survey-is-closed-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSurveyClose(Event is triggered when a survey is closed in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSurveyClose",
+    "ruleEvent": "SURVEY_CLOSED",
+    "objectType": "SURVEY",
+    "objectId": 1001000171,
+    "data": {
+      "id": 1001000171,
+      "name": "Offline",
+      "welcome_rtxt": null,
+      "welcome_description": null,
+      "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+      "thankyou_json": [],
+      "archived": true,
+      "visibility": "Mine",
+      "survey_type": "OfflineApp",
+      "template_name": null,
+      "properties": {
+        "autosize_heading": true,
+        "survey_randomiser": false,
+        "progress": {
+          "builder_completed": true,
+          "design_completed": true
+        }
+      },
+      "published": true,
+      "eui_version": 1,
+      "phishing": false,
+      "phishing_details": {},
+      "primary_language": "en",
+      "multi_language_welcome_rtxt": null,
+      "multi_language_welcome_description": null,
+      "multi_language_welcome_screen_yes_button_text": null,
+      "multi_language_thankyou_json": null,
+      "multi_language_name": null,
+      "multi_language_properties": {},
+      "response_blocked": false,
+      "logic_blocked": false,
+      "created_at": "2023-07-14T19:52:08.851Z",
+      "updated_at": "2024-02-27T13:16:52.468Z",
+      "deleted_at": null,
+      "account_id": 12,
+      "user_id": 1000000003,
+      "survey_folder_id": 1000000003,
+      "thankyou_template_id": null,
+      "theme_id": null
+    },
+    "account_id": 12
+  }  
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsurveyrestoreevent-is-triggered-when-a-survey-is-restored-in-surveysparrow"
+          >
+            <a
+              href="#onsurveyrestoreevent-is-triggered-when-a-survey-is-restored-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsurveyrestoreevent-is-triggered-when-a-survey-is-restored-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSurveyRestore(Event is triggered when a survey is restored in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSurveyRestore",
+    "ruleEvent": "SURVEY_RESTORED",
+    "objectType": "SURVEY",
+    "objectId": 1001000159,
+    "data": {
+      "id": 1001000159,
+      "name": "Adminprakash NPS - 5",
+      "welcome_rtxt": null,
+      "welcome_description": null,
+      "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+      "thankyou_json": [
+        {
+          "message": {
+            "entity_map": {},
+            "blocks": [
+              {
+                "key": "1hern",
+                "text": "Thank you for your time!",
+                "type": "unstyled",
+                "depth": 0,
+                "inline_style_ranges": [],
+                "entity_ranges": [],
+                "data": {}
+              }
+            ]
+          },
+          "branding": true,
+          "description_boolean": false,
+          "description": {
+            "entity_map": {},
+            "blocks": [
+              {
+                "key": "1hern",
+                "text": "",
+                "type": "unstyled",
+                "depth": 0,
+                "inline_style_ranges": [],
+                "entity_ranges": [],
+                "data": {}
+              }
+            ]
+          }
+        }
+      ],
+      "archived": false,
+      "visibility": "Mine",
+      "survey_type": "NPS",
+      "template_name": null,
+      "properties": {
+        "email": {
+          "body": "",
+          "subject": "Your feedback matters! Help us serve you better.",
+          "reply_email": "adminprakash@surveysparrow.com"
+        },
+        "accent_color": "19B885",
+        "company_name": "adminprakash",
+        "variables": [],
+        "thank_you": {
+          "default": "&lt;p data-alignment=\"center\" style=\"text-align:center\"&gt;Thanks for your valuable feedback on your experience with us. We sincerely appreciate your insight because it helps us build a better customer experience.&lt;/p&gt;",
+          "advanced": false,
+          "promoters": "&lt;p data-alignment=\"center\" style=\"text-align:center\"&gt;Thank you for your feedback. We are happy to hear that you had a great experience with us. Your feedback helps us discover new opportunities to improve ourselves and make sure you have the best experience.&lt;/p&gt;",
+          "passives": "&lt;p data-alignment=\"center\" style=\"text-align:center\"&gt;Thank you for your feedback. We want to give you the best possible experience. Your inputs and suggestions play a major role in helping us  improve.&lt;/p&gt;",
+          "detractors": "&lt;p data-alignment=\"center\" style=\"text-align:center\"&gt;Thank you for your feedback. We value all your inputs and suggestions. In the future, our team might reach out to you to learn more about how we can further improve your experience so that it exceeds your expectations.&lt;/p&gt;"
+        },
+        "redirection": {
+          "basic": false,
+          "default": null,
+          "advanced": false,
+          "promoters": null,
+          "passives": null,
+          "detractors": null
+        },
+        "response_notification": {
+          "enabled": false
+        },
+        "follow_up_email": {
+          "enabled": false,
+          "advanced": false,
+          "default": {
+            "subject": "Thanks for your feedback. It means a lot to us.",
+            "body": "Dear {contact.firstName},\n\n  Thanks for your valuable feedback on your experience with us. We sincerely appreciate your insight because it helps us build a better customer experience.\n\n  If you have any more questions, comments, or concerns or compliments, please feel welcome to reach out to us. We would be more than happy to assist.\n\n  Best,\n\n  {user.name}"
+          },
+          "promoters": {
+            "subject": "Thanks for your feedback. It means a lot to us.",
+            "body": "Dear {contact.firstName},\n\n  We are delighted to know that you would recommend us to your friends! Your insight helps us improve and build a better customer experience.\n\n  If you have any more questions, comments, or concerns or compliments, please feel welcome to reach out to us. We would be more than happy to assist.\n\n  Best,\n\n  {user.name}"
+          },
+          "detractors": {
+            "subject": "Thanks for your feedback. It means a lot to us.",
+            "body": "Dear {contact.firstName},\n\n  Thanks for your valuable feedback on your experience with us. We sincerely appreciate your insight because it helps us build a better customer experience.\n\n  We’re sorry you didn’t have the best experience with us. Please reach out to us to know how we can serve you better. We would be more than happy to assist. \n\n  Best,\n\n  {user.name}"
+          },
+          "passives": {
+            "subject": "Thanks for your feedback. It means a lot to us.",
+            "body": "Dear {contact.firstName},\n\n  Thanks for your valuable feedback on your experience with us. We sincerely appreciate your insight because it helps us build abetter customer experience.\nPlease reach out to us to know how we can serve you better. We wouldbe more than happy to assist.\n\n  Best,\n\n  {user.name}"
+          }
+        },
+        "autosize_heading": true,
+        "survey_randomiser": false,
+        "progress": {
+          "builder_complete": true,
+          "design_completed": true,
+          "configure_complete": false,
+          "share_complete": true,
+          "result_complete": true
+        }
+      },
+      "published": true,
+      "eui_version": 3,
+      "phishing": false,
+      "phishing_details": {},
+      "primary_language": "en",
+      "multi_language_welcome_rtxt": null,
+      "multi_language_welcome_description": null,
+      "multi_language_welcome_screen_yes_button_text": null,
+      "multi_language_thankyou_json": null,
+      "multi_language_name": null,
+      "multi_language_properties": {},
+      "response_blocked": false,
+      "logic_blocked": false,
+      "created_at": "2022-10-14T09:50:28.384Z",
+      "updated_at": "2024-02-27T13:18:38.970Z",
+      "deleted_at": null,
+      "account_id": 12,
+      "user_id": 1000000003,
+      "survey_folder_id": 1000000003,
+      "thankyou_template_id": null,
+      "theme_id": 1001000020
+    },
+    "account_id": 12
+  }   
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsurveyduplicateevent-is-triggered-when-a-survey-is-duplicated-in-surveysparrow"
+          >
+            <a
+              href="#onsurveyduplicateevent-is-triggered-when-a-survey-is-duplicated-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsurveyduplicateevent-is-triggered-when-a-survey-is-duplicated-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSurveyDuplicate(Event is triggered when a survey is duplicated in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSurveyDuplicate",
+    "ruleEvent": "SURVEY_DUPLICATED",
+    "objectType": "SURVEY",
+    "objectId": 1001000187,
+    "data": {
+      "id": 1001000187,
+      "name": "classic - Clone - Clone - Clone",
+      "welcome_rtxt": null,
+      "welcome_description": null,
+      "welcome_screen_yes_button_text": "builder.welcome_yes_proceed",
+      "thankyou_json": [],
+      "archived": false,
+      "visibility": "Mine",
+      "survey_type": "ClassicForm",
+      "template_name": null,
+      "properties": {
+        "autosize_heading": true,
+        "survey_randomiser": false,
+        "progress": {},
+        "start_assessment": true,
+        "is_survey": true,
+        "clone": {
+          "id": 1001000185,
+          "parent_survey_type": "ClassicForm"
+        }
+      },
+      "published": true,
+      "eui_version": 2,
+      "phishing": false,
+      "phishing_details": {},
+      "primary_language": "en",
+      "multi_language_welcome_rtxt": null,
+      "multi_language_welcome_description": null,
+      "multi_language_welcome_screen_yes_button_text": null,
+      "multi_language_thankyou_json": null,
+      "multi_language_name": null,
+      "multi_language_properties": {},
+      "response_blocked": false,
+      "logic_blocked": false,
+      "created_at": "2024-02-27T13:47:53.018Z",
+      "updated_at": "2024-02-27T13:47:53.915Z",
+      "deleted_at": null,
+      "account_id": 12,
+      "user_id": 1000000003,
+      "survey_folder_id": 1000000003,
+      "thankyou_template_id": null,
+      "theme_id": null
+    },
+    "account_id": 12
+  }
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsubmissioncreateevent-is-triggered-when-a-submission-is-created-in-surveysparrow"
+          >
+            <a
+              href="#onsubmissioncreateevent-is-triggered-when-a-submission-is-created-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsubmissioncreateevent-is-triggered-when-a-submission-is-created-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSubmissionCreate(Event is triggered when a submission is created
+            in surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSubmissionCreate",
+    "ruleEvent": "SUBMISSION_CREATED",
+    "objectType": "SUBMISSION",
+    "objectId": 1000238197,
+    "data": {
+        "id": 1000238197,
+        "state": "STARTED",
+        "start_time": "2024-03-01T13:06:22.508Z",
+        "device_type": "COMPUTER",
+        "feedback": null,
+        "ip": null,
+        "location": null,
+        "language": null,
+        "geo_info": {},
+        "created_at": "2024-03-01T13:06:22.526Z",
+        "updated_at": "2024-03-01T13:06:22.526Z",
+        "account_id": 1000001103,
+        "nomination_id": null,
+        "survey_id": 1000014426,
+        "contact": null,
+        "meta_data": {
+            "os": "macOS 10.15.7",
+            "browser": "Chrome 121.0.0.0",
+            "time_zone": "Asia/Calcutta",
+            "browser_language": "en-GB"
+        },
+        "survey": {
+            "id": 1000014426,
+            "survey_type": "ClassicForm",
+            "name": "classic"
+        },
+        "folder": {
+            "id": 1000002325,
+            "name": "General"
+        },
+        "channel": {
+            "id": 1000018047,
+            "type": "LINK",
+            "name": "Web Link Share",
+            "status": "ACTIVE",
+            "subject": "LINK Share",
+            "is_default": true,
+            "limits": null,
+            "web_url": "https://sankarsuite.surveysparrow.com/s/classic/tt-tiK6x6nTvnXzLwoZdxx7Ae"
+        }
+    },
+    "account_id": 1000001103
+}  
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsubmissionupdateevent-is-triggered-when-a-submission-is-updated-in-surveysparrow"
+          >
+            <a
+              href="#onsubmissionupdateevent-is-triggered-when-a-submission-is-updated-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsubmissionupdateevent-is-triggered-when-a-submission-is-updated-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSubmissionUpdate(Event is triggered when a submission is updated
+            in surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSubmissionUpdate",
+    "ruleEvent": "SUBMISSION_UPDATED",
+    "objectType": "SUBMISSION",
+    "objectId": 1000238196,
+    "data": {
+        "id": 1000238196,
+        "time_taken": "2.00",
+        "state": "STARTED",
+        "start_time": "2024-03-01T13:06:00.856Z",
+        "completed_time": null,
+        "device_type": "COMPUTER",
+        "feedback": null,
+        "ip": null,
+        "location": null,
+        "language": "en",
+        "geo_info": {},
+        "created_at": "2024-03-01T13:06:00.933Z",
+        "updated_at": "2024-03-01T13:06:01.567Z",
+        "account_id": 1000001103,
+        "nomination_id": null,
+        "survey_id": 1000014426,
+        "contact": null,
+        "meta_data": {
+            "os": "macOS 10.15.7",
+            "browser": "Chrome 121.0.0.0",
+            "time_zone": "Asia/Calcutta",
+            "browser_language": "en-GB"
+        },
+        "survey": {
+            "id": 1000014426,
+            "survey_type": "ClassicForm",
+            "name": "classic"
+        },
+        "folder": {
+            "id": 1000002325,
+            "name": "General"
+        },
+        "answers": {
+            "1000148466": {
+                "answer": 6,
+                "step": 10,
+                "question": "$Param_a.sr $Param_sr_12 opn",
+                "question_type": "OpinionScale",
+                "question_tags": [],
+                "question_id": 1000148466,
+                "skipped": false
+            }
+        },
+        "variables": {},
+        "expressions": {},
+        "channel": {
+            "id": 1000018047,
+            "type": "LINK",
+            "name": "Web Link Share",
+            "status": "ACTIVE",
+            "subject": "LINK Share",
+            "is_default": true,
+            "limits": null,
+            "web_url": "https://sankarsuite.surveysparrow.com/s/classic/tt-tiK6x6nTvnXzLwoZdxx7Ae"
+        }
+    },
+    "account_id": 1000001103
+}  
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onsubmissiondeleteevent-is-triggered-when-a-submission-is-deleted-in-surveysparrow"
+          >
+            <a
+              href="#onsubmissiondeleteevent-is-triggered-when-a-submission-is-deleted-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onsubmissiondeleteevent-is-triggered-when-a-submission-is-deleted-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            onSubmissionDelete(Event is triggered when a submission is deleted
+            in surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onSubmissionDelete",
+    "ruleEvent": "SUBMISSION_DELETED",
+    "objectType": "SUBMISSION",
+    "objectId": 1000240205,
+    "data": {
+        "id": 1000240205,
+        "time_taken": "1.00",
+        "state": "STARTED",
+        "start_time": "2024-03-04T10:39:05.983Z",
+        "completed_time": null,
+        "device_type": "COMPUTER",
+        "feedback": null,
+        "ip": null,
+        "location": null,
+        "language": "en",
+        "geo_info": {},
+        "created_at": "2024-03-04T10:39:06.049Z",
+        "updated_at": "2024-03-04T10:47:12.892Z",
+        "account_id": 1000001103,
+        "nomination_id": null,
+        "survey_id": 1000019502,
+        "contact": null,
+        "meta_data": {
+            "os": "macOS 10.15.7",
+            "browser": "Chrome 122.0.0.0",
+            "time_zone": "Asia/Calcutta",
+            "browser_language": "en-GB"
+        },
+        "survey": {
+            "id": 1000019502,
+            "survey_type": "ClassicForm",
+            "name": "sankar classic"
+        },
+        "folder": {
+            "id": 1000002325,
+            "name": "General"
+        },
+        "answers": {
+            "1000194883": {
+                "answer": 5,
+                "step": 10,
+                "question": "opn",
+                "question_type": "OpinionScale",
+                "question_tags": [],
+                "question_id": 1000194883,
+                "skipped": false
+            }
+        },
+        "variables": {},
+        "expressions": {},
+        "channel": {
+            "id": 1000023625,
+            "type": "LINK",
+            "name": "Web Link Share",
+            "status": "ACTIVE",
+            "subject": "LINK Share",
+            "is_default": true,
+            "limits": null,
+            "web_url": "https://sankarsuite.surveysparrow.com/s/sankar-classic/tt-wiiHowmqitGMfEsUAEuNcg"
+        }
+    },
+    "account_id": 1000001103
+}   
+    </code>
+</pre>
+          </details>
+          <h5
+            id="onticketcreateevent-is-triggered-when-a-ticket-is-created-in-surveysparrow"
+          >
+            <a
+              href="#onticketcreateevent-is-triggered-when-a-ticket-is-created-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onticketcreateevent-is-triggered-when-a-ticket-is-created-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnTicketCreate(Event is triggered when a ticket is created in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+        <code>
+        {
+    "eventType": "onTicketCreate",
+    "ruleEvent": "TICKET_CREATED",
+    "objectType": "TICKET",
+    "objectId": 100000004,
+    "data": {
+        "id": 100000004,
+        "subject": "Unable to restrict multiple submissions based on specific survey questions",
+        "description": "Restriciting submissions based on contact is possible but doesn't work with specific questions in the survey",
+        "created_at": "2023-12-20T10:53:18.507Z",
+        "updated_at": "2023-12-21T07:00:49.754Z",
+        "deleted_at": null,
+        "submission_id": null,
+        "nps_submission_id": null,
+        "priority": {
+            "id": 100000001,
+            "value": "High"
+        },
+        "status": {
+            "id": 100000004,
+            "value": "Open"
+        },
+        "source": {
+            "id": 100000006,
+            "value": "Call"
+        },
+        "agent": {
+            "id": 100000003,
+            "name": "Gabriel",
+            "email": "gabriel@surveysparrow.com"
+        },
+        "requester": {
+            "id": 100000003,
+            "name": "Gabriel",
+            "email": "gabriel@surveysparrow.com",
+            "phone": "9123456789",
+            "mobile": "123456789"
+        },
+        "custom_fields": {
+            "Text_field": "Random text"
+        },
+        "resolution_due": "2023-12-25T11:46:18.507Z",
+        "first_response_due": "2023-12-18T11:46:18.507Z"
+    },
+    "account_id": 1000001115
+}
+        </code>
+  </pre>
+          </details>
+          <h5
+            id="onticketupdateevent-is-triggered-when-a-ticket-is-updated-in-surveysparrow"
+          >
+            <a
+              href="#onticketupdateevent-is-triggered-when-a-ticket-is-updated-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onticketupdateevent-is-triggered-when-a-ticket-is-updated-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnTicketUpdate(Event is triggered when a ticket is updated in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onTicketUpdate",
+    "ruleEvent": "TICKET_UPDATED",
+    "objectType": "TICKET",
+    "objectId": 100000004,
+    "data": {
+        "id": 100000004,
+        "subject": "Unable to restrict multiple submissions based on specific survey questions",
+        "description": "Restriciting submissions based on contact is possible but doesn't work with specific questions in the survey",
+        "created_at": "2023-12-20T10:53:18.507Z",
+        "updated_at": "2023-12-21T07:00:49.754Z",
+        "deleted_at": null,
+        "submission_id": null,
+        "nps_submission_id": null,
+        "priority": {
+            "id": 100000001,
+            "value": "High"
+        },
+        "status": {
+            "id": 100000004,
+            "value": "Open"
+        },
+        "source": {
+            "id": 100000006,
+            "value": "Call"
+        },
+        "agent": {
+            "id": 100000003,
+            "name": "Gabriel",
+            "email": "gabriel@surveysparrow.com"
+        },
+        "requester": {
+            "id": 100000003,
+            "name": "Gabriel",
+            "email": "gabriel@surveysparrow.com",
+            "phone": "9123456789",
+            "mobile": "123456789"
+        },
+        "custom_fields": {
+            "Text_field": "Random text"
+        },
+        "resolution_due": "2023-12-25T11:46:18.507Z",
+        "first_response_due": "2023-12-18T11:46:18.507Z"
+    },
+    "account_id": 1000001115
+}
+    </code>
+  </pre>
+          </details>
+          <h5
+            id="onticketdeleteevent-is-triggered-when-a-ticket-is-deleted-in-surveysparrow"
+          >
+            <a
+              href="#onticketdeleteevent-is-triggered-when-a-ticket-is-deleted-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onticketdeleteevent-is-triggered-when-a-ticket-is-deleted-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnTicketDelete(Event is triggered when a ticket is deleted in
+            surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onTicketDelete",
+    "ruleEvent": "TICKET_DELETED",
+    "objectType": "TICKET",
+    "objectId": 100000004,
+    "data": {
+        "id": 100000004,
+        "subject": "Unable to restrict multiple submissions based on specific survey questions",
+        "description": "Restriciting submissions based on contact is possible but doesn't work with specific questions in the surve",
+        "created_at": "2023-12-20T10:53:18.507Z",
+        "updated_at": "2023-12-21T07:00:49.754Z",
+        "deleted_at": "2023-12-21T07:00:49.754Z",
+        "submission_id": null,
+        "nps_submission_id": null,
+        "priority": {
+            "id": 100000001,
+            "value": "High"
+        },
+        "status": {
+            "id": 100000004,
+            "value": "Open"
+        },
+        "source": {
+            "id": 100000006,
+            "value": "Call"
+        },
+        "agent": {
+            "id": 100000003,
+            "name": "Gabriel",
+            "email": "gabriel@surveysparrow.com"
+        },
+        "requester": {
+            "id": 100000003,
+            "name": "Gabriel",
+            "email": "gabriel@surveysparrow.com",
+            "phone": "9123456789",
+            "mobile": "123456789"
+        },
+        "custom_fields": {
+            "Text_field": "Random text"
+        },
+        "resolution_due": "2023-12-25T11:46:18.507Z",
+        "first_response_due": "2023-12-18T11:46:18.507Z"
+    },
+    "account_id": 1000001115
+}
+    </code>
+  </pre>
+          </details>
+          <h5
+            id="onticketcommentcreateevent-is-triggered-when-a-comment-is-made-on-a-ticket-in-surveysparrow"
+          >
+            <a
+              href="#onticketcommentcreateevent-is-triggered-when-a-comment-is-made-on-a-ticket-in-surveysparrow"
+              class="anchor-heading"
+              aria-labelledby="onticketcommentcreateevent-is-triggered-when-a-comment-is-made-on-a-ticket-in-surveysparrow"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnTicketCommentCreate(Event is triggered when a comment is made on a
+            ticket in surveysparrow)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onTicketCommentCreate",
+    "ruleEvent": "TICKET_COMMENT_CREATED",
+    "objectType": "TICKET_COMMENT",
+    "objectId": 122,
+    "data": {
+        "body": "Will be resolved by a specific team of SurveySparrow",
+        "id": 122,
+        "ticket_id": 111,
+        "type": "INTERNAL_NOTE/REPLY",
+        "responder_type": "AGENT/REQUESTER",
+        "agent": {
+            "id": 333,
+            "name": "Eldridge",
+            "email": "eldridge777l@surveysparrow.com"
+        },
+        "created_at": "2023-12-20T10:53:18.507Z"
+    },
+    "account_id": 1000001115
+}
+    </code>
+  </pre>
+          </details>
+          <h5
+            id="onwidgetcreateevent-is-triggered-when-a-new-widget-is-created"
+          >
+            <a
+              href="#onwidgetcreateevent-is-triggered-when-a-new-widget-is-created"
+              class="anchor-heading"
+              aria-labelledby="onwidgetcreateevent-is-triggered-when-a-new-widget-is-created"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnWidgetCreate(Event is triggered when a new widget is created)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onWidgetCreate",
+    "ruleEvent": "WIDGET_CREATE",
+    "objectType": "DASHBOARD_WIDGET",
+    "data": {
+      "id": 1000001459,
+      "name": "demo",
+      "properties": {
+        "date": {
+          "date_range": {
+            "end_date": null,
+            "start_date": null,
+            "display_string": "All Time"
+          },
+          "date_aggregation": "MONTHLY"
+        },
+        "meta": {},
+        "filters": {
+          "filter_groups": [],
+          "global_connector": "AND"
+        },
+        "metrics": [
+          {
+            "aggregation": "COUNT",
+            "resource_meta": {
+              "metric_id": 1000001494,
+              "metric_type": "OpinionScale",
+              "metric_label": "some op qsttn",
+              "metric_properties": {
+                "data": {
+                  "max": "builder.opinion_scale.max",
+                  "mid": "builder.opinion_scale.mid",
+                  "min": "builder.opinion_scale.min",
+                  "step": 10,
+                  "start": 0,
+                  "reversed_order": false,
+                  "not_applicable_tooltip_text": "Not Applicable"
+                }
+              }
+            },
+            "resource_type": "QUESTION",
+            "data_source_id": 1000000375,
+            "data_source_type": "survey",
+            "data_survey_type": "ClassicForm"
+          }
+        ],
+        "sources": [
+          {
+            "resource_id": 1000000375,
+            "survey_type": "ClassicForm",
+            "resource_type": "cognivue test 1"
+          }
+        ],
+        "chart_type": {
+          "type": "VERTICAL_BAR_CHART"
+        },
+        "color_theme": {
+          "mono_color": null,
+          "infographic_color": "#51D3D9"
+        },
+        "dimensions": [
+          {
+            "choices": {},
+            "resource_meta": {
+              "dimension_id": "submissionTime",
+              "dimension_type": "SUBMISSION_TIME",
+              "dimension_label": "Submission Time"
+            },
+            "resource_type": "CUSTOM",
+            "data_source_id": 1000000375,
+            "sub_dimensions": [],
+            "data_source_type": "survey"
+          }
+        ]
+      },
+      "account_id": 1000000053,
+      "dashboard_id": 1000000009
+    },
+    "account_id": 1000000053
+  }
+    </code>
+  </pre>
+          </details>
+          <h5 id="onwidgetupdateevent-is-triggered-when-a-widget-is-updated">
+            <a
+              href="#onwidgetupdateevent-is-triggered-when-a-widget-is-updated"
+              class="anchor-heading"
+              aria-labelledby="onwidgetupdateevent-is-triggered-when-a-widget-is-updated"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnWidgetUpdate(Event is triggered when a widget is updated)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+   {
+    "eventType": "onWidgetUpdate",
+    "ruleEvent": "WIDGET_UPDATE",
+    "objectType": "DASHBOARD_WIDGET",
+    "data": {
+      "current_data": {
+        "id": 1000001458,
+        "name": "bar charrt 2",
+        "properties": {
+          "date": {
+            "date_range": {
+              "end_date": null,
+              "start_date": null,
+              "display_string": "All Time"
+            },
+            "date_aggregation": "MONTHLY"
+          },
+          "meta": {},
+          "filters": {
+            "filter_groups": [],
+            "global_connector": "AND"
+          },
+          "metrics": [
+            {
+              "aggregation": "COUNT",
+              "resource_meta": {
+                "metric_id": 1000001489,
+                "metric_type": "NPSScore",
+                "metric_label": "How likely are you to recommend caseactivitylogs2 to a friend or colleague?",
+                "metric_properties": {
+                  "data": {
+                    "labels": {
+                      "left": "builder.opinion_scale.min",
+                      "right": "builder.opinion_scale.max"
+                    },
+                    "appearance": {
+                      "filled": true,
+                      "button_shape": "Square"
+                    },
+                    "start_with_one": false,
+                    "segment_colors": {
+                      "passives": "FFDB78",
+                      "promoters": "8DCD71",
+                      "detractors": "FC9B9C"
+                    },
+                    "tinted_options": false,
+                    "include_feedback": true,
+                    "segmented_options": false
+                  }
+                }
+              },
+              "resource_type": "QUESTION",
+              "data_source_id": 1000000372,
+              "data_source_type": "survey",
+              "data_survey_type": "NPS"
+            }
+          ],
+          "sources": [
+            {
+              "resource_id": 1000000372,
+              "survey_type": "NPS",
+              "resource_type": "Feedback NPS"
+            }
+          ],
+          "chart_type": {
+            "type": "VERTICAL_BAR_CHART"
+          },
+          "color_theme": {
+            "mono_color": null,
+            "infographic_color": "#51D3D9"
+          },
+          "dimensions": [
+            {
+              "choices": {},
+              "resource_meta": {
+                "dimension_id": "submissionTime",
+                "dimension_type": "SUBMISSION_TIME",
+                "dimension_label": "Submission Time"
+              },
+              "resource_type": "CUSTOM",
+              "data_source_id": 1000000372,
+              "sub_dimensions": [],
+              "data_source_type": "survey"
+            }
+          ]
+        },
+        "account_id": 1000000053,
+        "dashboard_id": 1000000009
+      },
+      "previous_data": {
+        "id": 1000001458,
+        "name": "bar charrt",
+        "properties": {
+          "date": {
+            "date_range": {
+              "end_date": null,
+              "start_date": null,
+              "display_string": "All Time"
+            },
+            "date_aggregation": "MONTHLY"
+          },
+          "meta": {},
+          "filters": {
+            "filter_groups": [],
+            "global_connector": "AND"
+          },
+          "metrics": [
+            {
+              "aggregation": "COUNT",
+              "resource_meta": {
+                "metric_id": 1000001489,
+                "metric_type": "NPSScore",
+                "metric_label": "How likely are you to recommend caseactivitylogs2 to a friend or colleague?",
+                "metric_properties": {
+                  "data": {
+                    "labels": {
+                      "left": "builder.opinion_scale.min",
+                      "right": "builder.opinion_scale.max"
+                    },
+                    "appearance": {
+                      "filled": true,
+                      "button_shape": "Square"
+                    },
+                    "start_with_one": false,
+                    "segment_colors": {
+                      "passives": "FFDB78",
+                      "promoters": "8DCD71",
+                      "detractors": "FC9B9C"
+                    },
+                    "tinted_options": false,
+                    "include_feedback": true,
+                    "segmented_options": false
+                  }
+                }
+              },
+              "resource_type": "QUESTION",
+              "data_source_id": 1000000372,
+              "data_source_type": "survey",
+              "data_survey_type": "NPS"
+            }
+          ],
+          "sources": [
+            {
+              "resource_id": 1000000372,
+              "survey_type": "NPS",
+              "resource_type": "Feedback NPS"
+            }
+          ],
+          "chart_type": {
+            "type": "VERTICAL_BAR_CHART"
+          },
+          "color_theme": {
+            "mono_color": null,
+            "infographic_color": "#51D3D9"
+          },
+          "dimensions": [
+            {
+              "choices": {},
+              "resource_meta": {
+                "dimension_id": "submissionTime",
+                "dimension_type": "SUBMISSION_TIME",
+                "dimension_label": "Submission Time"
+              },
+              "resource_type": "CUSTOM",
+              "data_source_id": 1000000372,
+              "sub_dimensions": [],
+              "data_source_type": "survey"
+            }
+          ]
+        },
+        "account_id": 1000000053,
+        "dashboard_id": 1000000009
+      }
+    },
+    "account_id": 1000000053
+  }
+    </code>
+  </pre>
+          </details>
+          <h5 id="onwidgetdeleteevent-is-triggered-when-a-widget-is-deleted">
+            <a
+              href="#onwidgetdeleteevent-is-triggered-when-a-widget-is-deleted"
+              class="anchor-heading"
+              aria-labelledby="onwidgetdeleteevent-is-triggered-when-a-widget-is-deleted"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnWidgetDelete(Event is triggered when a widget is deleted)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+    "eventType": "onWidgetDelete",
+    "ruleEvent": "WIDGET_DELETE",
+    "objectType": "DASHBOARD_WIDGET",
+    "data": {
+      "id": 1000001459,
+      "account_id": 1000000053,
+      "dashboard_id": 1000000009
+    },
+    "account_id": 1000000053
+  }
+    </code>
+  </pre>
+          </details>
+          <h5
+            id="ondashboardcreateevent-is-triggered-when-a-new-dashboard-is-created"
+          >
+            <a
+              href="#ondashboardcreateevent-is-triggered-when-a-new-dashboard-is-created"
+              class="anchor-heading"
+              aria-labelledby="ondashboardcreateevent-is-triggered-when-a-new-dashboard-is-created"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnDashboardCreate(Event is triggered when a new dashboard is
+            created)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+  "eventType": "onDashboardCreate",
+  "ruleEvent": "DASHBOARD_CREATE",
+  "objectType": "DASHBOARD",
+  "data": {
+    "id": 1000000170,
+    "name": "ddd445",
+    "description": "",
+    "account_id": 1000000053,
+    "visibility": "MINE",
+    "properties": { "base_color": "#CDFBF2", "dashboard_icon": 5 }
+  },
+  "account_id": 1000000053
+}
+    </code>
+  </pre>
+          </details>
+          <h5
+            id="ondashboardupdateevent-is-triggered-when-a-dashboard-is-updated"
+          >
+            <a
+              href="#ondashboardupdateevent-is-triggered-when-a-dashboard-is-updated"
+              class="anchor-heading"
+              aria-labelledby="ondashboardupdateevent-is-triggered-when-a-dashboard-is-updated"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnDashboardUpdate(Event is triggered when a dashboard is updated)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+  "eventType": "onDashboardUpdate",
+  "ruleEvent": "DASHBOARD_UPDATE",
+  "objectType": "DASHBOARD",
+  "data": {
+    "current_data": {
+      "id": 1000000170,
+      "name": "ddd445567",
+      "description": "",
+      "account_id": 1000000053,
+      "visibility": "SHARED",
+      "properties": { "base_color": "#CDFBF2", "dashboard_icon": 5 }
+    },
+    "previous_data": {
+      "id": 1000000170,
+      "name": "ddd445",
+      "description": "",
+      "account_id": 1000000053,
+      "visibility": "MINE",
+      "properties": { "base_color": "#CDFBF2", "dashboard_icon": 5 }
+    }
+  },
+  "account_id": 1000000053
+}
+    </code>
+  </pre>
+          </details>
+          <h5
+            id="ondashboarddeleteevent-is-triggered-when-a-dasboard-is-deleted"
+          >
+            <a
+              href="#ondashboarddeleteevent-is-triggered-when-a-dasboard-is-deleted"
+              class="anchor-heading"
+              aria-labelledby="ondashboarddeleteevent-is-triggered-when-a-dasboard-is-deleted"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnDashboardDelete(Event is triggered when a dasboard is deleted)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+  "eventType": "onDashboardDelete",
+  "ruleEvent": "DASHBOARD_DELETE",
+  "objectType": "DASHBOARD",
+  "data": { "id": 1000000170, "account_id": 1000000053 },
+  "account_id": 1000000053
+}
+    </code>
+  </pre>
+          </details>
+          <h5
+            id="onexternaleventevent-is-triggered-when-a-third-party-sends-data-to-the-incoming-webhook"
+          >
+            <a
+              href="#onexternaleventevent-is-triggered-when-a-third-party-sends-data-to-the-incoming-webhook"
+              class="anchor-heading"
+              aria-labelledby="onexternaleventevent-is-triggered-when-a-third-party-sends-data-to-the-incoming-webhook"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            OnExternalEvent(Event is triggered when a third-party sends data to
+            the incoming webhook)
+          </h5>
+          <details>
+            <summary>Click to expand</summary>
+            <pre>
+    <code>
+    {
+        "data": {
+            "accountId": 2,
+            "headers": {
+                "x-forwarded-for": "107.23.202.147",
+                "x-forwarded-proto": "https",
+                "x-forwarded-port": "443",
+                "host": "marketplace.servicesparrow.app",
+                "x-amzn-trace-id": "Root=1-65cb0d1c-05618b34238835eb0a23294e",
+                "content-length": "221",
+                "accept": "application/json",
+                "accept-charset": "utf-8",
+                "accept-encoding": "gzip, deflate",
+                "user-agent": "IFTTT-Protocol/v1",
+                "authorization": "Bearer pudtlUifqXOD66NYm0VVAmTTL8csRJG--fCiMGZrCOia2lGpw0cr3JQL7C9ghtpoNjzkaAP30YTKLBsK76U9t7Mw",
+                "x-ifttt-realtime": "0",
+                "x-request-id": "a58bc84e04654229b248dd97829b0d02",
+                "content-type": "application/json",
+                "x-datadog-trace-id": "4433809555521032027",
+                "x-datadog-parent-id": "1666971791582876090",
+                "x-datadog-sampling-priority": "0",
+                "x-datadog-tags": "_dd.p.tid=65cb0d1c00000000",
+                "traceparent": "00-65cb0d1c000000003d880e4ca6904f5b-172246032fe4d1ba-00",
+                "tracestate": "dd=s:0",
+                "sentry-trace": "884c1a7bb28b46daa394facf0ee24dc7-2e9cc74b25614d24",
+                "baggage": "sentry-trace_id=884c1a7bb28b46daa394facf0ee24dc7,sentry-environment=production,sentry-release=ifttt_front_end%40production-v6189,sentry-public_key=f2dd1d54d35a4355ac4becccc9033596"
+            },
+            "data": {
+                "triggerFields": {
+                    "chosenSurvey": "1000010864"
+                },
+                "trigger_identity": "7eb6977c519b2a40c0df2083c36c720c73dd2f0d",
+                "ifttt_source": {
+                    "id": "136127942",
+                    "url": "https://ifttt.com/applets/ZwWuyMJE"
+                },
+                "user": {
+                    "timezone": "Asia/Kolkata"
+                }
+            },
+            "requestUrl": "/NjoyOjEmaGFzaD1ObzNCdzQ2UmZSVGVydWw/ifttt/v1/triggers/submission",
+            "eventType": "onExternalEvent"
+        },
+        "iparams": null
+    }
+    </code>
+  </pre>
+          </details>
+          <h2 id="key-considerations">
+            <a
+              href="#key-considerations"
+              class="anchor-heading"
+              aria-labelledby="key-considerations"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            Key Considerations
+          </h2>
+          <ol>
+            <li>
+              <p>
+                To integrate serverless functionalities on a react application
+                created using SSDK CLI, just add a folder named
+                <strong>server</strong> in the root directory and add the file
+                <strong>server.js</strong> inside it. In the server.js file, add
+                the necessary code as mentioned above such as the event
+                configurations and the handlers.
+              </p>
+            </li>
+            <li>
+              <p>
+                When you want to import and use any NPM packages within the
+                server folder, please add the NPM packages as dependencies in
+                the manifest.json.
+              </p>
+              <div class="language-bash highlighter-rouge">
+                <div class="highlight">
+                  <pre class="highlight"><code> <span class="o">{</span>
+   <span class="s2">"platform-version"</span>: <span class="s2">"1.0"</span>,
+   <span class="s2">"product"</span>: <span class="o">{</span>
+     <span class="s2">"surveysparrow"</span>: <span class="o">{</span>
+       <span class="s2">"location"</span>: <span class="o">{</span>
+         <span class="s2">"full_page_app"</span>: <span class="o">{</span>
+           <span class="s2">"url"</span>: <span class="s2">"index.html"</span>,
+           <span class="s2">"icon"</span>: <span class="s2">"icon.svg"</span>
+         <span class="o">}</span>
+       <span class="o">}</span>
+     <span class="o">}</span>
+   <span class="o">}</span>,
+   <span class="s2">"whitelisted-domains"</span>: <span class="o">[]</span>,
+   <span class="s2">"engines"</span>: <span class="o">{</span>
+     <span class="s2">"node"</span>: <span class="s2">"18.19.0"</span>,
+     <span class="s2">"ssdk"</span>: <span class="s2">"0.1.10"</span>
+   <span class="o">}</span>,
+
+   <span class="s2">"dependencies"</span>:<span class="o">{</span>
+     <span class="s2">"date"</span>:<span class="s2">"2.0.4"</span>
+   <span class="o">}</span>
+ <span class="o">}</span>
+</code></pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>
+                When importing local files or modules in any of the files within
+                the server, the require() function returns a promise, so you
+                need to await the require() call and then use the module. This
+                is not a issue when importing NPM packages. Below is an example.
+              </p>
+            </li>
+          </ol>
+          <p>
+            In the <strong>db_schema.js</strong> file present in the
+            <strong>server</strong> folder,
+          </p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code>  const db_schema <span class="o">=</span> <span class="o">{</span>
+    <span class="nb">id</span>:<span class="o">{</span>
+        <span class="nb">type</span>: <span class="s2">"string"</span>,
+        required: <span class="nb">true</span>,
+    <span class="o">}</span>,
+    
+    survey_id:<span class="o">{</span>
+        <span class="nb">type</span>: <span class="s2">"string"</span>,
+        required:true,
+    <span class="o">}</span>      
+  <span class="o">}</span>
+
+  exports <span class="o">=</span> <span class="o">{</span>
+    db_schema
+  <span class="o">}</span>
+</code></pre>
+            </div>
+          </div>
+          <p>In the <strong>server.js</strong> file,</p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code>  const db_schema <span class="o">=</span> require<span class="o">(</span><span class="s2">"./db_schema"</span><span class="o">)</span>
+
+  async <span class="k">function </span>handler<span class="o">(){</span>
+      const db_schema_obj <span class="o">=</span> await db_schema<span class="p">;</span>
+  <span class="o">}</span>
+</code></pre>
+            </div>
+          </div>
+          <p><br /></p>
+          <p>
+            <strong>Note:</strong> When exporting data from a file within the
+            <strong>server</strong> folder, ensure that you are using the
+            <strong>exports</strong> keyword. Below is the syntax on exporting
+            data inside the server folder.
+          </p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>  // an Object
+  const sample_obj <span class="o">=</span> <span class="o">{</span>
+    message: <span class="s2">"sample text"</span>
+  <span class="o">}</span>
+
+  // a Function
+  const sample_function <span class="o">=</span> async <span class="o">()=&gt;{</span>
+    <span class="k">return</span> <span class="o">{</span>
+      <span class="s2">"data"</span>:<span class="s2">"sample data"</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  // exporting the sample object and the sample Function
+  exports <span class="o">=</span> <span class="o">{</span>
+    sample_obj,
+    sample_function
+  <span class="o">}</span>
+</code></pre>
+            </div>
+          </div>
+          <h2 id="server-method-invocation">
+            <a
+              href="#server-method-invocation"
+              class="anchor-heading"
+              aria-labelledby="server-method-invocation"
+              ><svg viewBox="0 0 16 16" aria-hidden="true">
+                <use xlink:href="#svg-link"></use></svg
+            ></a>
+            Server Method Invocation:
+          </h2>
+          <p>
+            The Server Method Invocation (SMI) feature enables you to build an
+            app with a front-end component that can invoke a serverless
+            component. To do this:
+          </p>
+          <ol>
+            <li>
+              <p>
+                In the manifest.json &gt; functions object, specify all the
+                server methods that are called from the front-end component of
+                the app, to allowlist the methods.
+              </p>
+            </li>
+            <li>
+              <p>
+                In the front-end component (app.js), specify the method to
+                invoke the serverless component and pass an appropriate payload
+                to the serverless component. By default, the serverless
+                environment adds the installation parameters set during app
+                installation to the payload.
+              </p>
+            </li>
+            <li>
+              <p>
+                In the serverless component (server.js), define the server
+                method (SMI function) that is allow-listed in the app manifest
+                and called from the front-end component. In this server method,
+                include the app logic that runs based on the payload passed and
+                the method will return success and failure responses to the
+                front-end component.
+              </p>
+            </li>
+          </ol>
+          <p>
+            The SMI functions should be mentioned under the productName in
+            manifest.json like:
+          </p>
+          <div class="language-json highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code><span class="nl">"functions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"serverMethod1"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"timeout"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"serverMethod2"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"timeout"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+</span></code></pre>
+            </div>
+          </div>
+          <p>Sample:</p>
+          <div class="language-json highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code><span class="nl">"functions"</span><span class="p">:{</span><span class="w">
+</span><span class="nl">"surveyConverter"</span><span class="p">:{</span><span class="w">       
+    </span><span class="nl">"timeout"</span><span class="p">:</span><span class="mi">10</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+            </div>
+          </div>
+          <p>
+            The server method can be invoked from the frontend using the client
+            object like:
+          </p>
+          <p>
+            <code class="language-plaintext highlighter-rouge"
+              >client.request.invoke(functionName, data);</code
+            >
+          </p>
+          <p>Sample:</p>
+          <p><strong>in app.js</strong></p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code>const result <span class="o">=</span> await window.client.request.invoke<span class="o">(</span>“surveyConverter”, <span class="o">{</span>data:”sample_data”<span class="o">})</span><span class="p">;</span>
+</code></pre>
+            </div>
+          </div>
+          <p><strong>server.js</strong></p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code>exports <span class="o">=</span> <span class="o">{</span>
+  surveyConverter: async <span class="k">function</span><span class="o">(</span>options<span class="o">)</span> <span class="o">{</span>
+    console.log<span class="o">(</span>options<span class="o">)</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">{</span>
+      <span class="s2">"data"</span>:<span class="s2">"demo"</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+            </div>
+          </div>
+          <p>
+            The Server method will recieve the data along with the iparams of
+            the app user like:
+          </p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code><span class="o">{</span>
+  <span class="s2">"iparams"</span>:<span class="o">{</span>
+    api_Key: <span class="s2">"dafsfdfaasdsd"</span>
+  <span class="o">}</span>,
+  <span class="s2">"data"</span>:<span class="o">{</span>
+    data:”sample_data”
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+            </div>
+          </div>
+          <p>
+            After the app logic in the server method runs, the server method
+            sends an appropriate response to the front-end component. To enable
+            this:
+          </p>
+          <ul>
+            <li>
+              Navigate to the
+              <code class="language-plaintext highlighter-rouge"
+                >server.js</code
+              >
+              file. In the exports code block, define the server method (SMI
+              function) that is called from the front-end component. Place the
+              app logic inside the server method.
+            </li>
+          </ul>
+          <p>
+            The frontend component will get the value retired from this smi
+            function and this value is stringified. The actual JSON can be taken
+            from the retired value by
+            <code class="language-plaintext highlighter-rouge"
+              >JSON.parse(returned_value)</code
+            >
+            in the frontend Component.
+          </p>
+        </div>
+      </div>
+      <div class="search-overlay"></div>
+    </div>
+  </body>
+</html>

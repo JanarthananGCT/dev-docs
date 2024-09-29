@@ -1,0 +1,188 @@
+---
+id: get-v-1-csat-survey-id-responses-dissatisfied
+title: "List Dissatisfied"
+description: "List Dissatisfied"
+sidebar_label: "List Dissatisfied"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VF1r20AQ/Cthn9pwjcirKAXThhLSh5C0hRJE2Uhr64g+Lrd7blSh/17W+rCVKsUt1A+2ZM3M7c7OqoXakUexdXWZQQwbkq/n7xnlNvgtNd9tdkPs6oqJP1hmFMtrSxkYcOixJCHPEN+1UGFJEAOPNDBgK4jBoeRgwNNjsJ4yiMUHMsBpTiVC3II0TolVKO/JQ9eZSStDobON0Cj1GMg3M601FrwkxuJttQED69qXKIPW7+LFfxIv8emGOBTCfy+/YITDzT/UOQklBgQ3OiZIGQUSZQ9DVXxGawyF9Jeceus0DhDDbUhTYl6HAgykdSVU7VCn0an+vORMpx8DTGnwVppdPFbXl9+vLr5BfJdoPfNzPlmWk2fxKknyekjkLm2SQwzR9jzSHqJ2CloXTc1E2VyDyW/HfAZfQAy5iOM4itDZs16BHXpf/zhL6xLU8jmOwptjoeiOhpb0EjTZ23ar7vYDmsybnEZnr0hjMCRkFSSvvf25W+QxKjlh1icJbLWula529J6DAbFSKBk6A65mKbFSzCC5NJTZ2KZihJ4kcgXaSpV2rbbDwO5ge67Z0dgZiA/fDvsIGpjNLTGQ1yxKbtt7ZPrii67Tv/vs6zQzy3hfHKT/gZr5G2OLRRia+zO8OBo+2+pjCMPe7qGJ3nir2OU2nhk87Ry8uhn2/fWJTm7J+DEaVXN45ljL3vou6cyYDS2if75KU3JywNQl14KnRfx48RkMYNC5HgbxYRfE4UIFFwt5ntD+VP1WAxcpb1fXlydX1Lyb4P2TFwlDUyNabUm6rvsF+9RU/g==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List Dissatisfied"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/csat/{survey_id}/responses/dissatisfied"}
+>
+  
+</MethodEndpoint>
+
+
+
+List Dissatisfied
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"survey_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"date.gte","in":"query","required":false,"schema":{"type":"string","format":"date"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"date.lte","in":"query","required":false,"schema":{"type":"string","format":"date"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"maxResults","in":"query","required":false,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"page","in":"query","required":false,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

@@ -1,0 +1,214 @@
+---
+id: post-v-1-survey-survey-id-channels-channel-id-contacts-surveylink
+title: "Unique survey link for each contact"
+description: "Unique survey link for each contact"
+sidebar_label: "Unique survey link for each contact"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VV1v00oQ/SvRPF3QFrev1tWVAuQhKoiKAtJVsNDEntRL7d3tfqQNlv87Gu/aSWiKKh7Ig7PZnJnZOXPOugNtyKKXWi0ryMFo579cXAe7pV18fpPVmxqVosalb97RymPpXYQ0Ut2CAIMWW/JkHeSrDhS2BDm4MQsIkIpLoK9BgKW7IC1VkHsbSIAra2oR8g78znCgCu2aLPS9mHKV0wH+OFkRweT8a13tGFFq5Ul5XqIxjSwHNrLvTivee5RKr79T6blfy9x5SW5Mg6VfVu4Ai9biDgS0+LD01DrIL87PBci4PtHqmOaddE+k+l1spOfT8McEcN5KdQMCKtpgaDzksHg/X74DAaRCC/lq+r14/3rxFgoBD2elVluyAyvBGLIlOors9vEjwOMNTxpcjZZgINYZrVzkY6rGS1daaZhWyOE6lCU5twkNiEPyX2YvT/Kdzp+KOiqDlX43SGx+tfx2ufgf8lXBgz2u81nJu0CzqL8Za3S20XZGWNazxDJPhnytR+UPIvY15JBtL7IYmXWTgvssMeyybi/FPkvZXIo4S35wZLejGYJtIIfae+PyLEMjX0WsM2itvn9V6hZY6Mc4CmfPhaJ5NrSlp6DFnt9rHkOc5MTyXotGXhKLMflyHnytrfwxOGe0Zk1YJWGylz7uXbd4wNY09KtrVufFY/3HzUNhJ7X2XGajOQmzHGcOArz0nBoYwDNtcbBxOunzRHEkpKlrTw8+Mw1KxbkHTruklxVsL3jiQ1oQkB/eeqNoeP/oBht1M0VG5RQCahZjvoKuW6Ojz7bpe96+C2RZ+YWALVqJa+501UElHa8ryDfYOHrUwOQy+OdjuilfzJirU42NM1bcyBabQJHYW9odXecsrL9Y+IC5vujFKC9uPwLexFpng0r2CR7d6XzuGDEvSzL+AMtXEJtguhSuPlx/AgHr9KpodcUwi/f8zsF7yOErfOUz6qHlwS7DfgcNqpuAN4yPZdkIGFgthz66HfSSFtzMSRZ+NVg8Pz+5m5Mh/86vlrNL2v03weM/TwYkQkc0z6To+/4nUA/ICQ==
+sidebar_class_name: "post api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Unique survey link for each contact"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/survey/{survey_id}/channels/{channel_id}/contacts/survey-link"}
+>
+  
+</MethodEndpoint>
+
+
+
+Unique survey link for each contact
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"survey_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"channel_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"contactIds"}
+          required={false}
+          schemaName={"number[]"}
+          qualifierMessage={"**Possible values:** `<= 100`"}
+          schema={{"type":"array","maxItems":100,"items":{"type":"number"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"contactListIds"}
+          required={false}
+          schemaName={"number[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"number"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"channelType"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`EMAIL`, `EMBED`]"}
+          schema={{"type":"string","default":"EMAIL","enum":["EMAIL","EMBED"],"x-convert":{"uppercase":true}}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

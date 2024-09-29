@@ -1,0 +1,176 @@
+---
+id: post-v-1-contactlist
+title: "Create contact list"
+description: "Create contact list"
+sidebar_label: "Create contact list"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVE1P3DAQ/StojigQcY2qSlvEAXEoKrRStURo1hk2hsQ29nghjfLfq4mzu2G1SFwia+Z5Pt57Tg/WkUfW1lxXUICzgf9cXFrDqLjRgSEDT6+RAv+wVQdFD8oaJsNyROcarcbb+XOwRmJB1dSinLhzBAXY1TMpqeO89GJNQbIGW5qhAntt1jBkUFFQXjspeiQ/pHm0pwqKZapSDoPEGddBYipN/ziOXwo+OGtCalvRE8aG03HWCO6iUhTCU2wgm+94mp8eXWs30Ng7kIpecwfFsofF7fXjzdVfKJblUB4sBJeekOlkGvJk4rglru1WAOEKuYYC8s1Frj6IEchvyIexT/QNFFAzu1DkOTp9HqLfUBccem/fzpVtYcgOcRTPvgpF92VoS59Byz07d0Ji0mHH0Y5QdPqGOsgmZ8Aicm29/jfaCzLQwl5NWJEfbSCG+7W35tU7tq6hvbW2Ch0KsHeaNk9W8EJoykEGrFmqgABEjBbNrOZx9Y5blumdc9egNlJrpKufhF3C5mKy2VbaMoNatC+W0PcrDPTbN8Mg4ddIXoxVZrBBr3El8y3LIduyIV54oU7GS749u5cJBN7ERO3BOxX90o2FUuR4hhW/i2Y7R97+vLuHDFbT829tJTCPb/JrwDco4AEehDk7EjCqO8Z7aNCsI64Fn9qKbhiFgbnsL6Ps00GW2aZMNxvs0A9pfvnKNkevfFvcXp/cUPd9B0+ZTy9MhG7Ropz8XP4DDxXCeA==
+sidebar_class_name: "post api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create contact list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/contactlist"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create contact list
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"description"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

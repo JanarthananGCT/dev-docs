@@ -1,0 +1,218 @@
+---
+id: post-v-1-kiosk-deviceid-submissions
+title: "Create Kiosk Submissions"
+description: "Create Kiosk Submissions"
+sidebar_label: "Create Kiosk Submissions"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVMtO20AU/RV0l2jAzaKbUVUppSyiLIoIrVQZC03sSzzE82AeCa7lf6+uH4mJoMULazxz7uuc42nAWHQiSKMXBXCwxodfs6U0fvsddzJHWaziWknvpdEeGDh8jujDN1PUwBvIjQ6oAy2FtZXMu1TJkzea9nxeohK0CrVF4GDWT5gHYGAdFQ4SPZ0WXa0HWUygPjipN9AyENrv0fnJmXBO1MBABlT+/+lvRaBUR5yOao0OGCippYoK+IyBEi/9+nM7PgyC2HjgKWyJEsiIAG+N9mPfjyJWoV/63ElL4wOHVcxz9P4xVsCmJJ0n52/yMg7bF/WYRydDDTxtYH6zeFhe/waeZm3GTupcORQBzzrBzl4rpTCUZtSUKBGhBA7JbpZ0wyRNz/qiaBP/KtKj23V8pw1EVwGHMgTreZIIKy99dDusvRXOmf1lbhS07BSH8eKjUGE/DFX4HjQ7crYiant1DswdfWPlEsk4Wij6nsdQGif/dK4lPxGnJYoCHZAQ5OPbo+OvX4SyFZ44dhRvYtT06LlPbdZS4kdDYcRrrxwwCDJQMiCPk0hKdD/N0Ns/pH3lgcNwAV9CYishNSXsqGsG1VPYzYANJmbAR+VJ7EnmjEFJZuEpNM1aePzpqral7eeIjuyYMdgJJ8WaGk9psoEtGnmLNfXdu/3ijroieBV76k+uB9K3j5jnOdowwdJfQpoeLHzzY3UHDNbDraNMQTAn9nQjiT1wuId7otR0pHTqd/sNVEJvotgQvi9LuopIrExtse1sMSxomPFI15PGTv3S909vmubNkC/zm8XZEuuvB3h/8m7AQOiIJjWztm3/AgNh8Jc=
+sidebar_class_name: "post api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Kiosk Submissions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/kiosk/{deviceId}/submissions"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create Kiosk Submissions
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"device_id"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  answers
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"Rating"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={"**Possible values:** `>= 1` and `<= 5`"}
+                schema={{"type":"number","minimum":1,"maximum":5}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

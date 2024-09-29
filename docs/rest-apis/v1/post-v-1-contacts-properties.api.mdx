@@ -1,0 +1,194 @@
+---
+id: post-v-1-contacts-properties
+title: "Create contact property"
+description: "Create contact property"
+sidebar_label: "Create contact property"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVNtu2kAQ/ZVoHqtNCJXyYlWVSLAiKwQQl15ELLTYE9jE9m72QuIi/3s1tjEOIm1erPXOZWfOnDM7kAo1t0JmQQweKGnsj+6NzCyPrBlrslqBBhhofHFo7LWMc/B2EMnMYmbpyJVKRFQm6TwZmdGdiTaYcjrZXCF4IFdPGFlgoA5JG2vjZawW2RoYYOZS8BYwnN9f+xNg0B/Nrwc+MPDve8EAGEyD4e3AXw6Cob+c+b9mwOB+PpgF7276vRnFzCcU0Z+Mxv3RzyEFzybB8BbCgkHCV5icKiHlbwPM1nYD3terq4JBjCbSQlGf//HvXl5eFqzEiEd2WbecL9daOrUUcSs8c+kKNRRFhbDQGFPfpXVfXFgUZLd8bchWpzUQUoxRMjMVmDE+cpfY6tiqFaYuitCYR5cAa0/uS+fLyWHVPRXVuwYjp4XNwVvsoDcOlnf+b/AWYREeYQI3GrnFs7rAs33fBA7ajdwzjFjACSfobLudfTsd1aabQb1Fbco3nU7Ag421ynidDlfiwji9xdworrV8vYhkCgU79kN3/llXrj7tmuJHruEBqSkBWs2kwasBlytxh4RJxlP67zm7kVr8KQUEDAQhuUEe17QgSU0O4vPfeKqStmgajdRUPlDy/XSa63/wkmgrskdJ6Qn/KhIYWGHpUYCClTNMeSmCuoePB39aNBbfbEclXGSUr0R4V3NiAdvuoUbzfmOEDDZEIG8Bu92KG5zrpCjo+sWhJoaGDLZcC76iahck8BpKItIz5lRsJYDzWaWxLU9cNZejNUbDryJ6UYTKtnxJODTwhtbj0ZT2zarejqmMyU3zV9qc/BU8eIAHwlGWUJTUKO93kPBs7fia/KtnaejcERZtzjyXnKkP1MzelOWtwo7JVNVPX+rmZMi33jg4u8P8e+NeWT4MqAHde9MMaUP9BbNIIJw=
+sidebar_class_name: "post api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create contact property"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/contacts/properties"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create contact property
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"type"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`NUMBER`, `DOUBLE`, `EMAIL`, `SINGLE_LINE_TEXT`, `MULTI_LINE_TEXT`, `DATE`, `URL`, `DROPDOWN`, `STRING`]"}
+          schema={{"type":"string","enum":["NUMBER","DOUBLE","EMAIL","SINGLE_LINE_TEXT","MULTI_LINE_TEXT","DATE","URL","DROPDOWN","STRING"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"label"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** `<= 255 characters`"}
+          schema={{"type":"string","maxLength":255}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"description"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** `<= 1000 characters`"}
+          schema={{"type":"string","maxLength":1000}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"contact_property_group_id"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

@@ -1,0 +1,313 @@
+---
+id: get-v-1-contacts
+title: " Get Contacts"
+description: " Get Contacts"
+sidebar_label: " Get Contacts"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vm1v2zYQ/ivEfezUOk6atjOKYlmbFWnQIlizAoXrDSfpbDERSZWknHiG/vtwlKwXx0m9DMuH2Anvnnvu7uEd12AKsuil0WcpTGBB/sv4rdEeE+8gggItKvJkHUyma0jJJVYWbA4TeFs6b5S4NNekxYI0A1Eq5tYo4TMSJ0UBEWhUBBPA0mfGyr9DLIhAMkJGmJKFCCx9L6WlFCbelhSBSzJSCJM1+FXB7s5bqReBkfdk2Xn0K6ElK6Z/fvvmZj+NIIKU5ljmHibQnL0O5N5AVUXrDROFt7+TK/OQYKDxvSS7GrCYY+520dCligNhJbVUpYLJOGLA5vvBQY/D8UE/aoEL+g/xWtRxAB02Yi5zbpFgJ2HmIqkb2BU/oP3r4G3NSXN2Uyi1K2MOHFMKEWDi5ZJxY1PqhFKY7eDmCG2SiRpL3GQyycSNzHPRHGCeB7EUlpXoJTnOADc5iLmxAoVCn2QMsMS8pC6xGuTRqVXVLAKPC1Y3JBvZzxjBFUY7cuxzeHDAH8O8PpdJQs7Nyxyi4Eras9WT0RP+uBPRxFcUWtIlyqdt0M4SrUXOQnpS7scIMt2tlz7Zs3dcVC7zRhrVpoR3uz10/a3Mc/EJ1Zaw6BZVkbPfB9Qk3hliSFIo8x9jnrLZfXhXqCk19Isr7ZJWrkBrzc2zxCiI4Pbp3FiFodBNLJ4XVdWKsYsdG5MT6jvB5VyEGSOkTmWCnly/MLU2a7B8JSwlJJckQjCBOhVOOeEytOT6rAOLaHhBHkkF/YCPdKKPWk/Xmhbfh0BsQCVIvoqgyIzeo78XbCZq3WyLpN+Wn8eHR8+PX7x8dXTEnVYmlvke8B+D3R744xfHR8+PD1++CvBXJr6Ufp8AH0wsgulD4B9R44Isr4HecJjy3emNsUH3eJZBhu4T3foLnt272tlFCFW/g9/3n1X8E4GjpLTSr8JCPbk4++v89CtMpjMeRcPUxHvyoreMFfnMNFu63oQZr8HleJR0Ro7scrOuS5vzkvW+cJPRCAv57O6l4ok9tKPy6b6mWOxtqug+01lXk888Neux1lamm4uFPKdVN/tPHnhRcKGlnht253LUBYUIfK0qYJEVxnmFmm0ayO2KD/rREvF060dFjlIzSkhz3XRjCstxsw82qyQzzvPBeh2joz9sXlX873pXhUeVdBjnvW11TavtZ0q99gLtex2aF8bDplsZtYvrgTfEzqzrkM274pEh/6enwQN82+dCx3jGf1jJlMMtjDYS4tbUXidJQoXvefGOZ8f2Qr4/veRBUrIE+nq9DnptvjDg5kivenDbQq6j8m+u506X1ycXZ+KcVm9a8/rkXof2pV1bc1F4IP0DsF8XdQ==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={" Get Contacts"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/contacts"}
+>
+  
+</MethodEndpoint>
+
+
+
+ Get Contacts
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"maxResults","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":100,"default":50}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"page","in":"query","required":false,"schema":{"type":"number","default":1}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"filters type of contact","name":"type","in":"query","required":false,"schema":{"type":"string","enum":["unsubscribed","active","bounced"]}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"search string which will search all the properties of a contact for a matching value","name":"search","in":"query","required":false,"schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Custom Token generated from the App","name":"authorization","in":"header","required":true,"schema":{"type":"string","pattern":"/Bearer [^\\s]+/","default":"Bearer <Token>"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                contacts
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object[]
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                              >
+                                Array [
+                              </div>
+                            </li><SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={true}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"ID of the contact"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Full Name of contact","example":"Jane Doe"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"email"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Email of contact","example":"janedoe@surveysparrow.com","x-format":{"email":true}}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"active"}
+                              required={true}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean","description":"if true, indicates the contact will actively receive email and sms shares","example":true}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"unsubscribed"}
+                              required={true}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean","description":"if true, indicates that the contact is unsubscribed from receiving emails","example":false}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"phone"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Phone number of the contact","example":"91234567833"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"mobile"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Mobile number of the contact","example":"1653452783"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"jobTitle"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Job Title of the contact","example":"Manager"}}
+                            >
+                              
+                            </SchemaItem><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                              >
+                                ]
+                              </div>
+                            </li>
+                          </div>
+                        </details>
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"hasNextPage"}
+                        required={true}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean","example":"false"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"contacts\": [\n    {\n      \"id\": 0,\n      \"name\": \"Jane Doe\",\n      \"email\": \"janedoe@surveysparrow.com\",\n      \"active\": true,\n      \"unsubscribed\": false,\n      \"phone\": \"91234567833\",\n      \"mobile\": \"1653452783\",\n      \"jobTitle\": \"Manager\"\n    }\n  ],\n  \"hasNextPage\": \"false\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

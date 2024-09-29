@@ -1,0 +1,154 @@
+---
+id: get-v-1-targets
+title: "List targets"
+description: "List targets"
+sidebar_label: "List targets"
+hide_title: true
+hide_table_of_contents: true
+api: eJytU8tq20AU/ZVwl2Ea2YVuhlLwIhTjLkKTFooRZSxfS0M0j8zccaMK/Xu5kiw/WkMW1cIaS+fcxzlHLTiPQZF2drkFCSXS9/mTCiVSBAFeBWWQMESQ6xasMggSjHr9ijHVPURbkPCSMDQgIOBL0gG3IHeqjiggFhUaBbIFajxzbTIbDCDAaKtNMiDnggsO5/ezmYAt7lSqCeSHWdeJqatXJf6Xfl2XCyBV8k5A4645F4ve2YiR6dMQfIxF0J41AgmPqSgwxl2qQUDhLKHtUbfZLd/+GiBS0LaEji8BEYsUNDW9nIuH5c/V/Q+Q65xHOu/zRUe6ockJg1S50aHeGKpAQrafZ0dMxLA/WJVCDRIqIh9llimv72IKe2yiVyG4X3eFM8DinuMwvXsrVPk3Qw1eg+ZHRR5ZuEH7SZdJROX1CtnwMQuLRJUL+ncf3EMoKlRbDMAya7tzTGc5BjlBAGmqmQydAO8iGWUZM5a80PvMjGkOwlfKfK205SL9lu3oxRr2c25yzFPlIvHztt2oiN9C3XX8eMgue7TVUW3qk/Q+Y3P5ee1VncahrxLGL+MIzflP0IztwyUO2nDXgbMoCvR0wuL8MnEK2uf7JxCgEi93asRzb8R44IKHV7Y5KXfp0NCVf3mRf1I+Lh6WNytsPk3w4c1VwrjUAc2m5F3X/QE4QJ82
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List targets"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/targets"}
+>
+  
+</MethodEndpoint>
+
+
+
+List targets
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"maxResults","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":200,"default":50}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"page","in":"query","required":false,"schema":{"type":"number","minimum":1}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

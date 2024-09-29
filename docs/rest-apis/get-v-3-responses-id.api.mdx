@@ -1,0 +1,408 @@
+---
+id: get-v-3-responses-id
+title: "Get a response"
+description: "Get a response"
+sidebar_label: "Get a response"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVm1v4kYQ/ivWfGpPTiDhdFKtqidUoSvKtUov9KQ2QmixB7yNvbvZnSVxkf97NbYxdkxE7vgAxjvzzDPvuwdt0AqSWs0TiGCL9HXyBZ3RyqGbJxCCEVbkSGgdRPd7SNDFVhrWgAjmSaA3gW0UIAQlcoQIJGtKljCCUgjB4qOXFhOIyHoMwcUp5gKiPVBhWEP5fI0WyjLcH0CctzssVkesR4+2+E4wY9Gh3eFqo20u6HXIjcjcKcy11hkKBSEkuBE+o0a0LJchkNhyeKCNxDJsnx2DXI/H/NOP3p2PY3Ru4zMIIdaKUBFLvRu9458BBb3+F2OmbiynjWSNnQh6g5RMhgEKz6UTn0VuMoToqgw7+Xgj0F2l0IW5LmtHRUwncapjFiXsnjqyUm0HVu5IkHdsiVIMnF/n0jk+YphUKIXZN7BtNLp0J2UImVBbL7Z4ns7nRvJA6FQcAVXPyRXJ/CR0U6YRZxcHphYyx0BQ8JTKOG0NBcfYdU1ej6+vL8aTi/FkMf4QXf0Ujd9fvr/68A8TEco9Va3dMhDWCs6ZJMzd+bJ69OhqUkMfjhR+009BJh8wKwJhMSi0D0gHFmOd56iSQHsb3Fqd+Jj4YGMlqsR9ZIYHA6u6xwY8+4H5s5EOKumhFw23sgt8ukSeL0RGaJUgucN69r2s1QHqkrvkQRrTq97u5OiVnavK5MAjaDQ/diPXjJjyWNHnU1JPvHPV+ofI20p1qbD9Mp3lQmb1++CK01CDnQNdFAZf6SWY/T6df2YoV7Xtt7T3Kbjpr4v51xmUx08IDmNvJRVVtqa389XN7G+I7pc8ovvYn5AC0e3QHCnVzQqsth6lEMFoNxm1c3y0l0kJbMXuDuvQ2wwiSImMi0YjYeRlPSWdEdbqp8tY51Wh9OXQX7xVVJg3i+b4mujyGJo7Xip1nbQBOvaUkTfVwG6W5tRTqq38r7ogHFZmiiKplytItdGszuGo4wohkKQqQZxqox3lQh2rchj4Xl5aJoTPNDKZkNW4rPzcN0m5h90Euus1hEgmvHFT7YjP9/u1cPiXzcqSX9c7vrq8SCfWWWfLvzDe7mD44UtzIfgxgPA0qQcsXlxSdiLzjecnbNXyw3vIUWvJf6xkte+nO9jhJ8kfEq6KLoMDSZnUs6xJNXOpD6ZxjKZLmq8qzLttn0+zBYQgPGeqW1cPVV01D51h2mfwsuBqq/zdmbZ9lZ+nt/PgBotfWvH65FWFxqnWV8W+luX/y13BzA==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a response"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v3/responses/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a response
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of response","name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"survey_id","in":"query","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"preserve_format","in":"query","required":false,"schema":{"type":"boolean","default":false}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Id of response","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"survey_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Id of Survey","example":2}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"contact_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"completed"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Status of the submission"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"channel_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Id of channel","example":3}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"language"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Language of the response","example":"en"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"completed_time"}
+                              required={false}
+                              schemaName={"date"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date","description":"Time at which response completed","example":"2022-03-03T06:19:04.416Z"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      answers
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object[]
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                    >
+                                      Array [
+                                    </div>
+                                  </li><SchemaItem
+                                    collapsible={false}
+                                    name={"question"}
+                                    required={false}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","example":"How likely are you to recommend our Product to friends?"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"question_tags"}
+                                    required={false}
+                                    schemaName={"string[]"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"array","description":"Question tags","items":{"type":"string"}}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"question_id"}
+                                    required={false}
+                                    schemaName={"number"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"number","x-alternatives":[{"type":"number"},{"type":"string"}]}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"skipped"}
+                                    required={false}
+                                    schemaName={"boolean"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"boolean","description":"Is the question skipped?","example":false}}
+                                  >
+                                    
+                                  </SchemaItem><li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                    >
+                                      ]
+                                    </div>
+                                  </li>
+                                </div>
+                              </details>
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      channel
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <SchemaItem
+                                    collapsible={false}
+                                    name={"name"}
+                                    required={false}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Name of the share","example":"Email share 1"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"type"}
+                                    required={false}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Type of channel","example":"EMAIL"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"status"}
+                                    required={false}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Status of channel","example":"ACTIVE"}}
+                                  >
+                                    
+                                  </SchemaItem>
+                                </div>
+                              </details>
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": {\n    \"id\": 1,\n    \"survey_id\": 2,\n    \"contact_id\": 0,\n    \"completed\": \"string\",\n    \"channel_id\": 3,\n    \"language\": \"en\",\n    \"completed_time\": \"2022-03-03T06:19:04.416Z\",\n    \"answers\": [\n      {\n        \"question\": \"How likely are you to recommend our Product to friends?\",\n        \"question_tags\": [\n          \"string\"\n        ],\n        \"question_id\": 0,\n        \"skipped\": false\n      }\n    ],\n    \"channel\": {\n      \"name\": \"Email share 1\",\n      \"type\": \"EMAIL\",\n      \"status\": \"ACTIVE\"\n    }\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

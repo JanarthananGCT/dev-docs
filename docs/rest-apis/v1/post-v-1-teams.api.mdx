@@ -1,0 +1,185 @@
+---
+id: post-v-1-teams
+title: "Create team"
+description: "Create team"
+sidebar_label: "Create team"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVE1r4zAQ/StmjkWtt1exLGSXHEIOW5q0UBKzyPYkUWtLqj6Seo3/+zKyk7jZFnoxYvTm670nt6ANWuGlVrMSOBjt/OPtEkXtgIHF14DO/9RlA7yFQiuPytNRGFPJIualz04rirlih7Wgk28MAgedP2PhgYGx1MVLdHSrRI0jlPNWqi0weLsutNqjjQ28lTVwbwN2HRug/6eU6AorDY0BHGjshCAskZtEaZ8Yq/eyxDI5yKpKckzWsHi4f5w+rSHJm6TEjQiVj4X6Ex/ugQGqUANfnQPL2a/5dAlZxyA4tLPSjUYS1ooGGEiP9TiuQp2jhY62IDqlxZKqRhKyLsa92DqK+Uh7RkBntHI9XafR2ot1F6Eo0LlNqICNtblKrz6UY2Ct65s6LIKVvgG+amFyN/sznz4BX2VddknrL4vCY0LTAYMa/U4frULaCr8DDun+NvWDbRzaPVoXKwdbAYed98bxNBVG3rhg99g4I6zVh5tC19CxSxyG669ChfkytMbPoNmZjwXR1jN/YuWsspFzJJl7D8Mk+J228m98CKQ+8bVDUUbJGdDTuD8/oumbqE2F50dwdvLQ4GS2k8NW38hwUm00pRGvvSqUIz0VA+hYVKMWalT6vWzvJD3t4/HNp6YSUlGNyFY7KLqC/S31OHpyR3LzFbRtLhw+2KrrKPwa0JKHMgZ7YaXIaaIVjTzQQCZ4wYYG6i16vaTeBK9Cz+nFr4SE6zMmRYHGj7BkbRLrZMK734slMMiHP1StS4JZcaC/lzgAhzWsiSsdV4+yxngLlVDbILaE79uSYCLQ7mO9X6Lew4GWOV6pZjTYpRH6+elL23yY8n1yN0vm2Pw4wfubTxMGQo9o0ox+IP8Auj7w5Q==
+sidebar_class_name: "post api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create team"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/teams"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create team
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","x-convert":{"trim":true}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"type"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`SURVEY`, `TICKET`]"}
+          schema={{"type":"string","description":"Team type, if not provided will be \"SURVEY\" by default","default":"SURVEY","enum":["SURVEY","TICKET"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"userIds"}
+          required={false}
+          schemaName={"number[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"number"}}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

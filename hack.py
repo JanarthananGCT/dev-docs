@@ -12,6 +12,8 @@ def get_version_from_url(url):
         return 'v3'
     if 'v1' in url:
         return 'v1'
+    if 'rest-apis' in url:
+        return 'v3'
     return ['v1', 'v2', 'v3']
 
 # Fetch all records from the index

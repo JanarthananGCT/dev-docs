@@ -1,0 +1,173 @@
+---
+id: delete-v-3-contacts-id
+title: "Delete a contact"
+description: "Delete a contact"
+sidebar_label: "Delete a contact"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVMFu2zAM/RWBp63T6kNvRlEga3MIukOxdgOG1BsUi6mF2pIqUdkyw/8+0HacpUu35pAYER/1+N6jW3AegyLj7EJDDhprJPxyduksqZLiQoMEr4JqkDBEyJctaIxlMJ4xkMNliuQacece0YoHtNwNtVgH1wiqUMy8BwlWNQg5qESVC+ZXfyFIMNyhQqUxgISAT8kE1JBTSCghlhU2CvIWaOsZHikY+9AzIsLA4OwDqoBBLL/d38fiXQYSNK5VqglyGM/Oe3IX0HXyOfvFlXDrnmc5TCzIiRWKQQe9Z270jq5XVL2GrE3NCgN0XSGB1ANrB+MlEQpuEL2zESNjJs7PCd6mssQY16kG2cPR9lUn2Qn/vCRRxx8JEcsUDG1732Y3i+/X86+QLwvmdHjPVT+wUDsdQEKDVLl9KAbZK9Z8c5btJslaozvgm8JmF5AUaraVyMc8y5Q3pzGFDW6jVyG4H6ela4CtOKzD9P61pcq/urTBl0qLvTy3rOJgxCTSpKjy5hq3+yTM/pFh1tzYtWM4yzFoCxLIUM1g6CR4F6lRlmvGlkfEP3Bn4kL4kzJfK2O5UT9pO7qyhM3ZGJE+YRJyozlnlYvEx227UhE/h7rr+O+nhIFzUUjYqGDUivnxdpvIzxrytaoj/sVkyiC8+TSuwFvx/zU6OsBOYcvyblSdcFDrEbfDynVFJ3faMrnhYFaW6OkPCC8D+zkl9mr+cX43B9m/cA69fOy9HB+451ESz00eLuZvjthRyPnsZiGucXsxlQ8nLwKm9944ruVxu+43DcDhBQ==
+sidebar_class_name: "delete api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a contact"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v3/contacts/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a contact
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"ID of the contact to be deleted","name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Custom Token generated from the App","name":"authorization","in":"header","required":true,"schema":{"type":"string","pattern":"/Bearer [^\\s]+/","default":"Bearer <Token>"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

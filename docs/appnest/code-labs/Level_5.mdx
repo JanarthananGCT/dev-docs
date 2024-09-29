@@ -42,7 +42,7 @@ As you know, the event payload is sent to an endpoint URL which you will provide
 
 ### Real-Time Scenerio
 
-Imagine you have two online tools â€“ **SurveySparrow** and a **third party application**. You want these tools to work seamlessly together. One best way to achieve this is through Global Webhook.
+Imagine you have two online tools - **SurveySparrow** and a **third party application**. You want these tools to work seamlessly together. One best way to achieve this is through Global Webhook.
 
 In this scenario, let's say SurveySparrow is where you collect information about your contacts. Whenever a new contact is created there, you want this information to be instantly sent to the third party application, keeping everything up-to-date.
 
@@ -70,17 +70,17 @@ Let's locate the Webhooks in SurveySparrow.
 
 You will find a list of required and optional fields. These fields are important to fill in and detailed explanations of the fields are down below.
 
-- **App Name** - As the name suggests, you can provide an appropriate name thatâ€™s relevant to the functionality you want to implement.
+- **App Name** - As the name suggests, you can provide an appropriate name that's relevant to the functionality you want to implement.
 
-- **Short Description** - Here, itâ€™s highly useful to provide the necessary instructions, the purpose of this webhook app, unobvious configurations, and other important information.
+- **Short Description** - Here, it's highly useful to provide the necessary instructions, the purpose of this webhook app, unobvious configurations, and other important information.
 
 - **Support Email** - This is crucial to specify because if the webhook you created is malfunctioning or if the endpoint URL throws errors for 24 hours, you will be notified via this email.
 
-- **Support URL (Optional)** - Provide a support URL through which SurveySparrowâ€™s support team can contact you regarding any issues with your webhook app.
+- **Support URL (Optional)** - Provide a support URL through which SurveySparrow's support team can contact you regarding any issues with your webhook app.
 
-- **Website Link (Optional)** - Provide a website URL that you are associated with such as your companyâ€™s website, personal website, etc. This is to verify the identity of the user whoâ€™s creating the webhook app.
+- **Website Link (Optional)** - Provide a website URL that you are associated with such as your company's website, personal website, etc. This is to verify the identity of the user who's creating the webhook app.
 
-- **App Icon (Optional)** - Upload a suitable app icon thatâ€™s minimalistic and relevant.
+- **App Icon (Optional)** - Upload a suitable app icon that's minimalistic and relevant.
 
 ![Webhook Creation](./assets/global-webhook/webhook-creation.png)
 
@@ -214,7 +214,7 @@ Here, you can select the events whose data you want to fetch. Below are some of 
 - **onContactUpdate**: When a new contact is updated
 - **onContactDelete**: When a new contact is deleted
 
-For instance, letâ€™s say youâ€™ve selected the **onSubmissionComplete** event. Now, every time a response is submitted in any of the surveys in your SurveySparrow account, a POST request is made to the endpoint URL with the event payload in the body of the request.
+For instance, let's say you've selected the **onSubmissionComplete** event. Now, every time a response is submitted in any of the surveys in your SurveySparrow account, a POST request is made to the endpoint URL with the event payload in the body of the request.
 
 The same applies to all of the events of SurveySparrow. You can select multiple events on one webhook app as well.
 

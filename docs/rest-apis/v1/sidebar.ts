@@ -226,30 +226,6 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
-          id: "rest-apis/v1/get-v-1-surveys-id-settings",
-          label: "Get Survey settings",
-          className: "api-method get",
-        },
-        {
-          type: "doc",
-          id: "rest-apis/v1/put-v-1-surveys-id-settings",
-          label: "Update Survey settings",
-          className: "api-method put",
-        },
-        {
-          type: "doc",
-          id: "rest-apis/v1/get-v-1-surveys-id-questions",
-          label: "Get survey questions",
-          className: "api-method get",
-        },
-        {
-          type: "doc",
-          id: "rest-apis/v1/get-v-1-surveys-survey-id-submissions",
-          label: "Get survey responses",
-          className: "api-method get",
-        },
-        {
-          type: "doc",
           id: "rest-apis/v1/get-v-1-surveys-id-variables",
           label: "List survey variables",
           className: "api-method get",
@@ -259,6 +235,30 @@ const sidebar: SidebarsConfig = {
           id: "rest-apis/v1/post-v-1-surveys-id-variables",
           label: "Create survey variable",
           className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/v1/get-v-1-surveys-survey-id-submissions",
+          label: "Get survey responses",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/v1/get-v-1-surveys-id-questions",
+          label: "Get survey questions",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/v1/get-v-1-surveys-id-settings",
+          label: "Get Survey settings",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/v1/put-v-1-surveys-id-settings",
+          label: "Update Survey settings",
+          className: "api-method put",
         },
         {
           type: "doc",
@@ -292,18 +292,6 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
-          id: "rest-apis/v1/put-v-1-surveys-id-questions-question-id",
-          label: "Update question",
-          className: "api-method put",
-        },
-        {
-          type: "doc",
-          id: "rest-apis/v1/delete-v-1-surveys-id-questions-question-id",
-          label: "Delete question",
-          className: "api-method delete",
-        },
-        {
-          type: "doc",
           id: "rest-apis/v1/put-v-1-surveys-id-sections-section-id",
           label: "Update survey section",
           className: "api-method put",
@@ -312,6 +300,18 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "rest-apis/v1/delete-v-1-surveys-id-sections-section-id",
           label: "Delete a section",
+          className: "api-method delete",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/v1/put-v-1-surveys-id-questions-question-id",
+          label: "Update question",
+          className: "api-method put",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/v1/delete-v-1-surveys-id-questions-question-id",
+          label: "Delete question",
           className: "api-method delete",
         },
         {
@@ -880,22 +880,6 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "Public",
-      link: {
-        type: "doc",
-        id: "rest-apis/v1/public",
-      },
-      items: [
-        {
-          type: "doc",
-          id: "rest-apis/v1/post-v-1-surveys-id-questions",
-          label: "postV1SurveysIdQuestions",
-          className: "api-method post",
-        },
-      ],
-    },
-    {
-      type: "category",
       label: "Share",
       link: {
         type: "doc",
@@ -937,6 +921,22 @@ const sidebar: SidebarsConfig = {
           id: "rest-apis/v1/put-v-1-survey-surveyid-shares-sms-channelid",
           label: "Update SMS share",
           className: "api-method put",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Public",
+      link: {
+        type: "doc",
+        id: "rest-apis/v1/public",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "rest-apis/v1/post-v-1-surveys-id-questions",
+          label: "postV1SurveysIdQuestions",
+          className: "api-method post",
         },
       ],
     },

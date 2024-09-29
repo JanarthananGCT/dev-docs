@@ -1,0 +1,173 @@
+---
+id: get-v-3-contacts-id
+title: "Get a contact"
+description: "Get a contact"
+sidebar_label: "Get a contact"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVMFu2zAM/RWBp63T6kNvRlEgK4oi6KVYuwFDlg2szcRCbUmVqGyZ4X8faDtuk7VDckiMiI98fO/JLThPAdk4Oy8hhzXx17NLZxkLjvMSNHgM2BBTiJAvWigpFsF4AUAOlymya9S9eySr1mSlFZVqFVyjuCI18x40WGwIcsDElQvmTz8NNBjpUBGWFEBDoKdkApWQc0ikIRYVNQh5C7z1Ao8cjF33jJgpCDj7RBgoqMWP79/j8kMGGkpaYaoZchjPzntyF9B1+pB9MeypTKncSqHyGNgUqcagxqNn8qbcMfbI1TF8bWoeKEDXLTUwrkW+3cQIS2kQvbORomAm2occ71JRUIyrVIPu4WT7qpPsRH7eUqmTj4ZIRQqGt711s9v5z5urb5AvlsJpf841scIXazfElRsTMWheieCbs2y3Q9aasgOZETa7dKRQi6fMPuZZht6cxhQ2tI0eQ3C/TgvXgPiwX0fp47Gl6I8ubeit0uWzMHei32DBJM+kJXpzQ9vnDMz+E2BR29iVE7jIMagKGthwLWDoNHgXuUErNWPLQ9n3TJmIMP3mzNdorHTp12xHSxawORuT0QdLQ25KiVflIstx2z5gpC+h7jr5+ylRkDgsNWwwGHwQcnKvTZTnEvIV1pH+YTJFD959HpP/Xh11gV7dYaewFXk3WCca1Hqk7XDZumWnd9oKv+FgVhTk+QVEroH4OcX1+uoedP+q2TfysTdyfJCGrzI4dHiYKt+Sr1ch57Pbubqh7cVUPpy8CZjeeOOuVnbtur+On98q
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a contact"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v3/contacts/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a contact
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"contact id of a particular contact","name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Custom Token generated from the App","name":"authorization","in":"header","required":true,"schema":{"type":"string","pattern":"/Bearer [^\\s]+/","default":"Bearer <Token>"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

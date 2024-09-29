@@ -1,0 +1,324 @@
+---
+id: get-v-1-contacts-id
+title: "Get contact"
+description: "Get contact"
+sidebar_label: "Get contact"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVu9v2zYQ/VeI+7S2SvyrSR2hKJa1WZGmHYI1HTC4XnESzxYTiVRJyoln6H8fTpJtyU46Y9gXy5Du3j2+R95xBSYni14ZfSkhhDn5PwZvjfYYe3cpIYAcLWbkyToIJyuQ5GKrck6AEN4WzptM3Jg70mJOmqFIipk1mfAJifM8hwA0ZgQhYOETY9XfVTUIQDFCQijJQgCWvhfKkoTQ24ICcHFCGUK4Ar/MOd15q/S8YuQ9WU7u/UJoyYrJX1+/uumLHgQgaYZF6iGE5tvritwbKMtgl31cr1MoKcxMoMjRehUXKVrRfNqSV3LNOEefHMJXF1lEFspyGoDHOcu3ruhgygAuN9qR45xhv8+PLr/PRRyTc7MihaBKJe056nnvOT/2KprolirOuWVXvaqxldxnFeyUunzHErBl65WX66XvG9BN/bVIU/EbZsQIW93oAbM85bwPqEm8M8SQlKFK/x3zgsOewrtFTdLQz66wC1q6HK0198exySCAh6OZsRlWMjW12J6yDABjrxbt9UTGpIR6r7iaicpSobRUMXpybWHEvUpTUYOlS2EpJrUgURUTqKVwmRMuQUuuzbpiEUChXRFxsYjkf6WCvsNHOdFGrQ9fTUvpeU2sQ2WGqdvl8q2WbNeVtZgg0dMeu/uEdIdKgl0uHduG/eHoqD8+Go7FYBgOT8OT0+Px2dmL/kk46vPeyBOjD9hv1xwm6n28u2nb9c4Gw9HLk9NX49GI0TMTqfQA+E9V3AH4g9OT0cuT4atxBX9rohvlDynwwUSiCv0R+CfUOOfuEUCqXNsbtBaXe6AflfOM9xEjSt2eKd6IiARKSVIo7U271qTuEINNq+OCA+B2ye+HnfdD4HamPGXu/248FfXD286643BqWqeW7a48qVt2BTYtH/3WdISdU7l/MDidARzFhVV+WWl2fn357eriTwgnU5akS+49+ZatGfnENNO1nl8JD6/FoLeeB72VkiVwBbtYT9rCpjwfvc9d2Othro73Gx6b1I2j4ujQUMwPDs3oqdDpVpbPPI9q5zfibLdtrq5ouZ2n5z+4DLDWSs8Mp7MctaYQgK9PGFTdwjifoeaYBrIreseQDQ1PD76Xp6g0Y1SLXDWGTGAxaOZsNaIDCJXkQZ0YPoATWK0idPTFpmXJr78XZHkrTANYoFUYNYdJKsf/ZdNo95hsBjn89HuzI5+Jg64ij65hra9mcReYFlRrdUfL+tpSTstgrSzzqz+cxzHlvpXClwp2c7NZ31/c8BkpWJu2jXeVjc0fBnyUwa6/dVX+5d31aMrr8+tLcUXLN5vw+suTCZu7Y7NWzWsty38AqGipuQ==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get contact"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/contacts/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get contact
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"contact id of a particular contact","name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Custom Token generated from the App","name":"authorization","in":"header","required":true,"schema":{"type":"string","pattern":"/Bearer [^\\s]+/","default":"Bearer <Token>"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"id"}
+                        required={true}
+                        schemaName={"number"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"number","description":"ID of the contact"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"name"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"Full Name of contact","example":"Jane Doe"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"email"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"Email of contact","example":"janedoe@surveysparrow.com","x-format":{"email":true}}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"active"}
+                        required={true}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean","description":"if true, indicates the contact will actively receive email and sms shares","example":true}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"unsubscribed"}
+                        required={true}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean","description":"if true, indicates that the contact is unsubscribed from receiving emails","example":false}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"unsubscribed_at"}
+                        required={true}
+                        schemaName={"date"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","format":"date","description":"when the contact has unsubscribed","example":"2023-08-28 12:26:56.899+05:30"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"phone"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"Phone number of the contact","example":"91234567833"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"mobile"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"Mobile number of the contact","example":"1653452783"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"jobTitle"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"Job Title of the contact","example":"Manager"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                list
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object[]
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <div
+                              style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                            >
+                              
+                              
+                              List of Labels the contact has to be added into
+                              
+                              
+                            </div><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                              >
+                                Array [
+                              </div>
+                            </li><SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={true}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"ID of the Label"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"name"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Name of the label"}}
+                            >
+                              
+                            </SchemaItem><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                              >
+                                ]
+                              </div>
+                            </li>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"id\": 0,\n  \"name\": \"Jane Doe\",\n  \"email\": \"janedoe@surveysparrow.com\",\n  \"active\": true,\n  \"unsubscribed\": false,\n  \"unsubscribed_at\": \"2023-08-28 12:26:56.899+05:30\",\n  \"phone\": \"91234567833\",\n  \"mobile\": \"1653452783\",\n  \"jobTitle\": \"Manager\",\n  \"list\": [\n    {\n      \"id\": 1,\n      \"name\": \"list1\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"list2\"\n    }\n  ]\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

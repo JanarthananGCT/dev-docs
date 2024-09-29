@@ -1,0 +1,300 @@
+---
+id: post-v-1-nps-surveyid-shares-channelid-reminders
+title: "Create reminder"
+description: "Create reminder"
+sidebar_label: "Create reminder"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vdtu2zgQ/RVjntpCrRqgT8KigJtkASPdxLDTFoVrGLQ0jthIJMuLU1fQvxdD6hZb2c1igX2xaHJmOHPmzGEFUqFmlksxyyABJY39fHatzNLpPR54tsyZRnOeMyGw4NkCSy4y1AYiUEyzEi39SVYVCFYiJGC84yyDCLigiMzmEIHGH45rzCCx2mEEJs2xZJBUYA+K/IQrt6ihrqMuVBpu/Q+x1sEYjf0gswNZpFJYFJaWTKmCp772+LuRgvZOQsntd0wtVasJKcvR0Om2CddYGau5uIM6AuOCw9jZzuci0hHPCFC4EpIVXLADgfsF8Z6+f0lhcwPrOmo8nva8vrndLC6X85vri8sLiGA+XdzOph8/fh3sUhwuLOo9K0YAOy7zGIQMd8wVvjost5htdlwbu/EIc0IwNCR1xspys5PSooZkxwqDJ7HHA3R3bqUskAnK6SjcP5ps9qxwI1DV9ZA7q/EMjq9bH3v1XWxaMkB0XddkbtkdzQQIZcBT0CgpTCj73dt39MnQpJqrUDRcSzv5UzpBTB8w9FX86t+QErWW+u8Y4od5IqSd7PxlPl2fscHUaW4PfpKn89nm6vIrJKs1TdDjVM81MosT3QgBRFCizWUrHl4XbA4JxPuzWCgTV60i1LHxYhJX3WDXsR4IikG9b9XE6QISyK1VJoljpvibEMYoprV8eJPKEkgqHtuhe/1cU6aebVriU6brHrklNSn0ocOv6wRT/AqJMI2yTZ3Npea/WEM5r245siwoIJAcLXrhuvzJSlVgLzx9azu96bcGMtOqSZPGsUL0SvD2edM5Ot4jm+0EDiePi52kyNTiQCVKjFuqC7z0SGNL5jWggemUa4+42MFr8aeNVcG41wLfvKqh4Qr2Z4S7IhiSweMUuEibw2emp+M6gpz4nKygqrbM4Cdd1DVt/3CoaVDWEeyZ5mxLFawqyLihddYI3kmy3WDDi0WjJy8nfXMeF9ESRxBrWjQhgns8DB9ZIuv/eG8PVU0vScNYKj6cn4erXt8GXWz9T15aSjt4TNMUlR3YkubRXHWqMr9Z3kLUvbilzMhMswdqF3uABL7BN0pR+oo9e/1+BQUTd47dkX24lnjIHPFiOJr3fjSbBRUzCsLxzIb86ZeqGXX5YzqfTa7w8L4zDydPOjSAttbUEtLo30DyT4E=
+sidebar_class_name: "post api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create reminder"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/nps/{surveyId}/shares/{channelId}/reminders"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create reminder
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"surveyId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"channelId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"body"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"subject"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"frequency"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`Days`, `Weeks`, `Months`]"}
+          schema={{"type":"string","enum":["Days","Weeks","Months"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"type"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`NOT_RESPONDED`, `PARTIALLY_RESPONDED`]"}
+          schema={{"type":"string","enum":["NOT_RESPONDED","PARTIALLY_RESPONDED"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"interval"}
+          required={true}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  properties
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"embed_first_question"}
+                required={true}
+                schemaName={"boolean"}
+                qualifierMessage={undefined}
+                schema={{"type":"boolean"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"custom_footer"}
+                required={true}
+                schemaName={"boolean"}
+                qualifierMessage={undefined}
+                schema={{"type":"boolean"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"custom_footer_value"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"404"}
+        value={"404"}
+      >
+        <div>
+          
+          
+          Not Found
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"error"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={"**Possible values:** [`Share not found`]"}
+                        schema={{"type":"string","enum":["Share not found"]}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"error\": \"Share not found\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

@@ -1,0 +1,159 @@
+---
+id: delete-v-3-survey-folders-id
+title: "Delete a survey folder"
+description: "Delete a survey folder"
+sidebar_label: "Delete a survey folder"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNU11r2zAU/SvhPG1Fq8vyJsYg0DyE7KEs22AEUxT7ZtZqW6o+snnG/31c23GTtoH6wZKt+3HuOUctjCWngjb1KodETiUF+jHfRHeg5n5vypycX+UQsMqpigI5D7ltUauKIKH5SNeQsCoUEHD0GLWjHDK4SAI+K6hSkC1CYzmjjtWOHLouFQjqF1eDP22HlKt4a2pPnhM/3tzwkpPPnLaMFRKbmGXk/T6WEMhMHagOHHWVXPHyoq3Z/aYsoONHwFMWnQ5NP8ribnW/Xv6E3KYM6rzPbc/ITM0GjLMRo0BFoTBPnPUMhQISyWGenA3kk1bnHbirOxz5i66ERBGC9TJJlNXXQ463yjnz5zozFTrxPI7ih7eGKvvm0IouhaZPVG2Y0UGQibCJXWX1mhqIoy0WMRTG6X+9s44OKUjlvfL8vTecznQMPEMg6FByMjoBa3yoVM0xY8mLQpzpNSEK9DcktlS65nL9vO2o0BaHOatxphEEpM7Ze4XxgYPadqc8fXdl1/Hvx0iO/ZIKHJTTasdYty1y7XmfQ+5V6ekFnsmbePd1vBvvZzztaziPdNbM5UGVkQZqHqgZLluXduJIJHcfDhZZRjacpPAtYPEmk94uvyy/LSGgIlNwKtxDL9y44Zqvgniu6NCY3+ynV1M+Le5WszU1n6fw4eRiwjjXNG7N43bdf/wnkYU=
+sidebar_class_name: "delete api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a survey folder"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v3/survey_folders/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a survey folder
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        object
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

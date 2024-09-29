@@ -1,0 +1,285 @@
+---
+id: get-v-3-reminders-id
+title: "Get a Channel reminder"
+description: "Only applicable for Classic, CX and Chat surveys via EMAIL, SMS channels"
+sidebar_label: "Get a Channel reminder"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v20YM/is3ftoKtc6Wb8JQwEi8wkjSGHb2EgSGcZYo6xbpTr3jOXUN//eB0tmWHLt10eVDZEnkQx758KHWYCq0kpTRwxRiWCD9dTnGUukUrRumEEGKLrGqYhOI4V4XKyGrqlCJnBcoMmPFVSGdU0kkrv4RUqfiKpcknLdLXDmxVFIM7vrD20hM7iYiyaXWWDiIoJJWlkhoHcRP64M4w1SYTFCOAQgi0LJEiKG5nynOTbHpJ4+W31v85JXFFGKyHiNwSY6lhHgNtKrYU/tyjhY2m+h0tJDfPlx48EPxphGQXPAxwYbawpQBXGW0Q8c+v11c8KWb18QnCTqXeU4oMZpQE1u96b3hy6uIZv4vJsS1tdxXUg12KukMK5W+zv2w/U2hdoeIAD/LsioQ4l83ETjfIO9hHFmlF69gJo3hKSx4NN6KDDGdy+RZlJKYJT/BJoKMq446WX07yB9b05NhruWKiYjal9ybcPs34jNf74ym3MF0E4VA3wr4sKrwMFaA/nj/MBsPJqP7j9eDa4hg1B8/DPu3t4+tpxxIZoR2lnIir3kUgUNNs8R4TcdblUlfEMQXmwgSi5Iwncmj7ciMLfkNUwMZ2Vfp95jvh/BMyky2U9whjEzqw3wHTr/xOAQq0Tm5OKNHYyRvtZAieIiXHLUYSUtKFmJcT2SKmtyui4IBhXIiVFS8KMqNJ8FASi+E0aIK/s7PS+WcMtoJpVvyJRwSKb1wrD4t5XiCWle2g9Pmd2BdhxMdBnR63Olg1BHJVpGnm+aPcRJvFa1q6e2PhrObwSPET1PWqhIpN2Eb1DpNOcTQW172tjVxvbVKN3U6drkVcG8LiCEnqlzc68lKvQs7oJLWmpd3iSmBpbdrh/7tuaayOtu0xFOm0/3ZJyyfjfbtKrDjj6zUTXvt9D3lxqov9a7croIcZdpsFFA6M+zO5Wioxh1UVAsNj0xlHJVSs02A/IAkJG9LXjBt1ehQdr0X/v9z+4ZjEn6mXlVIpWsV4CKuQ8efYHlZr7nQc4ggZg5FkBtH/H69nkuHf9pis+HHzWKsd7lynF8KcSYLh1850c/jMAu/iCMr/2iSz7g6+AxYysKHMv9w7P0HwFeCdz4K9tGnfGMVh69nKdoShGvSePaTBCtqefEq7wzdh8EDD63nFrTZ+FxXJPxgwO0rvWrBHdK0icr/uTZHXX7vj4biBlfvd+bNm5MO4VBbay4MC8t/nxaBlg==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a Channel reminder"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v3/reminders/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Only applicable for Classic, CX and Chat surveys via EMAIL, SMS channels
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of the survey","name":"survey_id","in":"query","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of the channel","name":"channel_id","in":"query","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={true}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Id of reminder","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"subject"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Subject of reminder","example":"Your feedback matters!"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"frequency"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={"**Possible values:** [`Days`, `Weeks`, `Months`]"}
+                              schema={{"type":"string","description":"Frequency of reminder","example":"Days","enum":["Days","Weeks","Months"]}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"type"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={"**Possible values:** [`NOT_RESPONDED`, `PARTIALLY_RESPONDED`]"}
+                              schema={{"type":"string","description":"Type of reminder","enum":["NOT_RESPONDED","PARTIALLY_RESPONDED"]}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"after_days"}
+                              required={true}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"sent_count"}
+                              required={true}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","default":0}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"created_at"}
+                              required={true}
+                              schemaName={"date"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"updated_at"}
+                              required={true}
+                              schemaName={"date"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"survey_id"}
+                              required={true}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Id of Survey","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"account_id"}
+                              required={true}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Id of Account","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"message"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Return a message when Partial Respondents reminder type is created without turning on partial submissions in the survey settings"}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": {\n    \"id\": 1,\n    \"subject\": \"Your feedback matters!\",\n    \"frequency\": \"Days\",\n    \"type\": \"NOT_RESPONDED\",\n    \"after_days\": 0,\n    \"sent_count\": 0,\n    \"created_at\": \"2024-09-26\",\n    \"updated_at\": \"2024-09-26\",\n    \"survey_id\": 1,\n    \"account_id\": 1,\n    \"message\": \"string\"\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

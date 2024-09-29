@@ -1,0 +1,313 @@
+---
+id: patch-v-3-contact-properties-id
+title: "Update a contact property"
+description: "Update a contact property"
+sidebar_label: "Update a contact property"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVl1v4joQ/SvRPO1deRd2q32Jrq5EC+pGpbSisB9iETLJQNxNbK/t0HKj/PerSULKV0t7eYBgz4xnzjmeSQ5Ko+FOKBlE4IPmLoy/nV0o6XjoZtrQthNogwgYaG54ig6NBX+Sg+Qpgg+CtoSsvGNgYPBPJgxG4DuTIQMbxphy8HNwa00eMkvnaKAoppUxWneuojVZhEo6lI4eudaJCMvcWvdWSVo7CKXm9xg6yq1J9Wm3sbLOCLkEBiizFPwJDMbX570hMOjejM/7PWDQu+4EfWBwFwwu+71ZPxj0ZqPejxEwuB73R8HOSrczIp/xkDy6w5vb7s33ATmPhsHgEqYFg4TPMTmWQsof+yiXLgb/85cvBYMIbWiEpjpP2H9qt9sFKzHaYmc9WxqV6ZmIjkFMHwaOL4mzfVdCq+TAaiVtBd3ndpt+drKCuywM0dpFlgDb5uh96/1baIm4e4XVsUL2YIKg66mFV5fjbZAghh95qhME/1PBaoUeYroba8BTPBWNUkd4idfdmH0yOxm0Wwd9Tq67MUdrfTrPUpqnVbUbufv0z+NzlbnTaVMi90pIIZfeQmASwduU+TpCvTIAO1yfY6Lk0npO7XNeevx/0t94IlySuVcKrdh8GFgMMyPcuuyTndtgdtX7Cf5kSh1vN4+xJmV5/BjiKbpYNW25bMDUBqC1Omsd3uRWLqIC6Gyz2rTozCTgQ+yctn6rxbX4aDOzwrXV3Bj18DFUKRRs3w6zD6815frVpik+Zzp9AuyOOknVBhrYGiq5FldIwNSTp5O5WBnxbzkjNkMoRh6VnY8BTY3h03zpbUhrAjZjoL7Vz4mlWX5B4NSZhVwoCk/4V57AwAlXKoUuiFbWpby8kXUNL/F//A47fHQtnXAhKWKJcV4rYwKrs8Msqa0y8EVEvT5W1pFhns+5xbFJioKW/2RoSK1TBituBJ9TypMcImHpOQJ/wROLBzk1swDeDeux/5cH7HiuGxolFbfiSYYVQr9xXb1HFDQ5awLp9GrjojrjA/W/LceD9wOSXOXRCUPUbsuW5hTJrLlRt53RxVdgMK/fO1IVkZ3hD/QCwx/Ah1/wi5JTZa2lIsv1HBIulxlfkn11LmmNZ0TAtlR/l1KtH6iao+Xva7gqgL6pnKMuf3duA+8K1/805tXOsw41og3QkoAuiv8AmDBo8Q==
+sidebar_class_name: "patch api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update a contact property"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/v3/contact_properties/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update a contact property
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"type"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`NUMBER`, `DOUBLE`, `EMAIL`, `SINGLE_LINE_TEXT`, `MULTI_LINE_TEXT`, `DATE`, `URL`, `DROPDOWN`, `STRING`]"}
+          schema={{"type":"string","enum":["NUMBER","DOUBLE","EMAIL","SINGLE_LINE_TEXT","MULTI_LINE_TEXT","DATE","URL","DROPDOWN","STRING"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"label"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** `<= 255 characters`"}
+          schema={{"type":"string","maxLength":255}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"description"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** `<= 1000 characters`"}
+          schema={{"type":"string","maxLength":1000}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"contact_property_group_id"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"ID of contact property","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Name of contact property","example":"date"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"label"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Label of contact property","example":"Date"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"type"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Type of contact property","example":"DATE"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"description"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Description about contact property","example":"Date of joining field"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"contact_property_group_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"ID of contact property group, contact property belongs to","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"group"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Name of contact property group, contact property belongs to","example":"Group name"}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"date\",\n    \"label\": \"Date\",\n    \"type\": \"DATE\",\n    \"description\": \"Date of joining field\",\n    \"contact_property_group_id\": 1,\n    \"group\": \"Group name\"\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

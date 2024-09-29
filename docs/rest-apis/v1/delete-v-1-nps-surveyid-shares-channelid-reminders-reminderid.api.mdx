@@ -1,0 +1,243 @@
+---
+id: delete-v-1-nps-surveyid-shares-channelid-reminders-reminderid
+title: "Delete NPS reminder"
+description: "Delete NPS reminder"
+sidebar_label: "Delete NPS reminder"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VNtq20AQ/RUxT23YRknJkygF07hgUkKI20IxoqylcbSNtLvZnXXrCv17GN2sNA4EUuIHa5HOXPacM1ODsegkKaMXOSSQY4mE308vrV8Gt8WdypeFdOg/FVJrLFV+jZXSOTo/HFQOAqx0skJC5yFZ1aBlhZCAb1MsGKA0JGAlFSDA4V1QDnNIyAUU4LMCKwlJDbSzHKdDtUYHTSPGVFlX/7/kcn3nL0iWCiB5w5cFbT2kHOut0R49w9+fnPAjR585ZZldSGAZsgy934QSBGRGE2pi1FF8xI9Hxcz6F2bE5DoWiVSX23dpJsC1MSVKDQJQhwqSFXefNu1PwNnJ2eNeLg1Fn03Q+YtaQeeMm8A8OaVv9n3A4JFIG4o2bb2+r0aAxyw4RbvWMbOrxc+L+Q9IVimT+7Db89aV0eXVMhq0AwEVUmH2pm1dSAUkEG9PY219XA/+a2LfmjiuRxs18ZDJx/XeEA1wX247GDm4EhIoiKxP4lhaddzl9FY6Z34fZ6YCdtZDHIZ3z4VK+2xohU9B0z2ZS5auU2ekdNRHWnWBOxDDIMwCFcapv+38D7NQoMy7gQGlN4bDmY5OCRBAikoOhkaANZ4qqRnTpzws1QM5x3YI/1BsS6k052ovW/carmB7yn1aDwKSyR7phOSX040waskfJuOdCiiMJ85X12vp8Zsrm4Zf3wV07LxUwFY6Jdd8p1UNufJ8ziHZyNLjo9bHYYE31/22eBsxK4euNNCumfOtLAN2FN7ibrodWepXrLsn7pULT4Rp0kYMTmPaO8Asy9DSJJT3Ebt7HPXz+Zf51zkIkIFtMnX2bevs/sA5Dzbzr+W7wvzPZBwM+TC7WkQXuPs4wrsvTwb09xrQTA1vvXuGyoNz
+sidebar_class_name: "delete api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete NPS reminder"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/nps/{surveyId}/shares/{channelId}/reminders/{reminderId}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete NPS reminder
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"surveyId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"channelId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"reminderId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"success"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={"**Possible values:** [`true`]"}
+                        schema={{"type":"boolean","enum":[true]}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"success\": true\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"404"}
+        value={"404"}
+      >
+        <div>
+          
+          
+          Not Found
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"error"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={"**Possible values:** [`Reminder not found`]"}
+                        schema={{"type":"string","enum":["Reminder not found"]}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"error\": \"Reminder not found\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

@@ -1,0 +1,311 @@
+---
+id: post-v-3-tickets-batch
+title: "Create tickets in batch"
+description: "Create tickets in batch"
+sidebar_label: "Create tickets in batch"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vm1v2zYQ/ivCfQnQMXVs9w3CUCx9+WBk2IImGzC4RnCWrhYbiVRJyoln6L8PJ0o2o8qr06L+YNPS3XPHu+detqBLMuikVrMUYii1dX9Pr2VyS86+QZdkIMDQl4qse6PTDcRbSLRypBwfsSxzmTTqo89WK35mk4wK5JPblAQxoDG4AQGFVDNHhYV4LKDA++7P2ZkA6c87Hb38TIkDAaVhB52k5m3rCZkbmQbSqiqWZEBASjYxsmR/IAZ/jWindGIj9h0TF8kUBNA9FmVOEI9rAVSgzANM64xUq8dgeoQAFnCZ/Lbhp08TXUAtoMy0oh8y4hFCI79E48k0mkwZ31Y+bsda6ORDvIevojE0yfqd1MplEE84W+yYNJRCPIc9RHdaCLg/xdyRUejkmjM3/5n+1OKnoi/qHtyR1sKHAxaD19G44YaR2ki3OZrXO4UAffIwOYHI7vi/6fkOi0H4v0ebw2sdusoeffFWPICZ9jjZCbSHH7jygK2jLzyk21xXVyah46/rxQOYZ77UC2mt1OqoXviBbKmVpWj2LkR6XgtQpb15JNofl1fRAcQXtQC0Vq4U0WO6NK5IuRMbVZZMrz2/rAU4wuIxcCx/YntAr2oBSWWdLm4+ScrTgYlT+48AhyumCTg/C5lDpr1xozY5m/DPQ+PnSUKlIzYaTMknoyeDg/HAkCvIWlwNjAn2St/SQAtih8MC6CA6hUV7KUtJ5XvMfAvnl7Obi/f/QDxf1It+GN8aQkdRe/tIqmjZbgMFuUx3uwI7j9wpYbSejlrpUSdqyazJ+GqrTA4xZM6VNh6NsJRPbWXWtLElGqPv2gnZl6Pq9FhRLI8WLeiQ6GIfoytOl8/ILlL7naaUF8SdTGHB/88rl2kj/8W23UuOYUaYkmmSw8vRh/0a9b5j5Ly/04x3m0hve9gtD/uBH8z7oTn2ranUCO2nzmTfh6f7HvXsq07zfLBjvOhV/cugZF99XXU1R1qqT5pjyhzxTjJhpWvGZDMStXUFNnxv43yYlsMj2tG9G5U5SsV4DQu2LWPnsJ429nx9C/BICwEZEzuew3a7REt/mbyu+fGXigxXzkLAGo3EZZNAbuhtojmbt7RhN33xn16zFyyeV541vXWZqek1fOcIZLlpcJB25Xb559U1e9lu4YVOWczgHW/oeAcxfISPHEHdBMHvy/x8CzmqVdW0FPBmmZJYcRRCRt82jG4PwYREtQkc61Pd+8/fwWB8qPLr+eUsuqDN6524f3NQoQ1oJ83Z4xb2H688Vgk=
+sidebar_class_name: "post api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create tickets in batch"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v3/tickets/batch"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create tickets in batch
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><span
+          style={{"opacity":"0.6"}}
+        >
+           array
+        </span>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <li>
+          <div
+            style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+          >
+            Array [
+          </div>
+        </li><SchemaItem
+          collapsible={false}
+          name={"requester_id"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Ticket requester's contact id","example":1}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"email"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Ticket requester's contact email","example":"abc@ymail.com"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"phone"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Ticket requester's contact phone","example":"+ 123 23"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"subject"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** `<= 200 characters`"}
+          schema={{"type":"string","description":"Ticket subject","example":"Ticket subject 1","maxLength":200,"required":["subject","subject"],"x-alternatives":[{"type":"string","description":"Ticket subject","example":"Ticket subject 1","maxLength":200},{"type":"string","description":"Ticket subject","example":"Ticket subject 1","maxLength":200}]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"description"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"Ticket description","example":"Ticket description 1"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"priority"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Ticket priority","example":2,"required":["priority","priority"],"x-alternatives":[{"type":"number","description":"Ticket priority","example":2},{"type":"number","description":"Ticket priority","example":2}]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"status"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Ticket status","example":3,"required":["status","status"],"x-alternatives":[{"type":"number","description":"Ticket status","example":3},{"type":"number","description":"Ticket status","example":3}]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"source"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Ticket source","example":4}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"submission_id"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Response ID","example":5}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"nps_submission_id"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"NPS Response ID","example":6}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"assignee_id"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Ticket agent's user id","example":7}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"team_id"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Ticket team's id","example":8}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"custom_fields"}
+          required={false}
+          schemaName={"object"}
+          qualifierMessage={undefined}
+          schema={{"type":"object"}}
+        >
+          
+        </SchemaItem><li>
+          <div
+            style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+          >
+            ]
+          </div>
+        </li>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"202"}
+        value={"202"}
+      >
+        <div>
+          
+          
+          Accepted
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"token"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\",\n  \"token\": \"string\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

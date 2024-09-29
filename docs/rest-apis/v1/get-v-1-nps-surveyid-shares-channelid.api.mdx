@@ -1,0 +1,154 @@
+---
+id: get-v-1-nps-surveyid-shares-channelid
+title: "Get NPS Channel"
+description: "Get NPS Channel"
+sidebar_label: "Get NPS Channel"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9U9tq20AU/BUzT23YRvh1KQVTQjCBEOq2UIwoG+k4WiKtNntx64r993J0s3ODQKF6kJbVnNvMnA6tJaeCbs26hMQdhe/La+s30e3poMtNpRz5z5UyhmpdQsAqpxoK5DzktoNRDUHC9/g1A7SBhFWhgoCjh6gdlZDBRRLwRUWNguwQDpbjTGxuySElMacqhmL/kCsXCOqO+4OxHjnHetsaT57hJe1UrMNw9IXTlseHxCYWBXm/izUEitYEMj3qLDvjz7OCPjht7pD4EfBURKfDoadldbP+eXXxA3KbczuP61xSWFzfbBYjrRBoKFTtyH/Pcaggke2XmbE+6yZ2U+Z7PbJuJimBK7v9pEd0NSSqEKyXWaasPh+CvVXOtb/Oi7YBk/0YR/HDW6HKvhna0GvQ/EjXhlkdhJlJmxlWVl/RAWLyxiqGqnX6T2/YyR8VqXLwELTZtRzOdAxcQyDoUHMwkoBtfWiUYcyY8rkYj8SaWwn0O2S2Vtpwnn7QbhRqi/2Se7QeAvJkFQa1+PJo6lygan3gqK67VZ6+uTolvn6I5Ng9ucBeOa1uuetth1J7PpeQO1V7etbg7FS8+zLuyPsFz/1S4xOxhlndqzrSQNI9HU7XmMX8j3WP9KQ8iUlRHn74vyoKsuEkkleSXTQvzuXFVwioyHqc2ue+t8944IQvNvLUV0NVfjMRL4Z8XN2sF1d0+DTDhz+vBoxDTWimJU8p/QULvNru
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get NPS Channel"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/nps/{surveyId}/shares/{channelId}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get NPS Channel
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"surveyId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"channelId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

@@ -1,0 +1,154 @@
+---
+id: get-v-1-csat-survey-id-submissions-nps-submission-id
+title: "Get response of an csat survey submission"
+description: "Get response of an csat survey submission"
+sidebar_label: "Get response of an csat survey submission"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VGFr2zAQ/SvmPm1Fq8lXMQZhlFICoyzbYAQTFPtSi9qSqpOyZUb/fZwdO2mTQvdl+eAo1rvT03vv0oF16FXQ1txVIOEBw4/ZZ1JhGf0O92tdLeOm1UTaGvriaE3Tz7WuQIBTXrUY0BPIVQdGtQgSzAWkNiDBqVCDAI9PUXusQAYfUQCVNbYKZAdh7/oGsd2gh5TE1JNGRi96vVr78phUCAjqgYlCSSpAwQhy1hAS11e4VbEJw5JKrx3rAhKWsSyRaBsbEFBaE9D0qKv8ir/OGFDw2jxA4o8AwjJ6Hfa9QPP7u/Xi5ifIVcF8np9ziyEbGWV2mymTMdFsuHp2VBQEtBhqe7Cs9yHUICHfzXIuybtJrpQf6yjvzqxJrCH63Whh9A1IqENwJPNcOX09tCKnvLe/rkvbAtvyHIfxw1uhyr0Z2uJr0OKo65LlHxyc1J2sUE4vcA9iTNE8htp6/aeP/JikGlU1pA202VouZzkGU0BA0KHhYs6UsxRaZRhzaPkvrj3zeyIZ8HfIXaO04RN6CbqDoyvYzTh0nFcB8nQITmzlrfOZKwTUlgI36bqNIvzum5T49VNEz3ksBOyU12rD11t1UGnidQVyqxrCM75T9uHd18Nsvc9YoEv3GB0wLP9ONREHNR9xf/Evgu3/jwSOUqYiiTEDrMKwPy9LdOGkkqedczdN3u3NNxCgIvt0GrjHPnCHBTe8SORlEodT+clCXCz5OL+/yxa4/zTBh51XCw6XGtEsS5FS+gsxwgyR
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get response of an csat survey submission"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/csat/{survey_id}/submissions/{nps_submission_id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get response of an csat survey submission
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"nps_submission_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"survey_id","in":"path","schema":{"type":"number"},"required":true}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

@@ -1,0 +1,149 @@
+---
+id: post-v-3-reputation-reviews
+title: "Import a review for a custom location"
+description: "Import a review for a custom location"
+sidebar_label: "Import a review for a custom location"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNU02PmzAQ/StoTu3KXQ65oapSDj1EOTRK2kpVhCIHhsVawN6xzZYi/ns15mOznwoHwDAfb95704M2SNIp3WxySMBo636v9mi8Cx/32Cp8tCDASJI1OiQLybGHRtYICWTeOl2fpDEnU0lXaKpPKgcBqoEEHjxSBwIIH7wizCFx5FGAzUqsJSQ9uM5wmcbXZyQYhlSAk3fcAmgBcaIJRcqlrNGNRcvZORbSV258tRkpw+GQwMFnGVpb+AoEZLpx2ISom/iGH6/6W0equYOBLwEWM0/KdWHQ9W5z2n7/A8kxZXTP+2xqo8lFMhoRRoWmSEYjKVGlswAfBNToSj3zG8h0JSQQt6v4acyYFrItUjsz7amCBErnjE3iWBp1az212FkjifTjbaZrGMTLOPRfrg2V5urQGt8LTZ9oOzC7o0ALeQvT0qgtsicmA629KzWpfzNTwTclyjzYgc+F5nSmY+QcBDjlKk6GQQRGa9lwzFTyWlGeSbkAdPjXxaaSquHqYfx+0usI7Sq4eVYsHBZrlqxtcoS+P0uLv6gaBv48LgErmSsrzxWvQSEri68QLEaFT/tpYz5HPO5byO6x+2j/Wln5kaKUD6S4czCxmOllSGOVdZahcRdZvCecuPh29+PwEwRIzzxcinkfxJxeuOL8q+ku6r1UeWzLd/bYmylf17tNtMXu2xI+/nk3YZpqjmaW0mEY/gOuGK0f
+sidebar_class_name: "post api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Import a review for a custom location"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v3/reputation/reviews"}
+>
+  
+</MethodEndpoint>
+
+
+
+Import a review for a custom location
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"custom_app_platform_id","in":"query","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

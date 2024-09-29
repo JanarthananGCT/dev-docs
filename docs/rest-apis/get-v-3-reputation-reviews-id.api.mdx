@@ -1,0 +1,277 @@
+---
+id: get-v-3-reputation-reviews-id
+title: "Get a review"
+description: "Get a review"
+sidebar_label: "Get a review"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVdtu2kAQ/RVrntrIwdRJ28iqKvEQRSgPjUJaqY0QWuwBb2N7N7tjwLX879X4xiUEpeUBw+45M3Pm5hKURiNIqmwcQQBLpB8X96hzqs/ucSVxbccRuKCFESkSGgvBYwkR2tBIzSgIYBw5auE0cHAhEylCAJJ5ku+1oBhcMPicS4MRBGRydMGGMaYCghKo0MzI8nSOBqrKLTsjQuuZTgQtlElnW4vPOZrin0xOXSCx5OjB9ApnppEIUzZltcosWmb7wyE/9mVO8jBEaxd5Ai6EKiPMiFFn3hk/XvhW898YEifPcJ5JNrYjQW9AyeilChdwI1KdIAQfKhe4ctnyJOwjw2qNM5LEJz3YkmH2DhhulIqcCZqVDBG2zB2pr3O/5WRJZJHMlo5tTLhOqDIrLZOTwsFNiFjf40Zj2FTA7viJBB0NkGsvCAKoAbtO/aHvnw/9c//qYfg58D8Gl5cD/9PVr61RNLOmk07FPhHpHkPHitQsN8lpWkykbeB56/V6kKglEwahSj2xVJFgg4fNe7pS3ccFi2FuJBX1qI3uxrPb658QPE65ifdb8gbJEY7pJi9FilU7yfXQUgwBeKsLb9vzXtvzXimjCtiZWXVjXUvudQktBzY3KyysFsaoNasDHs59HObnb4UK/WZoiq9Bp9sMTXjmmoHp89QnWWh5i8V2IY1yipWRf+o0dJskRhE1OwdktlBM53Q06QUX2rEBrqdWllKRMaY1eZD/veL0cRBuyNOJkBkbaduqqc0jrC7qNdZVB7o2tOBCICPeTLGyxNCynAuL301SVXzc7MB6G0sr5glvwYVILL6Iox9geHffLsz3Dms7Ft8TFkf37kokeZOIKf8xkl3+v/uDd8bRULo6ZsWu/y5EGUE1rdyughxJczEKQ9S0Q+EFzVH343Fz/QAuiJxLsNsuT3W7tD/Y4NEIDvuo8crf3MVHKV9Gd2PnFouvPby5eZXQiuq1Zqy1qv4C9/edWg==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a review"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v3/reputation/reviews/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a review
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of Review","name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"app_platform_id","in":"query","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"rating"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":5}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"review_title"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"Good Service"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"review_content"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"Outstanding service, consistently exceeding expectations"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"review_date"}
+                              required={false}
+                              schemaName={"date"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date","example":"2022-02-28T07:25:44.268Z"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"reviewer_name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"Sam"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"reviewer_photo_url"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"https://www.log_url.com/agoda"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"app_platform_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":5}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": {\n    \"id\": 1,\n    \"rating\": 5,\n    \"review_title\": \"Good Service\",\n    \"review_content\": \"Outstanding service, consistently exceeding expectations\",\n    \"review_date\": \"2022-02-28T07:25:44.268Z\",\n    \"reviewer_name\": \"Sam\",\n    \"reviewer_photo_url\": \"https://www.log_url.com/agoda\",\n    \"app_platform_id\": 5\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

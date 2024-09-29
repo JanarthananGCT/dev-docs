@@ -1,0 +1,194 @@
+---
+id: get-v-1-nps-surveyid-shares-channelid-reminders
+title: "List NPS reminders"
+description: "List NPS reminders"
+sidebar_label: "List NPS reminders"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VNtq20AQ/RUzT23YRjakL6IUTEmLSQkhbgvFiLKWxtY20u5md9aNK/TvZXSznDolD6kfrNvMmZlzzmwFxqKTpIxeZBDDFunb7Nr6ZXA73KtsmUuH/kMutcZCZbdYKp2h8yDASidLJH6IVxVoWSLE4JvERQYClIYYrKQcBDi8D8phBjG5gAJ8mmMpIa6A9pbzdCjX6KCuxQCVtlVfBMvKLfYw9wHd/ghnIwv/DyABpdKqDCXEMwEZbmQoCOLZuEApH27Rh4L8C5Up5UN3P52Oir6d1nUigOSWaQdtPSRcw1ujPXpGvZhe8CVDnzplWVqI4drQ5KMJmslMjSbUxEFn0Rlf/mrJrH9iSqyyY4OQaqHROeNGYZ6c0lsQgJpbXUHjl4k2NNk0xZK6/QnwmAanaN+YZX6z+HF1+R3iVcLTHLf6WXmaXN8sJ27kthIpN51DG/NRDjFEu1mkrY+q3nZ15BvHRtXgnjoa43h0u96ywRUQQ05kfRxF0qrzFsZb6Zz5dZ6aElji4zgMb54bKu2zQ0t8KjQ5cLdkmVolBgYHLaRVV8iG6xw5D5Qbp343y92bMkeZtasBSm8MpzMdLfEggBQVnAy1AGs8lVJzTAd5Upkj8YZuCB8osoVUmqGaWatOtRXsZtym5ex4dGC00vHL8eofaiUCcuOJEapqLT1+dUVd8+t211jTTHm5Lkbbdof7w/7vZBG68Z4MPdrkQ0LCD05xxulCj3gYlgxe3XYnwOsJM3yKn15CvR/X7DsaKDrZ9f+re1ChTmrRe4eHb7/P0xQtjTL5NGGihmX9dPkFBMjAso+NetcYtbthwJONPHZwW5X/mYiTKe/mN4vJFe7fD+HtlycTuqH6aKaFz6w/I+5jKw==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List NPS reminders"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/nps/{surveyId}/shares/{channelId}/reminders"}
+>
+  
+</MethodEndpoint>
+
+
+
+List NPS reminders
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"surveyId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"channelId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"page","in":"query","required":false,"schema":{"type":"number","minimum":1,"default":1}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"maxResults","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":100,"default":50}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"404"}
+        value={"404"}
+      >
+        <div>
+          
+          
+          Not Found
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"error"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={"**Possible values:** [`Share not found`]"}
+                        schema={{"type":"string","enum":["Share not found"]}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"error\": \"Share not found\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

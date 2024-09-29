@@ -7,6 +7,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuItem,
   Button,
+  DropdownMenuSeparator,
 } from "@sparrowengg/twigs-react";
 import VersionJson from "../../docs/rest-apis/versions.json";
 import { useHistory, useLocation } from "react-router-dom";
@@ -56,34 +57,34 @@ const VersionSelector: React.FC = () => {
   const showDropdown = location.pathname.includes("/rest-apis");
   function getVersionObjectFromLocalStorage() {
     // Check if localStorage is defined (client-side context)
-    if (location.pathname.includes("/v3")) {
+    if (location.pathname.includes("/v1")) {
       return {
-        version: "v3",
-        label: "Version 3",
-        baseUrl: "/rest-apis/v3",
+        version: "v1",
+        label: "V1",
+        baseUrl: "/rest-apis/v1",
       };
     } else if (location.pathname.includes("/v2")) {
       return {
         version: "v2",
-        label: "Version 2",
+        label: "V2",
         baseUrl: "/rest-apis/v2",
       };
-    } else if (location.pathname.includes("/v1")) {
+    } else if (location.pathname.includes("/rest-apis")) {
       return {
-        version: "v1",
-        label: "Version 1",
-        baseUrl: "/rest-apis/v1",
+        version: "v3",
+        label: "V3",
+        baseUrl: "/rest-apis",
       };
     } else if (
       location.pathname.includes("rest-apis/Introduction") ||
       location.pathname.includes("rest-apis/OAuth")
     ) {
-      return JSON.parse(localStorage.getItem("selectedVersion"));
+      return JSON.parse(localStorage?.getItem("selectedVersion"));
     } else {
       return {
         version: "v3",
-        label: "Version 3",
-        baseUrl: "/rest-apis/v3",
+        label: "V3",
+        baseUrl: "/rest-apis",
       };
     }
   }
@@ -95,46 +96,53 @@ const VersionSelector: React.FC = () => {
       }}
     >
       {showDropdown && (
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button
-              size="md"
-              color={colorMode === "dark" ? "light" : "default"}
-              variant="outline"
-              rightIcon={<ChevronDownFillIcon size={20} />}
-            >
-              {selectedOption?.label || "Select API Version"}
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent
-            sideOffset={4}
-            css={{
-              minWidth: 120,
-              zIndex: "10000 !important",
-              background: colorMode === "dark" ? "rgba(9,10,17,0.8)" : "white",
-              border: "none !important",
-            }}
-          >
-            {options.map(
-              (option, id) =>
-                option.version !== selectedOption.version && (
-                  <DropdownMenuItem
-                    css={{
-                      cursor: "pointer",
-                      "&:hover": { color: "$primary500" },
-                      fontSize: "16px !important",
-                      color:
-                        colorMode === "dark" ? "white" : "rgba(9,10,17,0.8)",
-                    }}
-                    onClick={() => handleSelectChange(option)}
-                    key={id}
+        <div className="docs--version-drop-down">
+          <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    size="md"
+                    color={colorMode === "dark" ? "light" : "default"}
+                    variant="outline"
+                    rightIcon={<ChevronDownFillIcon size={20} />}
                   >
-                    {option.label}
-                  </DropdownMenuItem>
-                )
-            )}
-          </DropdownMenuContent>
-        </DropdownMenu>
+                    {selectedOption?.label || "Select API Version"}
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent
+                  sideOffset={4}
+                  css={{
+                    minWidth: 120,
+                    zIndex: "10000 !important",
+                    background:
+                      colorMode === "dark" ? "rgba(9,10,17,0.8)" : "white",
+                    // border: "none !important",
+                  }}
+                >
+                  {options.map(
+                    (option, id) =>
+                      option.version && (
+                       <>
+                        <DropdownMenuItem
+                          css={{
+                            cursor: "pointer",
+                            "&:hover": { color: "$primary500" },
+                            fontSize: "16px !important",
+                            color:
+                              colorMode === "dark"
+                                ? selectedOption === option ? "green": "white"
+                                :  selectedOption === option ? "green": "rgba(9,10,17,0.8)",
+                          }}
+                          onClick={() => handleSelectChange(option)}
+                          key={id}
+                        >
+                          {option.label}
+                        </DropdownMenuItem>
+                        </>
+                      )
+                  )}
+                </DropdownMenuContent>
+              </DropdownMenu>
+        </div>
       )}
     </Box>
   );

@@ -1,0 +1,198 @@
+---
+id: get-v-1-csat-survey-id-responses
+title: "List survey responses"
+description: "List survey responses"
+sidebar_label: "List survey responses"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVF1r20AQ/Ctmn9pwjew+HqVgQigmfQhJWyhBhIu0to5Ip8vdnhtV6L+X1Zfl1C5u2hdbtmZnd2dnt4bSolOkS7NKQcIG6dviwiu6DW6L1b1Ob9Db0nj0IMAqpwokdB7kXQ1GFQgS/AAFAdqABKsoAwEOn4J2mIIkF1CATzIsFMgaqLIcaELxgA6aRoxcqSI83xAOVE8BXbXHtVa5P0TmyWmz+Z0s/09khXq+QR9y8n9P1zcqoNBGF6EAuRBM2D2/n8/nAlJcq5ATyMV8Ps1r1eYVDRzMuEsxTWCsv8iUMZiv0lcnmhKuS1co+gfRYwGkNuwxSLwiiDl6cKGsd33wo0+ctuxfkHAbkgS9X4ccBCSlITQt6iw646/jGZumEeAxCU5T1Xp7eb26v7r8DvIu5nr283zWnmad7Wdush8FUlb2a9SuC2UgIdouIu4jqsdNaaJpmEe3HXYquBwkZETWyyhSVp93Qd4q58of50lZAGu9j8Pw7lSosidDCzwGjXdq3bKo3VxGzUaBldVXyNPvrbEMlJVO/2wPzuCQDFXaWQi0WZccznJ0UoMA0pRzMDQCbOmpUIYxPeWxWexNbCyI8JkimyttmK1tt+7ndAfbBdvGt96V06u2440FZKUnRtf1g/L41eVNw393PucRptqrh3zi9Ees9k/bVuWh7+jP8Pxk+N55OiWgvyunQF9ciFNCxhuwA8f8w2lGH5bpxcTG/YU3N/3teDtjOxya5OA3U01zDtXsZtnEjRgMx0V075dJgnZaLR8MLnhc6E+XX0CACmyUqbsfW3f3D0x4sJCXtu+y8idLeDDkw/J6NbvC6uMI794cDeibGtAsS9w0zS9QU6dN
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List survey responses"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/csat/{survey_id}/responses"}
+>
+  
+</MethodEndpoint>
+
+
+
+List survey responses
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"survey_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"date.gte","in":"query","required":false,"schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"date.lte","in":"query","required":false,"schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"maxResults","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":2000,"default":100}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"page","in":"query","required":false,"schema":{"type":"number","minimum":1,"default":1}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"npsChannelId","in":"query","required":false,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"format","in":"query","required":false,"schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

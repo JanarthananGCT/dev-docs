@@ -1,0 +1,313 @@
+---
+id: patch-v-3-users-id
+title: "Update a user"
+description: "Update a user"
+sidebar_label: "Update a user"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVW1v2zYQ/ivCfdo6pm7jFiiEoZv7AsxLMQR9GVCkRnAWzxZTiWRJyokn6L8PR1qKYruAow+2ID738O6548MWjCWHQRk9l5CDxVCU/06/eHJ+LkGARYc1BXIe8qsWNNYEOSheUjoFlCDA0Y9GOZKQB9eQAF+UVCPkLYSt5Qjd1Ety0HWLBCYf3hi5ZURhdCAd+BWtrVQR05nceKP52wGVWd5QETg3x8kHRZ5XU2oDygen9BoESPKFU5Y5IYd/sKbMrLJQUtZ4ciCA7rC2Fcf8bUqdvTMEAmq8+0B6HUrIz1++FHB3Vhi9IRfTDE7VqdKuE+BMRddKHha7vzermjE6i9IO+z7v4iMg4JplBk7MQ1TKW6N9KvD82TP+e8j5qSkK8n7VVCDGSj6ZPHmMeBLDCaiTi9yvT5zYnRgcoQ/agppiWzoBVKOqTiRK2DHTjSm1NPTn7svTwtRMakujT80uYrOh+Hvu355PX7149WLKhChrpUeES2MqQn3AOPdxCDPUWQoZEa6w8tQJMLea3CO4Ir4fcSwK0+gw5o1jKwDXpIvt9WPZOdMYmfY5lvCGnFopko9hTWlmfegfRxI++ZjN5fiAxwM3pjvv+keAp6JxKmyjt80u59cX779CfrVgl9rrvZUYKMPeNGoKpRkcMxolewVMNtNJPL6TVskOeAu36d2zcRXkUIZgfT6ZoFVPfeM2tPUWnTO3u3Hcx1FzdioU7cnQmn4GXdzr8ontI539QZ1BfrTqgrbQn22YNaE0Tv0X7bu/H0pCGX1fABv6x3vrf983ZLhVRvY7NJu9Q+mVYRjrmLoBAoIK8djF82t8qFGPqPbb9aCZQwWB7sLEVqg0s0R92l0jr2AzBbFzYgG5kuzHpfGB19p2iZ6+uKrr+POPhhzP0ELABp3CJWd21YJUnt/l7mwcpDH4NfzycXeB/ppxbcfS61XXLPkGq4aSEN9pm27kbtGJXm/ePS28TXucfebw+8CDm5YnJEXMioJsGGH5LuGpGGb+cvb57V8gYLm7wWsjGefwlluHt5DDN/jGyZlYaxyg+L2FCvW6wXV047gvjwY2rPl4sr7Hydq9cDVHy98fuVQA/3I5R0N+n13Oswvavh7gaeWnATtFB6E1C911/wM9Uh7w
+sidebar_class_name: "patch api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update a user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/v3/users/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update a user
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** `<= 255 characters`"}
+          schema={{"type":"string","description":"Name of the user","example":"John Doe","maxLength":255,"x-convert":{"trim":true}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"role_id"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"User role Id","example":1}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"User Id","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"User name","example":"Jane Doe"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"email"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"User email","example":"johndoe@example.com"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"phone"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"User phone number","example":"+1384843"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"admin"}
+                              required={false}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean","description":"Is user an admin","example":false}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"owner"}
+                              required={false}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean","description":"Is user owner of the account","example":true}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"agency_owner"}
+                              required={false}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean","description":"Is user an agency owner","example":false}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"verified"}
+                              required={false}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean","description":"Is user account verified?","example":true}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"role_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Id of the user role","example":2}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Jane Doe\",\n    \"email\": \"johndoe@example.com\",\n    \"phone\": \"+1384843\",\n    \"admin\": false,\n    \"owner\": true,\n    \"agency_owner\": false,\n    \"verified\": true,\n    \"role_id\": 2\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

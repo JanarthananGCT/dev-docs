@@ -1,0 +1,275 @@
+---
+id: post-v-1-surveys-survey-id-submission-start
+title: "Start submission"
+description: "Start submission"
+sidebar_label: "Start submission"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNldtu2zgQhl9FmKtuwUSxsS0Kolggu+1FkAUa1OkCrWsEY2kcsZVIlaScuoLefTGkDnbsFMmFQ5Bz4sz3Uy2Ymix6ZfRVDhJq4/x/s0Vjt7Rz8d+dyhfNulLOKaMXHq0HATVarMiTdSCXLWisCCS4wQEEKM3h0BcgwNKPRlnKQXrbkACXFVQhyBb8rmZH3VRrstB1q2hMzv9t8h1bZEZ70p6XWNelykKx6TdnNO8dhTLrb5SFEi1fzStyQxjMPNd2nFZAVqDWVD51XJHHd+ifkce4PRvnrdL3HGBtzYMje/LMq4q+GE2/c/wX9X2D96dtcvR0x1GOTwVsjK3QgwxWICAnl1lVcxNBwjv0lKDOk1tVUWI2iRtHfZ4sCtOUebKmROnEF5RcLT4kfTwB9BOruuRc84v5/Gw2O7uY385mcv5Gvnp1/vrP+Rfo+j8BHu+ZFJjCOwizdrXRLrYupw02pY/L/SIXTZaRc5umBLHPw8v05UkEhs7E1I6yxiq/C6Be3lzdXb//DHK5YtYe5WG49zoAYfCFGYQRuPcFSEi3szTC7tJ2pL5LJ9/U9UpxZLeDTBpbgoTC+9rJNMVanfdBarTWPJxnpoJOPLaj5uy5plg/27Sip0xXU88W3No4nbFzY5uxVte0AzGo/7LxhbHqVxDo8AIUhHlQtgCW7MdJ3O8Hfg7FeXEoxotD8bG8JrZHVU1bk5iOzCYNTUd70vkdxnyZjeECeJaRlpDMBwGwCBmQCsOb1PfjBE4HvI2N9PTTp3WJSnOgMKa2J20J2xlDFKcEAuT+G3sQOwK3ElAwqnIJbbtGR59s2XW8/aMhyyJYCdiiVbjm0pct5MrxOge5wdLRUZGj4ODFx/4d/yPhy58qfkBDMxdbLBuKnfpOu4PvQ7fqxMAGFxHP/4mpzm45yuR/9O4zzdHjMsuo9nu2/CYwwaNwbz4sbpmB/nNSmZzNLD7wdwkfQMJX+MolmnDjwHrYb6GcgIlpGQRseC77IvgeRNAv+DInm/BYHbF+/uXbnHR5e3lzlVzT7q/RPJ486dA3dLDmkay6rvsf/nSvvA==
+sidebar_class_name: "post api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Start submission"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/surveys/{survey_id}/submission/start"}
+>
+  
+</MethodEndpoint>
+
+
+
+Start submission
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"survey_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"contact_id"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"channel_id"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  metaData
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"os"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"browser"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"timeZone"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"browserLanguage"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"date_time"}
+                required={false}
+                schemaName={"date"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","format":"date","description":"Date and Time of submission. Should be in the ISO format","example":"2022-11-02T11:28:55.642Z"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

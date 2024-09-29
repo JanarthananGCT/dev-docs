@@ -1,0 +1,188 @@
+---
+id: get-v-3-contact-lists
+title: "Get all contact lists"
+description: "Get all contact lists"
+sidebar_label: "Get all contact lists"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNU1Fr2zAQ/ivmHotWt8ubGYNQSgnpQyHbYARTZPkaq7UtTTp59Yz/+zjbSZ3QbPWDJaTvTnff910HxqKTpE29yiGBHdKPxY2pSSp6LLUnDwJI7jwkW1BH56kAh96a2qOHpIPPV1e85OiV05YzQgKboBR6/xRKEEM81sSoi/iCF68KrCTvqLUICZjsGRWBAOu4MNJj7lzSHCWdky0I0ISV/3+0zmeYOlQZOhCAr7KyJUJy3QuoZYUzkCen690cBBMp0b32FF1DL447/VfoJmSMzDCPpiwe+sMnwKMKTlMLybaD5cPqcX37E5Jt2qcnj8AdUiTLMpqUiPYKVUiFmfTj9iUVkEDcLGJ1oqVH16Dzw1PBlZBAQWR9EsfS6ksfXIOtt9I58/tSmQp6cYrD8OmjUGk/DK3wHDR9I2jDdhk1PdD0Zgqr18iuGLWEZaDCOP1nMDebhQksUObogFnX9ZPhcKZjZJetrmmQjPW1xlMlB22nlOfof98JhK8U21LqmrMN7XaTNFtoFtNAHA1UYTzxbddl0uN3V/Y9H/8K6NgdqYBGOi0zrnGb9mLfD6v5gi13rRRa9kAjy8BV8KQxhweL3N1+AwEycB1z8l4G8qYNJ9xf1e0s3Smr46v8Z03fDfmyfFhFa2y/HuDjzdmAqak9mvlL+77/C4CBlZs=
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all contact lists"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v3/contact_lists"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all contact lists
+
+<div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object[]
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                              >
+                                Array [
+                              </div>
+                            </li><SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"Contact List 1"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"description"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"Subscribed Contacts"}}
+                            >
+                              
+                            </SchemaItem><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                              >
+                                ]
+                              </div>
+                            </li>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": [\n    {\n      \"id\": 1,\n      \"name\": \"Contact List 1\",\n      \"description\": \"Subscribed Contacts\"\n    }\n  ]\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

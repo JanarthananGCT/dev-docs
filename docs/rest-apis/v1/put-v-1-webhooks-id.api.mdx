@@ -1,0 +1,236 @@
+---
+id: put-v-1-webhooks-id
+title: "Update webhook"
+description: "Update webhook"
+sidebar_label: "Update webhook"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVG1vm0AM/iuVP20VK+pXNE3KumiLumlRm26a0mhywAnXwt31XtIyxH+fzBFIGyqVD3Cc7bP9PI+vBqXJoBNKzjJIQHv36/w3rXOl7u0sgwg0GizJkbGQLGuQWBIkINgkJEegyyECQw9eGMogccZTBDbNqURIanCV5gjpyzUZaJpVcCbrPqusYo9USUfS8RK1LkTa1hPfWSV57+gotb6j1HFthqt3gixbQ2m9l3VGyC00EWRkUyM0Hzpq96YY3c+d0z/I5So7NkdA0peQLGH+83oBEXyd8ns+WVx84+8N/32Zfp8uprDiswizFsP+IDQGK0bRUWmPu2saxr4qFGZjRn4icLhlWuCxYwxacK1W0gZMMtqgL1xYHqAA1z5NydqNLyA6JOA0Ph3FfI9KyGsp9Ua4qpXEZD77ezn9A8lyxeQ+z3OjM3R00hUIEZQdoCy1Vl4uhwTi3Xm8byKuRdYAJzG7vexailpCbBLHqMWZ9WZHldVojHo8S1UJTfTSj/yHt7qifrNrSa+5rgZkrhnAwEGPz0C9FpfE3HfTNPEuV0b8a3W/H6ygmFYHPAlXw8xMn7DUBQ2aH0T5HPx+OzTQ/x4Ke6/fXqDLmvsYpMcFCLlRnI75CEdDBE44LgJ4VLSyrkR5UNIR8eNT6OjJxbpAIQ8mMYhiCbtziAZtR5CIjBWeK+vYXNdrtHRjiqbh7QdPhhW5imCHRuCaq1vWkAnL6wySDRaWjirp1Q/vrrpb7P0J9zdW4Z5ByfTtsPAUwLinKlyLzTDtbfZguAg5Piw4fAg8uu5YbSFikqak3YEvTyYz0w9QuGPW3SVaqoy9DD7ybYyPkMAt3HJpqu20lWK7X0OBcutxy/4hK3OMnkE/1Oh9q9Fuwb2MNv9SvKF8fnMzoyEfJ/PZySVVn3r3YHk1oMOzh1kyzE3zH7xmRa4=
+sidebar_class_name: "put api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update webhook"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/webhooks/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update webhook
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"description"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"url"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"httpMethod"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`POST`, `GET`, `PATCH`, `PUT`, `DELETE`]"}
+          schema={{"type":"string","enum":["POST","GET","PATCH","PUT","DELETE"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"headers"}
+          required={false}
+          schemaName={"object[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"object"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"payload"}
+          required={false}
+          schemaName={"object"}
+          qualifierMessage={undefined}
+          schema={{"type":"object"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

@@ -1,0 +1,966 @@
+---
+id: put-v-3-questions-question-id
+title: "Update a question"
+description: "Update a question"
+sidebar_label: "Update a question"
+hide_title: true
+hide_table_of_contents: true
+api: eJztW21v4zYS/isCP/UK7cabXHs9oyiQS7Jobosg3Xi3KFLDoKWxxV1J1JKUHV+g/14MSVGULNvKIr2+2QECaTQcDofD4fDR6JHwAgRVjOfXMRmTolTvz34sQSJF1hczFpOQFFTQDBQIScb3jySnGZAx+dTiYTkKoSohIRHwqWQCYjJWooSQyCiBjJLxI1GbApvmZTYHQapqaphBqv/weIMcEc8V5AovaVGkLNIqnnyQPEfalig+/wCRQiUFDkgxkJqvFCvYoGpbvYYkBhkJVqBgMiZ3mjW4xlHAA82KFMj4VRW6AR7uTcGD8rikEixfkqrTU8/zxlLu4ZzzFGiOTzud7FUhpmqAWTLWr0dGH3rpUkHRZ0HIy4yM78/Cf4ZfhV+H/wq/Cf8dvhpNq5CsKVN7mozCV+FpqBsit+Hq7ZmKA3Kw/YKlMEMW30RUCLpBn1SQyW3pOC0LWqaKjO8Jy+gSkMQjMnXSW+SQrFgMnISEljHjZFpV6O9RWsYwWwDEcxp9nM03M1xO+bJnLrsuN+GBbR/U7YP5JjDtgwUXweuaXDthoEUap8i4AtE/Lr+XW8sZoHtqqTe3d02H25KplGzVMx1bgg3jULkxKEEjxQeofFmzDpWd8vUMFgsuetZfV/gPfB0Y3kb6xdU+6TmUStD0sOgbwzhUbsKWyWC1v2fL5Il6S6qYXLBWXNkh/a5m9WTfnU/2TSeTT5B/6XEP7kIJmsuUKpjRXK71vjNkTblmgW2m+9rVDf70aIqUbmYpX7LocADVbENizY72HzjLZxHPY9a/J2z77JJFgdmquQj4IlAJBP/lLA8aKd6+RWge+wHO3tdhzdxxQXbH3n4NNE8jR2cExNsiQ71xUz3iKKF5DqlWqxAgpWGIYcUimKAg7D3iGUrZERZcHJYYbEBnGPKGK3en9wf5E9MJB+RxfanVYLlE6qeSpvLODYsDSrgwDCQkOVdXyDLB0J6ClJOE5q+5uLWDWwqgCkSLOvX37Ht/ENOQPLygqQKRU8VWYHKlP824qnCfsud6PTXqevfPrbCWfwcpRMr2592AYXvNxV1EU2i19YjeoGtSe9A1tZH31uzdHYGO6kl0tLZIR25k3tQ5S0umo3oyHa0t05EbmZdUbQ3b0hqmn9HAXS5DfD4HPvrEX8Yn9i3+p8+luUUdBC8u+dqfzg45ofI9TUvQc3qVFWpz0Bd+C1POYcEFKkEXaqhtn2shHe27w77P65RMXpi0ZGIyGR1SfNLvN5+HVdtniuefr+eyxG+g2f4s5VJnmLUF7d3zbXj94iv/LyQrKhidpzAIenpvmYPrWB9VMLfX+TZpK+0L3av1k/vROvtI3kGda2jwkM6+0M/ReXc/lTk+mOPGwfPLhWEM7Dlss6V0PcELJqS6QWwzJCl1l5BRhmeZIuE53md8znSe8IHPJ0yZ3ILmyxIBoy1nM0oO87TfU29jU3twO2xTw3hYN3ts1Ihx1za2s8+yzWf1r8fYHEkHefuVYz/k723Bn+Px+/rSuhdUQK5mT1qu14sG92AyoIEs5zUhDLYlBmuWpsEcdN/XcY04GMbAO+87yOFMRz1MMg76jc5F3MhSa8UGrCBV1TaqMtufRmrkR1b832CaMitmiu/FjsmlvdI6x0xApGal2LF8miGGRxDpCCIdQaQjYPAnBgyOINLRJ44g0hFE+sPb9wgiHUGkI4h0BJGOINIRRDqCSH93EKmyRT/+06ZS1EMiLOSk6FL6YUga/5MFz6WBYk5HI1192akojSKQclGmdsu2Ba1fnnz5lBrWYSWd/fPXKmQdhtH82CqP8uGgCTyo67woNdRVcDkQdrq1nDj9fXNOTl+O2j9dG0flpanJ+qGD9e2q/PopAZWAcQfnpgmVga3tcj7iel7QVMKBAltEHIcXETdObsqJ/d5OURREw1ebk2VbtRZfQYUK+KK7eGgU8TJXgzo4N7ydkufTP3BwaJauhKgUTG10KDy/vZ69ufqZjO+nWEre1utdEetSQF9kBirhttxdF7arhIzJyersxC3xk0dP1wpxCBCruvRdw7skUaqQ45MTWrCXxkdkQYXg65cRzwiml20+KF8MZaXFYNYMdrFOGzPdYawx7u2M1cDOBXujXdVW9J+XKuGC/Y9aa+ma/gRorGv1Q4JF+G+bcv2ren5a5favOoXzujR+V4hw5O4nA/2RUJevN4101Xpza4rVz+oS9FG4FZ9sUfmoXTd+36kCn+6v7nYK2jLsRrwroPaH62qfG6JftNxQXbFxQ2rVCXvDaMpvvZ5aZbkNvaeWFkfQW/tav5i4337HYFF/a9Eauvfxdx+Obh1gRp3DwchLvFuJp0sdiduCWnnWqD9AnbnUwX0/MN16X+QPrX65497gdF/g+FP1l7HItDLfLSz0ay0MaWYYOAadypuXUwWXKqN67dqw0BdI+z9swcV+UqQICFUhse/CTJC9J6szL8NCBGPcOd0lXOpPMh4f51TCO5FWFZI/lSAw3E8bI+r5iJnE69hu51s6ucSLfPHWRpd/BM2EtXWtI2K+IY3tSEg+wqbzqZP2LRsUUQ3DcWE6e2HRl1rC1idMGMZNi/MogkJ5vJgdYuh2e9TtuwnCXvbDqIzHyCXoGt2VrsmY/EJ+QR15YSw6fjT0x+ZINiamV5x5WuI8+MH/ow7+9sI7WrSt0N0VjPr43wNS2k2+Pb+9Dt7A5jvHbp7sbGDtWXPjnKC7/grsKRqK
+sidebar_class_name: "put api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update a question"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v3/questions/{question_id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update a question
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"question_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"survey_id"}
+          required={true}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Survey Id","example":1}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  question
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"text"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"description"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"required"}
+                required={false}
+                schemaName={"boolean"}
+                qualifierMessage={undefined}
+                schema={{"type":"boolean"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={true}
+                className={"schemaItem"}
+              >
+                <details
+                  style={{}}
+                  className={"openapi-markdown__details"}
+                >
+                  <summary
+                    style={{}}
+                  >
+                    <span
+                      className={"openapi-schema__container"}
+                    >
+                      <strong
+                        className={"openapi-schema__property"}
+                      >
+                        properties
+                      </strong><span
+                        className={"openapi-schema__name"}
+                      >
+                         object
+                      </span>
+                    </span>
+                  </summary><div
+                    style={{"marginLeft":"1rem"}}
+                  >
+                    <SchemaItem
+                      collapsible={true}
+                      className={"schemaItem"}
+                    >
+                      <details
+                        style={{}}
+                        className={"openapi-markdown__details"}
+                      >
+                        <summary
+                          style={{}}
+                        >
+                          <span
+                            className={"openapi-schema__container"}
+                          >
+                            <strong
+                              className={"openapi-schema__property"}
+                            >
+                              data
+                            </strong><span
+                              className={"openapi-schema__name"}
+                            >
+                               object
+                            </span>
+                          </span>
+                        </summary><div
+                          style={{"marginLeft":"1rem"}}
+                        >
+                          <SchemaItem
+                            collapsible={false}
+                            name={"min"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"max"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"step"}
+                            required={false}
+                            schemaName={"number"}
+                            qualifierMessage={"**Possible values:** [`3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`]"}
+                            schema={{"type":"number","enum":[3,4,5,6,7,8,9,10]}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"wait"}
+                            required={false}
+                            schemaName={"number"}
+                            qualifierMessage={"**Possible values:** [`0`, `1`, `2`, `3`, `4`, `5`]"}
+                            schema={{"type":"number","enum":[0,1,2,3,4,5]}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"type"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"start"}
+                            required={false}
+                            schemaName={"number"}
+                            qualifierMessage={"**Possible values:** [`0`, `1`]"}
+                            schema={{"type":"number","enum":[0,1]}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"file_types"}
+                            required={false}
+                            schemaName={"string[]"}
+                            qualifierMessage={"**Possible values:** [`image`, `doc`, `video`, `audio`]"}
+                            schema={{"type":"array","items":{"type":"string","default":["image","doc"],"enum":["image","doc","video","audio"]}}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"include_feedback_by_rating"}
+                            required={false}
+                            schemaName={"boolean"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"boolean","description":"To include feedback by rating for Feedback question type"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"promoter"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string","description":"Promoter text for NPS feedback question type"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"passive"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string","description":"Passive text for NPS feedback question type"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"detractor"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string","description":"Detractor text for NPS feedback question type"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"low_effort"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string","description":"Low effort text for CES feedback question type"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"neutral"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string","description":"Neutral text for CES feedback question type"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"high_effort"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string","description":"High effort text for CES feedback question type"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"satisfied"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string","description":"Satisfied text for CSAT feedback question type"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"dissatisfied"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string","description":"Dissatisfied text for CSAT feedback question type"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"translate_answers"}
+                            required={false}
+                            schemaName={"boolean"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"boolean","description":"To translate answers for feedback question type"}}
+                          >
+                            
+                          </SchemaItem>
+                        </div>
+                      </details>
+                    </SchemaItem>
+                  </div>
+                </details>
+              </SchemaItem><SchemaItem
+                collapsible={true}
+                className={"schemaItem"}
+              >
+                <details
+                  style={{}}
+                  className={"openapi-markdown__details"}
+                >
+                  <summary
+                    style={{}}
+                  >
+                    <span
+                      className={"openapi-schema__container"}
+                    >
+                      <strong
+                        className={"openapi-schema__property"}
+                      >
+                        display_logic
+                      </strong><span
+                        className={"openapi-schema__name"}
+                      >
+                         object
+                      </span>
+                    </span>
+                  </summary><div
+                    style={{"marginLeft":"1rem"}}
+                  >
+                    <SchemaItem
+                      collapsible={true}
+                      className={"schemaItem"}
+                    >
+                      <details
+                        style={{}}
+                        className={"openapi-markdown__details"}
+                      >
+                        <summary
+                          style={{}}
+                        >
+                          <span
+                            className={"openapi-schema__container"}
+                          >
+                            <strong
+                              className={"openapi-schema__property"}
+                            >
+                              logics
+                            </strong><span
+                              className={"openapi-schema__name"}
+                            >
+                               object[]
+                            </span>
+                          </span>
+                        </summary><div
+                          style={{"marginLeft":"1rem"}}
+                        >
+                          <li>
+                            <div
+                              style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                            >
+                              Array [
+                            </div>
+                          </li><SchemaItem
+                            collapsible={false}
+                            name={"join_condition"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={"**Possible values:** [`and`, `or`]"}
+                            schema={{"type":"string","description":"Logic operator of the Join condition","example":"and","default":"and","enum":["and","or"]}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"type"}
+                            required={true}
+                            schemaName={"string"}
+                            qualifierMessage={"**Possible values:** [`param`, `question`, `contact`, `channel`, `expression`, `deviceType`]"}
+                            schema={{"type":"string","description":"Logic type","enum":["param","question","contact","channel","expression","deviceType"]}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"comparator"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={"**Possible values:** [`isPassed`, `isNotPassed`, `startsWith`, `endsWith`, `contains`, `equalsString`, `doesNotContain`, `notEqualTo`, `lessThanForParam`, `greaterThanForParam`]"}
+                            schema={{"type":"string","enum":["isPassed","isNotPassed","startsWith","endsWith","contains","equalsString","doesNotContain","notEqualTo","lessThanForParam","greaterThanForParam"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["isPassed","isNotPassed","startsWith","endsWith","contains","equalsString","doesNotContain","notEqualTo","lessThanForParam","greaterThanForParam"]},{"type":"string","enum":["isAnswered","isNotAnswered","startsWith","endsWith","contains","equalsString","doesNotContain","notEqualTo","isNotSelected","isSelected","equalToForScale","notEqualToForScale","lessThanForScale","greaterThanForScale","equalToForRating","notEqualToForRating","lessThanForRating","greaterThanForRating","equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber","equalToForDate","notEqualToForDate","equalToForYesNo","notEqualToForYesNo"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["isAnswered","isNotAnswered","startsWith","endsWith","contains","equalsString","doesNotContain","notEqualTo","isNotSelected","isSelected","equalToForScale","notEqualToForScale","lessThanForScale","greaterThanForScale","equalToForRating","notEqualToForRating","lessThanForRating","greaterThanForRating","equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber","equalToForDate","notEqualToForDate","equalToForYesNo","notEqualToForYesNo"]},{"type":"string","enum":["startsWith","endsWith","contains","equalsString","equalsForDropDown","notEqualsForDropDown","hasValue","isEmpty","doesNotContain","notEqualTo","equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber","before","after","equalToForDate","notEqualToForDate"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["startsWith","endsWith","contains","equalsString","equalsForDropDown","notEqualsForDropDown","hasValue","isEmpty","doesNotContain","notEqualTo","equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber","before","after","equalToForDate","notEqualToForDate"]},{"type":"string","enum":["startsWith","endsWith","contains","equalsString","isChannelType","isNotChannelType"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["startsWith","endsWith","contains","equalsString","isChannelType","isNotChannelType"]},{"type":"string","enum":["equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber"]},{"type":"string","enum":["isDevice","isNotDevice"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["isDevice","isNotDevice"]}]}]}]}]}]}]}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"variable_id"}
+                            required={false}
+                            schemaName={"number"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"number","description":"Variable Id for the Logic","required":["variable_id"],"x-alternatives":[{"type":"number","description":"Variable Id for the Logic"}]}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"question_id"}
+                            required={false}
+                            schemaName={"number"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"number","description":"Question Id for the Logic","required":["question_id"],"x-alternatives":[{"type":"number","description":"Question Id for the Logic"}]}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"contact"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={"**Possible values:** [`firstName`, `lastName`, `email`, `phone`, `mobile`, `jobTitle`, `language`]"}
+                            schema={{"type":"string","description":"Contact property for the Logic","enum":["firstName","lastName","email","phone","mobile","jobTitle","language"],"required":["contact"],"x-alternatives":[{"type":"string","description":"Contact property for the Logic","enum":["firstName","lastName","email","phone","mobile","jobTitle","language"]}]}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"channel"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={"**Possible values:** [`type`, `name`]"}
+                            schema={{"type":"string","description":"Channel property for the Logic","enum":["type","name"],"required":["channel"],"x-alternatives":[{"type":"string","description":"Channel property for the Logic","enum":["type","name"]}]}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"expression_id"}
+                            required={false}
+                            schemaName={"number"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"number","description":"Expression Id for the Logic","required":["expression_id"],"x-alternatives":[{"type":"number","description":"Expression Id for the Logic"}]}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"parent_question_id"}
+                            required={false}
+                            schemaName={"number"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"number","description":"If question is a subquestion, parent_question_id will be the Id of the parent question","example":3}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"value"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string","description":"Value for the logic","default":""}}
+                          >
+                            
+                          </SchemaItem><li>
+                            <div
+                              style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                            >
+                              ]
+                            </div>
+                          </li>
+                        </div>
+                      </details>
+                    </SchemaItem>
+                  </div>
+                </details>
+              </SchemaItem><SchemaItem
+                collapsible={true}
+                className={"schemaItem"}
+              >
+                <details
+                  style={{}}
+                  className={"openapi-markdown__details"}
+                >
+                  <summary
+                    style={{}}
+                  >
+                    <span
+                      className={"openapi-schema__container"}
+                    >
+                      <strong
+                        className={"openapi-schema__property"}
+                      >
+                        skip_logic
+                      </strong><span
+                        className={"openapi-schema__name"}
+                      >
+                         object
+                      </span>
+                    </span>
+                  </summary><div
+                    style={{"marginLeft":"1rem"}}
+                  >
+                    <SchemaItem
+                      collapsible={true}
+                      className={"schemaItem"}
+                    >
+                      <details
+                        style={{}}
+                        className={"openapi-markdown__details"}
+                      >
+                        <summary
+                          style={{}}
+                        >
+                          <span
+                            className={"openapi-schema__container"}
+                          >
+                            <strong
+                              className={"openapi-schema__property"}
+                            >
+                              logics
+                            </strong><span
+                              className={"openapi-schema__name"}
+                            >
+                               object[]
+                            </span>
+                          </span>
+                        </summary><div
+                          style={{"marginLeft":"1rem"}}
+                        >
+                          <li>
+                            <div
+                              style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                            >
+                              Array [
+                            </div>
+                          </li><SchemaItem
+                            collapsible={false}
+                            name={"jump_to"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string","default":"Default"}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={false}
+                            name={"redirect_url"}
+                            required={false}
+                            schemaName={"string"}
+                            qualifierMessage={undefined}
+                            schema={{"type":"string","default":""}}
+                          >
+                            
+                          </SchemaItem><SchemaItem
+                            collapsible={true}
+                            className={"schemaItem"}
+                          >
+                            <details
+                              style={{}}
+                              className={"openapi-markdown__details"}
+                            >
+                              <summary
+                                style={{}}
+                              >
+                                <span
+                                  className={"openapi-schema__container"}
+                                >
+                                  <strong
+                                    className={"openapi-schema__property"}
+                                  >
+                                    logics
+                                  </strong><span
+                                    className={"openapi-schema__name"}
+                                  >
+                                     object[]
+                                  </span>
+                                </span>
+                              </summary><div
+                                style={{"marginLeft":"1rem"}}
+                              >
+                                <li>
+                                  <div
+                                    style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                  >
+                                    Array [
+                                  </div>
+                                </li><SchemaItem
+                                  collapsible={false}
+                                  name={"join_condition"}
+                                  required={false}
+                                  schemaName={"string"}
+                                  qualifierMessage={"**Possible values:** [`and`, `or`]"}
+                                  schema={{"type":"string","description":"Logic operator of the Join condition","example":"and","default":"and","enum":["and","or"]}}
+                                >
+                                  
+                                </SchemaItem><SchemaItem
+                                  collapsible={false}
+                                  name={"type"}
+                                  required={true}
+                                  schemaName={"string"}
+                                  qualifierMessage={"**Possible values:** [`param`, `question`, `contact`, `channel`, `expression`, `deviceType`]"}
+                                  schema={{"type":"string","description":"Logic type","enum":["param","question","contact","channel","expression","deviceType"]}}
+                                >
+                                  
+                                </SchemaItem><SchemaItem
+                                  collapsible={false}
+                                  name={"comparator"}
+                                  required={false}
+                                  schemaName={"string"}
+                                  qualifierMessage={"**Possible values:** [`isPassed`, `isNotPassed`, `startsWith`, `endsWith`, `contains`, `equalsString`, `doesNotContain`, `notEqualTo`, `lessThanForParam`, `greaterThanForParam`]"}
+                                  schema={{"type":"string","enum":["isPassed","isNotPassed","startsWith","endsWith","contains","equalsString","doesNotContain","notEqualTo","lessThanForParam","greaterThanForParam"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["isPassed","isNotPassed","startsWith","endsWith","contains","equalsString","doesNotContain","notEqualTo","lessThanForParam","greaterThanForParam"]},{"type":"string","enum":["isAnswered","isNotAnswered","startsWith","endsWith","contains","equalsString","doesNotContain","notEqualTo","isNotSelected","isSelected","equalToForScale","notEqualToForScale","lessThanForScale","greaterThanForScale","equalToForRating","notEqualToForRating","lessThanForRating","greaterThanForRating","equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber","equalToForDate","notEqualToForDate","equalToForYesNo","notEqualToForYesNo"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["isAnswered","isNotAnswered","startsWith","endsWith","contains","equalsString","doesNotContain","notEqualTo","isNotSelected","isSelected","equalToForScale","notEqualToForScale","lessThanForScale","greaterThanForScale","equalToForRating","notEqualToForRating","lessThanForRating","greaterThanForRating","equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber","equalToForDate","notEqualToForDate","equalToForYesNo","notEqualToForYesNo"]},{"type":"string","enum":["startsWith","endsWith","contains","equalsString","equalsForDropDown","notEqualsForDropDown","hasValue","isEmpty","doesNotContain","notEqualTo","equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber","before","after","equalToForDate","notEqualToForDate"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["startsWith","endsWith","contains","equalsString","equalsForDropDown","notEqualsForDropDown","hasValue","isEmpty","doesNotContain","notEqualTo","equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber","before","after","equalToForDate","notEqualToForDate"]},{"type":"string","enum":["startsWith","endsWith","contains","equalsString","isChannelType","isNotChannelType"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["startsWith","endsWith","contains","equalsString","isChannelType","isNotChannelType"]},{"type":"string","enum":["equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["equalToForNumber","notEqualToForNumber","lessThanForNumber","greaterThanForNumber"]},{"type":"string","enum":["isDevice","isNotDevice"],"required":["comparator"],"x-alternatives":[{"type":"string","enum":["isDevice","isNotDevice"]}]}]}]}]}]}]}}
+                                >
+                                  
+                                </SchemaItem><SchemaItem
+                                  collapsible={false}
+                                  name={"variable_id"}
+                                  required={false}
+                                  schemaName={"number"}
+                                  qualifierMessage={undefined}
+                                  schema={{"type":"number","description":"Variable Id for the Logic","required":["variable_id"],"x-alternatives":[{"type":"number","description":"Variable Id for the Logic"}]}}
+                                >
+                                  
+                                </SchemaItem><SchemaItem
+                                  collapsible={false}
+                                  name={"question_id"}
+                                  required={false}
+                                  schemaName={"number"}
+                                  qualifierMessage={undefined}
+                                  schema={{"type":"number","description":"Question Id for the Logic","required":["question_id"],"x-alternatives":[{"type":"number","description":"Question Id for the Logic"}]}}
+                                >
+                                  
+                                </SchemaItem><SchemaItem
+                                  collapsible={false}
+                                  name={"contact"}
+                                  required={false}
+                                  schemaName={"string"}
+                                  qualifierMessage={"**Possible values:** [`firstName`, `lastName`, `email`, `phone`, `mobile`, `jobTitle`, `language`]"}
+                                  schema={{"type":"string","description":"Contact property for the Logic","enum":["firstName","lastName","email","phone","mobile","jobTitle","language"],"required":["contact"],"x-alternatives":[{"type":"string","description":"Contact property for the Logic","enum":["firstName","lastName","email","phone","mobile","jobTitle","language"]}]}}
+                                >
+                                  
+                                </SchemaItem><SchemaItem
+                                  collapsible={false}
+                                  name={"channel"}
+                                  required={false}
+                                  schemaName={"string"}
+                                  qualifierMessage={"**Possible values:** [`type`, `name`]"}
+                                  schema={{"type":"string","description":"Channel property for the Logic","enum":["type","name"],"required":["channel"],"x-alternatives":[{"type":"string","description":"Channel property for the Logic","enum":["type","name"]}]}}
+                                >
+                                  
+                                </SchemaItem><SchemaItem
+                                  collapsible={false}
+                                  name={"expression_id"}
+                                  required={false}
+                                  schemaName={"number"}
+                                  qualifierMessage={undefined}
+                                  schema={{"type":"number","description":"Expression Id for the Logic","required":["expression_id"],"x-alternatives":[{"type":"number","description":"Expression Id for the Logic"}]}}
+                                >
+                                  
+                                </SchemaItem><SchemaItem
+                                  collapsible={false}
+                                  name={"parent_question_id"}
+                                  required={false}
+                                  schemaName={"number"}
+                                  qualifierMessage={undefined}
+                                  schema={{"type":"number","description":"If question is a subquestion, parent_question_id will be the Id of the parent question","example":3}}
+                                >
+                                  
+                                </SchemaItem><SchemaItem
+                                  collapsible={false}
+                                  name={"value"}
+                                  required={false}
+                                  schemaName={"string"}
+                                  qualifierMessage={undefined}
+                                  schema={{"type":"string","description":"Value for the logic","default":""}}
+                                >
+                                  
+                                </SchemaItem><li>
+                                  <div
+                                    style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                  >
+                                    ]
+                                  </div>
+                                </li>
+                              </div>
+                            </details>
+                          </SchemaItem><li>
+                            <div
+                              style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                            >
+                              ]
+                            </div>
+                          </li>
+                        </div>
+                      </details>
+                    </SchemaItem>
+                  </div>
+                </details>
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"type"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Question type","example":"TextInput"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"position"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Position of question","example":"2.000000000000000"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"hasDisplayLogic"}
+                              required={false}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean","description":"Whether the question has display logic","example":false}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"properties"}
+                              required={false}
+                              schemaName={"object"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"object"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"survey_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Id of the Survey","example":2}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"section_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Id of the section question is part of","example":3}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"account_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Account Id","example":2}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"parent_question_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"If question is a subquestion, parent_question_id will be the Id of the parent question","example":3}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": {\n    \"id\": 1,\n    \"type\": \"TextInput\",\n    \"position\": \"2.000000000000000\",\n    \"hasDisplayLogic\": false,\n    \"properties\": {},\n    \"survey_id\": 2,\n    \"section_id\": 3,\n    \"account_id\": 2,\n    \"parent_question_id\": 3\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

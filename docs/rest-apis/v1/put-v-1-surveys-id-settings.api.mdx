@@ -1,0 +1,227 @@
+---
+id: put-v-1-surveys-id-settings
+title: "Update Survey settings"
+description: "Update Survey settings"
+sidebar_label: "Update Survey settings"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNlG9r2zAQxr9KuVfbUOu2jMHMGHR/XpS+WGnWwWjDuNiXRKstqdIpXWb83cdJjps2KSwvgpGf89099zt1YB15ZG3NeQ0luMg/TibRr2gdzusJMWuzCKDAoceWmHyA8qYDgy1BCboGBdpIIPISFHi6j9pTDSX7SApCtaQWoeyA104iTGxn5KHvp1lMgT/Zei2Kyhomw/KIzjW6SmUVv4M1crbzKTv7TRVLbV6aYE1B3jr0rLGZxFmrQ9A5eAiZWdsQGugVUK35ioKzJtB+BRpr1q2NYSML+3VhzHRJ/jqQ321XQauNbmML5UmvoIr8bT7/grydObDXZgEK5ta3yFBCLYI+/RQwLsR6CGk4kOzbKqumOcaG82OovHacWodJrCoKYR4bUNsWvyne7HV1KGPIGqiKXvM6Df3s8vzXxdefUN5MZXxP81w7Kfcgs3MQHslpiZd2YCuBxEsooVidFLmVUHS67outiEB+tQEt+gZKWDK7UBYFOn00RDn03j4cVbaFXj3XUTz8Xym6/5a29JJ0+ujURAzNMxn9Gs1Fpy9oDWqzP2eRl9brv4n0zSotCeu0IgqE/avHLfn6B1vX0AuU5417ynU+20fysJ+77B4/5RNOj0/fHh6/Pzx9J7BrM7eSXwaUBw8KWLNUBSJwNnCLaemGJl8k4wlAo0dMf7hwDeq0XGkC3UDNDaxOhI88AFBQpgto/ORUwdIGFmHXzTDQtW/6Xo7vI3mBeKpghV7jTOq96aDWQZ5rKOfYBNqpaVwYeHU1XG2vD6TjfbVuhmxkwitsImV77mid78p+2qvNeCV7fvE55zj8LuGPgTt3oACZI86qihxvaWWZBcJx1y6vv4OC2XCztrYWlccHuaLxAUq4hVspzaZOE63pvIMGzSLiQvQ5q3CIUezfxvguYTw8SC97m3/Ody5f/qWZvSEfzi7PDy5o/XGU5zcvBgx+jjYbsbnv/wFYhVl9
+sidebar_class_name: "put api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Survey settings"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/surveys/{id}/settings"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update Survey settings
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"partialSubmission"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"editResponse"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"anonymousResponses"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"submissionPerUser"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={"**Possible values:** `>= 1`"}
+          schema={{"type":"number","minimum":1}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"cutOffDate"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

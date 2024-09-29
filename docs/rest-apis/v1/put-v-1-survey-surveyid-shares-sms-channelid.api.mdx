@@ -1,0 +1,241 @@
+---
+id: put-v-1-survey-surveyid-shares-sms-channelid
+title: "Update SMS share"
+description: "Update SMS share"
+sidebar_label: "Update SMS share"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VW1r40YQ/itiPrWHLkqgn0QppMcVQq4Qzkmh+EQYSxNr76Rd3e6sE1fov5fZlSz57ECgUH8wy2pen3me2R5MRxZZGX1TQQ6d57+uVt7uaB//VbWq0ZJbte5DjVpToypIoUOLLTFZB/m6B40tQQ4uuNyIgdISDbmGFCx998pSBTlbTym4sqYWIe+B9534ad9uyMIwpIdQZUz2H2IV0Zgc/26qvViURjNpliN2XaPK0Hf21RktdyehzOYrlSzdWkGJFbkpDJbsFpZoLe6lUqZ2ee/YKr2VxiavT8rxGxxnRKAl53BLp1FTaPHlE+kt15Bf/XI5pOBad492SyzDPAmWwg6twk1D7rTLIQV+Vo0yj6XRjjQ/4tYSLeNsjGkINaRQkSut6gQ+yOEPYxPvlN4mkQCuQ2vNczJWnjiyO1VSsjc+0URVwiYJwROuKRnTXcAQfikwboVV4IR4EMboOjEKVVf0hL7heFxWsfJlSc49+QbS5ajfZe/OTvcwm5DUUemt4n2g8/XdzePtx78hXxdCo+M8D12FTMnqz1USK5QRcW1G+QRxyEQg211lEZCsn5QxZMHHZa51WX8g+QBSgd1NevK2gRxq5s7lWYadujhC9qI0LYhYju3Iv3+rKXZvNm3pNdNihm0l6MYBHcCbSd6pWxKWj9q+9lwbq/4J8pv0XRNWI+NFkJ9n6X58wbZr6Fh662l+xQ/SWl8WC83MWjmSxuWxFF7nviyZQSp8MpJfBhRZACmwYqkKRDqdcdxiWCNjk2docsSjAzpML5x1DSotgQL2/UihNeyupPQAPaSQLxZs5FFsTD7NC7NIoTYBCuj7DTp6sM0wyPV3T1YYXsztB7pVysm5gvwJG0cnlR7UBD99Hvfvz4kgcK6DaehaKt5h4ynC9Y32yydCiPY/5p3hGYohndgmzcfvH2Kq9/cSZfY/eSek7OhxXZbU8cJWFs1QLLbB3cM9pLAZX5/WVGJl8VmeMXyGHL7AF6nQhIaDeMJ9Dw3qrY8EjllFFuiFE0tVfQusGA/Sy1kMfpRbLF/+pZmzLr9e390kt7T/7WAev7zqMOI5WctEimEY/gVdE938
+sidebar_class_name: "put api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update SMS share"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/survey/{surveyId}/shares/sms/{channelId}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update SMS share
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"surveyId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"channelId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"contacts"}
+          required={false}
+          schemaName={"string[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"string"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"contactList"}
+          required={false}
+          schemaName={"number[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"number"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"message"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** `<= 140 characters`"}
+          schema={{"type":"string","maxLength":140}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"smsTargetId"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"variables"}
+          required={false}
+          schemaName={"object"}
+          qualifierMessage={undefined}
+          schema={{"type":"object"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"twilio_consent_agreed"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","description":"For using surveysparrow message service you need to agree the consent."}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

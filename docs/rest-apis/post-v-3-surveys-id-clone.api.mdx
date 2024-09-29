@@ -1,0 +1,304 @@
+---
+id: post-v-3-surveys-id-clone
+title: "Clone a survey"
+description: "Clone a survey"
+sidebar_label: "Clone a survey"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVmFv4kYQ/SvWfGpPm8BBej1ZVSWK0gqluouOtFLLoWiwB7wXe3dvd01Ckf97Nbs2EEguqVR/AON9szvz3vMMW9CGLHqp1SSHFIx2/s/htLZr2rhJPi61IhBg0GJFnqyDdLaFnFxmpeEoSGGSJ3qZxBgQoLAiSEHmIEDyukFfgABLX2tpKYfU25oEuKygCiHdgt8YjlB1tSALTTOPYHL+F51vGJFp5Ul5vkVjSpmFjHtfHCewPd1KL75Q5jlxy/V5SS7gQo63EbQDO2+lWoE4KisWlDAo8TpZUBLYyM9BAD1gZUoOHmu1JutCPljykqorSGenC+MSnZPZr9pWIOBKancHAj4ul6VUNDIGBHy4nsbPcYGc/fhyGj+739PRTfvVPrmsTKk3RMN3fZgLeDjLwrGBKW9lFclumk6Wl4r+gBWxmr7oyt0Luy+6OzXh8twSM45OXAespPqd1MoXkL4VUOFD92vQ7zfhEuBxxV5qJYEguTNauajUoN/nr2NFsoycW9ZM54El3vTe/BcX5OhfgZL5qTUPOHj7DUqfIGp6SFTLaCMAbVbINR0etdC6JFSH2yyxdNSIl+z7rCkbAZkl9JTfon8qcqltxStMDT3aadAfDM76g7PB+5v+j+ngh/Ti4nzw7v3fvGdt8v99z7bEpS5zsrcvadDna3hxEveyML+RIsvUdJcAR1ltpd+EDje6ntxeXf4F6WzO7eixD8OLkeCB4ckXumufoV2y26G3HvYixvW2Mm96WdtOHdl110trW0IKhffGpb0eGnnehhi0Vt+fZ7qCRhzjqD57LRTNq6EVPQed7/mZ8msW35EdSzuq0cirwykwqn2hrfwnWLEbCAVhHhq9AO7gn/a9/rIT6KhXn3bTdv9vdqKGz1tq3o2Do3ggwEsfTMAAVqzCMEXaLU/UfST+rlJPD75nSpQqvAvM47YVfgbrIXSedCAgDcMwqj8XULBL0hlstwt09Ictm4Yff63JsvvmAtZoJS44SZ620vF93jaCk4R2nRC++9TO2O+To6H8ZNKdZooRayxrivzc0SYO8GbeiE4tziQujON5Zzccvg88GczsrxgxyjIy/gDLHZs9tXtxrj9OebIt2nlf6ZxhFu/5jwPeQwqf4TPnpkPZwX3h+RZKVKsaV4yPx7KvsGYhDm15F3hob7iYJ6s/9mvM/y6Y6ZmQn0bXk+SKNj/v4HHl2YCW0B3Pinlumn8Bgkk3yg==
+sidebar_class_name: "post api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Clone a survey"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v3/surveys/{id}/clone"}
+>
+  
+</MethodEndpoint>
+
+
+
+Clone a survey
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of Survey","name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"survey_type"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`Conversational`, `ClassicForm`, `Kiosk`, `OfflineApp`, `NPS`, `NPSChat`, `CES`, `CESChat`, `CSAT`, `CSATChat`, `Employee360`]"}
+          schema={{"type":"string","description":"Survey type to be Cloned.","example":"Conversational","enum":["Conversational","ClassicForm","Kiosk","OfflineApp","NPS","NPSChat","CES","CESChat","CSAT","CSATChat","Employee360"],"x-convert":{"trim":true}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** `non-empty` and `<= 200 characters`"}
+          schema={{"type":"string","description":"Name of the Cloned Survey","example":"Employee satisfaction survey","minLength":1,"maxLength":200}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"Employee Satisfaction Survey"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"archived"}
+                              required={false}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean","example":false}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"survey_type"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"Conversational"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"created_at"}
+                              required={false}
+                              schemaName={"date"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date","example":"2022-02-28T07:25:44.268Z"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"updated_at"}
+                              required={false}
+                              schemaName={"date"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date","example":"2022-02-28T07:25:44.268Z"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"survey_folder_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":10000034}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"survey_folder_name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"General"}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Employee Satisfaction Survey\",\n    \"archived\": false,\n    \"survey_type\": \"Conversational\",\n    \"created_at\": \"2022-02-28T07:25:44.268Z\",\n    \"updated_at\": \"2022-02-28T07:25:44.268Z\",\n    \"survey_folder_id\": 10000034,\n    \"survey_folder_name\": \"General\"\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

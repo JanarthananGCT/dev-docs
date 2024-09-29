@@ -1,0 +1,228 @@
+---
+id: get-v-3-contacts
+title: "Get all Contacts"
+description: "Get all Contacts"
+sidebar_label: "Get all Contacts"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1V21v2kgQ/iur+dj6QtqoX6yqElf1qihVFam5k06UQ4s9xtvsi7svJD7Efz/N2mAnGAq0xwcg3tmZZ595dh6yAlOh5V4YfZ1DCgv0f129N9rzzDtIoOKWK/RoHaSTFeToMisqCocU3gfnjWJ35h41W6CmRJizwhrFfIlsXFWQgOYKIQUefGms+DfWggQEZSiR52ghAYvfg7CYQ+ptwARcVqLikK7A1xVtd94KvYiIvEdLm0e/I7do2eSfr1/d9OUIEsix4EF6SKFdexvBvYP1OtlB35ySfRLOs+u8Q5o1CzMpnJ+JfIP1e0BbP4FacOmGsOqg5miHav4hJHHJKJCZgrWlutoxw8kFt+SgDgrSCQTtwpwKz5Hw88yLJeWdm6AzzGE6gO0LcpuVrMnFHkqRlexBSMlcs8CljF2tLEnGC3R0Ar45AyuMZZwp7rOSEiy5DNgdrEly9tEG8H6OLBMGi5mxuWO1CezBBJkzKe6RCc04owroegxLoYQ/u6cJKKGFIpZfJaD4Y/P9zWVPe28uB9De8gU2WF2Q8Wq1eCq+OKPjg3C2CF4NALjbJ7mN3Iek92OldelQVdLUiIPiaoS/Ke5YZjHOCl7QY5LVQixRs5z7nmjaqBk9vVj4n7kZhbGK02CIFU5AOMfCWDwOovylEKcJeL5wPZYdTCmjq4x26CjH68tL+nh2k0OWoXNFkJDErag9Rb0YvaCPHQRm/g1jC7urTasldzONj34WJdqFz42RyGmG4yNXlcRmaK8TAt7Py63lxIHwqNzQnW5eCTjMghW+jh4zvr2e3Xz4G9LJlCh4erSP6OMg6lmUQl+a1rsafyjJHJZXo6wLcmiXGxMLVpL1eF+5dDTilbhwwS6xdhW31jxcZEYB6eNpHIbfjg3l1dGhCveFTjtavlDDmp5syelIrsQN1p0gxwd8lrgWujC0nehoOIUEvPDURoB1ApVxXnFNMW3KAdKfdGWLxeOjH1WSC02J4klXbUMmsLxq1bgRcmmcp4XVas4d/mnlek2Pm5sTf20Ix+eyd3eeVd1Ke8DLBxHdYz3o741XxeOfUnW/mx+o3o7ZM0v+TyZ9AO/WuM9EfKpNH4Cyse4zkexa8IFarS2fWWrXbI/Q488p40SHPYRn13V/MaZ9nnosKPkM1JT+sIJQRdtINgOPpkizf5xlWPXFQ2ZIG7f28fHDHf1UDjSt+tP1Pk7X9gsl3Czpupfu+dhtqtI7UTa45e349prdYP1uG96s7N2w/W+piSZ6puv1+j/Ih7XL
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all Contacts"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v3/contacts"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all Contacts
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Contact List Id","name":"contact_list_id","in":"query","required":false,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Filters type of contact","name":"type","in":"query","required":false,"schema":{"type":"string","enum":["unsubscribed","active","bounced"]}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Search string which will search all the properties of a contact for a matching value","name":"search","in":"query","required":false,"schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Number of records you would like in a request","name":"limit","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":50,"default":50}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Page of results","name":"page","in":"query","required":false,"schema":{"type":"number","minimum":1,"default":1}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Type of contact","name":"contact_type","in":"query","schema":{"type":"string","enum":["contact","employee"]}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Filter contacts created after the given date","name":"created_date.gte","in":"query","required":false,"schema":{"type":"string","format":"date"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Filter contacts created before the given date","name":"created_date.lte","in":"query","required":false,"schema":{"type":"string","format":"date"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Custom Token generated from the App","name":"authorization","in":"header","required":true,"schema":{"type":"string","pattern":"/Bearer [^\\s]+/","default":"Bearer <Token>"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"has_next_page"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean","example":true}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"data"}
+                        required={false}
+                        schemaName={"string[]"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"array","items":{"type":"string"}}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"has_next_page\": true,\n  \"data\": [\n    \"string\"\n  ]\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

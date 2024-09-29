@@ -1,0 +1,218 @@
+---
+id: put-v-1-workspaces-id
+title: "Update workspace"
+description: "Update workspace"
+sidebar_label: "Update workspace"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVE1v2zAM/SsFT1vh1uvVGAZkQw9Bewj6NQxZMDA2E6u1JVUfTj3D/32gpThpkwKdDwYhPYrk4yM7UJoMOqHktIAMtHcPFz+VebIac7LTAhLQaLAmR8ZCNu9AYk2QgeArIdkHXQkJGHr2wlABmTOeErB5STVC1oFrNXtIXy/JQN8vApis+66KlhG5ko6kYxO1rkQ+ZJQ+WiX57OAptXyk3HFuhvN3gizfNsKKpaiEa/ew1hkh15AASV9DNofJ9TUkMLuZPkzuLmHRJ+AIa7vngsZgy+U5enU+VpCAtwMf/+MSiDvM6+UsV7IhM5TvjKgDg334EnC4ZuZhM7YFBgatVtKGwgtaoa9cMG1uhGb+IINbn+dk7cpXkOyzfJqeHiU2JhUjW8q9GdicdzCZTf9cXf6CbL7gDr6Oc68LdHQypggJ1ORKFTU1qMiVkEHaXKS7QtJOFD1wINNs9eVNBRmUzmmbpSlqcW69aai1Go1Rm/Nc1dAnb3Hkzz4KRf1haE3vQRc7dm6ZxNCHkaOdLrS4IhZGHJuJd6Uy4u8g8O0ElYRFFAlL/mY3HJcvWOuK3oo7ajjqdv5lMQpysGOsbTM5ykoNb5CxoWHsLRy/DAzQyroah2GLzkc6+qrlY4WOXlyqKxSSHxr462K359BcQLIv3AQyUbB8S2UdA7puiZbuTdX3fPzsybDcFgk0aAQuOcN5B4WwbBeQrbCydJDLKG34dBP30OcTrvFYjtvWSO5Lg5WnQMgTtWGx9bwUYlM4erj4EWKc3bH7zvFgYbGMgsckz0m7PSyPHUtnnI3Z/R0ksIxrsFYFowxueJ/iBjL4Db85NTVUOmhsOO+gQrn2uGZ8iMrqQc+074vvaRBfNLiWo8W/VWVIn/9czFGXr5PZ9OSK2m8jPNy86xD5HGmWTHPf/wMv1zPA
+sidebar_class_name: "put api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update workspace"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/workspaces/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update workspace
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"visibility"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`ALL`, `PRIVATE`]"}
+          schema={{"type":"string","enum":["ALL","PRIVATE"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"teams"}
+          required={false}
+          schemaName={"number[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"number"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"users"}
+          required={false}
+          schemaName={"number[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"number"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","x-convert":{"trim":true}}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

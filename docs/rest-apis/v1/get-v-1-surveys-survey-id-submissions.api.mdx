@@ -1,0 +1,203 @@
+---
+id: get-v-1-surveys-survey-id-submissions
+title: "Get survey responses"
+description: "Get survey responses"
+sidebar_label: "Get survey responses"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VNtq20AQ/ZUwT23YRPFDX0QpmDSEkJcQp4ViRFhLY2uJ9pK9uHHN/nsZ3SK5djFp6gd7LZ05c3YuZwvaoOVeaHVTQAor9N8ns2DXuHHNz6MoZmEhhXNCKwcMDLdcokfrIJ1vQXGJkILrwMBAKEjBcF8CA4vPQVgsIPU2IAOXlyg5pFvwG0OBKsgFWoiR9VySv9yjC5V3HdlzQLsZsS155f5Cx0AKJWSQkE4YEbbniwsGBS55qDykny6GWQ1f4ZvzDYkK7vF85d9A5rwVagUMltpK7luuP8mr/0TuPP8nZlRU5DnxWI80CrmWpsLmzKsKsmE6bQu0j4vNe2V8ELJWP0pcP8wGXd95VQt6Ocu1WqP1lCMYgzbnDpuZjWyk9x3ETmeXwODr1exyLKx+EmPGwPOVq69VbxWhLDqjlUNHxH0IHV1uhaEFhhRmIc/RuWWo6hIoj6pGnSan9HNIWqQPA4d5sMJv6r2e3t083l79gHSexVrlMM81+pNG28mrMAYSfalbG6mdwpeQQrKeJA3YJdveJ2LiRrbi0K47Twm2ghRK741Lk4Qbcd7GG26t/nmeawnUtjEOw9mxUG6Ohko8BM1eKzajwja96evWF5kbcYs0Ku0YTYMvtRW/atftxqlEXjQ+AkItNYVTOZpyAwMvfEXBEBkY7bzkijAt5YF+jJrW6/H44hNTcaGIrL7ttu3VHNYT6kVzWWCQDn192LCMQamdp5DtdsEdfrNVjPS4WQxqYyEcX1SD1XjCza69r3kV2nsdDGid+RjowHuPhldHwzt/PAY7MLej4SNsRn+sIPD+au50t193+HDfetLHE5qcfV3vRlON9PX37Jses8i62SQRzftpnqPxg0jyFxLcG8D11QM5fqChGi7CU70I7YEI9wrZ3ZAmK31TBfeGfJ7e3Zzc4uZLD2/eHAxoL9WhqSxZjPE35hUNkA==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get survey responses"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/surveys/{survey_id}/submissions"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get survey responses
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"survey_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"maxResults","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":100,"default":50}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"page","in":"query","required":false,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"date.gte","in":"query","required":false,"schema":{"type":"string","format":"date"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"date.lte","in":"query","required":false,"schema":{"type":"string","format":"date"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"state","in":"query","required":false,"schema":{"type":"string","enum":["started","completed","all"]}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"order_by","in":"query","required":false,"schema":{"type":"string","enum":["startTime","id","completedTime"],"default":"completedTime"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"x-convert":{"uppercase":true},"name":"order","in":"query","required":false,"schema":{"type":"string","enum":["ASC","DESC"],"default":"DESC"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

@@ -1,7 +1,64 @@
 ---
 sidebar_position: 1
 hide_title: true
-sidebar_label: OAuth
+sidebar_label: OAuth 2.0
 title: OAuth Section
-id: OAuth
 ---
+
+# SurveySparrow OAuth 2.0
+
+## Client ID and Client Secret
+
+To obtain clientId and clientSecret, create a private app on your SurveySparrow account. Refer to the Authentication section on this [link](/rest-apis) for more information.
+
+![](https://ss-staging-public.s3.amazonaws.com/ss-public-api-docs/Rest_api/oauth.jpeg)
+
+## Auth URL
+
+Auth URL: [https://app.surveysparrow.com/o/oauth/auth?client*id=client_id&redirect* uri=redirect_uri&scope=scope](https://app.surveysparrow.com/o/oauth/auth?client_id=%7Bclient_id%7D&redirect_uri=%7Bredirect_uri%7D&scope=%7Bscope)
+
+- **scope** - It should be space-separated values. For example, “view_survey view_questions“. Make sure the scopes specified here match the scopes selected in your private app
+- **redirect_uri** - It is the URL where the authorization code will be sent upon successful authorization. Most importantly, specify the redirect_uri in the Redirection URI field of your private app.
+
+To perform OAuth 2.0, first make a GET request to the Auth URL, which will provide you an authorization code in the query parameters while redirecting you to the redirect URL.
+
+## Access Token
+
+| REGION             |                     TOKEN URL                     |
+| ------------------ | :-----------------------------------------------: |
+| United States(US)  |    https://api.surveysparrow.com/o/oauth/token    |
+| Europe(EU)         |  https://eu-api.surveysparrow.com/o/oauth/token   |
+| Asia/Pacific(AP)   |  https://ap-api.surveysparrow.com/o/oauth/token   |
+| Middle East(ME)    |  https://me-api.surveysparrow.com/o/oauth/token   |
+| United Kingdom(UK) | https://eu-ln-api.surveysparrow.com/o/oauth/token |
+
+- Then, make a POST request to the token URL where in the body of the request, pass the following payload.
+- You can obtain the code from the query parameters of the redirect URL.
+
+```json
+{
+  client_id : {client_id},
+  client_secret: {client_secret},
+  grant_type: ”authorization_code”,
+  code: {code},
+}
+```
+
+- This will return the access token, and refresh token among other necessary fields.
+
+## Refresh Token
+
+
+- Make a POST request to the token URL, similar to fetching access tokens.
+- But in the body of the request, change the grant_type to “refresh_token” and the code field is not necessary here. This will return the new access token.
+
+```json
+
+
+{
+  client_id : {client_id},
+  client_secret: {client_secret},
+  grant_type: ”refresh_token”,
+  refresh_token: {refresh_token}
+}
+```

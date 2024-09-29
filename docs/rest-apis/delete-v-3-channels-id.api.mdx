@@ -1,0 +1,173 @@
+---
+id: delete-v-3-channels-id
+title: "Delete a channel"
+description: "Delete a channel"
+sidebar_label: "Delete a channel"
+hide_title: true
+hide_table_of_contents: true
+api: eJytU8Fq20AQ/RUxpzao0cE3UQqm8cG4h9C0hRJEWEvjaIm0u9mddasK/XsZrSTLiQwp1Adb8s7befPemxa0QStIarUtIIUCKyT8sfpcCqWwctsCYjDCihoJrYP0voUCXW6lYQyksC0ifYioxCgPGIhBiRohBclgyUVGUAkxWHz20mIBKVmPMbi8xFpA2gI1hhHK13u00HXx5TbO2yM2py7h/eHU7Nmjbf6pWxYDiUeeDoYhHGR8gTNaOXSMKfAgfEXhcc7szuc5OnfwPHmuFaHqq66SK/551dWRleoROv7E4DD3VlLTK7u+3T7sNj8hvc+Y03mfm96aSMx0rpFKfbKtt4pKSCE5rpJxkqSVRQfcyR5HC72tIIWSyLg0SYSR10FFZ4S1+td1rmtgD87r0H94a6kwby6t8VJpdpLnjlUMRkwiTYoKI3fzRKw9ldrKP32sx1SUKIoQLZDqoBnOcgRtIQaSVDEYuhiMdlQLxTXDlQvin7kzcSH8TYmphFR8UT9pO7hyD8cVR2RMWAypLDhnpXbEx227Fw6/26rr+O+Q437jpBP7ipN8EJXDV72n1MG7r0Po30cLG7PI8QmbF1t0FJUPUmT8YiU3/x9ETuItMhntVM2cxMhQFtBlXTwayXTCwTrP0dAMwpvH1Kf1uNl82XzbQAzCsxHz4Dz1wgwPfOciiZeJCo35m/O8CPm4vt1GO2w+TeXh5CJgmGsaV/G4XfcXZwbmEA==
+sidebar_class_name: "delete api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a channel"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v3/channels/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a channel
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of the channel","name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of the survey","name":"survey_id","in":"query","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

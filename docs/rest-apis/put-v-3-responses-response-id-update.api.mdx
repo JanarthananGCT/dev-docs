@@ -1,0 +1,322 @@
+---
+id: put-v-3-responses-response-id-update
+title: "Add answers for response"
+description: "Add answers for response"
+sidebar_label: "Add answers for response"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVtuO2zYQ/RVhntpAibBZ5EUoAjhtHoxN0YWzWyBxDIOWxhYTiWR48doR9O/FUNTFt6ybl4WWPnM4M5xzyBqkQs0sl2KaQwrK2X9vZ2iUFAZN97Hk+aPKmUWIQTHNKrSoDaTzGnI0meaKCCCF6V+RXEe2wEiHUIhBsAohBT2QQQyc4IrZAmLQ+N1xjTmkVjuMwWQFVgzSGuxeUahw1Qo1NM2iBaOx72S+J0QmhUVh6ZMpVfLM15J8NZRPfUolV18xs1SHpsotR+NxTm9xT6md7BpfrLENghhwxypVIqQ3TQxMmCffnZ6Iac0Ixi1W5vlcfH1civ+ZTRd2nI9iGoVd/iJrG32RvC12RGis5mJzQjjxOCLtmZoYpC1QL+3OPk/wD0GjB9zZqOWi+IpZzXdHBF23D+P/9tAQG61l4JoK5eyZowlZNMMmXPzKJjNmudhEP99B44YOJpM5Pt+ImQdHBKZ2hmZQmrsPKDa2gPT1mzdNDJZXV9A98OoKnuUPKa4k+yzFTwmbsd7nB8Pej9OiOYYN+hwERijKj23Iinp/AW8SwcEo5xzXzJW2/Ryn+9FlGRqzdiXEYyN5kbw46x39kfl9DWZOc7v3Nji5ny7v3n+CdL4gkzoa/jyPQtJ+KEbeWKEtZDBeb67UJki2t0lfQlKPnLNJXGfEBvW2c2GnS0ihsFaZNEmY4q/ahhnFtJZPrzJZQRMf49C9vBbK1NXQCi9BF0PTPlJv2+PpWzeIS/E776vh5pg4W0jNf7DgQP7uKJDl/k6Igcx+NlwL7zuDOrD1m5Ezz49M9ua8S94M/jZM/MizhsWxEc275cWhd4zXDxQ/0LSSPfw/SK8fvkVDDVhLKo/Ovx0xD7ZUNJAxKmlsxfwN2PXw8gweDGt/CBZ3NlEl496p/RHXYT7nsL2FschiSA9v9zCkixgKaXztdb1iBh912TS0/N2hJuUsYtgyzdmKUqfnBDf0nUO6ZqXBk+R6lcJvs2APv0dnXx1ny+gGTNB0bVnpsO3dN9wfvVB8n8OMUWIt4s92+5cPxDMwnLw8SBVtxCTLUNkRlsyFlNAr//7xAWJYhfdM1Y6EZk/UYfYEKXyBL5Sj9E3wkvHrNZRMbBzbEL7dlcTAHB3RWEvfvJbCB9VytgvHImvTp79UzNmQPyb30+gO9297ePvLxYDQzw5NZ0Im/h+VUKCH
+sidebar_class_name: "put api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add answers for response"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v3/responses/{response_id}/update"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add answers for response
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"ID of the response","name":"response_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"survey_id"}
+          required={true}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"ID of the survey","example":1}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  answers
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"question_id"}
+                required={true}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","description":"ID of the question","example":1}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"parent_question_id"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","description":"ID of the parent question","example":1}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"answer"}
+                required={true}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","description":"Answer of question"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"other_txt"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","description":"Other Text Answer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"matrix_txt"}
+                required={false}
+                schemaName={"string[]"}
+                qualifierMessage={undefined}
+                schema={{"type":"array","description":"Matrix Answer for Text Input","items":{"type":"string"}}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"matrix_int"}
+                required={false}
+                schemaName={"string[]"}
+                qualifierMessage={undefined}
+                schema={{"type":"array","description":"Matrix Answer for Rating ","items":{"type":"string"}}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"region_code"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={"**Possible values:** `<= 255 characters`"}
+                schema={{"type":"string","description":"Region code of Answer","maxLength":255}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"time"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={"**Possible values:** `<= 255 characters`"}
+                schema={{"type":"string","description":"Time of Answer","maxLength":255}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"time_zone"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={"**Possible values:** `<= 255 characters`"}
+                schema={{"type":"string","description":"TimeZone of Answer","maxLength":255}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

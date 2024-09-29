@@ -1,0 +1,159 @@
+---
+id: get-v-1-auditlogs-events
+title: "List subscribed events"
+description: "List subscribed events"
+sidebar_label: "List subscribed events"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVV1v2zoM/SsFHwdvaR72YgwXMGytC5rGvrbToigCQ3HYRJi/JslZs8D/faC/kyZAH5YHx+I5JKVDkT5CXqDkWuTZbAMmbFE/Tq1yI3SSbxXbY6YVGFBwyVPUKBWYL0fIeIpgAhIcHgoEA0QGJvwqUR7AABXvMOVgHkETaoLSUmRbMACzMgXzBYKl/8ieI9tnVsgcMDoDc2Yna4fNWWMIf7AHFlmOM1r17GY5kJcB80fB6+UZ2vva7iK07HBE7yxLzzmzDDE6i+e7HvPD5wvuPfQuVY8M8Z5c/z7wLJuNAg22S7xBqueFHTnscWazYFDOZ4HnLgIWzR481w8vAHXQmbsYIHvuBmP1fRaErj+2uE8L5gc/Zl4U+tYi+M58MOC7O3eYH9WyWrbNgiC6861FeBny2YP7yAYsZNbDFbcx1Lu1O6HVaGOeFQRPru+8v1I9Moh4jvRS/r9kAUkS2VZozd27UbR3UBduVVVG3xIF377rBom/SiFxA+YrTxReaI+sTNcowYBUZCKlDpkasMFXXiYazOk4QcrffFRlUrflv0iT8rf2/fZ2lPTrbVWtDNB8Sy0PnEZCRDMBVpRKFXmmUFHw3oVeVSxFQdMETAjKOEalXssEDIjzTGNWsz5NPtHftSFR0c8AhXEphT7UA8fyZtE9ewbzZUW7Os0zF0rfqHJNtjVubrCbWinqXd5OtXqI6R2YMNlPJ/VxPtNxJj1bodx3A66UCZiw07pQ5mTCC/FFlXKPB1VwKfPfX+I8BSrKKQ/Lzx+l8uLD1BSvUVeDSgGJ2dSj16oXlhfiHumKtHfIKvUul+JPPfa7a7RDvkEJJL3IXnNyJzkaicEALXRCzlAZUORKpzwjThvyag1OStXvSOObnhQJFxmFq897bOvzAvspGDBUiL4aTbSVAbtcaeIcj2uucCmTqiJz0wNUuY1QfJ2MuuAnHs4+VXuelO1JrvLbPv4I9aQjB4cVLaQgj/raGp3CtMvG04pjLPTIizqDHPuLe8fCWgsSZlzOn3U52xcK2EHZYRTuvM5NVnrScS66fLO82c09Hv7r6Q1y1aE9VMemgq6qqvoLD+CnVA==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List subscribed events"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/audit-logs/events"}
+>
+  
+</MethodEndpoint>
+
+
+
+List subscribed events
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"eventType","in":"query","schema":{"type":"string","enum":["SURVEY_CREATED","SURVEY_EDITED","SURVEY_DELETED","THEME_ADDED","THEME_EDITED","THEME_DELETED","USER_CREATED","USER_DELETED","USER_EDITED","CONTACT_CREATED","CONTACT_UPDATED","CONTACT_DELETED","CONTACT_PROPERTY_CREATED","CONTACT_PROPERTY_EDITED","CONTACT_PROPERTY_DELETED","WORKSPACE_CREATED","WORKSPACE_DELETED","WORKSPACE_EDITED","SYNC_DEVICES","SURVEY_RESPONSE_IMPORT","SURVEY_RESPONSE_DELETION","SURVEY_CLOSED","SURVEY_RESTORED","SURVEY_OWNERSHIP_TRANSFER","FOLDER_USER_ACCESS_GRANT","FOLDER_USER_ACCESS_REMOVE","FOLDER_TEAM_ACCESS_GRANT","FOLDER_TEAM_ACCESS_REMOVE","SURVEY_MOVED","SURVEY_PASSWORD_CREATED","SURVEY_PASSWORD_DELETED","SURVEY_PASSWORD_EDITED","QUESTION_CATALOG_CREATED","QUESTION_CATALOG_DELETED"]}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"page","in":"query","required":false,"schema":{"type":"number","minimum":1,"default":1}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"maxResults","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":100,"default":50}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

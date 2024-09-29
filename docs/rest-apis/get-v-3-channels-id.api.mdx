@@ -1,0 +1,250 @@
+---
+id: get-v-3-channels-id
+title: "Get a channel"
+description: "Get a channel"
+sidebar_label: "Get a channel"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVF1r20AQ/Ctin9pwjZLmTZSCCSaItCU0aaAEE87SOrpGOl3u9tyoQv+9rL5sxTZJ6wdL9u3Ozs7tbA2lQStJlTpOIYIHpNuz80xqjbmLUxBgpJUFEloH0V0NKbrEKsMJEEGcBuUqoAyDpMsBAVoWCBEoTlYcZCRlIMDik1cWU4jIehTgkgwLCVENVBnO0L5YooWmEfUA4rxdY3W/wXryaKt/AlsIIPnA5KHn6GDBAM6U2qHjnI8nJ/yY9nbtkwSdW3luKik1oSaOOgqP+LFTsVz+woRYMcuakuqwU0lviFLpLnexV+yN0PgsC5MjRKfNoPoI4cgq/bAD8U0WeAAE5oVUeeAyaTE4hUaAI0nevQ563cYNg9ACTIBn5zfx7ZwRO5zX8G4qc5jk11n8haGm8k3FbYaPAIeJt4qqdnZnV/H95fwnRHcLHotp1QukQG7VLJCysrdEawPKIIJwfRYOYxTWKm2Aa9j1YA9vc4ggIzIuCkNp1HE3ws5Ia8vfx0lZAM/3NA79h7eGSvPm0AIPhS42wlzzGHcijvKMekqjLrHaeHrmKSut+tPui8GSGcq0sy0ovSo5neXoVAUBpKi9uvbWSkeF1BzTQ76UfXIpIxHCZwpNLpVmlLbNur+SO1ifsUEHbwuIVMoOz0pHfFzXS+nwh82bhv/uNki7ypSTy5x3yErmDndqj56Hd9/7dfM+ALGf0yNWL/bVWua+63vBP6ziYv9feN+q3ctkuDtdbZMYGKoUmkUjhltjOt3BLEnQ0FYK7zmmPhrhYn4DAqRn1bdH5LEdkf6FAfcyeDk7XVX+5sndm/JpdhUHl1h9HsO7k4MJfVNjr5p7bZq/mgNRDg==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a channel"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v3/channels/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a channel
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of the channel","name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"survey_id","in":"query","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","description":"Id of channel","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Name of channel","example":"Email share 1"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"status"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Status of the share","example":"ACTIVE"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"type"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"Type of channel","example":"EMAIL"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"properties"}
+                              required={false}
+                              schemaName={"object"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"object"}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Email share 1\",\n    \"status\": \"ACTIVE\",\n    \"type\": \"EMAIL\",\n    \"properties\": {}\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

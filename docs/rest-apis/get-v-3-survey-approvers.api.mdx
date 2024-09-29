@@ -1,0 +1,332 @@
+---
+id: get-v-3-survey-approvers
+title: "List approvers"
+description: "List approvers"
+sidebar_label: "List approvers"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVdtu2kAQ/RU0T220DbRR+2BVlXiIKpSqipq2UoUstNgD3mRv2QsNRf73anzDBNPwUB7AZs85s3N2ZnYHxqLjQRg9yyGBNYafV3fRbXA7tdaZDToPDCx3XGGgl2S+gxx95oQlFiQwy0dmNQoFjnxFBAaaK4QE6veFyIGBIOhjREfrDh+jcJhDElxEBj4rUHFIdhC2lpg6qiU6KEu2a8WkUCKcFlpx6f+hxEAJLVRUkLxloPhT8zyZMMhxxaMMkLyf9ANavsb/Eq8sUwaBr8k8QGWl2SIurj5MICVFb4326Enj3WRCP4f+3sUsQ+9XUQKDzOiAOhDqYnxBP0c7MMt7zMgp6+hwg6i1cx7OQEnhQw/FneOUtwio/MtskQ85capceFNhULYV03F9cEKvj7hfucIhNiou5Mv0a4Id8Rk8vVkZp3iVeCNFdVmWDO6N0JgvrHGB9yMsjZHINfSqp6qIkkEtzKUfqOd2FQeMKkkrkxRvcNGizimroS7pFeYcqn6rDG2d6W+qt4VewL18SnKZiToM7qJuw8FT7rrodLNRGtRWL/TLYT71Zlg3ASqFtKw/DDxm0YmwrUbT9Ha2uLn+Bck8pa47PP8vwofu3MkJhaEwzdyrhEMBCYw3V+N6dI37YI9u007A6CQkUIRgfTIecysua4K33Dnz+zIzCmiUHOIwvjkXyu3ZUIWnoOnenDuaEnWTdhbtu9yKm/7cnsZQGCf+VPdCOwIL5HlTbEKvDNHJjtpZYBBEkESuStX4oLgmTCN5ZP3ByXQ7CfgUxlZyoUmmynPXHMscNld0Cu0dsxdLGRSGxtYcdrsl9/jDybKkv+uxXV1ZwvOl7A3uZ/G7uQqvvjWl93o0cLMN7vMBt89uuw2XsTFjIHaNb8v5HGxzF+2hKb04Qdiq1ll7PpRszZlmGdp+ALowiNhV/efr72RkJHv7xfDQGFw9kGC7pLc9uedVUkelb0pkkPJxejsb3eD2UwevV04SmqRaNNlNjf8XFpvylQ==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List approvers"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v3/survey/approvers"}
+>
+  
+</MethodEndpoint>
+
+
+
+List approvers
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of the survey","name":"survey_id","in":"query","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"limit","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":100,"default":50}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"page","in":"query","required":false,"schema":{"type":"number","minimum":1}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      list
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object[]
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                    >
+                                      Array [
+                                    </div>
+                                  </li><SchemaItem
+                                    collapsible={false}
+                                    name={"id"}
+                                    required={true}
+                                    schemaName={"number"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"number","description":"Id of the approver"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"name"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Name of the approver"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"email"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Email of the approver","x-format":{"email":true}}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"joined_portal"}
+                                    required={false}
+                                    schemaName={"boolean"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"boolean","default":false}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"approvals"}
+                                    required={true}
+                                    schemaName={"number"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"number"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"approved"}
+                                    required={true}
+                                    schemaName={"number"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"number"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"declined"}
+                                    required={true}
+                                    schemaName={"number"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"number"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"pending"}
+                                    required={true}
+                                    schemaName={"number"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"number"}}
+                                  >
+                                    
+                                  </SchemaItem><li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                    >
+                                      ]
+                                    </div>
+                                  </li>
+                                </div>
+                              </details>
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"count"}
+                              required={true}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"limit"}
+                              required={true}
+                              schemaName={"number"}
+                              qualifierMessage={"**Possible values:** `>= 1` and `<= 100`"}
+                              schema={{"type":"number","default":50,"minimum":1,"maximum":100}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"page"}
+                              required={true}
+                              schemaName={"number"}
+                              qualifierMessage={"**Possible values:** `>= 1`"}
+                              schema={{"type":"number","minimum":1}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": {\n    \"list\": [\n      {\n        \"id\": 0,\n        \"name\": \"string\",\n        \"email\": \"string\",\n        \"joined_portal\": false,\n        \"approvals\": 0,\n        \"approved\": 0,\n        \"declined\": 0,\n        \"pending\": 0\n      }\n    ],\n    \"count\": 0,\n    \"limit\": 50,\n    \"page\": 0\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

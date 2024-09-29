@@ -1,0 +1,154 @@
+---
+id: delete-v-1-surveys-id-questions-question-id
+title: "Delete question"
+description: "Delete question"
+sidebar_label: "Delete question"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9U8tq20AU/RVzVm2YRng7lIIhXhh3kdZtoRgRJtJ1NEQajefh1hX693L1ip04ELqoFtKguec+zjm3QW3JqaBrs8ohkVNJgX7MN9Ed6OhX+ZdInm/9eLjTOQSscqqiQM5DbhsYVREkuittIGFVKCDgaB+1oxwyuEgCPiuoUpANwtEywsTqnhzaVkxJ9meF/i1bKhDUA/cG302ClOHe1saTZ0ROOxXL0B995rTlmpDYxCwj73exhEBWm0Cmi7pKrvjzoqYPTpsHtPwIeMqi0+HYsbK4Xd2tlz8htyl3dF7npmN6Nk4LgYpCUT+J0LEcCkgkh3nSj+GTRudtMoJ80pyw1YLru8MoSnQlJIoQrJdJoqy+HpJY5Vz96zqrKzDv53EUP7w1VNk3h1b0Wmj6RNqGue3lmaibeFZWr+kIMdpkEUNRO/1HDex1RilI5b2doM2uZjjT0TMOgaBDyWC0Arb2oVKGY4aULyU5k2xqJdDvkNhSacN5ukGbQastDnOWoZ8TArJz8SQY/zk1eCpQ1D4wsGnulafvrmxb/r2P5NhGqcBBOa3uufFtg1x7PueQO1V6etHjZFm8+zrsy/sZj36p95Fbw8QeVBmp5+mRjv06s5L/seIpNW3ailFQHryPWGQZ2XCC5b1kE03bc7P8vPy2hICKrMipgR47Aw0Hznmxm+fO6gvzm9m4CPm4uF3N1nT8NIX3N68Chrkmpg2P27Z/Abtx43U=
+sidebar_class_name: "delete api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete question"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/surveys/{id}/questions/{question_id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete question
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"question_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

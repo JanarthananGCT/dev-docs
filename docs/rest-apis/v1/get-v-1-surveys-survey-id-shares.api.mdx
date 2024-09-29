@@ -1,0 +1,183 @@
+---
+id: get-v-1-surveys-survey-id-shares
+title: "List all shares"
+description: "List all shares"
+sidebar_label: "List all shares"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVF1P20AQ/Ctonlp0JfDQF6uqZIIBKw5OY7cIISs6nAOf8Bd355Q08n+v1l8JNFS0eYjPvtnZvdnZ26AoheJGFrm7hIUHYX6cBJVaibVuHwu5DBKuhAZDyRXPhBFKw7rdIOeZgAXd48Agc1gouUnAoMRTJZVYwjKqEgw6TkTGYW1g1iUF5lV2JxTqmg1cGX+eC12lRvdkT5VQ6xds9zzVf6FjyGQusyqDdcKIsFsfHzMsxT2vUgPr8/Fu1pI/iP/Ot0vU7PwzkTZK5g9gEDlVegtnarseGDz3agIGZ3rqnIHh23wx9s8cMATTAAzXl3YY2LMZGCauHxA08Meu7S0ufP/Cc7bv4bUbhs58++HcHjunvk8h/vm55145TR7b9RZ9NveqpZ76p67nLIKzhv8mCJ0pLTx7TB9Cx25qca9CZz72aWvmz0Obyg9mfji+dMYTRHUdMRj+QMaBJj8hIml0WeRaaBJj6A0tdaxkSa6EhaCKY6H1fZWCIS5yI/IGdTg6pMdbctb0Y9AirpQ068ax9sxdTJwbWLcRFfQyjye1OeBpeqB7v2fCJEU3Fo39TQILo9XJqPW8Hm0G89ejIUwLtepnpFIpLCTGlNoajXgpj7rQkitV/DyKiwxkoJc4UX16L5SX74Zm4i1otNUpIDnbjgxqDdLyUk4Embrzu12ZpFDyV3OB9MZPBF+2cwGZ3xcUTnK0IoPBSJNSMGqGstAm4zlhOso/u/CiS0MpRjybUZlymRNPc9BN16FbrE6oDe05wWDtXlEdb8SQFNoQerO541p8V2ld0+d2cKl5S6n5Xbozuo9i/fqSWvG06k7zZkB3v7wH2t0gW2hEL0oSdn9Nr+QZBgQf5t3N8/GAVN8nW9/WfL2bs69lq1od1azvKxXR7ttxLEqzE0kTSQUPc3PhhGDgFXVl10SPjYm6BRHuLeS1u9qs9E8C7g35Ys/cg4lYfx3g7c6bAd2hejTJEtV1/RsjolLJ
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List all shares"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/surveys/{survey_id}/shares"}
+>
+  
+</MethodEndpoint>
+
+
+
+List all shares
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"survey_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"maxResults","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":100,"default":50}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"page","in":"query","required":false,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"type","in":"query","required":false,"schema":{"type":"string","enum":["EMAIL","LINK","EMBED","QR_CODE","SMS","WHATSAPP","KIOSK","SOCIAL_GOOGLE","SOCIAL_TWITTER","SOCIAL_FACEBOOK","OFFLINE","EMAIL_EMBED","INAPP","MOBILE_SDK","SYSTEM","SLACK","TEAMS","INTERCOM","PORTAL","SPOTCHECK"]}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

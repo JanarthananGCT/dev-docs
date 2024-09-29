@@ -1,0 +1,149 @@
+---
+id: delete-v-1-users-id
+title: "Delete user"
+description: "Delete user"
+sidebar_label: "Delete user"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNU01r20AU/CtmTm3YRvi6lIIhPhjnEJqmUIwoG+k5WiKtNvuhVhX738uTbCVOHIgO0krvzfuYGQ1oLTkVdGs2JSRKqinQz+WdJ+c3JQSscqqhQM5D7gYY1RAkNIe0gYRVoYKAo6eoHZWQwUUS8EVFjYIcEHrLCBObe3JIKRcI6oGrIXIX5Iz2tjWePANK2qtYh+noC6ctjweJ21gU5P0+1hAoWhPIjFkX2QU/3rT0wWnzgMSXgKciOh36cY3Vzeb3dv0LcpfzQKd9rkYSFjwdBBoKVfvMzUhJqCCRdcts3CAbdJnAHVx35Cm6GhJVCNbLLFNWX/roOuq9Vc61fy6LtkESr/MofvloqrIfTm3ovdT8mZZbZm8SYCZnZlJZvaUe4ij/KoaqdfrfaJyjEypS5agwv+9bhjMdE6cQCDrUDEYSsK0PjTKccyh5SvqJIPMYgf6GzNZKG64xLjkc1NihW0IcHCUgdcm+qlofODYM98rTnatT4s9PkRz7IBfolNPqnufaDSi153MJuVe1pzdjzJ7Dp+8Hv39e8GbnxjtSZ5i3TtWRJhoeqZ9+oJQncSSNu0+BVVGQDS8g7G4Wavbh1fp6/WMNARV585ciPY4iHQ5c8+wQr9WbGvOdvXMW8nV1s1lsqf82p0+RdwGHveZ1Da+b0n8NLH0l
+sidebar_class_name: "delete api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/users/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete user
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

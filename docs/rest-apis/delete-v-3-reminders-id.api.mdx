@@ -1,0 +1,178 @@
+---
+id: delete-v-3-reminders-id
+title: "Delete a channel reminder"
+description: "Only applicable for Classic, CX and Chat surveys via EMAIL, SMS channels"
+sidebar_label: "Delete a channel reminder"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVNtO20AQ/ZXVPLVoSx54s6pKEeQhAlRE2qoVitDgneAV9nrZS1rX8r9X40uchECRwA++7cyeMzPnbA2lJYdBl2auIAFFOQX6cXJNhTaKnJ8rkKDIp05bjoIEvpq8EmhtrlO8y0msSidOc/Rep1Kc/hRolDjNMAgf3ZoqL9YaxexyOr+QYnG5EGmGxlDuQYJFhwUFch6Sm3oPZ65EuRIhoyEDJBgsCBLQzEpzkMWQgQRHj1E7UpAEF0mCTzMqEJIaQmU5w8Tijhw0jXwepuM7onTftyPYYyRXvRfak6L6H2/CW0oIeM/dBNePEJa8gbel8eQ5R9EKYx66121ui5im5P0qMqm0NIFMG3U0OeLHE1QfnDb30PAlwVManQ5VO8np1fz2fPYLkpslcyooZOWor3byIYMEJuuTyUDUT2qtGuCd3HqQRHQ5JJCFYH0ymaDVx72qLDpX/j5OywK4y7txFD+9NhTtq0MLei50OZa/4C51jd40YdMxtPp8W2HTGLLS6b+tAYepZ4SqEw9osyo5ndvRzQgkBB1yToZGgi19KNBwTL/lWdthgYO+xEYHez6uxxG/p6X7SgP9CRObozZMs+1j3Q/9BtYnraj7sYOERCuWaVb6wOt1fYeevru8afh3Z4P2gNCe+SlIVph7eqGiD9e9Zz6KAwY/SPKBqj3TrzGPfaffjD3a/QXwnSNgRF/yh9MM/x5t+A+VQaum2iYxUNQKmmUjB5UynW5hmqZkw1YKHxs75j+bXcy+zUACRtbBtise2rH0L7znQRL7dumA+c4DOpjyeXo1F+dUfdmEdyvPJvR1bco1XG7T/AM6kmtT
+sidebar_class_name: "delete api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a channel reminder"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v3/reminders/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Only applicable for Classic, CX and Chat surveys via EMAIL, SMS channels
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of the channel","name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of the survey","name":"survey_id","in":"query","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of the channel","name":"channel_id","in":"query","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

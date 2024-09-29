@@ -6,6 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 import { PluginOptions as OpenAPIOptions } from "docusaurus-plugin-openapi-docs/src/types";
 import { src } from "./src/utils/logo";
+import Cookies from "js-cookie";
 
 // Function to get version object from localStorage or use default
 function getVersionObjectFromLocalStorage() {
@@ -21,12 +22,17 @@ function getVersionObjectFromLocalStorage() {
     }
   }
 
+
   // Default version object if localStorage is not available or item is not found/parsable
   return {
     version: "v3",
     label: "version 3",
-    baseUrl: "/rest-apis/v3",
+    baseUrl: "/rest-apis",
   };
+} 
+function getAuthCookie(){
+  const url = Cookies.get('redirection_url');
+  return url;
 }
 
 const config: Config = {
@@ -73,6 +79,7 @@ const config: Config = {
       appId: "DZTMW46IAP",
       contextualSearch: true,
       searchParameters: {
+        hitsPerPage: 5,
         facetFilters: [], // Dynamically fetch version from object
       },
       searchPagePath: "search",
@@ -83,7 +90,108 @@ const config: Config = {
         alt: "logo",
         src: src,
       },
-      hideOnScroll: true,
+      items: [
+        {
+          to: "/appnest/docs/",
+          type: "docSidebar",
+          sidebarId: "Appnest_Sidebar",
+          label: "Appnest",
+          id: "Appnest",
+          position: "left",
+        },
+        {
+          to: "/rest-apis",
+          label: "REST APIs",
+          id: "REST APIs",
+          position: "left",
+        },
+        {
+          to: "/sdk",
+          label: "Mobile SDK",
+          id: "Mobile SDK",
+          position: "left",
+        },
+        {
+          to: "/embed",
+          // type: "docSidebar",
+          // sidebarId: "Embed_Sidebar",
+          label: "Embed",
+          id: "Embed",
+          position: "left",
+        },
+        {
+          href: 'https://community.surveysparrow.com/c/appnest-developers-hub/51',
+          position: 'right',
+          label: "Community",
+          // className: 'header-github-link',
+          // 'aria-label': 'GitHub repository',
+        },
+        {
+          to: getAuthCookie() ? getAuthCookie() : 'https://app.surveysparrow.com/signup?source=dev_site',
+          label: getAuthCookie() ? 'Manage Apps' : 'Sign up',
+          position: 'right',
+          className: 'button button--primary button--md'
+        },
+      ],
+      hideOnScroll: false,
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Appnest',
+              to: '/appnest/docs',
+            },
+            {
+              label: 'REST APIs',
+              to: '/rest-apis',
+            },
+            {
+              label: 'Mobile Sdk',
+              to: '/sdk',
+            },
+            {
+              label: 'Embed',
+              to: '/embed',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/surveysparrow',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://x.com/SurveySparrow',
+            },
+            {
+              label: 'Support',
+              href: 'https://community.surveysparrow.com/c/appnest-developers-hub/51'
+            },
+            
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Blogs',
+              to: 'https://surveysparrow.com/blog/',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/surveysparrow',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © SurveySparrow Inc. ${new Date().getFullYear()} SurveySparrow Inc., 2345 Yale St FL 1, Palo Alto, CA 94306`,
     },
     prism: {
       additionalLanguages: ["ruby", "csharp", "php", "java", "powershell"],
@@ -150,25 +258,25 @@ const config: Config = {
         config: {
           ss_versioned: {
             specPath: `yaml/v3.yaml`, // Dynamic specPath based on version
-            outputDir: `docs/rest-apis/v3`, // Dynamic outputDir based on version
+            outputDir: `docs/rest-apis`, // Dynamic outputDir based on version
             sidebarOptions: {
               groupPathsBy: "tag",
               categoryLinkSource: "tag",
             },
             version: "v3", // Current version
             label: "Version 3", // Current version label
-            baseUrl: "/rest-apis/v3", // Current baseUrl
+            baseUrl: "/rest-apis/", // Current baseUrl
             versions: {
               v2: {
                 specPath: "yaml/v2.yaml",
                 outputDir: "docs/rest-apis/v2", // No trailing slash
-                label: "v2.0.0",
+                label: "Version 2",
                 baseUrl: "/rest-apis/v2", // Leading slash is important
               },
               v1: {
                 specPath: "yaml/v1.yaml",
                 outputDir: "docs/rest-apis/v1", // No trailing slash
-                label: "v1.0.0",
+                label: "Version 1",
                 baseUrl: "/rest-apis/v1", // Leading slash is important
               },
             },

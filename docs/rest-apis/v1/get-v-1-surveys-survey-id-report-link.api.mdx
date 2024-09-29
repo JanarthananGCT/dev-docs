@@ -1,0 +1,173 @@
+---
+id: get-v-1-surveys-survey-id-report-link
+title: "Get responses report public link"
+description: "Get responses report public link"
+sidebar_label: "Get responses report public link"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNU8GOmzAQ/RU0p3blLsoVVZVyWK2i9LDatJWqCK0cmAQrYLz2OC1F/Hs1GFiSZqtwCATmPc+896aF2qCVpGq9yiGBA9KPxcbbEzYu3F5U/oymtvRV6SMIMNLKCgmtg2TbgpYVQgJurAUBSkMCRlIBAiy+emUxh4SsRwEuK7CSkLRAjWGg9tUOLXSdmLhsf9yM69Wjbc7I9rJ0/2VLBZA8cIsDnYOUCZyptUPHkBz30pcUHl1mlWEVIIGNzzJ0bu9LEJDVmlD3VXfxHd/+OdSRVfoAHV8CHGbeKmp6dZZPq5f1w09Itim3dH7OI1I0dRSFNiPjd6XKojKIXSEV9eBLrz0VkEB8WsRBcBe3k/JdHCjiAevQnkaXvC0hgYLIuCSOpVH3A95Ia+tf91ldATtwXof+062l0txcWuF7pembehsWOfg0aTgJLo1aIwdiCMzSU1Fb9aeP8RiaAmUeggVK72uGsxxBehBAikoGQyfA1I4qqblmoLzBmzMzp94If1NsSqk0E/eTt4NvWzgt2JcwOAhI5lsTzgABPX0qoKgdMahtd9Lhd1t2Hb8Oy8Cm5srJXTlbhyM2F+tzkqUPQ6b8xyoGXAdfjDPlHj48D2v3MWLZro05+qKb+ZljQ29TdmknRmO4ifB9mWVoaIbkReOGp/Q/PnwDAdKzivMUHPsUDA9MeLWRy3iEU/mXw3kV8nn5tIrW2HyZysOXdwHDUGM1y5J2XfcXQ6rVKA==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get responses report public link"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/surveys/{survey_id}/report/link"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get responses report public link
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"survey_id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"report_id","in":"query","required":false,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

@@ -1,0 +1,264 @@
+---
+id: put-v-1-survey-surveyid-subject-subjectid-invite
+title: "Update invite"
+description: "Update invite"
+sidebar_label: "Update invite"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VO9r2zAQ/VfKfdqKW68M9sGMQTb6IRRGadfBSEO52JdYrW2p+pE2M/7fx0mK7SYpKwz2xRbS0929d+/UglSk0QrZTAvIQDn78+za6TVtwlcU125xT7mNP1FMm7WwBAko1FiTJW0gm7XQYE2QgfHXpgUkIBqOiLaEBDQ9OqGpgMxqRwmYvKQaIWvBbhTfa1y9IA1dl4xC+ZT/EGsewGTsV1lsGJHLxlJjeYlKVSL33NN7Ixve2wslfQnMVrNSVpDhU1pj5dBKbUZY1Bo3XKul2vw9xtJV1XfPtEcaq0Wzgi4BqlFU+ycJPJ8spa7RM4ggVqHrmGrl2RwI2I1Vmw2pt4lGl+fdLnpElg+7BCyujD+pVSU3RHcfP30AL7ZRsjGBX0FLdJUNS5NroUJxcO3ynIxZOs47ashxenywBz0Jn9tQ7rSwG2+6yeX07uL8F2SzOTf7ZZ4bVaClI7E1bE22lNHl3r+2hAzS9VkaTJu2W/N2afQeb0UTdmkfyJBeb23vdAUZlNYqk6UpKnEaghiFWsun01zWwJ5+iSN38lYoqjdDa3oNOh90u2Z5Q4d69QYLK3FB7OE4ghNnS6nF72CNOIYlYRFGFXhuroYJO3/GWlW0OyGzsdkHK0f7DhuDgfuezztOupQckjUPp5CAFZYTAQ+LksbW6H0f695t/Qtj9GwtPdtUVSgajuK1bKMtZrA+4057KSGBbPSuRUuE3fET5ZPNEyilsRyibRdo6EZXXcfbj44023aewBq1wAUTmLVQCMPrArIlVob2qu1HBN5dxbF8f8QSHGKxbWTDVXMPKOj1QJvx68zm+a95tzr5jkYHMflw/i2kOvnBUYb7e080lx1uTPKclB1h+fVgn/dTfnnzAxJYxIe/lgWjND6x0fAJMriFW65QesJ+IPx+CxU2K4crxoesbHV07IvxpDx4Z8QFczmowe4IhfL5y2QOXvk8uZweXdDmSw8PJ69eiHpu0dwRfqn/AG84sSs=
+sidebar_class_name: "put api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update invite"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/survey/{surveyId}/subject/{subjectId}/invite"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update invite
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"surveyId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"subjectId","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  evaluators
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"fullName"}
+                required={true}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"email"}
+                required={true}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","x-format":{"email":true}}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"relation"}
+                required={true}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

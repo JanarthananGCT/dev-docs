@@ -16,7 +16,9 @@
     "clean-api-docs:version": "docusaurus clean-api-docs:version",
     "gen-all": "docusaurus gen-api-docs all",
     "clean-all": "docusaurus clean-api-docs all",
-    "re-gen": "yarn clean-all && yarn gen-all"
+    "re-gen": "yarn clean-all && yarn gen-all",
+    "algolia-init": "docker run -it --env CONFIG=/app/config.json --env-file=.env -v $(pwd)/config.json:/app/config.json algolia/docsearch-scraper",
+    "algolia-version": "python hack.py"
   },
   "dependencies": {
     "@docusaurus/core": "3.2.1",

@@ -1,0 +1,304 @@
+---
+id: get-v-3-reputation-reviews
+title: "Get all reviews"
+description: "Get all reviews"
+sidebar_label: "Get all reviews"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vttu40YM/RWBT+1CsR1n0y6EooAfFkEQoA2SbYE2MIyxREvTjDSzM5Rt1dC/F5RkyY6v6yzqB+t2SJ4hh2e4Am3QCpI6u48ggBjpz5snNDlV755wLnHhwAcjrEiR0DoIXlYQoQutNIyBAO4jT8+8kTGPStBM2xR8yESKEIAwZmKatxMZgQ+SLb7maAvwweLXXFqMICCbow8uTDAVEKyACsP2WZ5O0UJZ+m+DPgmSWezFFgWh9SgRmTeTCq0nnacrlFAdEVvBe4rwMIeZUO4ICR9Smck0TyG49iEVy/r+9jA5hc61zOgEtfj/oXYmp6ryk0gQXpYzR1ZmMfjAlRcEAbCvfYU8u4IblC7K1fmUfquyypvaYqht5LxC595C5yrylHxFT2ae8DgiOuoYKplK+u41HPgQ4UzkivhhD9tHEWPN1eWKXMfHiPh7bamWwXVZjn0gEbMQgG2lYmIbrRhzDGd05tCx1+FgwJdtys95GKJzs5zrG+qMMCNGfeh/4MsOJz39B0NOrbEsWCRr34lwkwyXNKlW2sGnWisUGfiAS5EahbW+lD5XfNOvsFZwViRh6k7Hk9G+PLUxrku/aeajsFuG1ZuZJCnct0VbMNxpHXnPaOcyROgsN5J22Pb3nByJLGItcrUL3wt15qRjY1V4uAwRq++4NBjWtXQbcaoWOdlDm0GHg+HwajC8Gn76Mvg5GN4GHz/2hj99+rtzinZS79Bj3J9FumVhEk16klt13CwhMi7o9xeLRU/pmA16oU77ItaRYIdvT6TjlWp/PjgMcyupqA7A0eP95OHzXxC8jLkftnf3HZInlPJse3ymSIluDtjqNKUEAujPb/pdB/U7ONdqfdRWK26XJYzsudzOsXBGWKsXvDhgTdjGYX51LlSYs6EpHoKOu/w8c/PW/dJmqWs4Ix+w6CRqlFOirfy3ysBaqxIUUX3og8xmms05HXVywYema4DLabSjVGSMaVzuZn+rOi0VwiX1jRIyYz/Nxqor8wLzm0or17WB9Uas9C3Rjhi0Wk2Fwz+sKkt+XUtsNR5JJ6ZqQ2TfMGibF354avT4R2/fFLWX6isWeyeruVB5k5ZvoXDuIHWEy9Zw9T4aJ8aT0yTi95B4R/SdgelCCu+qw86IdCGJbx2AjnBaD0UXMtkdbo7EagaeLtSYH6zkWJVU+2tt4S6tbUZhiGaTIM8gbNhq9t3nL+CDyFkZNoXstRKy5oYdrj9lxYa7twpXR+V/TsRek19Gj/feAxa/tvD6y0GDZlFrNKdkXJblf/ZKwG4=
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all reviews"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v3/reputation/reviews"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all reviews
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of AppPlatform","name":"app_platform_id","in":"query","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Rating greater than filer is optional","name":"rating.lte","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":5}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Rating less than filter is optional","name":"rating.gte","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":5}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"less than filter is optional","name":"review_date.lte","in":"query","required":false,"schema":{"type":"string","format":"date"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"greater than filer is optional","name":"review_date.gte","in":"query","required":false,"schema":{"type":"string","format":"date"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Number of records you would like in a request","name":"limit","in":"query","required":false,"schema":{"type":"number","minimum":1,"maximum":50,"default":50}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Page of results","name":"page","in":"query","required":false,"schema":{"type":"number","minimum":1,"default":1}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"has_next_page"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean","example":true}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object[]
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                              >
+                                Array [
+                              </div>
+                            </li><SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"rating"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":5}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"review_title"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"Good Service"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"review_content"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"Outstanding service, consistently exceeding expectations"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"review_date"}
+                              required={false}
+                              schemaName={"date"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date","example":"2022-02-28T07:25:44.268Z"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"reviewer_name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"Sam"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"reviewer_photo_url"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"https://www.log_url.com/agoda"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"app_platform_id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":5}}
+                            >
+                              
+                            </SchemaItem><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                              >
+                                ]
+                              </div>
+                            </li>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"has_next_page\": true,\n  \"data\": [\n    {\n      \"id\": 1,\n      \"rating\": 5,\n      \"review_title\": \"Good Service\",\n      \"review_content\": \"Outstanding service, consistently exceeding expectations\",\n      \"review_date\": \"2022-02-28T07:25:44.268Z\",\n      \"reviewer_name\": \"Sam\",\n      \"reviewer_photo_url\": \"https://www.log_url.com/agoda\",\n      \"app_platform_id\": 5\n    }\n  ]\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

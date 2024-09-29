@@ -1,0 +1,217 @@
+---
+id: get-v-3-reputation-platforms-id
+title: "Get a platform"
+description: "Get a platform"
+sidebar_label: "Get a platform"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVG1rGkEQ/isyn9qw9dL67SgFKUFEKJK0hSIi493obXN3u9md1Vi5/17m3jQxaeMH7+2Z2WeeZ2aOYCw5ZG3KaQoxbIl/jm7JBq7fzXPkjXGFn6agwKLDgpich3hxhJR84rQVHMQwTQdmM+gCQEGJBUEMWiK1ICxyBgocPQTtKIWYXSAFPsmoQIiPwAcrEWUo1uSgqpYKGLdyGLie0sp2nGApybw1pScv8Z+ur+XylNddSBLyfhNyUJCYkqlkQV1FV3K5ON2sf1PCUq0TaVg3uVPkN6B0elmHAnrEwuYE8cdKQY5rys9Qnp0ut+coGG9NilCpFvIv6N3X2/F8+m0i6NxszSq4/yTPmK2Po2i/3w9zs5WAYWKKCJtDu58CT0lwmg+11+P5dDW7+QXxYim2PJV4QjzAgT1ZXxBnpm2num84gxii3Sg6+Rj1PkZHnVYgB7pd11t1GT1XtHrog9vRwVt0zuyFMVTqOY7Ch7dC0b4ZWtBr0OVJpTvpo6YJeq16G9DqGR1OMzEOnBmn/9RCdOOREaZ128vzxki4yNFIDApYc22gWG2N5wJLwbQpLzx4YlHPhOmRRXldSpq2WRp/FrAb1ePZOSTO9bOmINapTFxmPAv4eFyjpx8uryp5/RDISassFezQaVwLV1kS2st9CvEGc08XvPqJhHe37WJ4P7jYJS+y78QtRdkd5oEaoe7p0OydalmpTlbh0nwYJwlZPguRTSBW9l07ufkOCjCIKuce3tcetjeS8EUGz81tTpV/aa0XQz6P59PBjA5fenjz5dWAtqi+1lJqraq/tmv2sA==
+sidebar_class_name: "get api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a platform"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v3/reputation/platforms/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a platform
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of Platform","name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"label"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"Agoda"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"type"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"SCRAPING"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"logo_url"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"https://www.log_url.com/agoda"}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": {\n    \"id\": 1,\n    \"label\": \"Agoda\",\n    \"type\": \"SCRAPING\",\n    \"logo_url\": \"https://www.log_url.com/agoda\"\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

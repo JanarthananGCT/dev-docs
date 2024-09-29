@@ -1,0 +1,373 @@
+---
+id: patch-v-3-survey-folders-id
+title: "Update a survey folder"
+description: "Update a survey folder"
+sidebar_label: "Update a survey folder"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Ve9P2zAQ/Vei+7QhQ8v4Fk2TuoltFUxC/JqmrkLX5Gg8EtuznUIX5X+fzk5DSwHBhy1fYtnv7Lt3z88NaEMWvdRqnEMKBn1WXB6c1XZBy6trXeZk3TgHAQYtVuTJOkgnDSisCFKQvCRVjCxAgKXftbSUQ+ptTQJcVlCFkDbgl4YjVF3NyELbTiOYnP+o8yUjMq08Kc9DNKaUWchr8MtpxXNbW+nZL8o852a5Ci/J8epCOjmTpfTLNazzVqo5CCBVV5BOYHR8DAJOTseXo/NDmLYCPGHl1kLQWlxyeZ425vsKBNQu8PGakEjcdl53u5lWC7KhfG9lFRls4yfA45yZB7feGggkOqOVi7W/Gw75l5PLrDRMH6RwVmcZOXddlyDWSd4Z7LyG1xz9C1Ay365bAN1hZUqCdP8ZCnoQfCFFFjndCu+OSc19Aen+cNiKzdKe2+O8oGQe90m+a3vjDGa0ueO7sCPWXl9lltDTeu4zrUtCBa34n4qK7X1J0L/k/9sy+Syt80k0Algldh4iHka2a58AR1ltA1WTBkYn46ujwx+QTqZ84Td1eWFy9JRgEotOOk0LqMgXurejYD7cLhgsDgYb+neDRuYt8KF2sbKm2paQQuG9celggEbudaQatFbf7mW6glY8xFG9+1IomhdDK3oKOr1n6owvYOxez9d9+408Iu5/57ij2hfayj/BG1fmWxDmnYDYLU/vffVw1dNNX+zE2gl0Mpz2XhbG3Vmr/vIp1zrsQdbF5nG09EEtDDDa+QrDleyCn+zu4zfY050fmBJluHGBxabr+wQWByA2nc+BgFTmbICFdp5BTTNDRxe2bFue/l2TZRFOBSzQSpxxrpMGcul4nEN6jaWjrXx6g4Q3p91j9jbhah/Lc9UkxR1aYFlTpOaGlvF1bNkHuvbw6XHhUzxjN9yn+8CtV48FFSNGWUbGr2HZvFlE/V05GZ1/+goCZt1rWumccRZv+VnGW0jhJ/zk5HSoNegtzDdQoprXOGd8PLeNvlhsCvEmCLEbcDWPlv9QobGAm2AjT4S8H52MkyNafujhceXJgI7RnmjFRLftX7OJ+wg=
+sidebar_class_name: "patch api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update a survey folder"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/v3/survey_folders/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update a survey folder
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"visibility"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`ALL`, `PRIVATE`]"}
+          schema={{"type":"string","enum":["ALL","PRIVATE"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"teams"}
+          required={false}
+          schemaName={"number[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"number"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"users"}
+          required={false}
+          schemaName={"number[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"number"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","x-convert":{"trim":true}}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={false}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number","example":1}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={"**Possible values:** `<= 100 characters`"}
+                              schema={{"type":"string","example":"General","maxLength":100}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"description"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={"**Possible values:** `<= 200 characters`"}
+                              schema={{"type":"string","example":"The general Workspace","maxLength":200}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"auto_created"}
+                              required={false}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"visibility"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={"**Possible values:** [`ALL`, `PRIVATE`]"}
+                              schema={{"type":"string","enum":["ALL","PRIVATE"]}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"teams"}
+                              required={false}
+                              schemaName={"number[]"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"array","items":{"type":"number"}}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      surveys
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object[]
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                    >
+                                      Array [
+                                    </div>
+                                  </li><SchemaItem
+                                    collapsible={false}
+                                    name={"id"}
+                                    required={false}
+                                    schemaName={"number"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"number","example":1}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"name"}
+                                    required={false}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","example":"My First Survey"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"surveType"}
+                                    required={false}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string"}}
+                                  >
+                                    
+                                  </SchemaItem><li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                    >
+                                      ]
+                                    </div>
+                                  </li>
+                                </div>
+                              </details>
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"General\",\n    \"description\": \"The general Workspace\",\n    \"auto_created\": true,\n    \"visibility\": \"ALL\",\n    \"teams\": [\n      0\n    ],\n    \"surveys\": [\n      {\n        \"id\": 1,\n        \"name\": \"My First Survey\",\n        \"surveType\": \"string\"\n      }\n    ]\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      
