@@ -120,18 +120,18 @@ const config: Config = {
           position: "left",
         },
         {
-          href: 'https://community.surveysparrow.com/c/appnest-developers-hub/51',
-          position: 'right',
-          label: "Community",
-          // className: 'header-github-link',
-          // 'aria-label': 'GitHub repository',
-        },
-        {
           to: getAuthCookie() ? getAuthCookie() : 'https://app.surveysparrow.com/signup?source=dev_site',
           label: getAuthCookie() ? 'Manage Apps' : 'Sign up',
           position: 'right',
           className: 'button button--primary button--md'
         },
+        {
+          href: 'https://community.surveysparrow.com/c/appnest-developers-hub/51',
+          position: 'right',
+          label: "Community",
+          // className: 'header-github-link',
+          // 'aria-label': 'GitHub repository',
+        }
       ],
       hideOnScroll: false,
     },

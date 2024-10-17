@@ -124,8 +124,6 @@ const ResponsiveAppNestLayout = () => {
             imageSrc="https://ss-staging-public.s3.amazonaws.com/ss-public-api-docs/Appnest/img-6.jpeg"
           />
         </TabItem>
-
-        {/* Other TabItems... */}
       </Tabs>
 
       <hr />
@@ -156,7 +154,6 @@ const ResponsiveAppNestLayout = () => {
           title="Survey Migration"
           description="Effortlessly migrate surveys from Qualtrics to SurveySparrow seamlessly."
         />
-        {/* Other AppCards... */}
       </div>
 
       <hr />
@@ -181,7 +178,6 @@ const ResponsiveAppNestLayout = () => {
           title="Create a React app using SSDK"
           description="Introducing native support to build React apps using SSDK. Learn more on how to create and implement them."
         />
-        {/* Other ArticleCards... */}
       </div>
     </div>
   );

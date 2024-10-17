@@ -6241,7 +6241,6 @@ definitions:
         description: >-
           Message of sms, both {company_name} and {survey_link} variables are
           required.
-        maxLength: 140
       twilio_consent_agreed:
         type: boolean
         description: For using SurveySparrow message service you need to agree the consent
@@ -7866,7 +7865,7 @@ definitions:
       cut_off_date:
         type: string
         format: date
-        example: '2024-11-29T06:03:02.419Z'
+        example: '2024-12-15T13:22:29.636Z'
       dynamic_cut_off:
         $ref: '#/definitions/dynamic_cut_off'
       enable_offline_support:
@@ -8306,7 +8305,7 @@ definitions:
         type: string
         format: date
         description: expiry time of link in UTC
-        example: '2024-11-29T06:03:02Z'
+        example: '2024-12-15T13:22:29Z'
         minLength: now
   Model 106:
     type: array
@@ -8350,7 +8349,7 @@ definitions:
         type: string
         format: date
         description: expiry time of link in UTC
-        example: '2024-11-29T06:03:02Z'
+        example: '2024-12-15T13:22:29Z'
         minLength: now
       variables:
         $ref: '#/definitions/properties'
@@ -8378,7 +8377,7 @@ definitions:
         type: string
         format: date
         description: expiry time of link in UTC
-        example: '2024-11-29T06:03:02Z'
+        example: '2024-12-15T13:22:29Z'
     required:
       - contact_id
   uniqueChannelUrlsSchema:
@@ -11338,7 +11337,6 @@ x-alt-definitions:
         description: >-
           Message of sms, both {company_name} and {survey_link} variables are
           required.
-        maxLength: 140
       twilio_consent_agreed:
         type: boolean
         description: For using SurveySparrow message service you need to agree the consent

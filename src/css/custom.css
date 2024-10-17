@@ -599,6 +599,7 @@ html[data-theme=dark] .DocSearch-Button {
 }
 
 .docs--tabText {
+  font-size: 18px !important;
   color: var(--custom-text-gray);
   width: 500px;
 }
@@ -967,8 +968,11 @@ html[data-theme=dark] .DocSearch-Button {
   display: inline-flex;
   align-items: center;
   padding: 12px 24px;
-  min-width: 180px !important;
-  max-width: 240px;
+  height: 48px !important;
+  min-width: 173px !important;
+  width: max-content !important;
+  /* min-width: 180px !important;
+  max-width: 240px; */
   margin-top: 16px;
   background-color: var(--white);
   border: 1px solid #E2E8F0;
@@ -1090,7 +1094,7 @@ html[data-theme=dark] .DocSearch-Button {
   }
 
   .docs--card-button {
-    display: none;
+    /* display: none; */
   }
 
   .docs--mobile-card-button {
@@ -1210,4 +1214,10 @@ html[data-theme=dark] hr{
 }
 hr{
   background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.openapi-explorer__response-placeholder-message{
+  padding-left: 0px !important;
+}
+.docItemContainer_node_modules-docusaurus-theme-openapi-docs-lib-theme-ApiItem-Layout-styles-module > div:last-child {
+  padding: 0px !important;
 }
