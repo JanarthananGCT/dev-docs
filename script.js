@@ -2,18 +2,17 @@ const fs = require("fs").promises; // Use promises version of fs
 const fs2 = require("fs");
 const path = require("path");
 const axios = require("axios");
-const yaml = require("js-yaml")
-
+const yaml = require("js-yaml");
 
 const getOpenAPI = async () => {
-  try{
+  try {
     const { data } = await axios.get(
       "https://api.surveysparrow.com/swagger.json"
     );
     //remove introduction key from openapi object
     delete data.info;
     const tags = [];
-  
+
     Object.keys(data.paths).forEach((path) => {
       const pathItem = data.paths[path];
       Object.keys(pathItem).forEach((method) => {
@@ -25,17 +24,19 @@ const getOpenAPI = async () => {
         }
       });
     });
-  
+
     data.tags = tags.map((tag) => ({
       name: tag,
       "x-displayName": tag
         .replace(/_/g, " ") // Replace underscores with spaces
         .replace(/[^a-zA-Z0-9 ]/g, "") // Keep alphanumeric characters and spaces
         .split(" ") // Split into words
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) // Capitalize first letter of each word
+        .map(
+          (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        ) // Capitalize first letter of each word
         .join(" "), // Join words back into a string
     }));
-  
+
     data.securityDefinitions = {
       API_KEY: {
         type: "apiKey",
@@ -43,21 +44,24 @@ const getOpenAPI = async () => {
         in: "header",
       },
     };
-  
+
     data.servers = [
-      { url: "https://api.surveysparrow.com" },
-      { url: "https://eu-api.surveysparrow.com" },
-      { url: "https://ap-api.surveysparrow.com" },
-      { url: "https://me-api.surveysparrow.com" },
+      { url: "https://app.surveysparrow.com" },
+      { url: "https://eu-ff-app.surveysparrow.com" },
+      { url: "http://ap-mi-app.surveysparrow.com" },
+      { url: "http://me-uae-app.surveysparrow.com" },
+      { url: "http://eu-ln-app.surveysparrow.com" },
+      { url: "http://ap-sy-app.surveysparrow.com" },
+      { url: "http://ca-app.surveysparrow.com" },
     ];
-  
+
     delete data.host;
     delete data.basePath;
-  
+
     const v1Data = { ...data, paths: {} };
     const v2Data = { ...data, paths: {} };
     const v3Data = { ...data, paths: {} };
-  
+
     for (const [path, pathData] of Object.entries(data.paths)) {
       //add security Bearer token to all paths
       for (const method of Object.values(pathData)) {
@@ -68,7 +72,7 @@ const getOpenAPI = async () => {
           (tag) => !["v1", "v2", "v3"].includes(tag)
         );
       }
-  
+
       if (path.includes("/v1/")) {
         v1Data.paths[path] = pathData;
       } else if (path.includes("/v2/")) {
@@ -77,7 +81,7 @@ const getOpenAPI = async () => {
         v3Data.paths[path] = pathData;
       }
     }
-  
+
     async function writeDataToFile(version, data) {
       //if the directory does not exist, create it
       if (!fs2.existsSync(path.join(__dirname, "yaml"))) {
@@ -88,7 +92,7 @@ const getOpenAPI = async () => {
         yaml.dump(data)
       );
     }
-  
+
     await writeDataToFile("v1", v1Data);
     await writeDataToFile("v2", v2Data);
     await writeDataToFile("v3", v3Data);

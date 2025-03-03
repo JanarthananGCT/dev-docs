@@ -1,6 +1,324 @@
 swagger: '2.0'
 schemes:
   - https
+info:
+  title: API Documentation
+  version: 1.0.0
+  description: >-
+    ---
+
+
+    ## **Introduction**
+
+
+    SurveySparrow API allows you to integrate third party applications in your
+    enterprise ecosystem and helps you to automate workflows like, sending a
+    survey when a ticket is closed or a employee leaves the organisation.
+
+
+    ### Request & Response Format
+
+    SurveySparrow API accepts HTTPS requests with JSON Arguments. The response
+    will be in JSON format. Our Authentication is based on OAuth 2.0 and you can
+    pass your access token over Authorization header as "bearer token"
+
+
+    ## **Authentication**
+
+
+    SurveySparrow uses OAuth 2.0 for Authentication . You need to use the
+    generated access token in request header as "bearer token" (-H
+    "Authorization: Bearer Your_ACCESS_TOKEN ")
+
+
+    ### Generate Access Token
+
+
+    You can Generate Access Token using the following steps:
+
+    1. Login to your SurveySparrow account and go to Settings → Apps &
+    Integrations.
+
+    2. Create a Custom App.
+
+    3. Enter Name, Description, select scope, and generate the access token.
+
+    4. Copy and store the access token (Access token will be displayed only once
+    and you may need to re-generate if you misplaced it).
+
+    5. Save your app and you are good to start developing your custom app.
+
+
+    ## **Scopes**
+
+
+    While creating an app you can define the scope or privilege for the API
+    token to communicate with your surveysparrow account. Following are the
+    available scopes and permissions currently supported in SurveySparrow API.
+
+
+    | **Scope**                       |
+    **Permission**                                           |
+
+    |---------------------------------|----------------------------------------------------------|
+
+    | View Contacts                   | List
+    Contacts                                            |
+
+    | Manage Contacts                 | Create Contacts, Update
+    Contacts                         |
+
+    | View Contact Lists              | List Contact
+    Lists                                       |
+
+    | Manage Contact List             | Create Contact List, Update Contact
+    List                 |
+
+    | View Employees                  | View your
+    employees                                      |
+
+    | Manage Employees                | Modify your employees, add new
+    employees                 |
+
+    | View Employee List              | View your employee
+    list                                  |
+
+    | Manage Employee List            | Modify your employee list, add new
+    employee lists        |
+
+    | View Survey                     | List
+    Surveys                                             |
+
+    | Manage Survey                   | Create and edit
+    survey                                   |
+
+    | View Responses                  | List
+    Responses                                           |
+
+    | Manage Share Survey             | Update
+    Share                                             |
+
+    | View Survey Settings            | View the survey settings you
+    created                     |
+
+    | View Survey Integrations        | View Survey Integrations for
+    survey                      |
+
+    | Manage Survey Settings          | Edit your survey
+    settings                                |
+
+    | View Question                   | View the question you
+    created                            |
+
+    | Manage Questions                | Create and edit
+    questions                                |
+
+    | View Variables                  | View the variables created for
+    survey                    |
+
+    | View Expressions                | View the expressions created for
+    survey                  |
+
+    | Manage Variables                | Create and delete survey
+    variables                       |
+
+    | View Themes                     | View your
+    themes                                         |
+
+    | Manage Responses                | Manage
+    Responses                                         |
+
+    | View Webhooks                   | View Webhooks of
+    Survey                                  |
+
+    | Manage Webhooks                 | Modify your webhooks, add new
+    webhooks                   |
+
+    | View Questions                  | View Questions in a
+    Survey                               |
+
+    | Manage Shares                   | Manage shares of a
+    survey                                |
+
+    | Manage Offline Devices          | Manage Offline
+    Devices                                   |
+
+    | View Workspace                  | View Your
+    Workspace                                      |
+
+    | Manage Workspace                | Manage your account
+    workspace                            |
+
+    | Manage 360 Invite               | Manage 360 invitees of
+    Survey                            |
+
+    | View 360 Invite                 | View 360
+    invite                                          |
+
+    | View 360 Reports of Survey      | View 360 reports of
+    Survey                               |
+
+    | Manage Team                     | Manage teams in your
+    account                             |
+
+    | View Team                       | View Teams in your
+    account                               |
+
+    | View User                       | View User in your
+    account                                |
+
+    | Manage User                     | Manage user in your
+    account                              |
+
+    | View Targets                    | View
+    Targets                                             |
+
+    | View Audit Logs                 | View Audit
+    Logs                                          |
+
+    | Manage Audit Logs               | Manage Audit
+    Logs                                        |
+
+    | View Tickets                    | View Tickets in your
+    account                             |
+
+    | Manage Tickets                  | Create, Edit and Delete tickets in your
+    account          |
+
+    | View Ticket Comments            | View comments for tickets in
+    account                     |
+
+    | Manage Ticket Comments          | Manage comments for Tickets in
+    account                   |
+
+    | View Ticket Fields              | View the fields of Tickets in your
+    account               |
+
+    | Create Dashboards and Widgets   | Create dashboards and widgets for
+    survey                 |
+
+    | View Dashboards and Widgets     | View dashboards and widgets for
+    survey                   |
+
+    | View Reputation App Platforms   | View the app platforms for account in
+    reputation         |
+
+    | View Reputation Reviews         | View Reviews of Reputation for
+    account                   |
+
+
+
+    ## **Error Handling**
+
+
+    SurveySparrow uses standard HTTP status codes like 2xx for success and 4xx
+    for failure . Please refer the following table for status codes.
+
+
+    | **Status Code**           |
+    **Permission**                                                             
+    |
+
+    |---------------------------|-----------------------------------------------------------------------------|
+
+    | 200 OK                    | Request is
+    successful                                                       |
+
+    | 202 Accepted              | Request accepted but it is queued or
+    processing                             |
+
+    | 400 Bad Request           | Request has missing required parameters or
+    validation errors                |
+
+    | 401 Unauthorized          | Bad Token or missing
+    token                                                  |
+
+    | 403 Forbidden             | Access denied for the requested
+    resource                                    |
+
+    | 404 Not Found             | The requested resource doesn’t
+    exist                                        |
+
+    | 409 Conflict              | Request conflicts with another, trying to
+    create already existing resource  |
+
+    | 429 Too Many Requests     | Api request limit
+    exceeded                                                  |
+
+    | 500 Internal Server Error | Something went wrong in
+    Surveysparrow                                       |
+
+
+
+
+    Some of the error code above will give you a deeper level of information
+    just like below
+
+
+
+    | **Error Type**      |
+    **Description**                                                            |
+
+    |---------------------|----------------------------------------------------------------------------|
+
+    | missing_scope       | Token doesn’t have the requested resource
+    scope                            |
+
+    | backend_error       | Error in Surveysparrow
+    servers                                             |
+
+    | already_exist       | The resource trying to create already
+    exists                               |
+
+    | permission_denied   | You don’t have the access rights for the requested
+    resource                |
+
+    | not_found           | The requested resource is not available in the
+    system                      |
+
+    | not_active          | Resource is not active now, so you can’t perform the
+    operation             |
+
+    | limit_exceeded      | You have reached your hourly
+    quota                                         |
+
+    | disabled            | The app or integration is disabled by the
+    creator                          |
+
+    | bad_token           | Due to any of the following reasons: Invalid token,
+    Token expired, user revoked the access |
+
+
+    ## **Rate Limit**
+
+
+    Currently our API is rate limited based on the quota of the user on per
+    hour, per day and per minute basis. Once you exceed this, API responds with
+    an error code 429 (Too Many requests).
+
+
+    ## **Pagination**
+
+
+    You can use our pagination with limit and page parameter to navigate when
+    your list exceed our default maximum number of results . When you exceed
+    this you can paginate using Page params (Ex:-
+    https://api.surveysparrow.com/v3/contacts?limit=100&page=2)
+
+
+    __Note: To be passed as query parameter__
+
+
+    | **Name**     | **Description**                     |
+
+    |--------------|-------------------------------------|
+
+    | limit        | No of results needed in a request   |
+
+    | page         | Page No                             |
+
+
+    __Note: For all GET calls you can use option params to paginate__
 tags:
   - name: audit_logs
     x-displayName: Audit Logs
@@ -7644,7 +7962,7 @@ definitions:
       cut_off_date:
         type: string
         format: date
-        example: '2025-04-28T12:25:04.471Z'
+        example: '2025-04-28T12:24:23.031Z'
       dynamic_cut_off:
         $ref: '#/definitions/dynamic_cut_off'
       enable_offline_support:
@@ -8209,7 +8527,7 @@ definitions:
         type: string
         format: date
         description: expiry time of link in UTC
-        example: '2025-04-28T12:25:04Z'
+        example: '2025-04-28T12:24:22Z'
         minLength: now
   Model 123:
     type: array
@@ -8253,7 +8571,7 @@ definitions:
         type: string
         format: date
         description: expiry time of link in UTC
-        example: '2025-04-28T12:25:04Z'
+        example: '2025-04-28T12:24:22Z'
         minLength: now
       variables:
         $ref: '#/definitions/properties'
@@ -8281,7 +8599,7 @@ definitions:
         type: string
         format: date
         description: expiry time of link in UTC
-        example: '2025-04-28T12:25:04Z'
+        example: '2025-04-28T12:24:22Z'
     required:
       - contact_id
   uniqueChannelUrlsSchema:
