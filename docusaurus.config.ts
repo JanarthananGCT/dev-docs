@@ -112,6 +112,12 @@ const config: Config = {
           position: "left",
         },
         {
+          to: "/spotchecks",
+          label: "SpotChecks",
+          id: "SpotChecks",
+          position: "left",
+        },
+        {
           to: "/embed",
           // type: "docSidebar",
           // sidebarId: "Embed_Sidebar",
@@ -156,6 +162,10 @@ const config: Config = {
             {
               label: 'Embed',
               to: '/embed',
+            },
+            {
+              label: 'SpotChecks',
+              to: '/spotchecks',
             },
           ],
         },

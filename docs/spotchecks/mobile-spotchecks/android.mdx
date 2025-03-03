@@ -1,0 +1,204 @@
+---
+sidebar_position: 3
+hide_title: true
+sidebar_label: Android
+title: Android
+
+---
+
+# Android
+
+<div style={{
+  display: "flex",
+  alignItems: "center",
+  gap: "12px",
+  fontSize: "16px",
+  marginBlock: "20px"
+}}>
+
+<div style={{
+    width: "30px",
+    height: "30px",
+}}>
+<svg style={{width: "30px", height: "30px"}} viewBox="0 0 48 48" version="1" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48">
+    <circle fill="#2196F3" cx="24" cy="24" r="21"/>
+    <rect x="22" y="22" fill="#ffffff" width="4" height="11"/>
+    <circle fill="#ffffff" cx="24" cy="16.5" r="2.5"/>
+</svg>
+</div>
+<strong>Latest Version: [1.2.0]("https://github.com/surveysparrow/surveysparrow-android-sdk/releases/tag/1.2.0")</strong>
+</div>
+
+Below are the various processes involved in setting up SpotChecks on Android.
+
+
+### Installation
+
+Insert the following in your **build.gradle** file at the end of the repositories section.
+
+```
+allprojects {
+  repositories {
+    ...
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+
+
+Add the following line to your app modules, present in the **build.gradle** file within the **dependencies** section.
+
+```
+implementation 'com.github.surveysparrow:surveysparrow-android-sdk:1.2.0'
+```
+
+The SurveySparrowSdk requires Internet access to fetch surveys and submit answers. So, add the following permissions to the **AndroidManifest.xml** file.
+
+```
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+
+Below are the necessary imports before initializing the Spotchecks.
+
+```
+import com.surveysparrow.surveysparrow_android_sdk.SpotCheck
+import com.surveysparrow.surveysparrow_android_sdk.trackEvent
+import com.surveysparrow.surveysparrow_android_sdk.SpotCheckConfig
+import com.surveysparrow.surveysparrow_android_sdk.trackScreen
+```
+
+### Initialization
+
+ - SpotCheckConfig needs to be declared in the composable function
+
+
+#### Anonymous users
+
+If you wish not to keep track of users' data, you can follow the below syntax for initialization.
+
+```
+val context = LocalContext.current 
+val spotCheckConfig = remember {
+ SpotCheckConfig(
+   domainName = "<your_domain>",
+   targetToken = "<target_token>", 
+   userDetails = hashMapOf(),
+   variables = mapOf(),
+   customProperties = mapOf(), 
+   preferences = context.getSharedPreferences("spotcheck", Context.MODE_PRIVATE)// Mandatory for Anonumous Users, 
+   sparrowLang: "ta" // Eg: ta, te, ml, hi, en 
+ )
+}
+```
+
+#### Known Users
+
+If you wish to keep track of users' data and perform conditional Survey triggers, you can follow the below syntax for initialization.
+
+```
+val spotCheckConfig = remember {
+ SpotCheckConfig(
+   domainName = "<your_domain>",
+   targetToken = "<target_token>", 
+   variables = mapOf(
+       "<api_identifier_of_variable>" to "<variable_value>"
+   ),
+   customProperties = mapOf(
+       "<custom_property_name>" to "<custom_property_value>"
+   ), 
+   userDetails = hashMapOf(
+       "email" to "example@email.com",
+       "firstName" to "<your-first-name>",
+       "lastName" to "<your-last-name>",
+       "mobile" to "<user_mobile>",
+       "uuid" to "<uuid_value>" // Optional
+   ), 
+   sparrowLang: "ta" // Eg: ta, en,  
+  )
+}
+```
+
+-  Then, add the SpotCheck Composabe Function to all the screens where you want to display the surveys.
+
+
+```
+@Composable
+fun SpotCheckScreen(spotCheckConfig: SpotCheckConfig) {
+    Scaffold() {}
+    SpotCheck(spotCheckConfig)
+}
+```
+
+**Note:** Add the spotCheckConfig variable outside of the scaffold.
+
+
+
+## Screen Track
+
+It provides the ability to keep track of screens the users are visiting and to enable the survey trigger on that screen.
+
+
+### Syntax: 
+
+```
+LaunchedEffect(Unit) {
+    trackScreen(screen= "ScreenName", config = spotCheckConfig)
+}
+```
+### Example:
+
+If a survey needs to be triggered on the payment page, the name of the ScreenName should be specified in the TrackScreen function.
+
+```
+LaunchedEffect(Unit) {
+    trackScreen(screen= "paymentScreen", config = spotCheckConfig)
+}
+```
+
+## Event Track
+
+It provides the ability to keep track of events which when triggered, will enable the survey to be popped. 
+
+
+
+### Syntax:
+
+```
+spotCheck.trackEvent("ScreenName", {"EventName": {}});
+
+```
+
+### Example: 
+
+If a survey needs to be triggered when the user completes a payment, then the TrackEvent function should be called with the respective ScreenName and optional custom properties.
+
+```
+spotCheck.trackEvent("paymentScreen", {"paymentComplete": {
+    "email":"naveen@surveysparrow.com",
+    "paymentStatus":true
+}});
+```
+
+
+<div style={{
+  display: "flex",
+  alignItems: "center",
+  gap: "12px",
+  fontSize: "16px",
+   marginBlock: "30px"
+}}>
+
+<div style={{
+    width: "30px",
+    height: "30px",
+}}>
+<svg style={{width: "30px", height: "30px"}} viewBox="0 0 48 48" version="1" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48">
+    <circle fill="#2196F3" cx="24" cy="24" r="21"/>
+    <rect x="22" y="22" fill="#ffffff" width="4" height="11"/>
+    <circle fill="#ffffff" cx="24" cy="16.5" r="2.5"/>
+</svg>
+</div>
+<strong>Make sure to have the eventName configured in the Checks section of the configure panel</strong>
+</div>

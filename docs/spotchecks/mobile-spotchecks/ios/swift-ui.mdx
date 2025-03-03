@@ -1,0 +1,212 @@
+---
+sidebar_position: 3
+hide_title: true
+sidebar_label: Swift UI App
+title: Swift UI App
+---
+
+# Swift UI App
+
+
+
+
+<div style={{
+  display: "flex",
+  alignItems: "center",
+  gap: "12px",
+  fontSize: "16px",
+  marginBlock: "20px"
+}}>
+
+<div style={{
+    width: "30px",
+    height: "30px",
+}}>
+<svg style={{width: "30px", height: "30px"}} viewBox="0 0 48 48" version="1" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48">
+    <circle fill="#2196F3" cx="24" cy="24" r="21"/>
+    <rect x="22" y="22" fill="#ffffff" width="4" height="11"/>
+    <circle fill="#ffffff" cx="24" cy="16.5" r="2.5"/>
+</svg>
+</div>
+<strong>Latest Version: [1.2.1]("https://github.com/surveysparrow/surveysparrow-ios-sdk/releases/tag/1.2.1")</strong>
+</div>
+
+
+Below are the various processes involved in setting up SpotChecks in IOS
+
+
+### Installation
+
+- Open XCode and click on "File" menu
+
+- Click on "Add Package Dependency"
+
+- Enter the package URL -  https://github.com/surveysparrow/surveysparrow-ios-sdk.git
+
+- Select the version of SDK and Add to App Targets.
+
+- Then, click on Add Package to add the SurveySparrowSdk package to your IOS project.
+
+The SurveySparrowSdk package can also be added by navigating to your target's General panel -> In the **“Frameworks, Libraries, and Embedded Content”** section, click on the + **button** -> select **"Add Other "**-> choose **"Add Package Dependency"** -> Enter the above package URL -> Click on **Add Package**.
+
+### Initialization
+
+Import the SurveySparrowSdk and initialize a variable named spotCheck.
+
+```
+import SurveySparrowSdk
+```
+
+#### Anonymous users
+
+If you wish not to keep track of users' data, you can follow the below syntax for initialization.
+
+```
+
+var spotCheck = Spotcheck (
+ domainName: "<your_domain>",
+ targetToken: "<target_token>",
+ userDetails: [:],
+ variables: [:],
+ customProperties: [:],
+ sparrowLang: "ta" // Eg: ta, en, 
+)
+```
+
+#### Known Users
+
+If you wish to keep track of users' data and perform conditional Survey triggers, you can follow the below syntax for initialization.
+
+```
+var spotCheck = Spotcheck (
+ domainName: "<your_domain>",
+ targetToken: "<target_token>",
+ userDetails: [
+       email: 'example@email.com',
+       firstName: '<your-first-name>',
+       lastName: '<your-last-name>',
+       mobile: '<user_mobile>',
+       uuid: '<uuid_value>' // Optional
+  ], 
+ variables: [
+       <api_identifier_of_variable>: '<variable_value>',
+ ],
+ customProperties: [
+       <custom_property_name>:'<value>' 
+ ],
+ sparrowLang: "ta" // Eg: ta, en, 
+)
+```
+Add the spotCheck in the Zstack of the topmost parent
+
+```
+ZStack {<your-app-code>, spotCheck}
+```
+
+## Screen Track
+
+It provides the ability to keep track of screens the users are visiting and to enable the survey trigger on that screen.
+
+### Syntax: 
+
+```
+.onAppear {
+   spotCheck.TrackScreen(
+      screen: "<your-screen-name>"  //eg. PaymentScreen
+   )
+}
+```
+### Example:
+
+If a survey needs to be triggered on the payment page, the name of the ScreenName should be specified in the TrackScreen function.
+
+```
+spotCheck.TrackScreen(
+   screen: "PaymentScreen" 
+) 
+```
+
+## Event Track
+
+It provides the ability to keep track of events which when triggered, will enable the survey to be popped. 
+
+### Syntax:
+
+```
+spotCheck.TrackEvent(
+   onScreen: "<your-screen-name>"  //eg. ScreenName, 
+   event: [
+      "<your-events-or-functions>":[:]  //eg. "onButtonPressed": [:] 
+   ]
+) 
+
+```
+
+### Example: 
+
+If a survey needs to be triggered when the user completes a payment, then the TrackEvent function should be called with the respective ScreenName and optional custom properties.
+
+```
+spotCheck.TrackEvent(
+    onScreen: "paymentScreen", 
+    event: [ 
+        "paymentComplete": [
+            "email" : "naveen@surveysparrow.com",
+            "paymentStatus" : true
+        ] 
+    ]
+)
+```
+
+
+<div style={{
+  display: "flex",
+  alignItems: "center",
+  gap: "12px",
+  fontSize: "16px",
+   marginBlock: "30px"
+}}>
+
+<div style={{
+    width: "30px",
+    height: "30px",
+}}>
+<svg style={{width: "30px", height: "30px"}} viewBox="0 0 48 48" version="1" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48">
+    <circle fill="#2196F3" cx="24" cy="24" r="21"/>
+    <rect x="22" y="22" fill="#ffffff" width="4" height="11"/>
+    <circle fill="#ffffff" cx="24" cy="16.5" r="2.5"/>
+</svg>
+</div>
+<strong>Make sure to have the eventName configured in the Checks section of the configure panel</strong>
+</div>
+
+## Callbacks (Optional)
+
+Callbacks are used to listen to events that are part of the SpotChecks. Below are the events:
+
+- Survey Response - triggers when the user submits a response.
+
+- Survey Loaded - triggers when the SpotChecks is loaded on the user's page.
+
+- Survey Close - triggers when the SpotChecks is closed by the user.
+
+### Syntax:
+
+```
+// Step 1: Add callbacks to the SpotChecks Initialization
+var spotCheck = Spotcheck(
+    //...
+    surveyDelegate: SsDelegate()
+)
+
+// Step 2: Listen to the SpotChecks events
+class SsDelegate: UIViewController, SsSurveyDelegate {
+    func handleSurveyResponse(response: [String : AnyObject]) {}
+    
+    func handleSurveyLoaded(response: [String : AnyObject]) {}
+    
+    func handleSurveyValidation(response: [String : AnyObject]) {}
+    
+    func handleCloseButtonTap() {}
+}
+```

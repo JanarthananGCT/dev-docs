@@ -1,0 +1,164 @@
+---
+sidebar_position: 3
+hide_title: true
+sidebar_label: Flutter
+title: Flutter
+
+---
+
+# Flutter
+
+<div style={{
+  display: "flex",
+  alignItems: "center",
+  gap: "12px",
+  fontSize: "16px",
+  marginBlock: "20px"
+}}>
+
+<div style={{
+    width: "30px",
+    height: "30px",
+}}>
+<svg style={{width: "30px", height: "30px"}} viewBox="0 0 48 48" version="1" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48">
+    <circle fill="#2196F3" cx="24" cy="24" r="21"/>
+    <rect x="22" y="22" fill="#ffffff" width="4" height="11"/>
+    <circle fill="#ffffff" cx="24" cy="16.5" r="2.5"/>
+</svg>
+</div>
+<strong>Latest Version: [1.2.0]("https://pub.dev/packages/surveysparrow_flutter_sdk/versions/1.2.0")</strong>
+</div>
+
+Below are the various processes involved in setting up Spotcheck in Flutter
+
+
+### Installation
+
+To install the SurveySparrowSdk, make sure you are in the root folder of your Flutter project in the terminal and run the following command.
+
+```
+flutter pub add surveysparrow_flutter_sdk
+```
+
+
+### Initialization
+
+Declare and initialize the spotcheck variable using the Spotcheck().
+
+
+#### Anonymous users
+
+If you wish not to keep track of users' data, you can follow the below syntax for initialization.
+
+
+```
+final SpotCheck spotCheck = SpotCheck(
+  domainName: "<your_domain>",
+  targetToken: "<target_token>",
+  // Should Not Pass userDetails as const
+  userDetails: {},
+  variables: {},
+  customProperties: {},
+  sparrowLang: "ta" // Eg: ta, en, 
+);
+```
+
+#### Known Users
+
+If you wish to keep track of users' data and perform conditional Survey triggers, you can follow the below syntax for initialization.
+
+```
+final SpotCheck spotCheck = SpotCheck(
+  domainName: "<your_domain>",
+  targetToken: "<target_token>",
+  // Should Not Pass userDetails as const
+  userDetails: {
+       email:"<user_email>",
+       mobile:"<user_mobile>",
+       uuid: '<uuid_value>' // Optional
+  },
+  variables: {
+        sparrowLang: "ta" // Eg: ta, en, 
+       <api_identifier_of_variable>:"<variable_value>",
+  },
+  customProperties: {
+       <custom_property_name>: "<custom_property_value>"
+  }
+);
+```
+Then, add the SpotCheck initialized variable to all the screens where you want to display the surveys.
+
+```
+Stack(
+ children: [
+   <your-app-code>,
+    spotCheck,
+  ],
+)
+```
+
+
+
+## Screen Track
+
+It provides the ability to keep track of screens the users are visiting and to enable the survey trigger on that screen.
+
+
+### Syntax: 
+
+```
+spotCheck.trackScreen("ScreenName");
+```
+### Example:
+
+If a survey needs to be triggered on the payment page, the name of the ScreenName should be specified in the TrackScreen function.
+
+```
+spotCheck.trackScreen("paymentScreen");
+```
+
+## Event Track
+
+It provides the ability to keep track of events which when triggered, will enable the survey to be popped. 
+
+
+
+### Syntax:
+
+```
+spotCheck.trackEvent("ScreenName", {"EventName": {}});
+
+```
+
+### Example: 
+
+If a survey needs to be triggered when the user completes a payment, then the TrackEvent function should be called with the respective ScreenName and optional custom properties.
+
+```
+spotCheck.trackEvent("paymentScreen", {"paymentComplete": {
+    "email":"naveen@surveysparrow.com",
+    "paymentStatus":true
+}});
+```
+
+
+<div style={{
+  display: "flex",
+  alignItems: "center",
+  gap: "12px",
+  fontSize: "16px",
+   marginBlock: "30px"
+}}>
+
+<div style={{
+    width: "30px",
+    height: "30px",
+}}>
+<svg style={{width: "30px", height: "30px"}} viewBox="0 0 48 48" version="1" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48">
+    <circle fill="#2196F3" cx="24" cy="24" r="21"/>
+    <rect x="22" y="22" fill="#ffffff" width="4" height="11"/>
+    <circle fill="#ffffff" cx="24" cy="16.5" r="2.5"/>
+</svg>
+</div>
+<strong>Make sure to have the eventName configured in the Checks section of the configure panel</strong>
+</div>

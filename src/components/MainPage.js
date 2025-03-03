@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 
 const IMAGE_URL = 'https://static.surveysparrow.com/application/marketplace';
 
@@ -25,6 +24,13 @@ const documentationOptions = [
   },
   {
     id: 4,
+    name: 'Spotchecks',
+    icon: `${IMAGE_URL}/app/sdk-new.svg`,
+    arrowIcon: true,
+    path: '/spotchecks',
+  },
+  {
+    id: 5,
     name: 'Embed',
     icon: `${IMAGE_URL}/app/embed-new.svg`,
     path: '/embed',
@@ -65,6 +71,17 @@ const documentCards = [
   },
   {
     id: 4,
+    heading: 'Spotchecks',
+    title: 'Collect data on the fly with Flutter SDK',
+    description:
+      "Reduce customer friction by gathering feedback through your mobile app. Embrace SurveySparrow's Flutter SDK to deploy feedback surveys in just a few lines of code. Boost response rates by capturing user insights right after different app interactions.",
+    image: 'https://ss-staging-public.s3.amazonaws.com/ss-public-api-docs/Home/img-3.jpeg',
+    path: '/spotchecks',
+    arrowIcon: true,
+    btnText: 'Get Started'
+  },
+  {
+    id: 5,
     heading: 'web embed',
     title: 'Gather intuitive feedback from website widgets',
     description:

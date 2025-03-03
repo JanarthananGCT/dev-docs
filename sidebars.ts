@@ -83,7 +83,7 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
-  "Appnest_Sidebar": [
+  Appnest_Sidebar: [
     {
       type: "category",
       label: "Appnest",
@@ -257,354 +257,103 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
-  "Sdk_Sidebar": [
+  spot_checks_sidebar: [
+    {
+      type: "doc",
+      label: "Introduction",
+      id: "spotchecks/inroduction",
+    },
+    {
+      type: "doc",
+      label: "SpotChecks Essentials",
+      id: "spotchecks/spotchecks-essentials",
+    },
+    {
+      type: "doc",
+      label: "Configure Essentials",
+      id: "spotchecks/configure-essentials",
+    },
     {
       type: "category",
-      label: "Appnest",
-      collapsed: true,
+      label: "How to use SpotChecks ?",
+      collapsed: false,
       link: {
         type: "doc",
-        id: "appnest/docs/Appnest",
+        id: "spotchecks/how-to-use-spotchecks",
       },
       items: [
         {
           type: "category",
-          label: "Tutorial",
+          label: "Web SpotChecks",
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "Welcome to AppNest Codelabs",
-            description:
-              "Discover a seamless and interactive learning experience on our Developer Platform through detailed codelabs, empowering you to unleash your full potential by building SurveySparrow applications and exploring its rich features.",
-            slug: "appnest/code-labs",
+            type: "doc",
+            id: "spotchecks/web-spotchecks/index",
           },
           items: [
             {
               type: "doc",
-              id: "appnest/code-labs/simple_sdk_app",
+              id: "spotchecks/web-spotchecks/integrate-spotchecks-with-shopify",
             },
             {
               type: "doc",
-              id: "appnest/code-labs/event_app",
+              id: "spotchecks/web-spotchecks/integrate-spotchecks-with-google-tag-manager",
             },
             {
               type: "doc",
-              id: "appnest/code-labs/react_app",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/scheduler_app",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/global_webhook",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/submitting_app_for_review",
+              id: "spotchecks/web-spotchecks/integrate-spotchecks-with-wordpress",
             },
           ],
         },
         {
           type: "category",
-          label: "SDK Docs",
+          label: "Mobile SpotChecks",
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "SurveySparrow SDK Documentation",
-            description:
-              "This documentation helps developer to build apps using surveysparrow software development kit",
-            slug: "appnest/docs/Appnest",
+            type: "doc",
+            id: "spotchecks/mobile-spotchecks/index",
           },
           items: [
             {
               type: "category",
-              label: "Getting Started",
+              label: "IOS",
               collapsed: true,
               link: {
-                type: "doc",
-                id: "appnest/docs/getting-started/getting-started",
+                type: "generated-index",
+                title: "IOS",
+                description: "Here are two different ways to integrate Spotchecks in IOS applications.",
+                slug: "spotchecks/mobile-spotchecks/ios",
               },
               items: [
                 {
                   type: "doc",
-                  id: "appnest/docs/getting-started/quick-start",
+                  label: "Swift UI",
+                  id: "spotchecks/mobile-spotchecks/ios/swift-ui",
                 },
                 {
                   type: "doc",
-                  id: "appnest/docs/getting-started/first-app",
-                },
-              ],
-            },
-            {
-              type: "category",
-              label: "Building Apps",
-              collapsed: true,
-              link: {
-                type: "doc",
-                id: "appnest/docs/apps/building-apps",
-              },
-              items: [
-                {
-                  type: "doc",
-                  id: "appnest/docs/apps/react_app",
-                },
-                {
-                  type: "doc",
-                  id: "appnest/docs/apps/react_serverless_app",
-                },
-                {
-                  type: "doc",
-                  id: "appnest/docs/apps/scheduler_app",
-                },
-                {
-                  type: "doc",
-                  id: "appnest/docs/apps/serverless_app",
-                },
-                {
-                  type: "doc",
-                  id: "appnest/docs/apps/smi_app",
+                  label: "UI Kit",
+                  id: "spotchecks/mobile-spotchecks/ios/ui-kit",
                 },
               ],
             },
             {
               type: "doc",
-              id: "appnest/docs/sparrow-cli/index",
-            },
-            {
-              type: "category",
-              label: "Configuration",
-              collapsed: true,
-              link: {
-                type: "doc",
-                id: "appnest/docs/configuration/index",
-              },
-              items: [
-                {
-                  type: "doc",
-                  id: "appnest/docs/configuration/app-manifest",
-                },
-                {
-                  type: "doc",
-                  id: "appnest/docs/configuration/installation-parameters",
-                },
-              ],
+              id: "spotchecks/mobile-spotchecks/android",
             },
             {
               type: "doc",
-              id: "appnest/docs/app-category-types/index",
+              id: "spotchecks/mobile-spotchecks/flutter",
             },
             {
               type: "doc",
-              id: "appnest/docs/data-storage/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/features/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/global-webhook/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/incoming-webhook/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/logs/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/scheduler/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/serverless/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/terms-and-privacy/index",
+              id: "spotchecks/mobile-spotchecks/react-native",
             },
           ],
         },
       ],
     },
   ],
-  "Embed_Sidebar": [
-    {
-      type: "category",
-      label: "Appnest",
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "appnest/docs/Appnest",
-      },
-      items: [
-        {
-          type: "category",
-          label: "Tutorial",
-          collapsed: true,
-          link: {
-            type: "generated-index",
-            title: "Welcome to AppNest Codelabs",
-            description:
-              "Discover a seamless and interactive learning experience on our Developer Platform through detailed codelabs, empowering you to unleash your full potential by building SurveySparrow applications and exploring its rich features.",
-            slug: "appnest/code-labs",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "appnest/code-labs/simple_sdk_app",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/event_app",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/react_app",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/scheduler_app",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/global_webhook",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/submitting_app_for_review",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "SDK Docs",
-          collapsed: true,
-          link: {
-            type: "generated-index",
-            title: "SurveySparrow SDK Documentation",
-            description:
-              "This documentation helps developer to build apps using surveysparrow software development kit",
-            slug: "appnest/docs/Appnest",
-          },
-          items: [
-            {
-              type: "category",
-              label: "Getting Started",
-              collapsed: true,
-              link: {
-                type: "doc",
-                id: "appnest/docs/getting-started/getting-started",
-              },
-              items: [
-                {
-                  type: "doc",
-                  id: "appnest/docs/getting-started/quick-start",
-                },
-                {
-                  type: "doc",
-                  id: "appnest/docs/getting-started/first-app",
-                },
-              ],
-            },
-            {
-              type: "category",
-              label: "Building Apps",
-              collapsed: true,
-              link: {
-                type: "doc",
-                id: "appnest/docs/apps/building-apps",
-              },
-              items: [
-                {
-                  type: "doc",
-                  id: "appnest/docs/apps/react_app",
-                },
-                {
-                  type: "doc",
-                  id: "appnest/docs/apps/react_serverless_app",
-                },
-                {
-                  type: "doc",
-                  id: "appnest/docs/apps/scheduler_app",
-                },
-                {
-                  type: "doc",
-                  id: "appnest/docs/apps/serverless_app",
-                },
-                {
-                  type: "doc",
-                  id: "appnest/docs/apps/smi_app",
-                },
-              ],
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/sparrow-cli/index",
-            },
-            {
-              type: "category",
-              label: "Configuration",
-              collapsed: true,
-              link: {
-                type: "doc",
-                id: "appnest/docs/configuration/index",
-              },
-              items: [
-                {
-                  type: "doc",
-                  id: "appnest/docs/configuration/app-manifest",
-                },
-                {
-                  type: "doc",
-                  id: "appnest/docs/configuration/installation-parameters",
-                },
-              ],
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/app-category-types/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/data-storage/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/features/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/global-webhook/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/incoming-webhook/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/logs/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/scheduler/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/serverless/index",
-            },
-            {
-              type: "doc",
-              id: "appnest/docs/terms-and-privacy/index",
-            },
-          ],
-        },
-      ],
-    },
-  ]
 };
 
 export default sidebars;

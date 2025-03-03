@@ -26,7 +26,7 @@ Serverless applications are self-sustaining and automatically execute when trigg
 
 ## Serverless apps in SurveySparrow Platform
 
-The SurveySparrow AppNest offers a Serverless environment tailored to cater to specific use cases that go beyond the capabilities of a front-end app or require enhanced security measures. This technology enables developers to build their apps completely free of cost. Itâ€™s time to build seamless reactions to desired events and elegant problem-solving.
+The SurveySparrow AppNest offers a Serverless environment tailored to cater to specific use cases that go beyond the capabilities of a front-end app or require enhanced security measures. This technology enables developers to build their apps completely free of cost. It's time to build seamless reactions to desired events and elegant problem-solving.
 SurveySparrow's Serverless apps exclusively support the Node.js runtime and are integrated into the SurveySparrow app, which may also include other components like front-end elements and configuration pages. The process of publishing serverless apps is straightforward, as no special steps or configurations are needed.
 Now, let's delve into the structure of the Serverless app within the SurveySparrow platform. Please create an new directory and enter the command below.
 
@@ -57,7 +57,7 @@ parameters. Account admins can fill in these parameters during the app installat
 process.
 
 <strong>manifest.json</strong> - An information-capturing file that contains details
-about the app. It also serves as the overall appâ€™s configuration.
+about the app. It also serves as the overall app's configuration.
 
 <strong>server/server.js</strong> - This file is responsible for writing and exposing
 the Serverless functions. All additional serverless files that can be imported into
@@ -128,7 +128,7 @@ the security of Serverless apps.
 
 The Serverless environment is inherently secure by default, operating within a private cloud environment where other services cannot access it without proper authentication and addressing for the function.
 Additionally, it ensures that no information from the frontend component of the application can be read or exposed in the browser. The installation parameters are sent to the Serverless functions as arguments in plain text, maintaining high-level security.
-Given this robust security, the Serverless function is an excellent option for executing secure operations instead of performing them directly on the front end. For instance, tasks like generating a secret token for external API services or encoding specific text before sending it over an HTTP request can be efficiently handled within the Serverless function. It enhances the overall applicationâ€™s security and data protection.
+Given this robust security, the Serverless function is an excellent option for executing secure operations instead of performing them directly on the front end. For instance, tasks like generating a secret token for external API services or encoding specific text before sending it over an HTTP request can be efficiently handled within the Serverless function. It enhances the overall application's security and data protection.
 
 ## Recap
 

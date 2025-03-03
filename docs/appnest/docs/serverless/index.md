@@ -2613,7 +2613,7 @@ All these payloads can be found in server/test_data in your app directory and ca
           },
           "detractors": {
             "subject": "Thanks for your feedback. It means a lot to us.",
-            "body": "Dear {contact.firstName},\n\n  Thanks for your valuable feedback on your experience with us. We sincerely appreciate your insight because it helps us build a better customer experience.\n\n  Weâ€™re sorry you didnâ€™t have the best experience with us. Please reach out to us to know how we can serve you better. We would be more than happy to assist. \n\n  Best,\n\n  {user.name}"
+            "body": "Dear {contact.firstName},\n\n  Thanks for your valuable feedback on your experience with us. We sincerely appreciate your insight because it helps us build a better customer experience.\n\n  We're sorry you didn't have the best experience with us. Please reach out to us to know how we can serve you better. We would be more than happy to assist. \n\n  Best,\n\n  {user.name}"
           },
           "passives": {
             "subject": "Thanks for your feedback. It means a lot to us.",

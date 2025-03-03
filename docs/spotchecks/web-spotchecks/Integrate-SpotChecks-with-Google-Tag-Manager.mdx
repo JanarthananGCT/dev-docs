@@ -1,0 +1,57 @@
+---
+sidebar_position: 3
+hide_title: true
+sidebar_label: Integrate SpotChecks with Google Tag Manager
+title: Integrate SpotChecks with Google Tag Manager
+id: integrate-spotchecks-with-google-tag-manager
+
+---
+
+# Integrate SpotChecks with Google Tag Manager
+
+SpotChecks provides the flexibility to integrate it with Google Tag Manager. It can be seamlessly integrated with Google Tag Manager without making various code changes.
+
+
+Follow the below steps to configure SpotChecks in Google Tag Manager.
+
+- Navigate to the Google Tag Manager container which is installed on your website.
+
+- Click on the “New” button to create a new tag
+
+- Name your new tag “spotcheck”
+
+- Click on Tag Configuration and choose Custom HTML.
+
+
+![image-3](https://static.surveysparrow.com/application/marketplace/ssdk-assets/image3.png)
+
+
+
+
+- Copy and Paste your SpotChecks JavaScript snippet
+
+![image-3](https://static.surveysparrow.com/application/marketplace/ssdk-assets/image3.png)
+
+![image-3](https://static.surveysparrow.com/application/marketplace/ssdk-assets/image3.png)
+
+- Check the box next to the "Support document.write"
+
+- Set the trigger for the snippet to “Initialization - All Pages”
+
+- Publish your changes to the workspace
+
+
+### Identify the Visitors
+
+The key functionality of SpotChecks is to identify the visitors and set survey triggers based on the user information. You can utilize this functionality by passing the necessary information to the following snippet through which you can set conditions.
+
+In the userDetails, you are required to set the placeholders as you can find in the below image. The placeholders should match the variables created in the Google Tag Manager.
+
+
+![image-3](https://static.surveysparrow.com/application/marketplace/ssdk-assets/image3.png)
+
+If the app holds only static data and there is no requirement to keep track of the users, you can pass the following snippet in a new tag.
+
+```
+<script> window.SpotCheckLauncher('popup', { userDetails: {}, variables: {}, properties:{} });</script>
+```

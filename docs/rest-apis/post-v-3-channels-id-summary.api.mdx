@@ -1,0 +1,191 @@
+---
+id: post-v-3-channels-id-summary
+title: "Get channel analytics metrics"
+description: "Get channel analytics metrics"
+sidebar_label: "Get channel analytics metrics"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNlG1P2zAQx79Kda82ZIgQ76JpUkFoqngxRNmkqVTomlwbQx6MHwpZ5O8+nZ2EQovGm8iK/+e7+9/P7qBRpNHKpp7lkIJqjP19dlFgXVNpZvncVRXqFgQo1FiRJW0gXXSQk8m0VBwIKczySbOe2IImWQwFATVWBCnIHARIFim0BQjQ9OSkphxSqx0JMFlBFULagW0VR9SuWpEG75dRTMaeN3nLiqypLdWWl6hUKbNQefJguIpu/6hm9UCZ5eo192klmaBzekvtvcz3s4oPO4tBIIBesFIlQXrq/W47i51zl97zpsUN2wW9KwZCS0Y1tYmV5LRGV9q43M07d1lGxqwdW7nT9lFydLBTY7WsN+BjXkOZ09K2YVTT69n91eUfSBdLtvRtnh9kh5lNsMaytTIzk4qslpkBARXZohnICBjYAlJItmfJ0FTSydwnZiTFkN4OmDhdQgqFtcqkSYJKnkSPjEKtm+eTrKnAi/c6cseflaL6tLSij6TLV8fmbGyczejbaDIqeRUQ6NmeOls0Wv4NFA6YF4R5wFcAc3nzSvDlAM4bAk89B64b/s2+xbmAACstiwG8CO5XGCDvc/9vcG/GPHZg6cUmqkRZ86nBn66f6QK2Z8zagKqANNzdYbBLAQUzkC6g61Zo6JcuveffT440o7YUsEUtccVl8xshDa9zSNdYGtqracQavtz0t+jr5NBTcrD4YSY1D2SLpaNo2yO18dnxSy+GaXA5ceMiJj2+5fDXwL3nhPmJEdMsI2V3tHwHmZnxblz/nN+CgFX/SlVNzjKNz/zc4TOkcAd3XFsTeg90hf8dlFhvHG5YH9MyN+h4ILvYPQbs+gU3c7D79zzG+vnL3RwM+Ta9nk2uqP0+yuPOhwG9oaPPNfvs/T9orCSc
+sidebar_class_name: "post api-method"
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get channel analytics metrics"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v3/channels/{id}/summary"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get channel analytics metrics
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"description":"Id of the channel","name":"id","in":"path","required":true,"schema":{"type":"number"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"survey_id"}
+          required={true}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","description":"Id of the survey","example":1}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          Successful
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

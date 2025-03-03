@@ -292,7 +292,7 @@ Testing Serverless events with the SurveySparrow product locally can be difficul
 - Use the "ssdk run" command to launch the application locally.
 - Visit the test page for the simulation at https://localhost:30001/web/test
 - Select the "onScheduledEvent" event. The payload data that will be sent to the event handler function will be displayed. This test data will be saved in the "/server/test_data" directory, which can be customized for different test scenarios.
-- Select the "Simulate" option. The app will trigger the event, and the Terminal or Command Prompt, where the appâ€™s running, will display the log message from the event.
+- Select the "Simulate" option. The app will trigger the event, and the Terminal or Command Prompt, where the app's running, will display the log message from the event.
   Tracking which parts have been tested becomes more challenging as the app becomes more complicated. In order to overcome this, SurveySparrow offers test coverage tracking and reporting when using the app locally. To view the coverage report,
 - Use Control + C to close the terminal's running application.
 - The "/.reports" directory of the program contains the coverage report. To read the comprehensive line-by-line code coverage report, open the index HTML file in a browser. Event simulation is not necessary once the app has been published as a custom app in the SurveySparrow portal because the installed apps will be launched automatically when the events occur. Hence, the Serverless events are seamlessly integrated into the SurveySparrow platform.
