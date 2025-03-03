@@ -902,6 +902,58 @@ const sidebar: SidebarsConfig = {
         },
       ],
     },
+    {
+      type: "category",
+      label: "Translation",
+      link: {
+        type: "doc",
+        id: "rest-apis/translation",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "rest-apis/get-v-3-languages",
+          label: "Get all languages available for translation",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/get-v-3-translation-export",
+          label: "Get the specific language excel file",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/post-v-3-language",
+          label: "Create new custom language",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/post-v-3-channels-id-summary",
+          label: "Get channel analytics metrics",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/post-v-3-translation",
+          label: "Create new translation in a survey",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/put-v-3-translation",
+          label: "Update translation",
+          className: "api-method put",
+        },
+        {
+          type: "doc",
+          id: "rest-apis/delete-v-3-translation",
+          label: "Delete translation",
+          className: "api-method delete",
+        },
+      ],
+    },
   ],
 };
 
