@@ -49,7 +49,7 @@ SSDK create
 
 From products, select `SurveySparrow`. The available templates will be listed. Select `serverless_app`. Your `manifest.json` will look like this
 
-```
+```js
 {
   "platform-version": "1.0",
   "product": {
@@ -97,7 +97,7 @@ From products, select `SurveySparrow`. The available templates will be listed. S
 
 Add below code in `server/server.js`.
 
-```
+```js
 exports = {
   createSchedule: async function (args) {
     return createSchedule(args);
@@ -211,7 +211,7 @@ const onScheduledEvent = async (payload) => {
 
 Replace below code in `index.html`
 
-```
+```html
 <html>
 
 <head>
@@ -235,7 +235,7 @@ Replace below code in `index.html`
 
 Add below code in js/index.js
 
-```
+```js
 function addListeners() {
   q('#create-schedule').addEventListener('click', async function () {
     const res = await client.request.invoke('createSchedule', {
@@ -271,7 +271,7 @@ function q(selector) {
 
 Add below css in the directory css/style.css
 
-```
+```js
 .create-schedule-logo {
   content: url('../images/schedule.svg');
   height: 22%;

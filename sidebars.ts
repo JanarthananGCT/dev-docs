@@ -95,44 +95,6 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: "category",
-          label: "Tutorial",
-          collapsed: false,
-          link: {
-            type: "generated-index",
-            title: "Welcome to AppNest Codelabs",
-            description:
-              "Discover a seamless and interactive learning experience on our Developer Platform through detailed codelabs, empowering you to unleash your full potential by building SurveySparrow applications and exploring its rich features.",
-            slug: "appnest/code-labs",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "appnest/code-labs/simple_sdk_app",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/event_app",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/react_app",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/scheduler_app",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/global_webhook",
-            },
-            {
-              type: "doc",
-              id: "appnest/code-labs/submitting_app_for_review",
-            },
-          ],
-        },
-        {
-          type: "category",
           label: "SDK Docs",
           collapsed: false,
           link: {
@@ -146,7 +108,7 @@ const sidebars: SidebarsConfig = {
             {
               type: "category",
               label: "Getting Started",
-              collapsed: false,
+              collapsed: true,
               link: {
                 type: "doc",
                 id: "appnest/docs/getting-started/getting-started",
@@ -254,6 +216,44 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Tutorial",
+          collapsed: true,
+          link: {
+            type: "generated-index",
+            title: "Welcome to AppNest Codelabs",
+            description:
+              "Discover a seamless and interactive learning experience on our Developer Platform through detailed codelabs, empowering you to unleash your full potential by building SurveySparrow applications and exploring its rich features.",
+            slug: "appnest/code-labs",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "appnest/code-labs/simple_sdk_app",
+            },
+            {
+              type: "doc",
+              id: "appnest/code-labs/event_app",
+            },
+            {
+              type: "doc",
+              id: "appnest/code-labs/react_app",
+            },
+            {
+              type: "doc",
+              id: "appnest/code-labs/scheduler_app",
+            },
+            {
+              type: "doc",
+              id: "appnest/code-labs/global_webhook",
+            },
+            {
+              type: "doc",
+              id: "appnest/code-labs/submitting_app_for_review",
+            },
+          ],
+        },
       ],
     },
   ],
@@ -316,12 +316,12 @@ const sidebars: SidebarsConfig = {
           items: [
             {
               type: "category",
-              label: "IOS",
+              label: "iOS",
               collapsed: true,
               link: {
                 type: "generated-index",
-                title: "IOS",
-                description: "Here are two different ways to integrate Spotchecks in IOS applications.",
+                title: "iOS",
+                description: "Here are two different ways to integrate Spotchecks in iOS applications.",
                 slug: "spotchecks/mobile-spotchecks/ios",
               },
               items: [
@@ -352,6 +352,28 @@ const sidebars: SidebarsConfig = {
           ],
         },
       ],
+    },
+  ],
+  mobile_sdk_sidebar: [
+    {
+      type: "doc",
+      label: "iOS",
+      id: "sdk/ios",
+    },
+    {
+      type: "doc",
+      label: "Android",
+      id: "sdk/android",
+    },
+    {
+      type: "doc",
+      label: "Flutter",
+      id: "sdk/flutter",
+    },
+    {
+      type: "doc",
+      label: "React Native",
+      id: "sdk/react-native",
     },
   ],
 };

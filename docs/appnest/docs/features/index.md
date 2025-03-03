@@ -45,7 +45,7 @@ You can use the interface methods to trigger certain actions on the SurveySparro
 
 The interface method for failure and success toastr is **alertMessage**. Below's the syntax for utilizing the alertMessage function.
 
-```bash
+```js
 window.client.interface.alertMessage(message, options);
 ```
 
@@ -64,14 +64,14 @@ If you want to close the modal from your application's code, you can utilize the
 
 **Modal** - The pop-up box where you can preview your AppNest applications on various [locations](../configuration/app-manifest.html/#locations).
 
-```bash
+```js
 await client?.interface?.handleModal("close")
 ```
 
 ### 3. Get the AppNest Location:
 Applications can be rendered on [multiple locations](../configuration/app-manifest.html/#multiple-locations) if it's specified accordingly in the manifest.json file. If you want to fetch the current AppNest location from the application, you can utilize the **getLocation** function. Below's the sample code for utlizing the getLocation function.
 
-```bash
+```js
 const loc = await client.interface.getLocation();
 if (loc === "full_page_app"){
   console.log('Location: ', loc)
@@ -212,7 +212,7 @@ You can use the **OAuth 2 protocol** to authorize an app to access resources fro
 
 Sample payload:
 
-```bash
+```js
 {  	
 "client_id":"Your-client-id",
 "client_secret":"your-client-secret",
@@ -230,7 +230,7 @@ Sample payload:
 
 The access token and refresh token are stored and maintained in the AppNest. You can add the access token to the request method’s URL and options as 
 
-```plaintext
+```js
 <%=access_token%>.
 
 Sample:
@@ -286,10 +286,10 @@ try {
 
 
 sample response:
-```json
+```js
 {
-  "surveysparrow_api_key":"dfghj",
-  "name":"asasas"
+  "surveysparrow_api_key":"xxxxxx",
+  "name":"xyz"
 }
 ```
 

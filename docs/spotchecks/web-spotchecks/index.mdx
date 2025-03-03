@@ -22,7 +22,7 @@ You can find the installation steps while creating the target or under the targe
 
 ### Example:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,7 +71,7 @@ You can find the installation steps while creating the target or under the targe
 The next step in the installation is to display the survey which requires adding the following snippet right below the installation snippet.
 
 
-```
+```html
 <script>
     window.SpotCheckLauncher('popup', {
         userDetails: {
@@ -98,7 +98,7 @@ Also, If you are not collecting email from the user, then you can pass in a uniq
 **Note:** the userDetails should be the same as the contact properties in SurveySparrow such as firstName, lastName, etc.
 
 
-```
+```html
 <script>
     window.SpotCheckLauncher('popup', {
         userDetails: {
@@ -127,7 +127,7 @@ Global Variables are the key-value pairs that you pass as query parameters in th
 - To dynamically change survey language, you can utilize the sparrowLang property within the variables. The key thing to note here is you can only use the **languages** configured in the languages tab of the **builder** page of a survey.
 
 
-```
+```html
 <script>
     window.SpotCheckLauncher('popup', {
         userDetails: {},
@@ -151,7 +151,7 @@ To set a condition, go to the Configure panel, click on **visitors**, add a cond
 To dynamically change the survey language after the Spotchecks survey appears in the UI, use the following syntax:
 
 
-```
+```html
 <script>
     window.SpotCheckLauncher('changeLanguage', {
       sparrowLang: 'en' // Ex: en(English), es(Spanish) 
@@ -165,7 +165,7 @@ To let spotcheck listen to the events happening within the application and trigg
 
 ### Example
 
-```
+```html
 <button id = "survey-trigger">
     Click Now
 </button>
@@ -188,11 +188,11 @@ In some instances, your app might need more events because the existing mouse ev
 
 Go to the **"configure"** panel, toggle the **"Checks"** section, and choose **"After a custom event"**. Here, you can create a new event and also choose when the survey should be displayed when that event gets triggered.
 
-![image-3](https://static.surveysparrow.com/application/marketplace/ssdk-assets/image3.png)
+![image-3](../assets/image-9.png)
 
 Below is the syntax to set up custom events in your web application.
 
-```
+```js
 window.SpotCheckLauncher('customEvent', {
     customEvent: { 
       eventName: { // Specify the custom event name here. Ex: paymentComplete
@@ -204,4 +204,4 @@ window.SpotCheckLauncher('customEvent', {
 There is also an option to pass custom properties to the event triggers using which you can set conditions in the visitors section of the configure panel.
 
 
-![image-3](https://static.surveysparrow.com/application/marketplace/ssdk-assets/image3.png)
+![image-3](../assets/image-10.png)

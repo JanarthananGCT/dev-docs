@@ -15,7 +15,7 @@ Below are the various processes involved in setting up Spotcheck in React Native
 
 To install the SurveySparrowSdk, make sure you are in the root folder of your React Native project in the terminal and run the following command.
 
-```
+```js
 # NPM Installation
 npm install surveysparrow-react-native-sdk
 npm install react-native-webview # Supported Version: >= 13.7.0
@@ -31,7 +31,7 @@ yarn add react-native-webview # Supported Version: >= 13.7.0
 
 - So, add the following permissions to the AndroidManifest.xml file for Android
 
-```
+```java
  <uses-permission android:name="android.permission.CAMERA" />
    <uses-permission android:name="android.permission.INTERNET" />
    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -44,7 +44,7 @@ yarn add react-native-webview # Supported Version: >= 13.7.0
 
 - Also add the camera permissions in info.plist for IoS
 
-```
+```java
 <key>NSCameraUsageDescription</key>
 <string>Your-Description</string>
 ```
@@ -59,7 +59,7 @@ Declare and initialize the spotcheck variable using the Spotcheck().
 If you wish not to keep track of users' data, you can follow the below syntax for initialization.
 
 
-```
+```js
  useLayoutEffect(() => {
    initializeSpotChecks({
        domainName: ‘your-domain-name',
@@ -76,7 +76,7 @@ If you wish not to keep track of users' data, you can follow the below syntax fo
 
 If you wish to keep track of users' data and perform conditional Survey triggers, you can follow the below syntax for initialization.
 
-```
+```js
 //Initialize once at the root of the App
 useLayoutEffect(() => {
    initializeSpotChecks({
@@ -99,7 +99,7 @@ useLayoutEffect(() => {
 ```
 Add Spotcheck inside the navigation container only once in the App component
 
-```
+```java
 <NavigationContainer>
 	<Stack.Navigator>
 		<your-app-code>
@@ -116,7 +116,7 @@ It provides the ability to keep track of screens the users are visiting and to e
 
 ### Syntax: 
 
-```
+```js
 useEffect(()=>{
     trackScreen('<your-screen-name>  eg. ScreenName');
 },[])
@@ -125,7 +125,7 @@ useEffect(()=>{
 
 If a survey needs to be triggered on the payment page, the name of the ScreenName should be specified in the TrackScreen function.
 
-```
+```js
 useEffect(()=>{
     spotCheck.trackScreen("paymentScreen");
 },[])
@@ -139,7 +139,7 @@ It provides the ability to keep track of events which when triggered, will enabl
 
 ### Syntax:
 
-```
+```java
 trackEvent(‘<your-screen-name>’, {
       "<your-events-or-functions>": {}
    }
@@ -151,7 +151,7 @@ trackEvent(‘<your-screen-name>’, {
 
 If a survey needs to be triggered when the user completes a payment, then the TrackEvent function should be called with the respective ScreenName and optional custom properties.
 
-```
+```java
 trackEvent(‘paymentScreen’, {
       ‘paymentComplete’: {
       email:’kalaiselvan.k@surveysparrow.com’,

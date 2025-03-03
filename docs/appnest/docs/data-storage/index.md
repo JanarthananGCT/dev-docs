@@ -10,7 +10,7 @@ Some apps need to store and retrieve data. For example apps like Power BI needs 
 
 For this tutorial let say we have an object:
 
-```bash
+```js
 const newData = {
     id: 123,
     name: "john doe"
@@ -23,13 +23,13 @@ set can be used to set a key-value pair for every installed user for the app.
 
 **app.js:**
 
-  ```bash
+  ```js
   await client.db.set("data", newData);
   ```
 
 **server.js:**
 
-  ```bash
+  ```js
   await $Storage.set("data", newData);
   ```
 
@@ -39,13 +39,13 @@ set can be used to set a key-value pair for every installed user for the app.
   
 **app.js:**
 
-  ```bash
+  ```js
   const result = JSON.parse(await window.client.db.get("data"));
   ```
 
 **server.js:**
 
-```bash
+```js
 const result = await $Storage.get("data");
 ```
 

@@ -289,7 +289,7 @@
     }
   
     .docs--card-button {
-      /* display: none; */
+      display: none;
     }
   
     .docs--mobile-card-button {

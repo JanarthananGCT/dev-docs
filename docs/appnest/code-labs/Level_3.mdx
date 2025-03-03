@@ -120,7 +120,7 @@ The app folder contains the built/compiled assets of the app. The content of the
 
 Now that we have the template up and running for the React app without any errors, let us start building an app. iparams.json
 
-```
+```js
 {
     "surveysparrow_api_key": {
       "display_name": "SurveySparrow API Key",
@@ -139,7 +139,7 @@ Now that we have the template up and running for the React app without any error
 
 Replace the code in the file `src/components/main.js` with the code given below.
 
-```
+```js
 import React, { useState } from "react";
 import {
   Button,
@@ -262,7 +262,7 @@ add this constants below
 
 For CHAT_GPT_TOKEN Login to [openAI](www.openAI.com). Click on View API Keys and Fetch Secret key and add it here.
 
-```
+```js
 export const chatGptToken = "CHAT_GPT_TOKEN";
 export const chatGptUrl = "https://api.openai.com/v1/chat/completions";
 export const url = "https://api.surveysparrow.com";
@@ -281,7 +281,7 @@ add this files given below
 cd helpers && touch query.js
 ```
 
-```
+```js
 export const query = (content)=> {
     return({
     "model": "gpt-3.5-turbo",
@@ -293,7 +293,7 @@ export const query = (content)=> {
 
 touch createQuestions.js
 
-```
+```js
 import { url, seperator } from "../constants/constants";
 export default async function createQuestions(len, questionsArray, surveyId, client){
     for (let i = 0; i < len; i++) {
@@ -386,7 +386,7 @@ function typeCheck(type) {
 
 touch createSurvey.js
 
-```
+```js
 import { url } from "../constants/constants";
 export const createSurvey = async (name, client) => {
     return await client.request.post(`${url}/v3/surveys`,{options:{
@@ -404,7 +404,7 @@ export const createSurvey = async (name, client) => {
 
 touch generateQuestions.js
 
-```
+```js
 import {chatGptToken, chatGptUrl } from '../constants/constants';
 export async function generateQuestion(body, client){
     const result = await client.request.post(chatGptUrl,{options:{
@@ -420,7 +420,7 @@ export async function generateQuestion(body, client){
 
 In `manifest.json`, add whitelisted-domains and location as given below.
 
-```
+```js
 {
 "platform-version": "1.0",
 "product": {

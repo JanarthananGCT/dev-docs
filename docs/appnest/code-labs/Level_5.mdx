@@ -98,7 +98,7 @@ The secret token helps in the process of verifying that the event payload is sen
 
 - When the event gets triggered, the event payload will be sent to your server where extra key-value pairs will be passed in the headers. Find the reference to the request headers down below.
 
-  ```bash
+  ```js
   user-agent: SurveySparrow AppNest
   x-appnest-signature: ef1ee97cf88e42bb12c14f7885
   authorization: Bearer eyJ0eXAi0iJKV1QiLCJub25jZSI6I
@@ -236,7 +236,7 @@ You can find the list of all the webhooks on the [developer portal](https://appn
 
 2. In the body of the POST request sent to the endpoint URL, the data will be sent in a format similar to the one given below. Note that the event payload varies for each event. Below event payload is an example for **onSubmissionComplete** event.
 
-   ```bash
+   ```js
    {
      {
        "eventType": "onSubmissionComplete",

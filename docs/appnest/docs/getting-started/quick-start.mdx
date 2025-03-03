@@ -62,7 +62,7 @@ NVM (Node Version Manager) is a tool that allows you to easily manage multiple v
   - Launch Windows Powershell in Administrator mode.
   - Run the below command to install chocolatey.
 
-    ```bash
+    ```java
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
     ```
   - If you face the issue - **running the scripts is disabled on the system**, run the following command ``` Set-ExecutionPolicy Unrestricted ``` on the windows powershell or command prompt in administrator mode.
@@ -99,7 +99,7 @@ Verify NVM installation
 
 - The script clones the nvm repository to ~/.nvm, and attempts to add the source lines from the snippet below to the correct profile file (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).
 
-  ```bash
+  ```js
   export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
   ```
@@ -127,7 +127,7 @@ nvm use 18
 - To verify that the node is installed correctly, run the following commands
 
 ```bash 
-node â€“-version
+node -version
 ```
 
 ### Install Mkcert

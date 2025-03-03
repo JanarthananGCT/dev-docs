@@ -2,7 +2,6 @@
 title: Vanilla
 id: vanilla
 slug: /embed/vanilla
-hide_table_of_contents: true
 ---
 
 <br />
@@ -16,36 +15,40 @@ SurveySparrow API allows you to integrate third party applications in your enter
 
 Once you create a embed share from SurveySparrow, you'll get a JavaScript code which can be embedded in your HTML Page. Below is an example on how to embed the JavaScript code in HTML file.
 
-```
+```html
 <!DOCTYPE html>
- <html lang="en">
- <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
- </head>
- <body>
+<html lang="en">
 
-   <!-- surveysparrow embed code starts here -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-   <div id="ss_survey_widget"></div>
-   <script id="SS_SCRIPT">function sparrowLaunch(opts){var e="ss-widget",t="script",a=document,r=window,l=localStorage;var s,n,c,rm=a.getElementById('SS_SCRIPT');r.SS_WIDGET_TOKEN="tt-ssqBcbAG2EcEBqWdZ6G2mz";r.SS_ACCOUNT="xyz.surveysparrow.com";r.SS_SURVEY_NAME="Mckinsey-Survey";if(!a.getElementById(e) && !l.getItem('removed-ss-widget-tt-ssqBcbAG2EcEBqWdZ6G2mz')){var S=function(){S.update(arguments)};S.args=[];S.update=function(e){S.args.push(e)};r.SparrowLauncher=S;s=a.getElementsByTagName(t);c=s[s.length-1];n=a.createElement(t);n.type="text/javascript";n.async=!0;n.id=e;n.src=["https://","xyz.surveysparrow.com/widget/",r.SS_WIDGET_TOKEN,"?","customParams=",JSON.stringify(opts)].join("");c.parentNode.insertBefore(n,c);r.SS_VARIABLES=opts;rm.parentNode.removeChild(rm);}};</script>
+<body>
 
-   <!-- surveysparrow embed code ends here -->
+    <!-- surveysparrow embed code starts here -->
 
-   <script>
-     window.sparrowConfig = {
-       // widget configuration goes here - this is optional
-     };
+    <div id="ss_survey_widget"></div>
+    <script
+        id="SS_SCRIPT">function sparrowLaunch(opts) { var e = "ss-widget", t = "script", a = document, r = window, l = localStorage; var s, n, c, rm = a.getElementById('SS_SCRIPT'); r.SS_WIDGET_TOKEN = "tt-ssqBcbAG2EcEBqWdZ6G2mz"; r.SS_ACCOUNT = "xyz.surveysparrow.com"; r.SS_SURVEY_NAME = "Mckinsey-Survey"; if (!a.getElementById(e) && !l.getItem('removed-ss-widget-tt-ssqBcbAG2EcEBqWdZ6G2mz')) { var S = function () { S.update(arguments) }; S.args = []; S.update = function (e) { S.args.push(e) }; r.SparrowLauncher = S; s = a.getElementsByTagName(t); c = s[s.length - 1]; n = a.createElement(t); n.type = "text/javascript"; n.async = !0; n.id = e; n.src = ["https://", "xyz.surveysparrow.com/widget/", r.SS_WIDGET_TOKEN, "?", "customParams=", JSON.stringify(opts)].join(""); c.parentNode.insertBefore(n, c); r.SS_VARIABLES = opts; rm.parentNode.removeChild(rm); } };</script>
 
-     //pass survey variables here
-     sparrowLaunch({
-       name: "John Doe",
-       mail: "john@acmeinc.com"
-     });
-   </script>
- </body>
+    <!-- surveysparrow embed code ends here -->
+
+    <script>
+        window.sparrowConfig = {
+            // widget configuration goes here - this is optional
+        };
+
+        //pass survey variables here
+        sparrowLaunch({
+            name: "John Doe",
+            mail: "john@acmeinc.com"
+        });
+    </script>
+</body>
+
 </html>
 ```
 
@@ -55,7 +58,7 @@ Once you create a embed share from SurveySparrow, you'll get a JavaScript code w
 
 SurveySparrow widget provides a set of APIs which can be used to customize the behaviour of your survey embed. Below are the supported APIs and their use.
 
-```
+```html
 <script>
   window.sparrowConfig = { // config goes here };
 </script>
@@ -70,7 +73,7 @@ SurveySparrow widget provides a set of APIs which can be used to customize the b
 
 ### Below is the complete example
 
-```
+```html
 <script>
   window.sparrowConfig = {
     newTab: true,
@@ -89,7 +92,7 @@ SurveySparrow widget provides a set of APIs which can be used to customize the b
 
 Check if user started the survey
 
-```
+```html
 <script>
   window.addEventListener('message', (e) => {
     if(e && e.data && e.data.type === 'surveyLoadStarted') {
@@ -103,7 +106,7 @@ Check if user started the survey
 
 You can use the below event to get notified when the user changes survey language.
 
-```
+```html
 <script>
   window.addEventListener('message', (e) => {
     if(e && e.data && e.data.type === 'languageChanged') {
@@ -116,7 +119,7 @@ You can use the below event to get notified when the user changes survey languag
 
 ### Detect survey completion
 
-```
+```html
 <script>
   window.addEventListener('message', (e) => {
   if(e && e.data && e.data.type === 'surveyCompleted') {
@@ -131,7 +134,7 @@ You can use the below event to get notified when the user changes survey languag
 
 To detect any redirection in the Survey, event redirectPage can be used.
 
-```
+```html
 <script>
   window.addEventListener('message', (e) => {
     if(e && e.data && e.data.type === 'redirectPage') {
@@ -146,7 +149,7 @@ To detect any redirection in the Survey, event redirectPage can be used.
 
 Use the removeWindow event to get notified when user closes the widget.
 
-```
+```html
 <script>
   window.addEventListener('message', (e) => {
     if(e && e.data && e.data.type === 'removeWindow') {

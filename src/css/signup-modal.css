@@ -1,0 +1,510 @@
+/* Modal Container and Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    max-width: 523px;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 18.7px rgba(67, 102, 171, 0.09), 0px 34.7px 34.7px rgba(36, 58, 97, 0.22);
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Modal Header */
+  .modal-header {
+    position: relative;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 0;
+  }
+  
+  .header-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  
+  .header-background img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .header-title {
+    position: relative;
+    color: #363a43;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 7px;
+    margin: 0;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: #6A6A6A;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .close-button:hover {
+    color: #333;
+  }
+  
+  /* Modal Body */
+  .modal-body {
+    padding: 0 40px 37px;
+  }
+  
+  /* Form Elements */
+  .form-control {
+    margin-bottom: 12px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 13px;
+    color: #64748B;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  .form-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 10px;
+    border: 1px solid #C9CFD8;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  
+  .form-input::placeholder {
+    color: #A3AEBD;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    box-shadow: 0 0 2px 0 #F75635;
+  }
+  
+  .input-error {
+    border-color: #e53e3e;
+  }
+  
+  .error-message {
+    color: #e53e3e;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+  
+  /* Country Selector */
+  .country-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .data-location-text {
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    color: #737373;
+    margin: 0;
+  }
+  
+  .dropdown-container {
+    position: relative;
+  }
+  
+  .dropdown-button {
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #111827;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .dropdown-icon {
+    font-size: 10px;
+    margin-left: 4px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 5px 0;
+    list-style: none;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .dropdown-item {
+    padding: 8px 12px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f7fafc;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    background-color: black;
+    color: white;
+    height: 56px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #1a202c;
+  }
+  
+  .submit-button:disabled {
+    background-color: #718096;
+    cursor: not-allowed;
+  }
+  
+  /* Terms Text */
+  .terms-text {
+    text-align: center;
+    font-size: 12px;
+    color: #64748B;
+  }
+  
+  .terms-link {
+    color: #363A43;
+    text-decoration: underline;
+  }
+  
+  /* Modal Footer */
+  .modal-footer {
+    background-color: #E6F3F4;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 16px;
+    position: relative;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .login-prompt {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .login-text {
+    margin-left: 6px;
+    font-size: 14px;
+    color: #4E596C;
+  }
+  
+  .login-link {
+    margin-left: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #363A43;
+    text-decoration: underline;
+  }
+  
+  .recaptcha-notice {
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    position: absolute;
+    margin-top: 80px;
+    left: 0;
+  }
+  
+  .recaptcha-link {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries for Different Screen Sizes */
+  
+  /* Large Mobile and Tablet */
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 95%;
+    }
+    
+    .modal-body {
+      padding: 0 20px 30px;
+    }
+    
+    .header-title {
+      font-size: 1.8rem;
+    }
+    
+    .modal-subtitle {
+      margin-bottom: 36px;
+      font-size: 15px;
+    }
+  }
+  
+  /* Small Mobile Devices */
+  @media (max-width: 576px) {
+    .modal-content {
+      width: 100%;
+      border-radius: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .modal-overlay {
+      align-items: flex-start;
+    }
+    
+    .modal-body {
+      padding: 0 15px 24px;
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+    
+    .header-title {
+      font-size: 1.5rem;
+    }
+    
+    .modal-subtitle {
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+    
+    .form-label {
+      font-size: 12px;
+    }
+    
+    .form-input {
+      height: 44px;
+      font-size: 14px;
+    }
+    
+    .submit-button {
+      height: 48px;
+      font-size: 15px;
+    }
+    
+    .terms-text {
+      font-size: 11px;
+    }
+    
+    .login-text, .login-link {
+      font-size: 13px;
+    }
+    
+    .recaptcha-notice {
+      display: none;
+    }
+    
+    .close-button {
+      top: 10px;
+      right: 10px;
+    }
+    
+    /* Fix dropdown position on mobile */
+    .dropdown-menu {
+      left: 50%;
+      transform: translateX(-50%);
+      max-height: 150px;
+    }
+  }
+  
+  /* Extra small devices */
+  @media (max-width: 360px) {
+    .modal-body {
+      padding: 0 10px 20px;
+    }
+    
+    .header-title {
+      font-size: 1.3rem;
+    }
+    
+    .form-input {
+      font-size: 13px;
+    }
+    
+    .country-selector {
+      flex-direction: column;
+      gap: 2px;
+    }
+    
+    .login-prompt {
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    
+    .login-text, .login-link {
+      margin: 0;
+    }
+  }
+  
+  /* Tall and Narrow Screens */
+  @media (min-height: 800px) and (max-width: 576px) {
+    .modal-body {
+      padding-top: 10px;
+    }
+    
+    .modal-subtitle {
+      margin-bottom: 40px;
+    }
+    
+    .form-control {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Landscape Orientation on Mobile */
+  @media (max-height: 450px) and (orientation: landscape) {
+    .modal-content {
+      height: auto;
+      max-height: 95vh;
+    }
+    
+    .modal-body {
+      padding-top: 0;
+      padding-bottom: 15px;
+    }
+    
+    .header-title {
+      font-size: 1.3rem;
+      padding-top: 0;
+    }
+    
+    .modal-subtitle {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    
+    .form-control {
+      margin-bottom: 8px;
+    }
+    
+    .form-input {
+      height: 36px;
+    }
+    
+    .submit-button {
+      height: 40px;
+      margin-top: 2px;
+      margin-bottom: 8px;
+    }
+    
+    .modal-footer {
+      padding: 10px;
+    }
+  }
+  
+  /* High-DPI Screens */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .form-input {
+      border-width: 0.5px;
+    }
+    
+    .dropdown-menu {
+      border-width: 0.5px;
+    }
+  }
+  
+  /* Print Styles */
+  @media print {
+    .modal-overlay {
+      background-color: white;
+      position: static;
+    }
+    
+    .modal-content {
+      box-shadow: none;
+      width: 100%;
+    }
+    
+    .close-button {
+      display: none;
+    }
+  }
+  
+  /* Focus States for Accessibility */
+  .form-input:focus,
+  .dropdown-button:focus,
+  .submit-button:focus,
+  .close-button:focus,
+  .terms-link:focus,
+  .login-link:focus,
+  .recaptcha-link:focus {
+    outline: 2px solid #4299e1;
+    outline-offset: 2px;
+  }
+  
+  /* Make sure dropdown isn't cut off at viewport edges */
+  .dropdown-container {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    max-width: 250px;
+  }
+  
+  /* Ensure dropdowns on the right edge go left instead */
+  .dropdown-menu.align-right {
+    left: auto;
+    right: 0;
+  }

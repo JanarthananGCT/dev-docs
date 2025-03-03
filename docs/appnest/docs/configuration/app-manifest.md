@@ -13,7 +13,7 @@ The manifest.json lists the configured urls for api calls that the app invokes t
 
 ### Sample manifest.json:
 
-```json
+```js
 {
     "platform-version": "1.0",
     "product": {
@@ -112,7 +112,7 @@ The AppNest applications can be rendered on multiple locations. After installing
 
 Here's the sample manifest.json file for rendering the app on multiple locations.
 
-```bash
+```js
 {
   "platform-version": "1.0",
   "product": {

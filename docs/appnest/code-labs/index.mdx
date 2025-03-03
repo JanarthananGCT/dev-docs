@@ -57,19 +57,19 @@ Install NVM and Node to develop an application in SurveySparrow.
 
 1. Install `brew` using the commands given below. If you have already installed it, please skip this step.
 
-```
+```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 To Verify the installation
 
-```
+```sh
 brew --version
 ```
 
 2.Install NVM via brew
 
-```
+```sh
 brew install nvm
 ```
 
@@ -80,7 +80,7 @@ Installation using the Chocolatey package manager.
 1. Launch Windows Powershell in Administrator mode.
 2. Run the below command to install Chocolatey.
 
-```
+```java
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
@@ -88,7 +88,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 3. Verify Chocolatey installation using the command given below.
 
-```
+```sh
 choco -v
 ```
 
@@ -317,7 +317,7 @@ To check the application, navigate to [apps page](https://domain.surveysparrow.c
 
 Installation Parameters are values that are collected during the app's installation. In this app, we are collecting API keys. Navigate to the config folder. Open the iparams.json file and add the following JSON code.
 
-```
+```js
 {
     "surveysparrow_api_key": {
         "display_name": "SurveySparrow API Key",
@@ -331,13 +331,14 @@ Installation Parameters are values that are collected during the app's installat
         }
     }
 }
+
 ```
 
 ### App Manifest
 
 The `manifest.json` file contains information such as product, location where you want to place your app, whitelisted domains, events, functions, engines with node and SSDK. Essentially, it helps to build, test, validate, and pack your app.
 
-```
+```json
 {
  "platform-version": "1.0",
  "product": {
@@ -413,7 +414,7 @@ const headers = {
 
 Let's start adding logic to the following code.
 
-```
+```js
 const button = document.getElementById("btn");
 const message = document.getElementById("msg");
 

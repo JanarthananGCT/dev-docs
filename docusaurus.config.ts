@@ -106,7 +106,7 @@ const config: Config = {
           position: "left",
         },
         {
-          to: "/sdk",
+          to: "/sdk/ios",
           label: "Mobile SDK",
           id: "Mobile SDK",
           position: "left",
@@ -126,18 +126,18 @@ const config: Config = {
           position: "left",
         },
         {
-          to: getAuthCookie() ? getAuthCookie() : 'https://app.surveysparrow.com/signup?source=dev_site',
-          label: getAuthCookie() ? 'Manage Apps' : 'Sign up',
-          position: 'right',
-          className: 'button button--primary button--md'
-        },
-        {
           href: 'https://community.surveysparrow.com/c/appnest-developers-hub/51',
           position: 'right',
           label: "Community",
           // className: 'header-github-link',
           // 'aria-label': 'GitHub repository',
-        }
+        },
+        {
+          to: getAuthCookie() ? getAuthCookie() : 'https://app.surveysparrow.com/signup?source=dev_site',
+          label: getAuthCookie() ? 'Manage Apps' : 'Sign up',
+          position: 'right',
+          className: 'button button--primary button--md margin-inline'
+        },
       ],
       hideOnScroll: false,
     },
@@ -157,7 +157,7 @@ const config: Config = {
             },
             {
               label: 'Mobile Sdk',
-              to: '/sdk',
+              to: '/sdk/ios',
             },
             {
               label: 'Embed',

@@ -12,7 +12,7 @@ The SSDK enables you to define and use parameters whose values app users can set
 
 &emsp;&emsp; 2. In the app logic, use the following code to retrieve the iparam values (for secure iparams):
 
-```plaintext
+```js
 <%= iparams.api_key %>
 &emsp;&emsp; Note: To prevent exposure of sensitive iparam information, secure iparams can only be retrieved through the Request Method, as part of HTTPS request headers.
 
@@ -34,7 +34,7 @@ For serverless apps, the configured iparams are passed as part of event payloads
 
 ## Configure iparams.json:
 
-```json 
+```js
 {
   "surveysparrow_api_key": {
       "display_name": "SurveySparrow API Key",

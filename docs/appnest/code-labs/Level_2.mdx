@@ -71,7 +71,7 @@ When a Serverless function needs to be accessible from outside the component, it
 The Serverless function can contain the required business logic to be executed upon the event trigger, such as handling ticket creation. Additionally, there are other Product Events available, each associated with specific events from the SurveySparrow product.
 Here's an example of how the Serverless function can be structured:
 
-```
+```js
 exports = {
   onSubmissionComplete: function (payload) {
     onSubmissionCompleteHandler(payload);

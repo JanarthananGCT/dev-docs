@@ -36,7 +36,7 @@ Below are the various processes involved in setting up Spotcheck in Flutter
 
 To install the SurveySparrowSdk, make sure you are in the root folder of your Flutter project in the terminal and run the following command.
 
-```
+```java
 flutter pub add surveysparrow_flutter_sdk
 ```
 
@@ -51,7 +51,7 @@ Declare and initialize the spotcheck variable using the Spotcheck().
 If you wish not to keep track of users' data, you can follow the below syntax for initialization.
 
 
-```
+```java
 final SpotCheck spotCheck = SpotCheck(
   domainName: "<your_domain>",
   targetToken: "<target_token>",
@@ -67,7 +67,7 @@ final SpotCheck spotCheck = SpotCheck(
 
 If you wish to keep track of users' data and perform conditional Survey triggers, you can follow the below syntax for initialization.
 
-```
+```java
 final SpotCheck spotCheck = SpotCheck(
   domainName: "<your_domain>",
   targetToken: "<target_token>",
@@ -88,7 +88,7 @@ final SpotCheck spotCheck = SpotCheck(
 ```
 Then, add the SpotCheck initialized variable to all the screens where you want to display the surveys.
 
-```
+```java
 Stack(
  children: [
    <your-app-code>,
@@ -106,14 +106,14 @@ It provides the ability to keep track of screens the users are visiting and to e
 
 ### Syntax: 
 
-```
+```java
 spotCheck.trackScreen("ScreenName");
 ```
 ### Example:
 
 If a survey needs to be triggered on the payment page, the name of the ScreenName should be specified in the TrackScreen function.
 
-```
+```java
 spotCheck.trackScreen("paymentScreen");
 ```
 
@@ -125,7 +125,7 @@ It provides the ability to keep track of events which when triggered, will enabl
 
 ### Syntax:
 
-```
+```java
 spotCheck.trackEvent("ScreenName", {"EventName": {}});
 
 ```
@@ -134,7 +134,7 @@ spotCheck.trackEvent("ScreenName", {"EventName": {}});
 
 If a survey needs to be triggered when the user completes a payment, then the TrackEvent function should be called with the respective ScreenName and optional custom properties.
 
-```
+```java
 spotCheck.trackEvent("paymentScreen", {"paymentComplete": {
     "email":"naveen@surveysparrow.com",
     "paymentStatus":true

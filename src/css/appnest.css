@@ -260,3 +260,26 @@
     margin-block: 24px !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
   }
+
+  @media (min-width: 768px) {
+    .margin-inline{
+      margin-inline: 12px !important;
+    }
+    .btn-primary{
+      height: 32px;
+      width: 100px !important;
+      color: white !important;
+      background-color: #4a9ca6;
+    } 
+  }
+
+  @media (max-width: 768px) {
+    .margin-inline{
+      margin-inline: 12px !important;
+      width: 80% !important;
+    }
+    .btn-primary{
+      border: 1px solid #4a9ca6;
+      color: white !important;
+    } 
+  }

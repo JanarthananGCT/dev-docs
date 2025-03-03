@@ -1,4 +1,5 @@
 import React from 'react';
+import spotchecks from '../../assets/spotchecks.png';
 
 const IMAGE_URL = 'https://static.surveysparrow.com/application/marketplace';
 
@@ -25,7 +26,7 @@ const documentationOptions = [
   {
     id: 4,
     name: 'Spotchecks',
-    icon: `${IMAGE_URL}/app/sdk-new.svg`,
+    icon: spotchecks,
     arrowIcon: true,
     path: '/spotchecks',
   },

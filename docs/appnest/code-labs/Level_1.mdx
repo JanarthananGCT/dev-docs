@@ -320,7 +320,7 @@ To check the application, navigate to [apps page](https://domain.surveysparrow.c
 
 Installation Parameters are values that are collected during the app's installation. In this app, we are collecting API keys. Navigate to the config folder. Open the iparams.json file and add the following JSON code.
 
-```
+```js
 {
     "surveysparrow_api_key": {
         "display_name": "SurveySparrow API Key",
@@ -340,7 +340,7 @@ Installation Parameters are values that are collected during the app's installat
 
 The `manifest.json` file contains information such as product, location where you want to place your app, whitelisted domains, events, functions, engines with node and SSDK. Essentially, it helps to build, test, validate, and pack your app.
 
-```
+```js
 {
  "platform-version": "1.0",
  "product": {
@@ -370,7 +370,7 @@ This app will create a survey with the click of the <strong>Create</strong> butt
 We will attain this in a few steps:
 Fetch the API key from the installation parameters. Make a POST request to the Survey API endpoint to create a new survey. After the survey is successfully created, a notification banner will appear. To start, please replace the body in `index.html` with the following code.
 
-```
+```html
 <body>
   <div class="main">
     <h2>Welcome, Click here to create a Survey!</h2>
@@ -382,7 +382,7 @@ Fetch the API key from the installation parameters. Make a POST request to the S
 
 Clear `app.js` and paste the code given below to start the application.
 
-```
+```js
 var client;
 
 init();
@@ -395,7 +395,7 @@ async function init() {
 
 Add the constants required for this app.
 
-```
+```js
 const questions = [
   "What is your name?",
   "Where are you from?",
@@ -416,7 +416,7 @@ const headers = {
 
 Let's start adding logic to the following code.
 
-```
+```js
 const button = document.getElementById("btn");
 const message = document.getElementById("msg");
 
@@ -447,7 +447,7 @@ async function createSurvey() {
 
 The `createSurvey` function will create a survey and add the questions with the click of a button and shows a success message notification. Similarly, upon a failure case it will display error message notification, and the same will be printed in the console.
 
-```
+```js
 async function postSurvey() {
   const response = await client.request.post(`${API_BASE_URL}surveys`, headers, {
     name: "My Marketplace Survey",
@@ -459,7 +459,7 @@ async function postSurvey() {
 
 The `postSurvey` function will create a survey in the SurveySparrow account. Here, we are using request method to create a survey.
 
-```
+```js
 async function postQuestion(surveyId, question) {
   await client.request.post(`${API_BASE_URL}questions`, headers, {
     survey_id: surveyId,
@@ -473,7 +473,7 @@ async function postQuestion(surveyId, question) {
 
 The `postQuestion` function will create question in the SurveySparrow account.
 
-```
+```js
 function showNotificationMessage(message, options) {
   client.interface.alertMessage(message, options);
   if (options.type === "success") {

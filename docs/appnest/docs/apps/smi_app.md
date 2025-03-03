@@ -32,7 +32,7 @@ This approach was introduced to interact between client-side and server-side. Th
 - To create an SMI function within the server.js file of your serverless application, please refer to the sample code below.
     - The SMI function must return some data in the object format.
 
-    ```bash
+    ```js
     exports = {
 
         // handling the onSubmissionComplete event
@@ -52,7 +52,7 @@ This approach was introduced to interact between client-side and server-side. Th
     
 - To configure the SMI functions within the manifest.json file, 
 
-    ```bash
+    ```js
     {
         "platform-version": "1.0",
         "product": {
@@ -91,7 +91,7 @@ This approach was introduced to interact between client-side and server-side. Th
 
 - Now, to invoke or call the SMI function from the React application, refer to the sample code below.
 
-    ```bash
+    ```js
     const result = await window.client.request.invoke("surveyConverter", {data:"sample_data"});
     ```
 
