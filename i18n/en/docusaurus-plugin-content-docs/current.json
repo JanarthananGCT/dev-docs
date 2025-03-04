@@ -1,0 +1,1290 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.ss_versioned-v2.category.SurveySparrow V2 API": {
+    "message": "SurveySparrow V2 API",
+    "description": "The label for category SurveySparrow V2 API in sidebar ss_versioned-v2"
+  },
+  "sidebar.ss_versioned-v2.category.SurveySparrow V2 API.link.generated-index.title": {
+    "message": "SurveySparrow API (v2)",
+    "description": "The generated-index page title for category SurveySparrow V2 API in sidebar ss_versioned-v2"
+  },
+  "sidebar.ss_versioned-v2.category.SurveySparrow V2 API.link.generated-index.description": {
+    "message": "SurveySparrow V2 API",
+    "description": "The generated-index page description for category SurveySparrow V2 API in sidebar ss_versioned-v2"
+  },
+  "sidebar.ss_versioned-v2.category.Share": {
+    "message": "Share",
+    "description": "The label for category Share in sidebar ss_versioned-v2"
+  },
+  "sidebar.ss_versioned-v2.doc.Trigger email share V2": {
+    "message": "Trigger email share V2",
+    "description": "The label for the doc item Trigger email share V2 in sidebar ss_versioned-v2, linking to the doc rest-apis/v2/post-v-2-survey-surveyid-shares-email-share-id"
+  },
+  "sidebar.ss_versioned-v2.doc.Update SMS survey V2": {
+    "message": "Update SMS survey V2",
+    "description": "The label for the doc item Update SMS survey V2 in sidebar ss_versioned-v2, linking to the doc rest-apis/v2/put-v-2-survey-surveyid-shares-sms-channelid"
+  },
+  "sidebar.ss_versioned-v1.category.SurveySparrow V1 API": {
+    "message": "SurveySparrow V1 API",
+    "description": "The label for category SurveySparrow V1 API in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.SurveySparrow V1 API.link.generated-index.title": {
+    "message": "SurveySparrow API (v1)",
+    "description": "The generated-index page title for category SurveySparrow V1 API in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.SurveySparrow V1 API.link.generated-index.description": {
+    "message": "SurveySparrow V1 API",
+    "description": "The generated-index page description for category SurveySparrow V1 API in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Audit Logs": {
+    "message": "Audit Logs",
+    "description": "The label for category Audit Logs in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Contact List": {
+    "message": "Contact List",
+    "description": "The label for category Contact List in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Contacts": {
+    "message": "Contacts",
+    "description": "The label for category Contacts in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Roles": {
+    "message": "Roles",
+    "description": "The label for category Roles in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Survey": {
+    "message": "Survey",
+    "description": "The label for category Survey in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Targets": {
+    "message": "Targets",
+    "description": "The label for category Targets in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Teams": {
+    "message": "Teams",
+    "description": "The label for category Teams in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Users": {
+    "message": "Users",
+    "description": "The label for category Users in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Webhooks": {
+    "message": "Webhooks",
+    "description": "The label for category Webhooks in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Workspaces": {
+    "message": "Workspaces",
+    "description": "The label for category Workspaces in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Nps": {
+    "message": "Nps",
+    "description": "The label for category Nps in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Reports": {
+    "message": "Reports",
+    "description": "The label for category Reports in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Employee 360": {
+    "message": "Employee 360",
+    "description": "The label for category Employee 360 in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Ces": {
+    "message": "Ces",
+    "description": "The label for category Ces in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Csat": {
+    "message": "Csat",
+    "description": "The label for category Csat in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Share": {
+    "message": "Share",
+    "description": "The label for category Share in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Public": {
+    "message": "Public",
+    "description": "The label for category Public in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Accounts": {
+    "message": "Accounts",
+    "description": "The label for category Accounts in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Kiosk": {
+    "message": "Kiosk",
+    "description": "The label for category Kiosk in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.Submissions": {
+    "message": "Submissions",
+    "description": "The label for category Submissions in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.category.integrations": {
+    "message": "integrations",
+    "description": "The label for category integrations in sidebar ss_versioned-v1"
+  },
+  "sidebar.ss_versioned-v1.doc.List audit logs": {
+    "message": "List audit logs",
+    "description": "The label for the doc item List audit logs in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-auditlogs"
+  },
+  "sidebar.ss_versioned-v1.doc.List subscribed events": {
+    "message": "List subscribed events",
+    "description": "The label for the doc item List subscribed events in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-auditlogs-events"
+  },
+  "sidebar.ss_versioned-v1.doc.Get audit log": {
+    "message": "Get audit log",
+    "description": "The label for the doc item Get audit log in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-auditlogs-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Create subscribed event": {
+    "message": "Create subscribed event",
+    "description": "The label for the doc item Create subscribed event in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-auditlogs-events-subscribe"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete subscribed event": {
+    "message": "Delete subscribed event",
+    "description": "The label for the doc item Delete subscribed event in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-auditlogs-events-id"
+  },
+  "sidebar.ss_versioned-v1.doc.List contact lists": {
+    "message": "List contact lists",
+    "description": "The label for the doc item List contact lists in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-contactlist"
+  },
+  "sidebar.ss_versioned-v1.doc.Create contact list": {
+    "message": "Create contact list",
+    "description": "The label for the doc item Create contact list in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-contactlist"
+  },
+  "sidebar.ss_versioned-v1.doc.List contacts in a list": {
+    "message": "List contacts in a list",
+    "description": "The label for the doc item List contacts in a list in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-contactlist-id-contacts"
+  },
+  "sidebar.ss_versioned-v1.doc.Update contact list": {
+    "message": "Update contact list",
+    "description": "The label for the doc item Update contact list in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-contactlist-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete contact list": {
+    "message": "Delete contact list",
+    "description": "The label for the doc item Delete contact list in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-contactlist-id"
+  },
+  "sidebar.ss_versioned-v1.doc. Get Contacts": {
+    "message": " Get Contacts",
+    "description": "The label for the doc item  Get Contacts in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-contacts"
+  },
+  "sidebar.ss_versioned-v1.doc.Create contact": {
+    "message": "Create contact",
+    "description": "The label for the doc item Create contact in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-contacts"
+  },
+  "sidebar.ss_versioned-v1.doc.List contact properties": {
+    "message": "List contact properties",
+    "description": "The label for the doc item List contact properties in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-contacts-properties"
+  },
+  "sidebar.ss_versioned-v1.doc.Create contact property": {
+    "message": "Create contact property",
+    "description": "The label for the doc item Create contact property in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-contacts-properties"
+  },
+  "sidebar.ss_versioned-v1.doc.Get contact": {
+    "message": "Get contact",
+    "description": "The label for the doc item Get contact in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-contacts-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Update contact": {
+    "message": "Update contact",
+    "description": "The label for the doc item Update contact in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-contacts-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete contact": {
+    "message": "Delete contact",
+    "description": "The label for the doc item Delete contact in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-contacts-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Create/Add Contacts to a Custom Label": {
+    "message": "Create/Add Contacts to a Custom Label",
+    "description": "The label for the doc item Create/Add Contacts to a Custom Label in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-contactlist-id-contacts"
+  },
+  "sidebar.ss_versioned-v1.doc.Get all shares of a contact": {
+    "message": "Get all shares of a contact",
+    "description": "The label for the doc item Get all shares of a contact in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-contacts-id-shares"
+  },
+  "sidebar.ss_versioned-v1.doc.Create multiple contacts": {
+    "message": "Create multiple contacts",
+    "description": "The label for the doc item Create multiple contacts in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-contactlist-active-contacts"
+  },
+  "sidebar.ss_versioned-v1.doc.Update contact property": {
+    "message": "Update contact property",
+    "description": "The label for the doc item Update contact property in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-contacts-properties-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete contact property": {
+    "message": "Delete contact property",
+    "description": "The label for the doc item Delete contact property in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-contacts-properties-id"
+  },
+  "sidebar.ss_versioned-v1.doc.List roles": {
+    "message": "List roles",
+    "description": "The label for the doc item List roles in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-roles"
+  },
+  "sidebar.ss_versioned-v1.doc.Get surveys": {
+    "message": "Get surveys",
+    "description": "The label for the doc item Get surveys in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveys"
+  },
+  "sidebar.ss_versioned-v1.doc.Create survey": {
+    "message": "Create survey",
+    "description": "The label for the doc item Create survey in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-surveys"
+  },
+  "sidebar.ss_versioned-v1.doc.Get public themes for a Survey": {
+    "message": "Get public themes for a Survey",
+    "description": "The label for the doc item Get public themes for a Survey in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveythemes"
+  },
+  "sidebar.ss_versioned-v1.doc.Get survey": {
+    "message": "Get survey",
+    "description": "The label for the doc item Get survey in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveys-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Update survey details": {
+    "message": "Update survey details",
+    "description": "The label for the doc item Update survey details in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-surveys-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Get survey integrations": {
+    "message": "Get survey integrations",
+    "description": "The label for the doc item Get survey integrations in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-survey-surveyid-integrations"
+  },
+  "sidebar.ss_versioned-v1.doc.List survey variables": {
+    "message": "List survey variables",
+    "description": "The label for the doc item List survey variables in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveys-id-variables"
+  },
+  "sidebar.ss_versioned-v1.doc.Create survey variable": {
+    "message": "Create survey variable",
+    "description": "The label for the doc item Create survey variable in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-surveys-id-variables"
+  },
+  "sidebar.ss_versioned-v1.doc.Get survey responses": {
+    "message": "Get survey responses",
+    "description": "The label for the doc item Get survey responses in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveys-survey-id-submissions"
+  },
+  "sidebar.ss_versioned-v1.doc.Get survey questions": {
+    "message": "Get survey questions",
+    "description": "The label for the doc item Get survey questions in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveys-id-questions"
+  },
+  "sidebar.ss_versioned-v1.doc.Get Survey settings": {
+    "message": "Get Survey settings",
+    "description": "The label for the doc item Get Survey settings in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveys-id-settings"
+  },
+  "sidebar.ss_versioned-v1.doc.Update Survey settings": {
+    "message": "Update Survey settings",
+    "description": "The label for the doc item Update Survey settings in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-surveys-id-settings"
+  },
+  "sidebar.ss_versioned-v1.doc.Get survey response": {
+    "message": "Get survey response",
+    "description": "The label for the doc item Get survey response in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveys-survey-id-submissions-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete survey response": {
+    "message": "Delete survey response",
+    "description": "The label for the doc item Delete survey response in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-submissions-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Create question": {
+    "message": "Create question",
+    "description": "The label for the doc item Create question in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-sections-id-questions"
+  },
+  "sidebar.ss_versioned-v1.doc.Create a section": {
+    "message": "Create a section",
+    "description": "The label for the doc item Create a section in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-surveys-id-sections"
+  },
+  "sidebar.ss_versioned-v1.doc.Clone survey": {
+    "message": "Clone survey",
+    "description": "The label for the doc item Clone survey in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-surveys-id-clone"
+  },
+  "sidebar.ss_versioned-v1.doc.Update survey section": {
+    "message": "Update survey section",
+    "description": "The label for the doc item Update survey section in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-surveys-id-sections-section-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete a section": {
+    "message": "Delete a section",
+    "description": "The label for the doc item Delete a section in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-surveys-id-sections-section-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Update question": {
+    "message": "Update question",
+    "description": "The label for the doc item Update question in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-surveys-id-questions-question-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete question": {
+    "message": "Delete question",
+    "description": "The label for the doc item Delete question in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-surveys-id-questions-question-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete survey variable": {
+    "message": "Delete survey variable",
+    "description": "The label for the doc item Delete survey variable in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-surveys-id-variables-variable-id"
+  },
+  "sidebar.ss_versioned-v1.doc.List targets": {
+    "message": "List targets",
+    "description": "The label for the doc item List targets in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-targets"
+  },
+  "sidebar.ss_versioned-v1.doc.List teams": {
+    "message": "List teams",
+    "description": "The label for the doc item List teams in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-teams"
+  },
+  "sidebar.ss_versioned-v1.doc.Create team": {
+    "message": "Create team",
+    "description": "The label for the doc item Create team in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-teams"
+  },
+  "sidebar.ss_versioned-v1.doc.List users": {
+    "message": "List users",
+    "description": "The label for the doc item List users in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-users"
+  },
+  "sidebar.ss_versioned-v1.doc.Create user": {
+    "message": "Create user",
+    "description": "The label for the doc item Create user in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-users"
+  },
+  "sidebar.ss_versioned-v1.doc.Get user": {
+    "message": "Get user",
+    "description": "The label for the doc item Get user in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-users-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Update user": {
+    "message": "Update user",
+    "description": "The label for the doc item Update user in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-users-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete user": {
+    "message": "Delete user",
+    "description": "The label for the doc item Delete user in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-users-id"
+  },
+  "sidebar.ss_versioned-v1.doc.List webhooks": {
+    "message": "List webhooks",
+    "description": "The label for the doc item List webhooks in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-webhooks"
+  },
+  "sidebar.ss_versioned-v1.doc.Create webhook": {
+    "message": "Create webhook",
+    "description": "The label for the doc item Create webhook in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-webhooks"
+  },
+  "sidebar.ss_versioned-v1.doc.List survey webhooks": {
+    "message": "List survey webhooks",
+    "description": "The label for the doc item List survey webhooks in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveys-survey-id-webhooks"
+  },
+  "sidebar.ss_versioned-v1.doc.Update webhook": {
+    "message": "Update webhook",
+    "description": "The label for the doc item Update webhook in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-webhooks-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete webhook": {
+    "message": "Delete webhook",
+    "description": "The label for the doc item Delete webhook in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-webhooks-id"
+  },
+  "sidebar.ss_versioned-v1.doc.List workspaces": {
+    "message": "List workspaces",
+    "description": "The label for the doc item List workspaces in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-workspaces"
+  },
+  "sidebar.ss_versioned-v1.doc.Create workspace": {
+    "message": "Create workspace",
+    "description": "The label for the doc item Create workspace in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-workspaces"
+  },
+  "sidebar.ss_versioned-v1.doc.Get workspace": {
+    "message": "Get workspace",
+    "description": "The label for the doc item Get workspace in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-workspaces-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Update workspace": {
+    "message": "Update workspace",
+    "description": "The label for the doc item Update workspace in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-workspaces-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete workspace": {
+    "message": "Delete workspace",
+    "description": "The label for the doc item Delete workspace in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-workspaces-id"
+  },
+  "sidebar.ss_versioned-v1.doc.List NPS channels": {
+    "message": "List NPS channels",
+    "description": "The label for the doc item List NPS channels in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-nps-surveyid-shares"
+  },
+  "sidebar.ss_versioned-v1.doc.Get NPS metrics": {
+    "message": "Get NPS metrics",
+    "description": "The label for the doc item Get NPS metrics in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-nps-survey-id-metrics"
+  },
+  "sidebar.ss_versioned-v1.doc.List survey responses": {
+    "message": "List survey responses",
+    "description": "The label for the doc item List survey responses in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-csat-survey-id-responses"
+  },
+  "sidebar.ss_versioned-v1.doc.List passives": {
+    "message": "List passives",
+    "description": "The label for the doc item List passives in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-nps-survey-id-responses-passives"
+  },
+  "sidebar.ss_versioned-v1.doc.List promoters": {
+    "message": "List promoters",
+    "description": "The label for the doc item List promoters in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-nps-survey-id-responses-promoters"
+  },
+  "sidebar.ss_versioned-v1.doc.List detractors": {
+    "message": "List detractors",
+    "description": "The label for the doc item List detractors in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-nps-survey-id-responses-detractors"
+  },
+  "sidebar.ss_versioned-v1.doc.Get NPS Channel": {
+    "message": "Get NPS Channel",
+    "description": "The label for the doc item Get NPS Channel in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-nps-surveyid-shares-channelid"
+  },
+  "sidebar.ss_versioned-v1.doc.Get NPS Channel triggers": {
+    "message": "Get NPS Channel triggers",
+    "description": "The label for the doc item Get NPS Channel triggers in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-nps-surveyid-shares-channelid-triggers"
+  },
+  "sidebar.ss_versioned-v1.doc.List NPS reminders": {
+    "message": "List NPS reminders",
+    "description": "The label for the doc item List NPS reminders in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-nps-surveyid-shares-channelid-reminders"
+  },
+  "sidebar.ss_versioned-v1.doc.Create reminder": {
+    "message": "Create reminder",
+    "description": "The label for the doc item Create reminder in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-csat-surveyid-shares-channelid-reminders"
+  },
+  "sidebar.ss_versioned-v1.doc.Creates NPS Survey": {
+    "message": "Creates NPS Survey",
+    "description": "The label for the doc item Creates NPS Survey in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-nps"
+  },
+  "sidebar.ss_versioned-v1.doc.Create NPS Email channel": {
+    "message": "Create NPS Email channel",
+    "description": "The label for the doc item Create NPS Email channel in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-nps-survey-id-email"
+  },
+  "sidebar.ss_versioned-v1.doc.Create SMS share": {
+    "message": "Create SMS share",
+    "description": "The label for the doc item Create SMS share in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-csat-survey-id-sms"
+  },
+  "sidebar.ss_versioned-v1.doc.Share existing SMS Share": {
+    "message": "Share existing SMS Share",
+    "description": "The label for the doc item Share existing SMS Share in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-csat-survey-id-sms-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Send NPS channel Blast": {
+    "message": "Send NPS channel Blast",
+    "description": "The label for the doc item Send NPS channel Blast in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-nps-survey-id-email-channel-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete NPS reminder": {
+    "message": "Delete NPS reminder",
+    "description": "The label for the doc item Delete NPS reminder in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-nps-surveyid-shares-channelid-reminders-reminderid"
+  },
+  "sidebar.ss_versioned-v1.doc.Get responses report public link": {
+    "message": "Get responses report public link",
+    "description": "The label for the doc item Get responses report public link in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveys-survey-id-report-link"
+  },
+  "sidebar.ss_versioned-v1.doc.List subjects": {
+    "message": "List subjects",
+    "description": "The label for the doc item List subjects in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-survey-surveyid-subjects"
+  },
+  "sidebar.ss_versioned-v1.doc.List approvers": {
+    "message": "List approvers",
+    "description": "The label for the doc item List approvers in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-survey-surveyid-approvers"
+  },
+  "sidebar.ss_versioned-v1.doc.List subject evaluators": {
+    "message": "List subject evaluators",
+    "description": "The label for the doc item List subject evaluators in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-survey-surveyid-subject-subjectid-evaluators"
+  },
+  "sidebar.ss_versioned-v1.doc.Get subject report": {
+    "message": "Get subject report",
+    "description": "The label for the doc item Get subject report in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-survey-surveyid-subject-subjectid-report"
+  },
+  "sidebar.ss_versioned-v1.doc.Create invite": {
+    "message": "Create invite",
+    "description": "The label for the doc item Create invite in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-survey-surveyid-invite"
+  },
+  "sidebar.ss_versioned-v1.doc.Update invite": {
+    "message": "Update invite",
+    "description": "The label for the doc item Update invite in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-survey-surveyid-subject-subjectid-invite"
+  },
+  "sidebar.ss_versioned-v1.doc.Get CES metrics": {
+    "message": "Get CES metrics",
+    "description": "The label for the doc item Get CES metrics in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-ces-survey-id-metrics"
+  },
+  "sidebar.ss_versioned-v1.doc.List CES channels": {
+    "message": "List CES channels",
+    "description": "The label for the doc item List CES channels in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-ces-surveyid-shares"
+  },
+  "sidebar.ss_versioned-v1.doc.Get CES Channel": {
+    "message": "Get CES Channel",
+    "description": "The label for the doc item Get CES Channel in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-ces-surveyid-shares-channelid"
+  },
+  "sidebar.ss_versioned-v1.doc.List HighEffort": {
+    "message": "List HighEffort",
+    "description": "The label for the doc item List HighEffort in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-ces-survey-id-responses-higheffort"
+  },
+  "sidebar.ss_versioned-v1.doc.List lowEffort": {
+    "message": "List lowEffort",
+    "description": "The label for the doc item List lowEffort in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-ces-survey-id-responses-loweffort"
+  },
+  "sidebar.ss_versioned-v1.doc.List Neutral": {
+    "message": "List Neutral",
+    "description": "The label for the doc item List Neutral in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-csat-survey-id-responses-neutral"
+  },
+  "sidebar.ss_versioned-v1.doc.Get response of an CES survey submission": {
+    "message": "Get response of an CES survey submission",
+    "description": "The label for the doc item Get response of an CES survey submission in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-ces-survey-id-submissions-nps-submission-id"
+  },
+  "sidebar.ss_versioned-v1.doc.List CES reminders": {
+    "message": "List CES reminders",
+    "description": "The label for the doc item List CES reminders in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-ces-surveyid-shares-channelid-reminders"
+  },
+  "sidebar.ss_versioned-v1.doc.Get CES Channel triggers": {
+    "message": "Get CES Channel triggers",
+    "description": "The label for the doc item Get CES Channel triggers in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-ces-surveyid-shares-channelid-triggers"
+  },
+  "sidebar.ss_versioned-v1.doc.Creates CES Survey": {
+    "message": "Creates CES Survey",
+    "description": "The label for the doc item Creates CES Survey in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-ces"
+  },
+  "sidebar.ss_versioned-v1.doc.Create CES Email channel": {
+    "message": "Create CES Email channel",
+    "description": "The label for the doc item Create CES Email channel in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-ces-survey-id-email"
+  },
+  "sidebar.ss_versioned-v1.doc.Send CES channel Blast": {
+    "message": "Send CES channel Blast",
+    "description": "The label for the doc item Send CES channel Blast in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-ces-survey-id-email-channel-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete CES reminder": {
+    "message": "Delete CES reminder",
+    "description": "The label for the doc item Delete CES reminder in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-ces-surveyid-shares-channelid-reminders-reminderid"
+  },
+  "sidebar.ss_versioned-v1.doc.Get csat metrics": {
+    "message": "Get csat metrics",
+    "description": "The label for the doc item Get csat metrics in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-csat-survey-id-metrics"
+  },
+  "sidebar.ss_versioned-v1.doc.List csat channels": {
+    "message": "List csat channels",
+    "description": "The label for the doc item List csat channels in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-csat-surveyid-shares"
+  },
+  "sidebar.ss_versioned-v1.doc.Get CSAT Channel": {
+    "message": "Get CSAT Channel",
+    "description": "The label for the doc item Get CSAT Channel in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-csat-surveyid-shares-channelid"
+  },
+  "sidebar.ss_versioned-v1.doc.List Dissatisfied": {
+    "message": "List Dissatisfied",
+    "description": "The label for the doc item List Dissatisfied in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-csat-survey-id-responses-dissatisfied"
+  },
+  "sidebar.ss_versioned-v1.doc.List Satisfied": {
+    "message": "List Satisfied",
+    "description": "The label for the doc item List Satisfied in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-csat-survey-id-responses-satisfied"
+  },
+  "sidebar.ss_versioned-v1.doc.Get response of an csat survey submission": {
+    "message": "Get response of an csat survey submission",
+    "description": "The label for the doc item Get response of an csat survey submission in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-csat-survey-id-submissions-nps-submission-id"
+  },
+  "sidebar.ss_versioned-v1.doc.List csat reminders": {
+    "message": "List csat reminders",
+    "description": "The label for the doc item List csat reminders in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-csat-surveyid-shares-channelid-reminders"
+  },
+  "sidebar.ss_versioned-v1.doc.Get csat Channel triggers": {
+    "message": "Get csat Channel triggers",
+    "description": "The label for the doc item Get csat Channel triggers in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-csat-surveyid-shares-channelid-triggers"
+  },
+  "sidebar.ss_versioned-v1.doc.Creates csat Survey": {
+    "message": "Creates csat Survey",
+    "description": "The label for the doc item Creates csat Survey in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-csat"
+  },
+  "sidebar.ss_versioned-v1.doc.Create csat Email channel": {
+    "message": "Create csat Email channel",
+    "description": "The label for the doc item Create csat Email channel in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-csat-survey-id-email"
+  },
+  "sidebar.ss_versioned-v1.doc.Send csat channel Blast": {
+    "message": "Send csat channel Blast",
+    "description": "The label for the doc item Send csat channel Blast in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-csat-survey-id-email-channel-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete csat reminder": {
+    "message": "Delete csat reminder",
+    "description": "The label for the doc item Delete csat reminder in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-csat-surveyid-shares-channelid-reminders-reminderid"
+  },
+  "sidebar.ss_versioned-v1.doc.List all shares": {
+    "message": "List all shares",
+    "description": "The label for the doc item List all shares in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveys-survey-id-shares"
+  },
+  "sidebar.ss_versioned-v1.doc.Get share details": {
+    "message": "Get share details",
+    "description": "The label for the doc item Get share details in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/get-v-1-surveys-survey-id-shares-share-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Create email share": {
+    "message": "Create email share",
+    "description": "The label for the doc item Create email share in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-shares-email-share-id"
+  },
+  "sidebar.ss_versioned-v1.doc.Create link share for Survey": {
+    "message": "Create link share for Survey",
+    "description": "The label for the doc item Create link share for Survey in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-surveys-survey-id-share-link"
+  },
+  "sidebar.ss_versioned-v1.doc.Unique survey link for each contact": {
+    "message": "Unique survey link for each contact",
+    "description": "The label for the doc item Unique survey link for each contact in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-survey-survey-id-channels-channel-id-contacts-surveylink"
+  },
+  "sidebar.ss_versioned-v1.doc.Update SMS share": {
+    "message": "Update SMS share",
+    "description": "The label for the doc item Update SMS share in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-survey-surveyid-shares-sms-channelid"
+  },
+  "sidebar.ss_versioned-v1.doc.postV1SurveysIdQuestions": {
+    "message": "postV1SurveysIdQuestions",
+    "description": "The label for the doc item postV1SurveysIdQuestions in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-surveys-id-questions"
+  },
+  "sidebar.ss_versioned-v1.doc.Create account": {
+    "message": "Create account",
+    "description": "The label for the doc item Create account in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-signup"
+  },
+  "sidebar.ss_versioned-v1.doc.Delete account": {
+    "message": "Delete account",
+    "description": "The label for the doc item Delete account in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/delete-v-1-delete"
+  },
+  "sidebar.ss_versioned-v1.doc.Create Kiosk Submissions": {
+    "message": "Create Kiosk Submissions",
+    "description": "The label for the doc item Create Kiosk Submissions in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-kiosk-deviceid-submissions"
+  },
+  "sidebar.ss_versioned-v1.doc.Start submission": {
+    "message": "Start submission",
+    "description": "The label for the doc item Start submission in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/post-v-1-surveys-survey-id-submission-start"
+  },
+  "sidebar.ss_versioned-v1.doc.Complete submission": {
+    "message": "Complete submission",
+    "description": "The label for the doc item Complete submission in sidebar ss_versioned-v1, linking to the doc rest-apis/v1/put-v-1-survey-survey-id-submissions-submission-id-complete"
+  },
+  "sidebar.ss_versioned-v3.category.SurveySparrow V3 API": {
+    "message": "SurveySparrow V3 API",
+    "description": "The label for category SurveySparrow V3 API in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.SurveySparrow V3 API.link.generated-index.title": {
+    "message": "SurveySparrow API (v3)",
+    "description": "The generated-index page title for category SurveySparrow V3 API in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.SurveySparrow V3 API.link.generated-index.description": {
+    "message": "SuvreySparrow v3 API",
+    "description": "The generated-index page description for category SurveySparrow V3 API in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Audit Logs": {
+    "message": "Audit Logs",
+    "description": "The label for category Audit Logs in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Contacts": {
+    "message": "Contacts",
+    "description": "The label for category Contacts in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Roles": {
+    "message": "Roles",
+    "description": "The label for category Roles in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Survey": {
+    "message": "Survey",
+    "description": "The label for category Survey in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Targets": {
+    "message": "Targets",
+    "description": "The label for category Targets in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Teams": {
+    "message": "Teams",
+    "description": "The label for category Teams in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Users": {
+    "message": "Users",
+    "description": "The label for category Users in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Webhooks": {
+    "message": "Webhooks",
+    "description": "The label for category Webhooks in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Channels": {
+    "message": "Channels",
+    "description": "The label for category Channels in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Contact Lists": {
+    "message": "Contact Lists",
+    "description": "The label for category Contact Lists in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Contact Properties": {
+    "message": "Contact Properties",
+    "description": "The label for category Contact Properties in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Email Theme": {
+    "message": "Email Theme",
+    "description": "The label for category Email Theme in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Expressions": {
+    "message": "Expressions",
+    "description": "The label for category Expressions in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Nps": {
+    "message": "Nps",
+    "description": "The label for category Nps in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Questions": {
+    "message": "Questions",
+    "description": "The label for category Questions in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Reminder": {
+    "message": "Reminder",
+    "description": "The label for category Reminder in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Reports": {
+    "message": "Reports",
+    "description": "The label for category Reports in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Response": {
+    "message": "Response",
+    "description": "The label for category Response in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Survey Folder": {
+    "message": "Survey Folder",
+    "description": "The label for category Survey Folder in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Ticket Fields": {
+    "message": "Ticket Fields",
+    "description": "The label for category Ticket Fields in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Tickets": {
+    "message": "Tickets",
+    "description": "The label for category Tickets in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Variables": {
+    "message": "Variables",
+    "description": "The label for category Variables in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Reputation App Platforms": {
+    "message": "Reputation App Platforms",
+    "description": "The label for category Reputation App Platforms in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Reputation Platforms": {
+    "message": "Reputation Platforms",
+    "description": "The label for category Reputation Platforms in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Reputation Reviews": {
+    "message": "Reputation Reviews",
+    "description": "The label for category Reputation Reviews in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Employee 360": {
+    "message": "Employee 360",
+    "description": "The label for category Employee 360 in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Ticket Comments": {
+    "message": "Ticket Comments",
+    "description": "The label for category Ticket Comments in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.category.Translation": {
+    "message": "Translation",
+    "description": "The label for category Translation in sidebar ss_versioned-v3"
+  },
+  "sidebar.ss_versioned-v3.doc.List audit logs": {
+    "message": "List audit logs",
+    "description": "The label for the doc item List audit logs in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-audit-logs"
+  },
+  "sidebar.ss_versioned-v3.doc.List subscribed events": {
+    "message": "List subscribed events",
+    "description": "The label for the doc item List subscribed events in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-audit-logs-events"
+  },
+  "sidebar.ss_versioned-v3.doc.Create subscribed event": {
+    "message": "Create subscribed event",
+    "description": "The label for the doc item Create subscribed event in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-audit-logs-events"
+  },
+  "sidebar.ss_versioned-v3.doc.Get audit log": {
+    "message": "Get audit log",
+    "description": "The label for the doc item Get audit log in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-audit-logs-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete subscribed event": {
+    "message": "Delete subscribed event",
+    "description": "The label for the doc item Delete subscribed event in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-audit-logs-events-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all Contacts": {
+    "message": "Get all Contacts",
+    "description": "The label for the doc item Get all Contacts in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-contacts"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a contact": {
+    "message": "Create a contact",
+    "description": "The label for the doc item Create a contact in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-contacts"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a contact": {
+    "message": "Get a contact",
+    "description": "The label for the doc item Get a contact in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-contacts-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Update a contact": {
+    "message": "Update a contact",
+    "description": "The label for the doc item Update a contact in sidebar ss_versioned-v3, linking to the doc rest-apis/put-v-3-contacts-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a contact": {
+    "message": "Delete a contact",
+    "description": "The label for the doc item Delete a contact in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-contacts-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Batch contact creation status": {
+    "message": "Batch contact creation status",
+    "description": "The label for the doc item Batch contact creation status in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-contacts-status-token"
+  },
+  "sidebar.ss_versioned-v3.doc.Create contacts": {
+    "message": "Create contacts",
+    "description": "The label for the doc item Create contacts in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-contacts-batch"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all roles": {
+    "message": "Get all roles",
+    "description": "The label for the doc item Get all roles in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-roles"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all surveys": {
+    "message": "Get all surveys",
+    "description": "The label for the doc item Get all surveys in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-surveys"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a survey": {
+    "message": "Create a survey",
+    "description": "The label for the doc item Create a survey in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-surveys"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a survey": {
+    "message": "Get a survey",
+    "description": "The label for the doc item Get a survey in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-surveys-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Update a survey": {
+    "message": "Update a survey",
+    "description": "The label for the doc item Update a survey in sidebar ss_versioned-v3, linking to the doc rest-apis/patch-v-3-surveys-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Create survey section": {
+    "message": "Create survey section",
+    "description": "The label for the doc item Create survey section in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-sections"
+  },
+  "sidebar.ss_versioned-v3.doc.Clone a survey": {
+    "message": "Clone a survey",
+    "description": "The label for the doc item Clone a survey in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-surveys-id-clone"
+  },
+  "sidebar.ss_versioned-v3.doc.Update survey section": {
+    "message": "Update survey section",
+    "description": "The label for the doc item Update survey section in sidebar ss_versioned-v3, linking to the doc rest-apis/put-v-3-sections-section-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a section": {
+    "message": "Delete a section",
+    "description": "The label for the doc item Delete a section in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-sections-section-id"
+  },
+  "sidebar.ss_versioned-v3.doc.List targets": {
+    "message": "List targets",
+    "description": "The label for the doc item List targets in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-targets"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all teams": {
+    "message": "Get all teams",
+    "description": "The label for the doc item Get all teams in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-teams"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a team": {
+    "message": "Create a team",
+    "description": "The label for the doc item Create a team in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-teams"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all users": {
+    "message": "Get all users",
+    "description": "The label for the doc item Get all users in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-users"
+  },
+  "sidebar.ss_versioned-v3.doc.Create user": {
+    "message": "Create user",
+    "description": "The label for the doc item Create user in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-users"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a user": {
+    "message": "Get a user",
+    "description": "The label for the doc item Get a user in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-users-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a user": {
+    "message": "Delete a user",
+    "description": "The label for the doc item Delete a user in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-users-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Update a user": {
+    "message": "Update a user",
+    "description": "The label for the doc item Update a user in sidebar ss_versioned-v3, linking to the doc rest-apis/patch-v-3-users-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all webhooks": {
+    "message": "Get all webhooks",
+    "description": "The label for the doc item Get all webhooks in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-webhooks"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a webhook": {
+    "message": "Create a webhook",
+    "description": "The label for the doc item Create a webhook in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-webhooks"
+  },
+  "sidebar.ss_versioned-v3.doc.Update a webhook": {
+    "message": "Update a webhook",
+    "description": "The label for the doc item Update a webhook in sidebar ss_versioned-v3, linking to the doc rest-apis/put-v-3-webhooks-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a webhook": {
+    "message": "Delete a webhook",
+    "description": "The label for the doc item Delete a webhook in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-webhooks-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all channels": {
+    "message": "Get all channels",
+    "description": "The label for the doc item Get all channels in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-channels"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a channel": {
+    "message": "Create a channel",
+    "description": "The label for the doc item Create a channel in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-channels"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a channel": {
+    "message": "Get a channel",
+    "description": "The label for the doc item Get a channel in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-channels-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Update a channel": {
+    "message": "Update a channel",
+    "description": "The label for the doc item Update a channel in sidebar ss_versioned-v3, linking to the doc rest-apis/put-v-3-channels-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a channel": {
+    "message": "Delete a channel",
+    "description": "The label for the doc item Delete a channel in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-channels-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Create unique survey links": {
+    "message": "Create unique survey links",
+    "description": "The label for the doc item Create unique survey links in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-channels-create-unique-links"
+  },
+  "sidebar.ss_versioned-v3.doc.Clone a channel": {
+    "message": "Clone a channel",
+    "description": "The label for the doc item Clone a channel in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-channels-id-clone"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all contact lists": {
+    "message": "Get all contact lists",
+    "description": "The label for the doc item Get all contact lists in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-contact-lists"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a contact list": {
+    "message": "Create a contact list",
+    "description": "The label for the doc item Create a contact list in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-contact-lists"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a contact list": {
+    "message": "Get a contact list",
+    "description": "The label for the doc item Get a contact list in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-contact-lists-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a contact list": {
+    "message": "Delete a contact list",
+    "description": "The label for the doc item Delete a contact list in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-contact-lists-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Update a contact list": {
+    "message": "Update a contact list",
+    "description": "The label for the doc item Update a contact list in sidebar ss_versioned-v3, linking to the doc rest-apis/patch-v-3-contact-lists-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all contact properties": {
+    "message": "Get all contact properties",
+    "description": "The label for the doc item Get all contact properties in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-contact-properties"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a contact property": {
+    "message": "Create a contact property",
+    "description": "The label for the doc item Create a contact property in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-contact-properties"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a contact property": {
+    "message": "Delete a contact property",
+    "description": "The label for the doc item Delete a contact property in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-contact-properties-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Update a contact property": {
+    "message": "Update a contact property",
+    "description": "The label for the doc item Update a contact property in sidebar ss_versioned-v3, linking to the doc rest-apis/patch-v-3-contact-properties-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Get email themes": {
+    "message": "Get email themes",
+    "description": "The label for the doc item Get email themes in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-email-themes"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all survey expressions": {
+    "message": "Get all survey expressions",
+    "description": "The label for the doc item Get all survey expressions in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-expressions"
+  },
+  "sidebar.ss_versioned-v3.doc.Get metrics": {
+    "message": "Get metrics",
+    "description": "The label for the doc item Get metrics in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-metrics"
+  },
+  "sidebar.ss_versioned-v3.doc.List respones based on metrics of CX surveys": {
+    "message": "List respones based on metrics of CX surveys",
+    "description": "The label for the doc item List respones based on metrics of CX surveys in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-metrics-responses"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all survey questions": {
+    "message": "Get all survey questions",
+    "description": "The label for the doc item Get all survey questions in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-questions"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a question": {
+    "message": "Create a question",
+    "description": "The label for the doc item Create a question in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-questions"
+  },
+  "sidebar.ss_versioned-v3.doc.Update a question": {
+    "message": "Update a question",
+    "description": "The label for the doc item Update a question in sidebar ss_versioned-v3, linking to the doc rest-apis/put-v-3-questions-question-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a question": {
+    "message": "Delete a question",
+    "description": "The label for the doc item Delete a question in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-questions-question-id"
+  },
+  "sidebar.ss_versioned-v3.doc.List Channel reminders": {
+    "message": "List Channel reminders",
+    "description": "The label for the doc item List Channel reminders in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-reminders"
+  },
+  "sidebar.ss_versioned-v3.doc.Create Reminder for a channel": {
+    "message": "Create Reminder for a channel",
+    "description": "The label for the doc item Create Reminder for a channel in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-reminders"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a Channel reminder": {
+    "message": "Get a Channel reminder",
+    "description": "The label for the doc item Get a Channel reminder in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-reminders-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a channel reminder": {
+    "message": "Delete a channel reminder",
+    "description": "The label for the doc item Delete a channel reminder in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-reminders-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Get responses report public link": {
+    "message": "Get responses report public link",
+    "description": "The label for the doc item Get responses report public link in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-reports"
+  },
+  "sidebar.ss_versioned-v3.doc.Get response properties": {
+    "message": "Get response properties",
+    "description": "The label for the doc item Get response properties in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-response-properties"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all responses": {
+    "message": "Get all responses",
+    "description": "The label for the doc item Get all responses in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-responses"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a response": {
+    "message": "Create a response",
+    "description": "The label for the doc item Create a response in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-responses"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a response": {
+    "message": "Get a response",
+    "description": "The label for the doc item Get a response in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-responses-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Update a response": {
+    "message": "Update a response",
+    "description": "The label for the doc item Update a response in sidebar ss_versioned-v3, linking to the doc rest-apis/put-v-3-responses-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a response": {
+    "message": "Delete a response",
+    "description": "The label for the doc item Delete a response in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-responses-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Batch response creation status": {
+    "message": "Batch response creation status",
+    "description": "The label for the doc item Batch response creation status in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-responses-status-token"
+  },
+  "sidebar.ss_versioned-v3.doc.Batch create responses": {
+    "message": "Batch create responses",
+    "description": "The label for the doc item Batch create responses in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-responses-batch"
+  },
+  "sidebar.ss_versioned-v3.doc.Start a new response": {
+    "message": "Start a new response",
+    "description": "The label for the doc item Start a new response in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-responses-new"
+  },
+  "sidebar.ss_versioned-v3.doc.Complete response": {
+    "message": "Complete response",
+    "description": "The label for the doc item Complete response in sidebar ss_versioned-v3, linking to the doc rest-apis/put-v-3-responses-response-id-complete"
+  },
+  "sidebar.ss_versioned-v3.doc.Add answers for response": {
+    "message": "Add answers for response",
+    "description": "The label for the doc item Add answers for response in sidebar ss_versioned-v3, linking to the doc rest-apis/put-v-3-responses-response-id-update"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all survey folders": {
+    "message": "Get all survey folders",
+    "description": "The label for the doc item Get all survey folders in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-survey-folders"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a survey folder": {
+    "message": "Create a survey folder",
+    "description": "The label for the doc item Create a survey folder in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-survey-folders"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a survey folder": {
+    "message": "Get a survey folder",
+    "description": "The label for the doc item Get a survey folder in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-survey-folders-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a survey folder": {
+    "message": "Delete a survey folder",
+    "description": "The label for the doc item Delete a survey folder in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-survey-folders-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Update a survey folder": {
+    "message": "Update a survey folder",
+    "description": "The label for the doc item Update a survey folder in sidebar ss_versioned-v3, linking to the doc rest-apis/patch-v-3-survey-folders-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all ticket fields": {
+    "message": "Get all ticket fields",
+    "description": "The label for the doc item Get all ticket fields in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-ticket-fields"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a ticket field": {
+    "message": "Get a ticket field",
+    "description": "The label for the doc item Get a ticket field in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-ticket-fields-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all tickets": {
+    "message": "Get all tickets",
+    "description": "The label for the doc item Get all tickets in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-tickets"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a ticket": {
+    "message": "Create a ticket",
+    "description": "The label for the doc item Create a ticket in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-tickets"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a ticket": {
+    "message": "Get a ticket",
+    "description": "The label for the doc item Get a ticket in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-tickets-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Edit a ticket": {
+    "message": "Edit a ticket",
+    "description": "The label for the doc item Edit a ticket in sidebar ss_versioned-v3, linking to the doc rest-apis/put-v-3-tickets-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a ticket": {
+    "message": "Delete a ticket",
+    "description": "The label for the doc item Delete a ticket in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-tickets-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Batch ticket creation status": {
+    "message": "Batch ticket creation status",
+    "description": "The label for the doc item Batch ticket creation status in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-tickets-batch-status-token"
+  },
+  "sidebar.ss_versioned-v3.doc.Create tickets in batch": {
+    "message": "Create tickets in batch",
+    "description": "The label for the doc item Create tickets in batch in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-tickets-batch"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all survey variables": {
+    "message": "Get all survey variables",
+    "description": "The label for the doc item Get all survey variables in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-variables"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a survey variable": {
+    "message": "Create a survey variable",
+    "description": "The label for the doc item Create a survey variable in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-variables"
+  },
+  "sidebar.ss_versioned-v3.doc.Create survey variables": {
+    "message": "Create survey variables",
+    "description": "The label for the doc item Create survey variables in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-variables-batch"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete a survey variable": {
+    "message": "Delete a survey variable",
+    "description": "The label for the doc item Delete a survey variable in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-variables-variable-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all app platforms": {
+    "message": "Get all app platforms",
+    "description": "The label for the doc item Get all app platforms in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-reputation-app-platforms"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a app platform": {
+    "message": "Get a app platform",
+    "description": "The label for the doc item Get a app platform in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-reputation-app-platforms-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all platforms": {
+    "message": "Get all platforms",
+    "description": "The label for the doc item Get all platforms in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-reputation-platforms"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a platform": {
+    "message": "Get a platform",
+    "description": "The label for the doc item Get a platform in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-reputation-platforms-id"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all reviews": {
+    "message": "Get all reviews",
+    "description": "The label for the doc item Get all reviews in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-reputation-reviews"
+  },
+  "sidebar.ss_versioned-v3.doc.Get a review": {
+    "message": "Get a review",
+    "description": "The label for the doc item Get a review in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-reputation-reviews-id"
+  },
+  "sidebar.ss_versioned-v3.doc.List approvers": {
+    "message": "List approvers",
+    "description": "The label for the doc item List approvers in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-survey-approvers"
+  },
+  "sidebar.ss_versioned-v3.doc.List subjects": {
+    "message": "List subjects",
+    "description": "The label for the doc item List subjects in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-survey-subjects"
+  },
+  "sidebar.ss_versioned-v3.doc.List subject evaluators": {
+    "message": "List subject evaluators",
+    "description": "The label for the doc item List subject evaluators in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-survey-subject-evaluators"
+  },
+  "sidebar.ss_versioned-v3.doc.Get subject report": {
+    "message": "Get subject report",
+    "description": "The label for the doc item Get subject report in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-survey-subject-report"
+  },
+  "sidebar.ss_versioned-v3.doc.Create invite": {
+    "message": "Create invite",
+    "description": "The label for the doc item Create invite in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-survey-invite"
+  },
+  "sidebar.ss_versioned-v3.doc.Update invite": {
+    "message": "Update invite",
+    "description": "The label for the doc item Update invite in sidebar ss_versioned-v3, linking to the doc rest-apis/put-v-3-survey-subject-updateinvite"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all ticket comments": {
+    "message": "Get all ticket comments",
+    "description": "The label for the doc item Get all ticket comments in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-tickets-id-comments"
+  },
+  "sidebar.ss_versioned-v3.doc.Create a comment": {
+    "message": "Create a comment",
+    "description": "The label for the doc item Create a comment in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-tickets-id-comments"
+  },
+  "sidebar.ss_versioned-v3.doc.Get all languages available for translation": {
+    "message": "Get all languages available for translation",
+    "description": "The label for the doc item Get all languages available for translation in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-languages"
+  },
+  "sidebar.ss_versioned-v3.doc.Get the specific language excel file": {
+    "message": "Get the specific language excel file",
+    "description": "The label for the doc item Get the specific language excel file in sidebar ss_versioned-v3, linking to the doc rest-apis/get-v-3-translation-export"
+  },
+  "sidebar.ss_versioned-v3.doc.Create new custom language": {
+    "message": "Create new custom language",
+    "description": "The label for the doc item Create new custom language in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-language"
+  },
+  "sidebar.ss_versioned-v3.doc.Get channel analytics metrics": {
+    "message": "Get channel analytics metrics",
+    "description": "The label for the doc item Get channel analytics metrics in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-channels-id-summary"
+  },
+  "sidebar.ss_versioned-v3.doc.Create new translation in a survey": {
+    "message": "Create new translation in a survey",
+    "description": "The label for the doc item Create new translation in a survey in sidebar ss_versioned-v3, linking to the doc rest-apis/post-v-3-translation"
+  },
+  "sidebar.ss_versioned-v3.doc.Update translation": {
+    "message": "Update translation",
+    "description": "The label for the doc item Update translation in sidebar ss_versioned-v3, linking to the doc rest-apis/put-v-3-translation"
+  },
+  "sidebar.ss_versioned-v3.doc.Delete translation": {
+    "message": "Delete translation",
+    "description": "The label for the doc item Delete translation in sidebar ss_versioned-v3, linking to the doc rest-apis/delete-v-3-translation"
+  },
+  "sidebar.Appnest_Sidebar.category.Appnest": {
+    "message": "Appnest",
+    "description": "The label for category Appnest in sidebar Appnest_Sidebar"
+  },
+  "sidebar.Appnest_Sidebar.category.SDK Docs": {
+    "message": "SDK Docs",
+    "description": "The label for category SDK Docs in sidebar Appnest_Sidebar"
+  },
+  "sidebar.Appnest_Sidebar.category.SDK Docs.link.generated-index.title": {
+    "message": "SurveySparrow SDK Documentation",
+    "description": "The generated-index page title for category SDK Docs in sidebar Appnest_Sidebar"
+  },
+  "sidebar.Appnest_Sidebar.category.SDK Docs.link.generated-index.description": {
+    "message": "This documentation helps developer to build apps using surveysparrow software development kit",
+    "description": "The generated-index page description for category SDK Docs in sidebar Appnest_Sidebar"
+  },
+  "sidebar.Appnest_Sidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar Appnest_Sidebar"
+  },
+  "sidebar.Appnest_Sidebar.category.Building Apps": {
+    "message": "Building Apps",
+    "description": "The label for category Building Apps in sidebar Appnest_Sidebar"
+  },
+  "sidebar.Appnest_Sidebar.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category Configuration in sidebar Appnest_Sidebar"
+  },
+  "sidebar.Appnest_Sidebar.category.Tutorial": {
+    "message": "Tutorial",
+    "description": "The label for category Tutorial in sidebar Appnest_Sidebar"
+  },
+  "sidebar.Appnest_Sidebar.category.Tutorial.link.generated-index.title": {
+    "message": "Welcome to AppNest Codelabs",
+    "description": "The generated-index page title for category Tutorial in sidebar Appnest_Sidebar"
+  },
+  "sidebar.Appnest_Sidebar.category.Tutorial.link.generated-index.description": {
+    "message": "Discover a seamless and interactive learning experience on our Developer Platform through detailed codelabs, empowering you to unleash your full potential by building SurveySparrow applications and exploring its rich features.",
+    "description": "The generated-index page description for category Tutorial in sidebar Appnest_Sidebar"
+  },
+  "sidebar.spot_checks_sidebar.category.How to use SpotChecks ?": {
+    "message": "How to use SpotChecks ?",
+    "description": "The label for category How to use SpotChecks ? in sidebar spot_checks_sidebar"
+  },
+  "sidebar.spot_checks_sidebar.category.Web SpotChecks": {
+    "message": "Web SpotChecks",
+    "description": "The label for category Web SpotChecks in sidebar spot_checks_sidebar"
+  },
+  "sidebar.spot_checks_sidebar.category.Mobile SpotChecks": {
+    "message": "Mobile SpotChecks",
+    "description": "The label for category Mobile SpotChecks in sidebar spot_checks_sidebar"
+  },
+  "sidebar.spot_checks_sidebar.category.iOS": {
+    "message": "iOS",
+    "description": "The label for category iOS in sidebar spot_checks_sidebar"
+  },
+  "sidebar.spot_checks_sidebar.category.iOS.link.generated-index.title": {
+    "message": "iOS",
+    "description": "The generated-index page title for category iOS in sidebar spot_checks_sidebar"
+  },
+  "sidebar.spot_checks_sidebar.category.iOS.link.generated-index.description": {
+    "message": "Here are two different ways to integrate Spotchecks in iOS applications.",
+    "description": "The generated-index page description for category iOS in sidebar spot_checks_sidebar"
+  },
+  "sidebar.spot_checks_sidebar.doc.Introduction": {
+    "message": "Introduction",
+    "description": "The label for the doc item Introduction in sidebar spot_checks_sidebar, linking to the doc spotchecks/inroduction"
+  },
+  "sidebar.spot_checks_sidebar.doc.SpotChecks Essentials": {
+    "message": "SpotChecks Essentials",
+    "description": "The label for the doc item SpotChecks Essentials in sidebar spot_checks_sidebar, linking to the doc spotchecks/spotchecks-essentials"
+  },
+  "sidebar.spot_checks_sidebar.doc.Configure Essentials": {
+    "message": "Configure Essentials",
+    "description": "The label for the doc item Configure Essentials in sidebar spot_checks_sidebar, linking to the doc spotchecks/configure-essentials"
+  },
+  "sidebar.spot_checks_sidebar.doc.Swift UI": {
+    "message": "Swift UI",
+    "description": "The label for the doc item Swift UI in sidebar spot_checks_sidebar, linking to the doc spotchecks/mobile-spotchecks/ios/swift-ui"
+  },
+  "sidebar.spot_checks_sidebar.doc.UI Kit": {
+    "message": "UI Kit",
+    "description": "The label for the doc item UI Kit in sidebar spot_checks_sidebar, linking to the doc spotchecks/mobile-spotchecks/ios/ui-kit"
+  },
+  "sidebar.mobile_sdk_sidebar.doc.iOS": {
+    "message": "iOS",
+    "description": "The label for the doc item iOS in sidebar mobile_sdk_sidebar, linking to the doc sdk/ios"
+  },
+  "sidebar.mobile_sdk_sidebar.doc.Android": {
+    "message": "Android",
+    "description": "The label for the doc item Android in sidebar mobile_sdk_sidebar, linking to the doc sdk/android"
+  },
+  "sidebar.mobile_sdk_sidebar.doc.Flutter": {
+    "message": "Flutter",
+    "description": "The label for the doc item Flutter in sidebar mobile_sdk_sidebar, linking to the doc sdk/flutter"
+  },
+  "sidebar.mobile_sdk_sidebar.doc.React Native": {
+    "message": "React Native",
+    "description": "The label for the doc item React Native in sidebar mobile_sdk_sidebar, linking to the doc sdk/react-native"
+  }
+}

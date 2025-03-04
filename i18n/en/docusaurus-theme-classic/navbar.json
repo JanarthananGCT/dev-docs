@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "SurveySparrow",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Appnest": {
+    "message": "Appnest",
+    "description": "Navbar item with label Appnest"
+  },
+  "item.label.REST APIs": {
+    "message": "REST APIs",
+    "description": "Navbar item with label REST APIs"
+  },
+  "item.label.Mobile SDK": {
+    "message": "Mobile SDK",
+    "description": "Navbar item with label Mobile SDK"
+  },
+  "item.label.SpotChecks": {
+    "message": "SpotChecks",
+    "description": "Navbar item with label SpotChecks"
+  },
+  "item.label.Embed": {
+    "message": "Embed",
+    "description": "Navbar item with label Embed"
+  },
+  "item.label.Community": {
+    "message": "Community",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.Sign up": {
+    "message": "Sign up",
+    "description": "Navbar item with label Sign up"
+  }
+}
