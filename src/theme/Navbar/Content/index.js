@@ -14,6 +14,7 @@ import NavbarSearch from '@theme/Navbar/Search';
 import styles from './styles.module.css';
 import { Button } from '@sparrowengg/twigs-react';
 import { useColorMode } from "@docusaurus/theme-common";
+import Cookies from "js-cookie";
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
   return useThemeConfig().navbar.items;
@@ -67,14 +68,28 @@ export default function NavbarContent() {
         // TODO stop hardcoding items?
         // Ask the user to add the respective navbar items => more flexible
         <>
-         <VersionSelector />
+          <VersionSelector />
           <NavbarItems items={rightItems} />
-            {/* <Button size='md' onClick={()=>{
-            window.open('https://community.surveysparrow.com/c/appnest-developers-hub/51', '_blank');
-            }} color={colorMode === 'light' ? 'default' : 'light'} variant='outline' rightIcon={<svg viewBox="0 0 28 28" focusable="false" class="chakra-icon css-onkibi" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></g></svg>} >
-              Community
-            </Button> */}
-         
+          <Button
+            size="md"
+            css={{
+              margin: "0 10px",
+            }}
+            onClick={() => {
+              window.open(
+                Cookies.get("redirection_url")
+                  ? Cookies.get("redirection_url")
+                  : "https://app.surveysparrow.com/signup?source=dev_site",
+                "_blank"
+              );
+            }}
+            color="primary"
+            className="navbar-button desktop-button"
+            variant={"outline"}
+          >
+            {Cookies.get("redirection_url") ? "Manage Apps" : "Login / Signup"}
+          </Button>
+
           <NavbarColorModeToggle className={styles.colorModeToggle} />
           {!searchBarItem && (
             <NavbarSearch>

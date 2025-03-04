@@ -20,14 +20,14 @@ const documentationOptions = [
     id: 3,
     name: 'Mobile SDK',
     icon: `${IMAGE_URL}/app/sdk-new.svg`,
-    arrowIcon: true,
-    path: '/sdk',
+    arrowIcon: false,
+    path: '/sdk/ios',
   },
   {
     id: 4,
     name: 'Spotchecks',
     icon: spotchecks,
-    arrowIcon: true,
+    arrowIcon: false,
     path: '/spotchecks',
   },
   {

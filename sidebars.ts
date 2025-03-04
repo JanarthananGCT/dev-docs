@@ -43,7 +43,7 @@ const sidebars: SidebarsConfig = {
       link: {
         type: "generated-index",
         title: "SurveySparrow API (v1)",
-        description: "SurveySparrow V1 API",
+        description: "Note : SurveySparrow API V1 is deprecated.",
         slug: "/rest-apis/v1",
       },
       items: [

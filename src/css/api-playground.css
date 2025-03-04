@@ -149,7 +149,7 @@
   
   .navbar__title {
     font-family: 'DM Sans', sans-serif !important;
-    font-size: x-large;
+    font-size: large;
   }
   
   [data-theme='dark'] .twigs-select__control {
@@ -243,3 +243,40 @@
     background-color: var(--ifm-color-primary);
   }
   
+
+  @media (max-width: 768px) {
+    .navbar__title {
+      font-family: 'DM Sans', sans-serif !important;
+      font-size: large;
+    }
+    
+  }
+  @media (min-width: 575px) {
+    .navbar__title {
+      font-family: 'DM Sans', sans-serif !important;
+      font-size: x-large;
+    }
+    
+  }
+  .navbar-button{
+    background-color: #fff;
+  }
+  [data-theme='dark'] .navbar-button{
+    background-color: #1b1b1d;
+  }
+
+
+  @media (max-width: 768px) {
+    .desktop-button {
+      visibility: hidden;
+    }
+
+  }
+  
+
+  @media (max-width: 400px) {
+    .navbar__items--right {
+      width: 50px;
+    }
+
+  }

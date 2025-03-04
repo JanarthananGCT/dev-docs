@@ -119,8 +119,6 @@ const config: Config = {
         },
         {
           to: "/embed",
-          // type: "docSidebar",
-          // sidebarId: "Embed_Sidebar",
           label: "Embed",
           id: "Embed",
           position: "left",
@@ -131,13 +129,7 @@ const config: Config = {
           label: "Community",
           // className: 'header-github-link',
           // 'aria-label': 'GitHub repository',
-        },
-        {
-          to: getAuthCookie() ? getAuthCookie() : 'https://app.surveysparrow.com/signup?source=dev_site',
-          label: getAuthCookie() ? 'Manage Apps' : 'Sign up',
-          position: 'right',
-          className: 'button button--primary button--md margin-inline'
-        },
+        }
       ],
       hideOnScroll: false,
     },
