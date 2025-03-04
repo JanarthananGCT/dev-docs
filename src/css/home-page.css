@@ -137,7 +137,7 @@
   }
   
   .docs--card-heading {
-    color: var(--ifm-color-primary) !important;
+    color: #4a9ca6 !important;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;

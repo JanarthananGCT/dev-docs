@@ -108,7 +108,7 @@
   .get>.menu__link::before {
     font-family: 'DM Sans', sans-serif !important;
     content: "get";
-    background-color: var(--ifm-color-primary);
+    background-color: #4a9ca6;
   }
   
   .post>.menu__link::before {
@@ -240,7 +240,7 @@
   }
   
   .openapi-explorer__request-btn {
-    background-color: var(--ifm-color-primary);
+    background-color: #4a9ca6;
   }
   
 
@@ -262,6 +262,13 @@
     background-color: #fff;
   }
   [data-theme='dark'] .navbar-button{
+    background-color: #1b1b1d;
+  }
+
+  .navbar-button:hover{
+    background-color: #fff;
+  }
+  [data-theme='dark'] .navbar-button:hover{
     background-color: #1b1b1d;
   }
 
