@@ -283,3 +283,8 @@
       color: white !important;
     } 
   }
+.docs--appIcon{
+  img{
+    max-width: fit-content !important;
+  }
+}
