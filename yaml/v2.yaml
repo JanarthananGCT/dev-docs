@@ -4532,7 +4532,7 @@ definitions:
       cut_off_date:
         type: string
         format: date
-        example: '2025-05-28T18:39:18.314Z'
+        example: '2025-05-28T18:43:43.222Z'
       dynamic_cut_off:
         $ref: '#/definitions/dynamic_cut_off'
       enable_offline_support:
@@ -5097,7 +5097,7 @@ definitions:
         type: string
         format: date
         description: expiry time of link in UTC
-        example: '2025-05-28T18:39:18Z'
+        example: '2025-05-28T18:43:43Z'
         minLength: now
   Model 124:
     type: array
@@ -5141,7 +5141,7 @@ definitions:
         type: string
         format: date
         description: expiry time of link in UTC
-        example: '2025-05-28T18:39:18Z'
+        example: '2025-05-28T18:43:43Z'
         minLength: now
       variables:
         $ref: '#/definitions/properties'
@@ -5169,7 +5169,7 @@ definitions:
         type: string
         format: date
         description: expiry time of link in UTC
-        example: '2025-05-28T18:39:18Z'
+        example: '2025-05-28T18:43:43Z'
     required:
       - contact_id
   uniqueChannelUrlsSchema:
