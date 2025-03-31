@@ -1,8 +1,3 @@
-@import "home-page.css";
-@import "algolia.css";
-@import "footer.css";
-@import "api-playground.css";
-@import "appnest.css";
 :root {
   --lyoko-color-white: hsl(0, 0%, 100%);
   --lyoko-color-black: #1c1e21;
@@ -129,3 +124,43 @@ hr{
 /* h2{
   font-size: 30px !important;
 } */
+
+
+
+.navbar__title{
+  display: none !important;
+}
+
+
+.navbar__link{
+  color: #757575 !important;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+.navbar__link:hover{
+  color: #111111 !important;
+  cursor: pointer;
+}
+
+
+.navbar__link--active{
+  color: #111111 !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+}
+
+.navbar__logo{
+  margin-bottom: 5px !important;
+}
+
+@media (max-width: 768px) {
+  .navbar__divider{
+    display: none !important;
+  }
+}
+
+@import "home-page.css";
+@import "algolia.css";
+@import "footer.css";
+@import "api-playground.css";
+@import "appnest.css";

@@ -68,11 +68,6 @@ const config: Config = {
         autoCollapseCategories: false,
       },
     },
-    colorMode: {
-      defaultMode: "dark",
-      disableSwitch: false,
-      respectPrefersColorScheme: true,
-    },
     algolia: {
       apiKey: "abd3bea0ec77da01c12788c63924af62",
       indexName: "dev_survey",
@@ -85,10 +80,10 @@ const config: Config = {
       searchPagePath: "search",
     },
     navbar: {
-      title: "SurveySparrow",
+      title: "",
       logo: {
         alt: "logo",
-        src: src,
+        src: 'https://ss-staging-public.s3.us-east-1.amazonaws.com/ss-public-api-docs/logo.png',
       },
       items: [
         {
@@ -298,11 +293,9 @@ const config: Config = {
 
 async function createConfig() {
   const lightTheme = (await import("./src/utils/prismLight.mjs")).default;
-  const darkTheme = (await import("./src/utils/prismLight.mjs")).default;
 
   if (config.themeConfig?.prism) {
     config.themeConfig.prism.theme = lightTheme;
-    config.themeConfig.prism.darkTheme = darkTheme;
   }
   return config;
 }

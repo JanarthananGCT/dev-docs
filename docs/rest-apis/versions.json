@@ -1,17 +1,17 @@
 [
   {
     "version": "v3",
-    "label": "V3",
+    "label": "Version 3",
     "baseUrl": "/rest-apis"
   },
   {
     "version": "v2",
-    "label": "V2",
+    "label": "Version 2",
     "baseUrl": "/rest-apis/v2"
   },
   {
     "version": "v1",
-    "label": "V1",
+    "label": "Version 1",
     "baseUrl": "/rest-apis/v1"
   }
 ]

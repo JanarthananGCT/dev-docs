@@ -60,19 +60,19 @@ const VersionSelector: React.FC = () => {
     if (location.pathname.includes("/v1")) {
       return {
         version: "v1",
-        label: "V1",
+        label: "Version 1",
         baseUrl: "/rest-apis/v1",
       };
     } else if (location.pathname.includes("/v2")) {
       return {
         version: "v2",
-        label: "V2",
+        label: "Version 2",
         baseUrl: "/rest-apis/v2",
       };
     } else if (location.pathname.includes("/rest-apis")) {
       return {
         version: "v3",
-        label: "V3",
+        label: "Version 3",
         baseUrl: "/rest-apis",
       };
     } else if (
@@ -83,7 +83,7 @@ const VersionSelector: React.FC = () => {
     } else {
       return {
         version: "v3",
-        label: "V3",
+        label: "Version 3",
         baseUrl: "/rest-apis",
       };
     }
@@ -101,9 +101,12 @@ const VersionSelector: React.FC = () => {
                 <DropdownMenuTrigger asChild>
                   <Button
                     size="md"
-                    color={colorMode === "dark" ? "light" : "default"}
+                    color={"secondary"}
                     variant="outline"
                     rightIcon={<ChevronDownFillIcon size={20} />}
+                    css={{
+                      width: '116px',
+                    }}
                   >
                     {selectedOption?.label || "Select API Version"}
                   </Button>

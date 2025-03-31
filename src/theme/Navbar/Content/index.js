@@ -68,12 +68,27 @@ export default function NavbarContent() {
         // TODO stop hardcoding items?
         // Ask the user to add the respective navbar items => more flexible
         <>
-          <VersionSelector />
+          {/* <VersionSelector /> */}
+     
+          {!searchBarItem && (
+            <NavbarSearch>
+              <SearchBar />
+            </NavbarSearch>
+          )}
+               <div className="navbar__divider" style={{
+            height: "20px",
+            width: "1px",
+            background: "#757575"
+          }} ></div>
+     
           <NavbarItems items={rightItems} />
-          <Button
+          {/* <NavbarColorModeToggle className={styles.colorModeToggle} /> */}
+     <div>
+     <Button
             size="md"
             css={{
               margin: "0 10px",
+              marginRight: "16px",
             }}
             onClick={() => {
               window.open(
@@ -85,17 +100,10 @@ export default function NavbarContent() {
             }}
             color="primary"
             className="navbar-button desktop-button"
-            variant={"outline"}
           >
-            {Cookies.get("redirection_url") ? "Manage Apps" : "Login / Signup"}
+            {Cookies.get("redirection_url") ? "Manage Apps" : "Login"}
           </Button>
-
-          <NavbarColorModeToggle className={styles.colorModeToggle} />
-          {!searchBarItem && (
-            <NavbarSearch>
-              <SearchBar />
-            </NavbarSearch>
-          )}
+     </div>
         </>
       }
     />

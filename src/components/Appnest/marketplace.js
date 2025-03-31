@@ -35,7 +35,7 @@ const ResponsiveAppNestLayout = () => {
     <a className='docs--card--link' href={url} target='_blank'>
       <div className="docs--appCard">
         <div className="docs--appIcon">
-          <img src={iconSrc} alt={title} />
+          <img src={iconSrc} alt={title} width="48px" height="48px" />
         </div>
         <div className="docs--appInfo">
           <span className="docs--appTitle">{title}</span>
@@ -132,8 +132,8 @@ const ResponsiveAppNestLayout = () => {
       <div className="docs--appsContainer">
         <AppCard
           url="https://surveysparrow.com/apps/import-contacts-from-sftp/"
-          iconSrc="https://ss-staging-public.s3.amazonaws.com/ss-public-api-docs/Appnest/sftp.svg"
-          title="Import Contacts From SFTP"
+          iconSrc="https://appnest-apps.surveysparrow.com/ImportContactsfromSFTP-204/version_1.0/icon/SFTP Contact (3).png"
+          title="Import Contact via SFTP"
           description="Import contacts from an SFTP server on a weekly, monthly and yearly schedule."
         />
         <AppCard
@@ -144,9 +144,9 @@ const ResponsiveAppNestLayout = () => {
         />
         <AppCard
           url="https://surveysparrow.com/apps/google-calendar-survey-integration/"
-          iconSrc="https://ss-staging-public.s3.amazonaws.com/ss-public-api-docs/Appnest/google-calender.svg"
-          title="Google Calender"
-          description="Streamline event creation in Google Calendar using your survey responses."
+          iconSrc="https://appnest-apps.surveysparrow.com/ReportCustomization-629/version_1.0/icon/Logo Doc Gen.png"
+          title="Document Generator"
+          description="Create a dynamic PDF document that can be shared via email after submission."
         />
         <AppCard
           url="https://surveysparrow.com/apps/survey-migration/"
@@ -156,10 +156,8 @@ const ResponsiveAppNestLayout = () => {
         />
       </div>
 
-      <hr />
-      <div className="docs--featuredSection">Featured articles</div>
 
-      <div className="docs--articlesContainer">
+      {/* <div className="docs--articlesContainer">
         <ArticleCard
           url="/appnest/code-labs/appnest/code-labs/simple_sdk_app"
           imageSrc={colorMode === 'dark' ? "https://ss-staging-public.s3.amazonaws.com/ss-public-api-docs/Appnest/webhook.png" : "https://ss-staging-public.s3.amazonaws.com/ss-public-api-docs/Appnest/new-sdk-app.png"}
@@ -178,7 +176,7 @@ const ResponsiveAppNestLayout = () => {
           title="Create a React app using SSDK"
           description="Introducing native support to build React apps using SSDK. Learn more on how to create and implement them."
         />
-      </div>
+      </div> */}
     </div>
   );
 };
