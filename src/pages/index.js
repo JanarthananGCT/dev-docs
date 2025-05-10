@@ -1,10 +1,9 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Main from '../components/MainPage';
 const Home = () => {
   return (
     <Layout>
-      <Main />
+      <iframe style={{width: '100%', minHeight: '310vh', maxHeight: 'auto', border: 'none'}} src="https://ss-staging-public.s3.us-east-1.amazonaws.com/public-api-docs/main.html" />
     </Layout>
   );
 };
