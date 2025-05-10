@@ -15,7 +15,7 @@
   }
   
   .sub-title {
-    color: #4a9ca6;
+    color: #00828D;
   }
   
   .docs--container {
@@ -25,7 +25,7 @@
   }
   
   .docs--title {
-    color: #4a9ca6;
+    color: #00828D;
     font-size: 60px;
   }
   
@@ -234,8 +234,8 @@
   
   .button--primary:hover {
     color: white;
-    background-color: #4a9ca6;
-    border: 1px solid #4a9ca6;
+    background-color: #00828D;
+    border: 1px solid #00828D;
   }
   
   .navbar-sidebar__item {
@@ -269,7 +269,7 @@
       height: 32px;
       width: 100px !important;
       color: white !important;
-      background-color: #4a9ca6;
+      background-color: #00828D;
     } 
   }
 
@@ -279,7 +279,7 @@
       width: 80% !important;
     }
     .btn-primary{
-      border: 1px solid #4a9ca6;
+      border: 1px solid #00828D;
       color: white !important;
     } 
   }

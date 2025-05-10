@@ -108,7 +108,7 @@
   .get>.menu__link::before {
     font-family: 'DM Sans', sans-serif !important;
     content: "get";
-    background-color: #4a9ca6;
+    background-color: #00828D;
   }
   
   .post>.menu__link::before {
@@ -240,7 +240,7 @@
   }
   
   .openapi-explorer__request-btn {
-    background-color: #4a9ca6;
+    background-color: #00828D;
   }
   
 

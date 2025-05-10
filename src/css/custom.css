@@ -9,7 +9,7 @@
   --ifm-footer-link-color: #333;
   --ifm-code-font-size: 95%;
   --ifm-h1-font-size: 2.5rem;
-  --ifm-color-primary: #4a9ca6;
+  --ifm-color-primary: #00828D;
   --docusaurus-highlighted-code-line-bg: #ffff;
   --ifm-global-shadow-tl: 2px 3px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, system-ui, -apple-system, sans-serif;
@@ -31,7 +31,7 @@ html[data-theme=dark] {
   --ifm-background-color: rgba(9, 10, 17, 1);
   --ifm-background-surface-color: rgba(9, 10, 17, 1);
   --ifm-footer-link-color: #dadde1;
-  --ifm-color-primary: #4a9ca6;
+  --ifm-color-primary: #00828D;
   --ifm-menu-color-background-active: #ffffff1a;
   --menu-link-active: rgba(255, 255, 255, 0.1);
   --ifm-menu-color-active: var(--ifm-color-primary);
@@ -85,7 +85,7 @@ a:hover {
 }
 
 .openapi-explorer__request-btn {
-  background-color: #4a9ca6 !important;
+  background-color: #00828D !important;
 }
 
 .DocSearch-Search-Icon {
@@ -307,7 +307,7 @@ button[class^=searchClearButton_] {
 .get>.menu__link::before {
   font-family: 'DM Sans', sans-serif !important;
   content: "get";
-  background-color: #4a9ca6;
+  background-color: #00828D;
 }
 
 .post>.menu__link::before {
@@ -439,7 +439,7 @@ html[data-theme=dark] .DocSearch-Button {
 }
 
 .openapi-explorer__request-btn {
-  background-color: #4a9ca6;
+  background-color: #00828D;
 }
 
 
@@ -503,7 +503,7 @@ html[data-theme=dark] .DocSearch-Button {
 }
 
 .sub-title {
-  color: #4a9ca6;
+  color: #00828D;
 }
 
 .docs--container {
@@ -513,7 +513,7 @@ html[data-theme=dark] .DocSearch-Button {
 }
 
 .docs--title {
-  color: #4a9ca6;
+  color: #00828D;
   font-size: 60px;
 }
 
@@ -722,8 +722,8 @@ html[data-theme=dark] .DocSearch-Button {
 
 .button--primary:hover {
   color: white;
-  background-color: #4a9ca6;
-  border: 1px solid #4a9ca6;
+  background-color: #00828D;
+  border: 1px solid #00828D;
 }
 
 .navbar-sidebar__item {
@@ -757,7 +757,7 @@ html[data-theme=dark] .DocSearch-Button {
     height: 32px;
     width: 100px !important;
     color: white !important;
-    background-color: #4a9ca6;
+    background-color: #00828D;
   } 
 }
 
@@ -767,7 +767,7 @@ html[data-theme=dark] .DocSearch-Button {
     width: 80% !important;
   }
   .btn-primary{
-    border: 1px solid #4a9ca6;
+    border: 1px solid #00828D;
     color: white !important;
   } 
 }
@@ -1082,7 +1082,7 @@ a[class^=footerLogoLink_] {
 }
 
 .docs--card-heading {
-  color: #4a9ca6 !important;
+  color: #00828D !important;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
