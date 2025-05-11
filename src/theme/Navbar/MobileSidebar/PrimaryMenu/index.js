@@ -24,7 +24,7 @@ export default function NavbarMobilePrimaryMenu() {
           key={i}
         />
       ))}
-       <Button
+       {/* <Button
             size="md"
             css={{
               marginInlineStart: '12px',
@@ -43,7 +43,7 @@ export default function NavbarMobilePrimaryMenu() {
             variant={"outline"}
           >
             {Cookies.get("redirection_url") ? "Manage Apps" : "Login / Signup"}
-          </Button>
+          </Button> */}
 
 
     </ul>

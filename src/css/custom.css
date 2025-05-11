@@ -1809,3 +1809,19 @@ a[class^=footerLogoLink_] {
   left: auto;
   right: 0;
 }
+
+
+
+.toggle_vylO {
+  display: none;
+}
+.navbar__toggle {
+  width: 24px !important;
+}
+.navbar-sidebar__close{
+  width: 16px !important;
+}
+
+.footer__items svg {
+  display: none;
+}
