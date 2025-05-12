@@ -1825,3 +1825,7 @@ a[class^=footerLogoLink_] {
 .footer__items svg {
   display: none;
 }
+.navbar__item navbar__link{
+  display: flex;
+  align-items: center;
+}
