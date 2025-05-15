@@ -13,7 +13,9 @@ const Home = () => {
             <div class="chakra-stack css-1485kjp">
                 <div class="chakra-container css-1waldwx">
                     <div class="css-1y73uiw video-wrapper">
-                        <video autoplay muted loop id="videoPlayer">
+                        <video autoplay muted loop id="videoPlayer" style={{
+                            borderRadius: "32px !important"
+                        }}>
                             <source
                                 src="https://static.surveysparrow.com/application/marketplace/marketplace-site/background.mp4" />
                         </video>
