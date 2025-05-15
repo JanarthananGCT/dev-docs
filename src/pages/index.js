@@ -5,32 +5,33 @@ import Head from '@docusaurus/Head';
 const Home = () => {
   return (
     <Layout>
-      <Head>
-        <link rel="stylesheet" href="https://ss-staging-public.s3.us-east-1.amazonaws.com/public-api-docs/bundle.css" />
+      <Head>    
         <link rel="stylesheet" href="https://ss-staging-public.s3.us-east-1.amazonaws.com/public-api-docs/styles.css" />
       </Head>
       <div class="css-0">
         <div class="css-16agjqd">
             <div class="chakra-stack css-1485kjp">
                 <div class="chakra-container css-1waldwx">
-                    <div class="css-1y73uiw">
-                        <video autoplay="" muted="" loop="" id="videoPlayer">
+                    <div class="css-1y73uiw video-wrapper">
+                        <video autoplay muted loop id="videoPlayer">
                             <source
                                 src="https://static.surveysparrow.com/application/marketplace/marketplace-site/background.mp4" />
                         </video>
                         <div class="css-1ho7uqx">
-                            <h2 class="chakra-heading css-17o7xnd">
+                            <h2 class="chakra-heading css-17o7xnd" style={{
+                                maxWidth: "798px"
+                            }}>
                                 Build experiences that match your imagination.
                             </h2>
                             <p class="chakra-text css-8ulcyx">
                                 Unleash boundless potential with SurveySparrow's
                                 developer tools.
                             </p>
-                            <div class="chakra-stack css-1eslg0f">
+                            <div class="chakra-stack css-1eslg0f ">
                                 <a target="_self" style={{margin: "0 !important"}}
                                     href="/appnest/docs/">
                                     <div class="homepage-options css-9lw9zd">
-                                        <div class="chakra-stack css-14di11j">
+                                        <div class="chakra-stack css-14di11j options-wrapper">
                                             <img alt="AppNest"
                                                 src="https://static.surveysparrow.com/application/marketplace/app/store-new.svg"
                                                 class="chakra-image css-vjbvzv" />
@@ -43,7 +44,7 @@ const Home = () => {
                                 </a><a target="_self" style={{margin: "0 !important"}}
                                     href="/rest-apis">
                                     <div class="homepage-options css-9lw9zd">
-                                        <div class="chakra-stack css-14di11j">
+                                        <div class="chakra-stack css-14di11j options-wrapper">
                                             <img alt="Rest API"
                                                 src="https://static.surveysparrow.com/application/marketplace/app/api-new.svg"
                                                 class="chakra-image css-vjbvzv" />
@@ -56,7 +57,7 @@ const Home = () => {
                                 </a><a target="_self" style={{margin: "0 !important"}}
                                     href="/sdk/ios">
                                     <div class="homepage-options css-9lw9zd">
-                                        <div class="chakra-stack css-14di11j">
+                                        <div class="chakra-stack css-14di11j options-wrapper">
                                             <img alt="Mobile SDK"
                                                 src="https://static.surveysparrow.com/application/marketplace/app/sdk-new.svg"
                                                 class="chakra-image css-vjbvzv" />
@@ -70,7 +71,7 @@ const Home = () => {
                                 <a target="_self" style={{margin: "0 !important"}}
                                     href="/spotchecks">
                                     <div class="homepage-options css-9lw9zd">
-                                        <div class="chakra-stack css-14di11j">
+                                        <div class="chakra-stack css-14di11j options-wrapper">
                                             <img alt="Spotcheck"
                                                 src="https://ss-staging-public.s3.us-east-1.amazonaws.com/public-api-docs/spotchecks.png"
                                                 class="chakra-image css-vjbvzv" />
@@ -82,9 +83,9 @@ const Home = () => {
                                     </div>
                                 </a>
                                 <a target="_self" style={{margin: "0 !important"}}
-                                    href="https://developers.surveysparrow.com/embed">
+                                    href="/embed">
                                     <div class="homepage-options css-9lw9zd">
-                                        <div class="chakra-stack css-14di11j">
+                                        <div class="chakra-stack css-14di11j options-wrapper">
                                             <img alt="Embed"
                                                 src="https://static.surveysparrow.com/application/marketplace/app/embed-new.svg"
                                                 class="chakra-image css-vjbvzv" />
@@ -114,7 +115,7 @@ const Home = () => {
                                     propelling your business to unprecedented heights.
                                 </p>
                                 <div class="chakra-linkbox css-1w0bw7u">
-                                    <a target="_self" href="https://developers.surveysparrow.com/appnest">
+                                    <a target="_self" href="/appnest">
                                         <button type="button" class="chakra-button css-1lzwfrc">
                                             Get Started
                                             <span class="chakra-button__icon css-1hzyiq5">
@@ -289,7 +290,7 @@ const Home = () => {
                                     experiences.
                                 </p>
                                 <div class="chakra-linkbox css-1w0bw7u">
-                                    <a target="_self" href="https://developers.surveysparrow.com/embed">
+                                    <a target="_self" href="/embed">
                                         <button type="button" class="chakra-button css-1lzwfrc">
                                             Learn More
                                             <span class="chakra-button__icon css-1hzyiq5">
@@ -304,7 +305,7 @@ const Home = () => {
                             <div class="css-omzpjv">
                                 <div class="chakra-linkbox css-1xfmci1">
                                     <a target="_self" style={{display: "inline-block"}}
-                                        href="https://developers.surveysparrow.com/embed">
+                                        href="/embed">
                                         <button type="button" class="chakra-button css-1l23psm">
                                             Learn More
                                             <span class="chakra-button__icon css-1hzyiq5">

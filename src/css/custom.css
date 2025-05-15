@@ -572,11 +572,13 @@ html[data-theme=dark] .DocSearch-Button {
 }
 
 .docs--appIcon {
-  /* display: flex; */
-
+  width: 158px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 16px;
   border: 1px solid #CBD5E0;
-  padding: 24px;
   margin-right: 10px;
 }
 
@@ -773,7 +775,8 @@ html[data-theme=dark] .DocSearch-Button {
 }
 .docs--appIcon{
 img{
-  max-width: fit-content !important;
+  width: 46px !important;
+  height: 46px !important;
 }
 }
 .footer__title {
@@ -1118,7 +1121,7 @@ a[class^=footerLogoLink_] {
   border: 1px solid #E2E8F0;
   border-radius: 8px;
   text-decoration: none;
-  color: var(--text-color);
+  color: black;
   font-weight: bold;
   transition: all 0.3s;
 }
@@ -1828,4 +1831,40 @@ a[class^=footerLogoLink_] {
 .navbar__item navbar__link{
   display: flex;
   align-items: center;
+}
+
+
+.navbar__logo{
+  height: 28px !important;
+}
+.navbar__link svg{
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .navbar__items{
+    margin-left: 22px !important;
+  }
+}
+
+.tabs__item{
+  color: black;
+}
+
+h2{
+  color: black;
+}
+
+.chakra-stack{
+  p{
+    margin: 0 !important;
+  }
+}
+
+#videoPlayer{
+  border-radius: 32px !important;
+}
+.options-wrapper{
+  gap: 8px;
 }
