@@ -773,12 +773,6 @@ html[data-theme=dark] .DocSearch-Button {
     color: white !important;
   } 
 }
-.docs--appIcon{
-img{
-  width: 46px !important;
-  height: 46px !important;
-}
-}
 .footer__title {
   margin: var(--ifm-heading-margin-bottom) 0;
 }

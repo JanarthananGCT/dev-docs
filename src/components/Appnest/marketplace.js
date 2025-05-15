@@ -34,8 +34,18 @@ const ResponsiveAppNestLayout = () => {
   const AppCard = ({ iconSrc, title, description, url }) => (
     <a className='docs--card--link' href={url} target='_blank'>
       <div className="docs--appCard">
-        <div className="docs--appIcon">
-          <img src={iconSrc} alt={title} width="48px" height="48px" />
+        <div className="docs--appIcon" style={{
+          width: '88px !important',
+          height: '88px !important',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}>
+          <img src={iconSrc} alt={title} width="48px" height="48px" style={{
+            width: '46px !important',
+            height: '46px !important',
+            margin: '0 !important'
+          }} />
         </div>
         <div className="docs--appInfo">
           <span className="docs--appTitle">{title}</span>
